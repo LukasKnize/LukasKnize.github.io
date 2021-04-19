@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukáš Kníže || programování, web design a grafika || Portfolio</title>
+    <meta name="description"
+        content="Jsem nadšenec do IT se zálibou ve vektorové grafice, webech a počítačévých hrách. Programuji v jazyce C# a weby tvořím v HTML, CSS a JavaScriptu, ale použít umím i Bootstrap.">
+    <link rel="icon" href="LKLogoIkona.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Reset stylů z webu https://cajthaml.eu/-->
+    <link rel="stylesheet" href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css">
+    <link rel="stylesheet" href="PortfolioPage.css">
+</head>
+
+<body>
+    <div id="loader">
+        <img src="GIF-210201_165322.gif" alt="">
+    </div>
+    <header>
+        <div id="logoKontejner">
+            <a href="MainPage.html">
+                <img src="LKLogoAnimDark.png" alt="logo" id="logo"> </a>
+        </div>
+        <div id="navigace">
+            <nav>
+                <a href="AboutMePage.html">O mě</a>
+                <a href="PortfolioPage.html">Portfolio</a>
+                <a href="ContactPage.html">Kontakt</a>
+                <a href="resume.html">Životopis</a>
+            </nav>
+        </div>
+    </header>
+    <div id="mobileNavBar">
+        <button id="burger" onclick="OpenMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <div id="mobileMenu">
+        <a href="MainPage.html">Úvodní stránka</a>
+        <a href="AboutMePage.html">O mně</a>
+        <a href="PortfolioPage.html">Portfolio</a>
+        <a href="ContactPage.html">Kontakt</a>
+        <a href="resume.html">Životopis</a>
+    </div>
+    <main>
+        <article id="weby">
+            <div class="leftText">
+                <h2 class="nadpisky">Webové stránky</h2>
+                <div class="textKontejner">
+                    <p class="contentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime
+                        impedit voluptatum soluta? Sint illo incidunt iste aliquid? Deleniti quam eum voluptates
+                        sapiente odit obcaecati consequuntur hic expedita ab ipsa!</p>
+                    <p class="contentText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis repellat
+                        culpa voluptate! Quos temporibus corporis odit assumenda officiis blanditiis veritatis, ducimus
+                        hic eum dolorem odio facilis laborum praesentium maxime iure.</p>
+                    <p class="contentText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum placeat
+                        voluptate inventore reprehenderit. Eaque autem fuga neque velit laudantium fugiat suscipit ab
+                        voluptatem, aliquam magnam eveniet commodi perferendis eos quia. </p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('w1')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>název projektu</p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('w1')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>název projektu</p>
+                </div>
+                <!-- doplnit až bude hotová <a href=""><button class="buttonToPages">Zobrazit mojí další stránku</button></a>  -->
+            </div>
+            <div class="rightImage">
+
+            </div>
+        </article>
+
+        <article id="loga">
+            <div class="leftImage">
+
+            </div>
+            <div class="rightText">
+                <h2 class="nadpisky">Logo design a grafika</h2>
+                <div class="textKontejner">
+                    <p class="contentText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+                        voluptates animi velit iusto qui doloremque, eius dolorum totam blanditiis eum assumenda
+                        officiis voluptatum dolores excepturi reiciendis quia, ad maiores ipsum!</p>
+                    <p class="contentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tenetur odit?
+                        Incidunt maiores dignissimos excepturi autem in sequi dicta quo illum at earum aut adipisci ab
+                        ipsum deserunt, praesentium explicabo?</p>
+                    <p class="contentText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi autem impedit
+                        reiciendis, aspernatur eaque, cum voluptatem nisi, excepturi officia dicta asperiores. Obcaecati
+                        quae totam nemo nam doloremque impedit vero nostrum.</p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('g1')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>Behance</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="hry">
+            <div class="leftText">
+                <h2 class="nadpisky">počítačové hry</h2>
+                <div class="textKontejner">
+                    <p class="contentText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+                        molestiae officiis a nihil, fuga earum illo aliquid vero. Voluptatem nisi corrupti ratione
+                        consequuntur labore quod, assumenda placeat eos architecto iste.</p>
+                    <p class="contentText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia optio nam,
+                        quidem voluptate nemo officia laudantium, possimus ipsa ad porro illum earum dolorum quos.
+                        Ducimus libero quibusdam sit possimus dolorum?</p>
+                    <p class="contentText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quo eos,
+                        ipsam accusantium esse dolor deserunt voluptate libero perspiciatis officiis ad facilis
+                        recusandae deleniti itaque laudantium distinctio suscipit eum nemo.</p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('h1')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>Itch.io</p>
+                </div>
+            </div>
+            <div class="rightImage">
+
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="infoFooter">
+            <div id="info">
+                <p id="pageInfo">Toto je má osobní stránka, která vznikla jako závěrečná práce předmětu Webové aplikace
+                    na Smíchovské střední průmyslové škole a gymnáziu</p>
+            </div>
+            <div id="links">
+                <h2>Odkazy</h2>
+                <p><a href="https://www.behance.net/lukkne" target="_blank"> <i class="fab fa-behance-square" id="icon1">
+                        </i>Behance</a></p>
+                <p><a href="https://tortoiseshell.itch.io/" target="_blank"> <i class="fab fa-itch-io" id="icon2"></i> Itch.io</a></p>
+            </div>
+        </div>
+
+        <div id="autor">
+            <div id="copyright">
+                <p id="date">© 2021 Lukáš Kníže</p>
+            </div>
+            <div id="name">
+                <p>Web a design by Lukáš Kníže</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="portfolioObjectBackground">
+        <div id="portfolioObject">
+            <h2 id="portfolioTextH2">Nazev projektu</h2>
+            <p id="portfolioTextP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quibusdam facilis
+                sequi earum, qui
+                reprehenderit cum provident quaerat delectus porro accusamus facere maiores libero ipsa quasi eveniet
+                dicta doloremque autem?</p>
+            <a href="" id="ProjectLink" target="_blank">více najdete zde</a>
+            <button onclick="ClosePortfolio()">zavřít</button>
+        </div>
+    </div>
+    <script src="JavaScriptForMainPage.js"> </script>
+</body>
+
+</html>

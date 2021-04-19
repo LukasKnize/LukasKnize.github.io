@@ -1,0 +1,616 @@
+#loader{
+    background-color: #02040F;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader img{
+    width: 100px;
+    height: 100px;
+}
+
+.afterLoad{
+        visibility: hidden;
+        opacity: 0;
+}
+
+body {
+    background-image: linear-gradient(45deg, #6830c38a, #80ffdba1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Jura', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(45deg, #ffffff75, #ffffffcb);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+}
+
+header #logoKontejner {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header #logoKontejner a #logo {
+    width: 80px;
+    height: 80px;
+}
+
+header #navigace nav a {
+    font-size: 20px;
+    color: #252525;
+    padding-bottom: 35px;
+    border-bottom: 5px solid #252525;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+}
+
+header #navigace nav a:hover {
+    font-size: 20px;
+    color: #80ffdb;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    border-bottom: 5px solid #252525;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    background-color: #252525;
+}
+
+header #navigace nav {
+    padding-top: 40px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #images img {
+    width: 100%;
+    height: 700px;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #b6ffea;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #6930c3, #80ffdb);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(180deg, #80ffdb, #6930c3);
+}
+
+footer {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(45deg, #ffffff75, #ffffffcb);
+    backdrop-filter: blur(5px);
+}
+
+footer #infoFooter {
+    display: flex;
+    height: 270px;
+}
+
+footer #info {
+    width: 33%;
+    height: 250px;
+}
+
+footer #links {
+    width: 33%;
+    height: 250px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+}
+
+footer #links h2 {
+    font-size: 2em;
+    color: #252525;
+}
+
+footer #links p {
+    padding-top: 10px;
+}
+
+footer #links a {
+    color: #252525;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+footer #links a:hover {
+    color: #840032;
+}
+
+footer #info #pageInfo {
+    color: #252525;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+footer #autor {
+    height: 30px;
+    display: flex;
+}
+
+footer #autor #copyright {
+    width: 50%;
+    height: 100%;
+}
+
+footer #autor #copyright #date {
+    padding-left: 30px;
+    color: #252525;
+}
+
+footer #autor #name {
+    padding-right: 30px;
+    width: 50%;
+    color: #252525;
+    text-align: right;
+}
+
+header #logoKontejner a #logo:hover{
+    animation: animm 1s linear;
+}
+
+#icon1:hover{
+    animation: animm 1s linear;
+}
+    
+#icon2:hover{
+    animation: animm 1s linear;
+}
+    
+@keyframes animm{
+    from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#weby{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(45deg, #ffffff57 ,#ffffffc0);
+    color: #252525;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.leftText{
+    width: 800px;
+    height: 700px;
+}
+
+.rightImage{
+    width: 400px;
+    height: 700px;   
+}
+
+#weby .rightImage{
+    background-image: url("programingSVG.png");
+}
+
+#portfolioObjectBackground{
+    background-color: #02040f3d;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolioObjectBackground #portfolioObject{
+    width: 600px;
+    height: auto;
+    background-image: linear-gradient(45deg, #ffffff9d, #ffffffe5);
+    backdrop-filter: blur(2px);
+    color: #252525;
+    text-align: center;
+}
+
+#portfolioObjectBackground #portfolioObject h2{
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#portfolioObjectBackground #portfolioObject p{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
+
+#portfolioObjectBackground #portfolioObject a{
+    color: #02040F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#portfolioObjectBackground #portfolioObject button{
+background-color: #02040F;
+color: #80ffdb;
+padding: 10px 15px;
+border-radius: 5px;
+border: none;
+margin-bottom: 25px;
+}
+
+#loga{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(45deg, #ffffff75, #ffffffcb);
+    color: #252525;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.portfolioButton{
+    border-top: #02040F 2px solid;
+    text-align: center;
+    color: #02040F;
+    padding-bottom: 10px;
+}
+
+.portfolioButton i{
+    padding-top: 5px;
+}
+
+.rightText{
+    width: 800px;
+    height: auto;
+}
+
+.leftImage{
+    width: 400px;
+    height: 700px;   
+}
+
+#loga .leftImage{
+    background-image: url("myLogos.png");
+}
+
+#hry{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(45deg, #ffffff75, #ffffffcb);
+    color: #252525;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.leftText{
+    width: 800px;
+    height: 700px;
+}
+
+.rightImage{
+    width: 400px;
+    height: 700px;   
+}
+
+#hry .rightImage{
+    background-image: url("gameBaner.png");
+}
+
+.nadpisky{
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.buttonToPages{
+    margin-left: 30px;
+    background-color: #E59500;
+    border: 1px solid #E59500;
+    color: #191B25;
+    width: 400px;
+    height: 40px;
+    font-size: 1.4em;
+    border-radius: 4px;
+}
+
+.contentText{
+    margin: 10px;
+    font-size: 1.4em;
+}
+
+.buttonToPages:hover{
+    background-color: #840032;
+    border: 1px solid #840032;
+}
+
+.textKontejner{
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.textKontejner a{
+    color: #E59500;
+}
+
+#mobileMenu{
+    display: none;
+}
+#mobileNavBar{
+    display: none;
+}
+
+@media(max-width: 1200px){
+
+    #weby, #loga, #hry {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-image: linear-gradient(45deg, #ffffff57 ,#ffffffc0);
+        color: #02040F;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        display: grid;
+        border-radius: 0px;
+    }
+
+    #weby, #hry{
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        
+    }
+
+    .leftText, .rightText {
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .leftText{
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+    }
+
+    .textKontejner {
+        height: auto;
+        text-align: center;
+    }
+
+    .leftText a{
+        text-align: center;
+    }
+
+    .buttonToPages {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #E59500;
+        border: 1px solid #E59500;
+        color: #191B25;
+        width: 50%;
+        height: auto;
+        font-size: 1.4em;
+        border-radius: 4px;
+    }
+
+    #weby .rightImage {
+        background-image: url("programingSVGH.png");
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        
+    }
+
+    #loga .leftImage {
+        background-image: url("myLogosH.png");
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        background-position: center;
+    }
+
+    #hry .rightImage {
+        background-image: url("gameBanerH.png");
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        background-position: center;
+    }
+
+    footer {
+        margin-top: 30px;
+        float: left;
+        width: 100%;
+        height: 850px;
+        background-color: #191B25;
+    }
+    
+    footer #infoFooter {
+        display: grid;
+        height: 750px;
+    }
+    
+    footer #info {
+        width: 100%;
+        height: 250px;
+    }
+    
+    footer #links {
+        width: 100%;
+        height: 250px;
+        padding-right: 0px;
+        padding-top: 20px;
+        text-align: center;
+        display: block;
+    }
+    
+    footer #links h2 {
+        font-size: 2em;
+        color: #02040F;
+    }
+    
+    footer #links p {
+        padding-top: 10px;
+    }
+    
+    footer #links a {
+        color: #02040F;
+        font-size: 1.5em;
+        font-weight: 800;
+        text-decoration: none;
+    }
+    
+    footer #links a:hover {
+        color: #840032;
+    }
+    
+    footer #info #pageInfo {
+        color: #02040F;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        
+    }
+    
+    footer #autor {
+        height: 30px;
+        display: flex;
+    }
+    
+    footer #autor #copyright {
+        width: 50%;
+        height: 100%;
+    }
+    
+    footer #autor #copyright #date {
+        padding-left: 30px;
+        color: #02040F;
+    }
+    
+    footer #autor #name {
+        padding-right: 30px;
+        width: 50%;
+        color: #02040F;
+        text-align: right;
+    }
+}
+
+@media(max-width: 600px){
+    #weby .rightImage {
+        background-image: url("programingSVGSmall.png");
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        
+    }
+
+    #loga .leftImage {
+        background-image: url("myLogosSmaler.png");
+        width: 100%;
+        height: 400px;
+        background-position: center;
+    }
+
+    #hry .rightImage {
+        background-image: url("gameBanerSmall.png");
+        width: 100%;
+        height: 400px;
+        background-position: center;
+    }
+
+    #mobileMenu{
+        z-index: 100;
+        display: none;
+        width: 300px;
+        background-image: linear-gradient(45deg, #ffffffaf, rgba(182, 252, 253, 0.795));
+        color: #02040F;
+        backdrop-filter: blur(2px);
+        height: 400px;
+        position: fixed;
+        left: 50%;
+        margin-left: -150px;
+        top: 50%;
+        margin-top: -200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #mobileMenu a{
+        color: #02040F;
+        font-size: 1.4em;
+        text-decoration: none;
+    }
+
+    #mobileNavBar{
+        background-image: linear-gradient(45deg, #ffffff75, #ffffffcb);
+        display: block;
+    }
+
+    #mobileNavBar button{
+        background-color: #02040F;
+        border: none;
+        font-size: 1.4em;
+        color: #80ffdb;
+        padding: 10px;
+    }
+
+    header{
+        display: none;
+    }
+
+    .nadpisky {
+        font-size: 3em;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+}

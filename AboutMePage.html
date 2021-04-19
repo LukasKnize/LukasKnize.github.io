@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+    <title>Lukáš Kníže || programování, web design a grafika || O mě</title>
+    <meta name="description"
+        content="Jsem nadšenec do IT se zálibou ve vektorové grafice, webech a počítačévých hrách. Programuji v jazyce C# a weby tvořím v HTML, CSS a JavaScriptu, ale použít umím i Bootstrap.">
+    <link rel="icon" href="LKLogoIkona.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Reset stylů z webu https://cajthaml.eu/-->
+    <link rel="stylesheet" href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css">
+    <link rel="stylesheet" href="AboutMePage.css">
+</head>
+
+<body>
+    <div id="loader">
+        <img src="GIF-210201_165322.gif" alt="">
+    </div>
+    <header>
+        <div id="logoKontejner">
+            <a href="MainPage.html">
+                <img src="LKLogoAnimDark.png" alt="logo" id="logo"> </a>
+        </div>
+        <div id="navigace">
+            <nav>
+                <a href="AboutMePage.html">O mě</a>
+                <a href="PortfolioPage.html">Portfolio</a>
+                <a href="ContactPage.html">Kontakt</a>
+                <a href="resume.html">Životopis</a>
+            </nav>
+        </div>
+    </header>
+    <div id="mobileNavBar">
+        <button id="burger" onclick="OpenMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <div id="mobileMenu">
+        <a href="MainPage.html">Úvodní stránka</a>
+        <a href="AboutMePage.html">O mě</a>
+        <a href="PortfolioPage.html">Portfolio</a>
+        <a href="ContactPage.html">Kontakt</a>
+        <a href="resume.html">Životopis</a>
+    </div>
+
+    <main>
+            <h2 class="nadpisy">O mě</h2>
+            <p class="texty">Jmenuji se Lukáš Kníže a jsem velký nadšenec do IT, programování, web designu a grafiky.
+                Žiji v Praze a jsem studentem Smíchovské střední průmyslové školy a gymnázia, kde studuji obor
+                informační technologie. Kromě IT mě baví hudba, kde poslouchám hudbu ze spousty žánru od metalové a
+                rockové hudby po EDM a sem tam trochu i toho klasického rapu. </p>
+            <p class="texty">Mezi mé záliby patří i četba fantasy, klasických detektivek anebo jiné podobné literatury a
+                zároveň jsem velkým fanouškem creepypast které poslouchám jako audio. A kromě IT, hudby a literatury se
+                věnuji třeba i hře na kytaru nebo třeba skautingu. </p>
+
+            <h2 class="nadpisy">Vzdělání</h2>
+
+            <ul>
+                <li class="texty">Základní vzdělání jsem absolvoval na základní škole Nebušice (2010 – 2019).</li>
+                <li class="texty">V roce 2019 jsem nastoupil do prvního ročníku Smíchovské střední průmyslové školy,
+                    obor Informační technologie, kde jsem v tuto chvílí v druhém ročníku</li>
+                <li class="texty">Umím základy programovacího jazyka C#</li>
+                <li class="texty">Umím základy webových jazyků HTML, CSS, JavaScript, a základy frameworku Bootstrap a
+                    W3.CSS
+                </li>
+                <li class="texty">Umím základy tvorby her v enginu Unity (především 2D) a tvorbu základních herních scriptů v
+                    jazyce C#</li>
+                <li class="texty">Mým mateřským jazykem je Český jazyk a umím základy Anglického jazyka (přibližně
+                    uroveň B1)</li>
+                <li class="texty">Ovládám software jako například: MS Office (úroveň se liší podle specifického
+                    produktu), Visual Studio (mírně pokročilý), Visual Studio Code (mírně pokročilý), Inkscape (mírně
+                    pokročilý), Unity (mírně pokročilý – 2D), GIMP (základy), LMMS (začátečník)…</li>
+            </ul>
+
+            <h2 class="nadpisy">Co dělám</h2>
+            <p class="texty">Zajímám se o tvorbu webových stránek, jednou z nich je právě tato, nebo stránka
+                prezentující fiktivní firmu kterou jsem dělal jako součást školního projektu. Kromě webů jsem také
+                vytvořil několik menších video her, které jsem umístil na Itch.io. Co se týče mých aktivit mimo IT, tak
+                trochu hraji na kytaru a působím jako vedoucí ve skautském oddílu.</p>
+    </main>
+    <footer>
+        <div id="infoFooter">
+            <div id="info">
+                <p id="pageInfo">Toto je má osobní stránka, která vznikla jako závěrečná práce předmětu Webové aplikace
+                    na Smíchovské střední průmyslové škole a gymnáziu</p>
+            </div>
+            <div id="links">
+                <h2>Odkazy</h2>
+                <p><a href="https://www.behance.net/lukkne"> <i class="fab fa-behance-square" id="icon1">
+                        </i>Behance</a></p>
+                <p><a href="https://tortoiseshell.itch.io/"> <i class="fab fa-itch-io" id="icon2"></i> Itch.io</a></p>
+            </div>
+        </div>
+
+        <div id="autor">
+            <div id="copyright">
+                <p id="date">© 2021 Lukáš Kníže</p>
+            </div>
+            <div id="name">
+                <p>Web a design by Lukáš Kníže</p>
+                <a href="mailto:"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScriptForMainPage.js"> </script>
+</body>
+
+</html>

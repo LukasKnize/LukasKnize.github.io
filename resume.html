@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukáš Kníže || životopis</title>
+    <meta name="description"
+        content="Jsem nadšenec do IT se zálibou ve vektorové grafice, webech a počítačévých hrách. Programuji v jazyce C# a weby tvořím v HTML, CSS a JavaScriptu, ale použít umím i Bootstrap.">
+    <link rel="icon" href="LKLogoIkona.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Reset stylů z webu https://cajthaml.eu/-->
+    <link rel="stylesheet" href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css">
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+    <div id="loader">
+        <img src="GIF-210201_165322.gif" alt="načítací animace">
+    </div>
+    <header>
+        <div id="logoKontejner">
+            <a href="MainPage.html">
+                <img src="LKLogoAnimDark.png" alt="logo" id="logo"> </a>
+        </div>
+        <div id="navigace">
+            <nav>
+                <a href="AboutMePage.html">O mně</a>
+                <a href="PortfolioPage.html">Portfolio</a>
+                <a href="ContactPage.html">Kontakt</a>
+                <a href="resume.html">Životopis</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobileNavBar">
+        <button id="burger" onclick="OpenMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <div id="mobileMenu">
+        <a href="MainPage.html">Úvodní stránka</a>
+        <a href="AboutMePage.html">O mě</a>
+        <a href="PortfolioPage.html">Portfolio</a>
+        <a href="ContactPage.html">Kontakt</a>
+        <a href="resume.html">Životopis</a>
+    </div>
+
+    <main>
+        <article>
+            <aside>
+                <div id="profilePic">
+
+                </div>
+                <div id="skills">
+                    <h2>Lukáš Kníže</h2>
+                    <p id="short">
+                        Programování, web design a grafika
+                    </p>
+
+                    <h3 class="asideHeadLine">
+                        Kontakt
+                    </h3>
+
+                    <p class="contacts"><i class="fas fa-at"></i> lukas.v.p.knize@gmail.com</p>
+                    <p class="contacts"><i class="fas fa-globe"></i> přidat adresu</p>
+                    <p class="contacts"><i class="fas fa-phone-alt"></i> +420 000 000 000</p>
+
+                    <h3 class="asideHeadLine">
+                        Znalosti
+                    </h3>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            C#
+                        </p>
+                        <div id="progressbar1">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">C# se učím druhým rokem .NET</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            HTML
+                        </p>
+                        <div id="progressbar2">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">HTML se aktivně učím asi půl roku</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            CSS
+                        </p>
+                        <div id="progressbar3">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">CSS se aktivně učím asi půl roku</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            JavaScript
+                        </p>
+                        <div id="progressbar4">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">umím základy JavaScripu</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            Bootstrap
+                        </p>
+                        <div id="progressbar5">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">umím používat Bootstrap, na základě dokumentace</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            W3.CSS
+                        </p>
+                        <div id="progressbar6">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">umím používat W3.CSS, na základě dokumentace</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            Unity
+                        </p>
+                        <div id="progressbar7">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">tvořím menší 2D game jam hry v enginu Unity</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            Inkscape
+                        </p>
+                        <div id="progressbar8">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">aktivně používám vektorový grafický editor Inkscape</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            Visual Studio
+                        </p>
+                        <div id="progressbar9">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">aktivně používám Visual Studio pro práci s C#</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            VS Code
+                        </p>
+                        <div id="progressbar10">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">aktivně používám VS Code pro tvorbu webových aplikací</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            GIMP
+                        </p>
+                        <div id="progressbar11">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">umím základ práce s editorem GIMP</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            LMMS
+                        </p>
+                        <div id="progressbar12">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">Učím se základ práce s DAW LMMS</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            Český jazyk
+                        </p>
+                        <div id="progressbar13">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">Český jazyk je mým mateřským jazykem</span>
+                    </div>
+
+                    <div class="skill descript">
+                        <p class="skillText">
+                            Anglický jazyk
+                        </p>
+                        <div id="progressbar14">
+                            <div></div>
+                        </div>
+                        <span class="descripttext">Anglický jazyk ovládám na základní, spíše pasivní úrovni - B1</span>
+                    </div>
+                </div>
+            </aside>
+
+            <div id="fullContent">
+                <h2 class="bigHeadline">Vzdělání</h2>
+                <p class="contentText">
+                    <span class="date"> od 2019</span> Smíchovská střední průmyslová škola a gymnázium - Informační
+                    technologie
+                </p>
+                <p class="contentText">
+                    <span class="date"> 2010 - 2019</span> základní škola Nebušice
+                </p>
+
+                <h2 class="bigHeadline">Projekty</h2>
+                <p class="contentText">
+                    <a href="">Osobní webová stránka</a>
+                </p>
+                <p class="contentText">
+                   <!-- ještě není hotový <a href="">Školní projekt - webová stránka fiktivní firmy</a> -->
+                </p>
+                <p class="contentText">
+                   <a href="https://tortoiseshell.itch.io/" target="_blank">počítačové hry tvořené vrámci Game jamů</a>
+                </p>
+
+                <h2 class="bigHeadline">Zájmy</h2>
+                <p class="contentText">
+                    It, web development, game development, vektorová grafika, logo design, hudba, literatura, skauting
+                </p>
+            </div>
+        </article>
+    </main>
+
+<div class="circrleObject" id="c1"></div>
+<div class="circrleObject" id="c2"></div>
+<div class="circrleObject" id="c3"></div>
+<div class="circrleObject" id="c4"></div>
+<div class="circrleObject" id="c5"></div>
+<div class="circrleObject" id="c6"></div>
+
+    <footer>
+        <div id="infoFooter">
+            <div id="info">
+                <p id="pageInfo">Toto je má osobní stránka, která vznikla jako závěrečná práce předmětu Webové aplikace
+                    na Smíchovské střední průmyslové škole a gymnáziu</p>
+            </div>
+            <div id="links">
+                <h2>Odkazy</h2>
+                <p><a href="https://www.behance.net/lukkne" target="_blank"> <i class="fab fa-behance-square" id="icon1">
+                        </i>Behance</a></p>
+                <p><a href="https://tortoiseshell.itch.io/" target="_blank"> <i class="fab fa-itch-io" id="icon2"></i> Itch.io</a></p>
+            </div>
+        </div>
+
+        <div id="autor">
+            <div id="copyright">
+                <p id="date">© 2021 Lukáš Kníže</p>
+            </div>
+            <div id="name">
+                <p>Web a design by Lukáš Kníže</p>
+                <a href="mailto:"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScriptForMainPage.js"> </script>
+</body>
+
+</html>
