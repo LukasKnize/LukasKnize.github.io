@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukáš Kníže || programování, web design a grafika || Portfolio</title>
+    <meta name="description"
+        content="Jsem nadšenec do IT se zálibou ve vektorové grafice, webech a počítačévých hrách. Programuji v jazyce C# a weby tvořím v HTML, CSS a JavaScriptu, ale použít umím i Bootstrap.">
+    <link rel="icon" href="LKLogoIkona.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Reset stylů z webu https://cajthaml.eu/-->
+    <link rel="stylesheet" href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css">
+    <link rel="stylesheet" href="PortfolioPage.css">
+</head>
+
+<body>
+    <div id="loader">
+        <img src="GIF-210201_165322.gif" alt="">
+    </div>
+    <header>
+        <div id="logoKontejner">
+            <a href="MainPage.html">
+                <img src="LKLogoAnimDark.png" alt="logo" id="logo"> </a>
+        </div>
+        <div id="navigace">
+            <nav>
+                <a href="AboutMePage.html">O mě</a>
+                <a href="PortfolioPage.html">Portfolio</a>
+                <a href="ContactPage.html">Kontakt</a>
+                <a href="resume.html">Životopis</a>
+            </nav>
+        </div>
+    </header>
+    <div id="mobileNavBar">
+        <button id="burger" onclick="OpenMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <div id="mobileMenu">
+        <a href="MainPage.html">Úvodní stránka</a>
+        <a href="AboutMePage.html">O mně</a>
+        <a href="PortfolioPage.html">Portfolio</a>
+        <a href="ContactPage.html" target="_blank">Kontakt</a>
+        <a href="resume.html">Životopis</a>
+    </div>
+    <main>
+        <article id="weby">
+            <div class="leftText">
+                <h2 class="nadpisky">Webové stránky</h2>
+                <div class="textKontejner">
+                    <p class="contentText">V dnešní době se firma bez svého místečka na internetu neobejde, a web mnohdy
+                        tvoří hlavní spojení mezi firmou a zákazníkem. A funguje to i opačně, zákazník hledá firmu na
+                        internetu. Z toho to důvodu je důležité mít webovou stránku která vás bude dobře reprezentovat a
+                        osloví potencionální zákazníky. Taková stránka by měla být přehledná, optimalizovaná pro co
+                        největší
+                        počet zařízení a v neposlední řadě by měla oslovit i svým designem, který bude to první, co
+                        potenciální zákazník na vašem webu uvidí.</p>
+                    <p class="contentText"> Kromě firem (u kterých je vlastní web prakticky nutnost, web využijí i
+                        podnikatelé, freelanceři, známé osobnosti nebo kdokoliv, kdo se potřebuje prezentovat na
+                        internetu,
+                        nebo třeba jen sdílet své zážitky.</p>
+                    <p class="contentText">Z výše uvedených důvodů vidím web jako velmi důležitou oblast informačních
+                        technologií a webům se tedy věnuji. Kromě této webové stránky, jsem tvořil v rámci jednoho
+                        školního
+                        projektu webovou stránku, která prezentuje fiktivní firmu a je mým nejnovějším projektem. </p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('w1')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>osobní webová stránka</p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('w2')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>stránka pro školní projekt</p>
+                </div>
+                <!-- doplnit až bude hotová <a href=""><button class="buttonToPages">Zobrazit mojí další stránku</button></a>  -->
+            </div>
+            <div class="rightImage">
+
+            </div>
+        </article>
+
+        <article id="loga">
+            <div class="leftImage">
+
+            </div>
+            <div class="rightText">
+                <h2 class="nadpisky">Logo design a grafika</h2>
+                <div class="textKontejner">
+                    <p class="contentText">Kromě webových stránek se zabývám také grafikou, která jde s webem ruku v
+                        ruce. Například logo, je jednou z nejdůležitějších věcí, kterou by měla mít každá firma a každý
+                        podnik. Logo je to, co vás bude prezentovat při prvním pohledu na váš produkt a bude to to co si
+                        zákazník zapamatuje jako první, a co si nejspíše bude pamatovat nejdéle.</p>
+                    <p class="contentText">Kromě tvorby log, se zabývám tvorbou grafiky obecně. Hlavní oblastí, které se
+                        věnuji je vektorová grafika a flat design. Flat design se používá především pro tvorbu
+                        infografiky, uživatelského prostředí (UI), ale dá se využít i k tvorbě grafiky pro počítačové
+                        hry.</p>
+                    <p class="contentText">Já se učím tvořit různá loga, navrhovat design aplikací a, nebo tvořím
+                        grafiku pro své hry a třeba pro tyto webové stránky. Kromě svého loga, které jsem vytvořil pro
+                        tuto webovou stránku, jsem tvořil také logo, pod kterým vytvářím počítačové hry, nebo logo pro
+                        fiktivní společnost, kterou jsme prezentovali jakožto školní projekt.</p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('g1')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>Behance</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="hry">
+            <div class="leftText">
+                <h2 class="nadpisky">počítačové hry</h2>
+                <div class="textKontejner">
+                    <p class="contentText">Jakožto fanoušek do IT, se zajímám i o tvorbu počítačových her. Jedná se
+                        především o koníček, který propojuje můj zájem o grafiku a programování. Hry tvořím v enginu
+                        unity a scripty píšu v jazyce C#. Ve svých hrách si tvořím vždy vše sám, od grafiky, přes
+                        scripty až po hudbu a zvuky.</p>
+                    <p class="contentText">Rád se účastním různých game jamů, což jsou eventy, během kterých je úkolem
+                        vytvořit hru na určené téma za určený čas. Během těchto game jamů jsem vytvořil několik svých
+                        her jako je třeba <a href="https://tortoiseshell.itch.io/cave-explorer"> Cave Explorer</a>,
+                        který vznikl jakož to můj příspěvek do Blackthornprod GAME JAM
+                        #3, což je sedmi denní akce a je to jeden z největších Game jamů. Má hra <a
+                            href="https://tortoiseshell.itch.io/cave-explorer"> Cave Explorer</a> se
+                        umístila ve slušné horní polovině z více jak tisícové konkurence.</p>
+                    <p class="contentText">Rád se účastním různých game jamů, což jsou eventy, během kterých je úkolem
+                        vytvořit hru na určené téma za určený čas. Během těchto game jamů jsem vytvořil několik svých
+                        her jako je třeba <a href="https://tortoiseshell.itch.io/cave-explorer"> Cave Explorer</a>,
+                        který vznikl jakož to můj příspěvek do Blackthornprod GAME JAM
+                        #3, což je sedmi denní akce a je to jeden z největších Game jamů. Má hra <a
+                            href="https://tortoiseshell.itch.io/cave-explorer"> Cave Explorer</a> se
+                        umístila ve slušné horní polovině z více jak tisícové konkurence.</p>
+                </div>
+                <div class="portfolioButton" onclick="openPortfolio('h1')">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>Itch.io</p>
+                </div>
+            </div>
+            <div class="rightImage">
+
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="infoFooter">
+            <div id="info">
+                <p id="pageInfo">Toto je má osobní stránka, která vznikla jako závěrečná práce předmětu Webové aplikace
+                    na Smíchovské střední průmyslové škole a gymnáziu</p>
+            </div>
+            <div id="links">
+                <h2>Odkazy</h2>
+                <p><a href="https://www.behance.net/lukkne" target="_blank"> <i class="fab fa-behance-square" id="icon1">
+                        </i>Behance</a></p>
+                <p><a href="https://tortoiseshell.itch.io/" target="_blank"> <i class="fab fa-itch-io" id="icon2"></i> Itch.io</a></p>
+            </div>
+        </div>
+
+        <div id="autor">
+            <div id="copyright">
+                <p id="date">© 2021 Lukáš Kníže</p>
+            </div>
+            <div id="name">
+                <p>Web a design by Lukáš Kníže</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="portfolioObjectBackground">
+        <div id="portfolioObject">
+            <h2 id="portfolioTextH2">Nazev projektu</h2>
+            <p id="portfolioTextP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quibusdam facilis
+                sequi earum, qui
+                reprehenderit cum provident quaerat delectus porro accusamus facere maiores libero ipsa quasi eveniet
+                dicta doloremque autem?</p>
+            <a href="" id="ProjectLink" target="_blank">více najdete zde</a>
+            <button onclick="ClosePortfolio()">zavřít</button>
+        </div>
+    </div>
+    <script src="JavaScriptForMainPage.js"> </script>
+</body>
+
+</html>
