@@ -41,7 +41,7 @@ function openPortfolio(text) {
     if (text == "w1") {
         document.getElementById("portfolioTextH2").innerText = "Osobní webová stránka";
         document.getElementById("portfolioTextP").innerText = "Moje osobní webová stránka vznikla jako závěrečná práce předmětu webové aplikace na Smíchovské střední průmyslové škole a gymnáziu.";
-        document.getElementById("ProjectLink").setAttribute("href", "https://www.LukasKnize.github.io");
+        document.getElementById("ProjectLink").setAttribute("href", "https://lukasknize.github.io/");
     }
 
     if (text == "w2") {
