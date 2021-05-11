@@ -48,6 +48,11 @@ header #logoKontejner {
 header #logoKontejner a #logo {
     width: 80px;
     height: 80px;
+    transition: transform 1s;
+}
+
+header #logoKontejner a #logo:hover{
+    transform: rotate(360deg);
 }
 
 header #navigace nav a {
@@ -122,11 +127,11 @@ footer #info {
 }
 
 footer #links {
-    width: 33%;
+    width: 66%;
     height: 250px;
-    padding-right: 20px;
+    padding-right: 200px;
     padding-top: 20px;
-    text-align: center;
+    text-align: right;
     display: block;
 }
 
@@ -176,28 +181,6 @@ footer #autor #name {
     width: 50%;
     color: #252525;
     text-align: right;
-}
-
-header #logoKontejner a #logo:hover{
-    animation: animm 1s linear;
-}
-
-#icon1:hover{
-    animation: animm 1s linear;
-}
-    
-#icon2:hover{
-    animation: animm 1s linear;
-}
-    
-@keyframes animm{
-    from{
-        transform: rotate(0deg);
-    }
-    
-    to{
-        transform: rotate(360deg);
-    }
 }
 
 #weby{

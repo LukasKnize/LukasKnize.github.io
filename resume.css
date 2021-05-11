@@ -57,32 +57,11 @@ header #logoKontejner {
 header #logoKontejner a #logo {
     width: 80px;
     height: 80px;
+    transition: transform 1s;
 }
 
 header #logoKontejner a #logo:hover{
-    animation: animm 1s linear;
-}
-
-#icon1:hover{
-    animation: animm 1s linear;
-}
-    
-#icon2:hover{
-    animation: animm 1s linear;
-}
-
-.exitAnim{
-  animation: animm 1s linear reverse;
-}
-    
-@keyframes animm{
-    from{
-        transform: rotate(0deg);
-    }
-    
-    to{
-        transform: rotate(360deg);
-    }
+    transform: rotate(360deg);
 }
 
 header #navigace nav a {
@@ -157,12 +136,12 @@ footer #info {
 }
 
 footer #links {
-    width: 33%;
-    height: 250px;
-    padding-right: 20px;
-    padding-top: 20px;
-    text-align: center;
-    display: block;
+  width: 66%;
+  height: 250px;
+  padding-right: 200px;
+  padding-top: 20px;
+  text-align: right;
+  display: block;
 }
 
 footer #links h2 {

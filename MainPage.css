@@ -81,28 +81,11 @@ header #logoKontejner {
 header #logoKontejner a #logo {
     width: 80px;
     height: 80px;
+    transition: transform 1s;
 }
 
 header #logoKontejner a #logo:hover{
-    animation: animm 1s linear;
-}
-
-#icon1:hover{
-    animation: animm 1s linear;
-}
-    
-#icon2:hover{
-    animation: animm 1s linear;
-}
-    
-@keyframes animm{
-    from{
-        transform: rotate(0deg);
-    }
-    
-    to{
-        transform: rotate(360deg);
-    }
+    transform: rotate(360deg);
 }
 
 header #navigace nav a {
@@ -163,10 +146,12 @@ main{
 
 main article {
     border-radius: 10px;
-    height: 500px;
+    height: auto;
     width: 30%;
     margin-top: 30px;
     background-image: linear-gradient(45deg, #ffffff57 ,#ffffffc0);
+    padding-bottom: 50px;
+    position: relative;
 }
 
 main article h2 {
@@ -179,19 +164,9 @@ main article .texty{
     padding: 20px;
     font-size: 2em;
     color: #252525;
-    height: 300px;
-}
-/*
-#projects {
-    float: right;
-    margin-right: 30px;
-    
+    height: auto;
 }
 
-#skills {
-    float: left;
-}
-*/
 footer {
     margin-top: 30px;
     float: left;
@@ -212,11 +187,11 @@ footer #info {
 }
 
 footer #links {
-    width: 33%;
+    width: 66%;
     height: 250px;
-    padding-right: 20px;
+    padding-right: 200px;
     padding-top: 20px;
-    text-align: center;
+    text-align: right;
     display: block;
 }
 
@@ -322,7 +297,10 @@ footer #autor #name {
     font-size: 1.5em;
     border-radius: 4px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 100%;
 }
 
 #kontentKards{
