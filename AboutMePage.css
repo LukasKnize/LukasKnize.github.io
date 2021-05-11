@@ -264,7 +264,7 @@ li {
     }
 
     #mobileNavBar{
-        background-color: #E59500;
+        background-image: linear-gradient(45deg, #ffffff75, #ffffffcb);
         display: block;
     }
 
@@ -272,7 +272,7 @@ li {
         background-color: #02040F;
         border: none;
         font-size: 1.4em;
-        color: #E59500;
+        color: #80ffdb;
         padding: 10px;
     }
 
