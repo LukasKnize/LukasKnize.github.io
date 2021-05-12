@@ -310,7 +310,7 @@ li {
     
     footer #links h2 {
         font-size: 2em;
-        color: #E59500;
+        color: #252525;
     }
     
     footer #links p {
@@ -318,7 +318,7 @@ li {
     }
     
     footer #links a {
-        color: #E59500;
+        color: #252525;
         font-size: 1.5em;
         font-weight: 800;
         text-decoration: none;
@@ -329,7 +329,7 @@ li {
     }
     
     footer #info #pageInfo {
-        color: #E59500;
+        color: #252525;
         padding-left: 20px;
         padding-top: 20px;
         padding-right: 20px;
@@ -348,13 +348,13 @@ li {
     
     footer #autor #copyright #date {
         padding-left: 30px;
-        color: #E59500;
+        color: #252525;
     }
     
     footer #autor #name {
         padding-right: 30px;
         width: 50%;
-        color: #E59500;
+        color: #252525;
         text-align: right;
     }
 }
