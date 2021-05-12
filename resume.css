@@ -41,7 +41,7 @@
 header {
     width: 100%;
     height: 100px;
-    background-image: linear-gradient(45deg, #6830c333, #80ffdb3b);
+    background-image: linear-gradient(45deg, #ffffff75, #ffffffcb);
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-around;
