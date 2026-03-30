@@ -1,0 +1,2022 @@
+{
+  "title": "Test – Softwarové inženýrství",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Podle IEEE Standard 610.12 je softwarové inženýrství definováno jako:",
+      "options": {
+        "A": "Systematický, disciplinovaný a měřitelný přístup k vývoji, provozu a údržbě software",
+        "B": "Tvůrčí proces psaní kódu za účelem řešení algoritmických problémů",
+        "C": "Soubor programovacích technik pro vývoj objektově orientovaných aplikací",
+        "D": "Disciplína zabývající se výhradně testováním a zajišťováním kvality software"
+      },
+      "correct": "A",
+      "explanation": "IEEE Standard 610.12 definuje SWI jako 'systematický, disciplinovaný a měřitelný přístup k vývoji, provozu a údržbě software'."
+    },
+    {
+      "id": 2,
+      "question": "Jaký byl hlavní podnět ke vzniku oboru softwarové inženýrství?",
+      "options": {
+        "A": "Potřeba standardizovat programovací jazyky na mezinárodní úrovni",
+        "B": "Softwarová krize 60.–70. let, kdy projekty systematicky překračovaly rozpočty a termíny",
+        "C": "Vznik internetu a potřeba síťových protokolů",
+        "D": "Rozvoj objektově orientovaného programování"
+      },
+      "correct": "B",
+      "explanation": "Softwarová krize 60.–70. let, kdy byl software nespolehlivý a projekty překračovaly rozpočty, vedla k NATO konferenci (1968) a vzniku termínu 'software engineering'."
+    },
+    {
+      "id": 3,
+      "question": "V SDLC se chyba požadavku odhalená až v produkci stojí ve srovnání s odhalením v analýze přibližně:",
+      "options": {
+        "A": "2–5× více",
+        "B": "10–20× více",
+        "C": "100–1 000× více",
+        "D": "Stejně, protože opravu lze nasadit jako hotfix"
+      },
+      "correct": "C",
+      "explanation": "Cena opravy chyby roste exponenciálně: analýza = 1×, návrh = 5–10×, implementace = 10–100×, produkce = 100–1 000×."
+    },
+    {
+      "id": 4,
+      "question": "Která fáze SDLC je typicky nejdelší a nejdražší za celý životní cyklus systému?",
+      "options": {
+        "A": "Implementace",
+        "B": "Testování",
+        "C": "Nasazení",
+        "D": "Údržba"
+      },
+      "correct": "D",
+      "explanation": "Fáze údržby (maintenance) je nejdelší a nejdražší fází celého SDLC – systém se udržuje po celou dobu své životnosti."
+    },
+    {
+      "id": 5,
+      "question": "Co charakterizuje metodu Blue-Green deployment?",
+      "options": {
+        "A": "Nová verze se nasadí pro 5 % uživatelů a postupně se zvyšuje na 100 %",
+        "B": "Dvě identická produkční prostředí; nová verze se nasadí do neaktivního a pak se přepne traffic",
+        "C": "Funkce se nasadí vypnuté a centrálně se zapínají bez nového nasazení",
+        "D": "Záložní servery automaticky přebírají provoz při výpadku primárního"
+      },
+      "correct": "B",
+      "explanation": "Blue-Green deployment udržuje dvě identická prostředí. Nová verze se nasadí do neaktivního, otestuje, a pak se přepne provoz. Rollback trvá sekundy."
+    },
+    {
+      "id": 6,
+      "question": "Jaký je hlavní princip agilního Scrum frameworku?",
+      "options": {
+        "A": "Lineární postup fázemi bez možnosti zpětného kroku",
+        "B": "Organizace práce do krátkých iterací (sprintů) s pravidelnými ceremoniemi",
+        "C": "Vizualizace pracovního toku pomocí tabule s WIP limity",
+        "D": "Rychlé vytváření prototypů, které se po schválení zahazují"
+      },
+      "correct": "B",
+      "explanation": "Scrum organizuje práci do sprintů (2–4 týdny) s ceremoniemi: planning, daily standup, sprint review a retrospective."
+    },
+    {
+      "id": 7,
+      "question": "Který přístup je nejlepší volbou pro projekt s jasnými, stabilními a dobře zdokumentovanými požadavky?",
+      "options": {
+        "A": "Scrum",
+        "B": "Kanban",
+        "C": "Waterfall",
+        "D": "Evolutionary prototyping"
+      },
+      "correct": "C",
+      "explanation": "Waterfall je vhodný pro projekty s jasnými a stabilními požadavky, kde je nutná přesná dokumentace (embedded systémy, kritické aplikace)."
+    },
+    {
+      "id": 8,
+      "question": "Jaký je hlavní rozdíl mezi systémovým analytikem a softwarovým inženýrem?",
+      "options": {
+        "A": "Systémový analytik programuje, softwarový inženýr testuje",
+        "B": "Systémový analytik se zaměřuje na CO systém dělá a tvoří specifikace; softwarový inženýr řeší JAK to technicky realizovat",
+        "C": "Softwarový inženýr komunikuje se zákazníkem, systémový analytik pracuje pouze s kódem",
+        "D": "Systémový analytik řídí projekt, softwarový inženýr píše dokumentaci"
+      },
+      "correct": "B",
+      "explanation": "Systémový analytik překládá business požadavky do technických specifikací (CO). Softwarový inženýr navrhuje a implementuje technické řešení (JAK)."
+    },
+    {
+      "id": 9,
+      "question": "Co je entita v kontextu ERD (Entity-Relationship Diagramu)?",
+      "options": {
+        "A": "Sloupec v databázové tabulce uchovávající jednu hodnotu",
+        "B": "Vazba mezi dvěma tabulkami s definovanou kardinalitou",
+        "C": "Objekt reálného světa, o kterém uchováváme informace; implementuje se jako tabulka",
+        "D": "SQL příkaz pro vytvoření databázové struktury"
+      },
+      "correct": "C",
+      "explanation": "Entita je objekt reálného světa (Student, Objednávka), o němž uchováváme data. V databázi se implementuje jako tabulka."
+    },
+    {
+      "id": 10,
+      "question": "Jak se v relační databázi implementuje vztah M:N (many-to-many)?",
+      "options": {
+        "A": "Cizím klíčem na straně jedné entity s omezením UNIQUE",
+        "B": "Sloučením obou tabulek do jedné s redundantními záznamy",
+        "C": "Asociační (vazební) tabulkou se složeným primárním klíčem",
+        "D": "Přidáním pole ARRAY do jedné z tabulek"
+      },
+      "correct": "C",
+      "explanation": "Vztah M:N nelze přímo implementovat v relační databázi. Řeší se asociační tabulkou, která obsahuje cizí klíče na obě entity jako složený primární klíč."
+    },
+    {
+      "id": 11,
+      "question": "Která z následujících situací je příkladem chyby 'Black Hole' v DFD?",
+      "options": {
+        "A": "Proces vytváří výstupní data, aniž by měl jakýkoliv vstup",
+        "B": "Datový tok je přímé propojení dvou externích entit bez průchodu procesem",
+        "C": "Proces přijímá vstupní datové toky, ale nemá žádné výstupní toky",
+        "D": "Datové úložiště je propojeno přímo s externí entitou bez procesu"
+      },
+      "correct": "C",
+      "explanation": "Black Hole = proces má vstupy, ale žádné výstupy. Data 'zmizí' bez jakéhokoliv výsledku, což je logicky chybné."
+    },
+    {
+      "id": 12,
+      "question": "Co říká princip zapouzdření (encapsulation) v objektově orientovaném programování?",
+      "options": {
+        "A": "Každá třída může mít pouze jednoho potomka, aby nedocházelo k vícenásobné dědičnosti",
+        "B": "Stejná metoda může mít různé implementace v různých třídách potomků",
+        "C": "Vnitřní implementace třídy je skrytá; přístup k datům probíhá pouze přes veřejné metody",
+        "D": "Potomek zdědí všechny vlastnosti a metody rodičovské třídy"
+      },
+      "correct": "C",
+      "explanation": "Zapouzdření skrývá vnitřní implementaci (privátní atributy) a poskytuje kontrolovaný přístup přes veřejné metody (gettery/settery)."
+    },
+    {
+      "id": 13,
+      "question": "Co vyjadřuje vztah kompozice (◆) v Class diagramu?",
+      "options": {
+        "A": "Části mohou existovat nezávisle na celku; při smazání celku části přežijí",
+        "B": "Silné vlastnictví; části nemohou existovat bez celku; při smazání celku se smažou i části",
+        "C": "Obecný vztah bez specifikace závislosti životního cyklu",
+        "D": "Potomek získává vlastnosti nadtřídy prostřednictvím dědičnosti"
+      },
+      "correct": "B",
+      "explanation": "Kompozice je silný vztah vlastnictví. Např. Faktura ◆── Položky faktury – položky nemohou existovat bez faktury. V SQL: cizí klíč NOT NULL + ON DELETE CASCADE."
+    },
+    {
+      "id": 14,
+      "question": "Jaké jsou tři vrstvy modelovacího jazyka ArchiMate?",
+      "options": {
+        "A": "Prezentační, Aplikační, Databázová",
+        "B": "Business, Application, Technology",
+        "C": "Strategická, Taktická, Operativní",
+        "D": "Konceptuální, Logická, Fyzická"
+      },
+      "correct": "B",
+      "explanation": "ArchiMate má tři vrstvy: Business Layer (obchodní procesy), Application Layer (IS/software) a Technology Layer (infrastruktura)."
+    },
+    {
+      "id": 15,
+      "question": "Co popisuje BPMN v kontextu modelování IS?",
+      "options": {
+        "A": "Strukturu databázových tabulek a jejich vztahů",
+        "B": "Tok dat mezi procesy systému a externími entitami",
+        "C": "Obchodní procesy – tok aktivit, rozhodování a odpovědnosti rolí",
+        "D": "Celkovou podnikovou architekturu od business po infrastrukturu"
+      },
+      "correct": "C",
+      "explanation": "BPMN (Business Process Model and Notation) je standard pro modelování obchodních procesů – definuje tok aktivit, větvení a odpovědnosti pomocí swimlanes."
+    },
+    {
+      "id": 16,
+      "question": "Jaký je formát User Story v agilním vývoji?",
+      "options": {
+        "A": "\"Systém musí umožnit uživateli [funkcionalitu] v rámci [časového limitu]\"",
+        "B": "\"Jako [role] chci [funkcionalita] abych [důvod/hodnota]\"",
+        "C": "\"Funkce [název] přijímá vstup [typ] a vrací výstup [typ]\"",
+        "D": "\"Požadavek [ID]: [popis] | Priorita: [MoSCoW] | Stav: [otevřený/uzavřený]\""
+      },
+      "correct": "B",
+      "explanation": "User Story formát: 'Jako [role] chci [funkcionalita] abych [důvod]'. Příklad: 'Jako zákazník chci resetovat heslo abych se mohl přihlásit, pokud jsem ho zapomněl.'"
+    },
+    {
+      "id": 17,
+      "question": "Jak metoda MoSCoW klasifikuje požadavky 'Won't have'?",
+      "options": {
+        "A": "Kritické požadavky, bez kterých systém nemůže fungovat",
+        "B": "Požadavky, které výrazně zlepší systém, ale nejsou kritické",
+        "C": "Požadavky, které se v aktuální verzi nebudou implementovat",
+        "D": "Požadavky vyloučené ze zadání z bezpečnostních důvodů"
+      },
+      "correct": "C",
+      "explanation": "'Won't have' v MoSCoW označuje požadavky vyloučené z aktuální verze – mohou se implementovat v budoucnosti, ale nyní nemají prioritu."
+    },
+    {
+      "id": 18,
+      "question": "Co zajišťuje vlastnost ACID 'Atomicity' databázové transakce?",
+      "options": {
+        "A": "Souběžné transakce se navzájem neovlivňují",
+        "B": "Potvrzené změny jsou permanentní i po pádu systému",
+        "C": "Databáze je vždy v konzistentním stavu dle integritních omezení",
+        "D": "Transakce je nedělitelná – buď proběhne celá, nebo vůbec"
+      },
+      "correct": "D",
+      "explanation": "Atomicity = nedělitelnost transakce. Typický příklad: bankovní převod – odečtení z jednoho účtu a přičtení na druhý musí proběhnout buď oba kroky, nebo žádný."
+    },
+    {
+      "id": 19,
+      "question": "Jaký SQL příkaz patří do kategorie DDL (Data Definition Language)?",
+      "options": {
+        "A": "SELECT",
+        "B": "COMMIT",
+        "C": "CREATE TABLE",
+        "D": "GRANT"
+      },
+      "correct": "C",
+      "explanation": "DDL = Data Definition Language; příkazy pro definici struktury: CREATE TABLE, ALTER TABLE, DROP TABLE. SELECT je DML, COMMIT je TCL, GRANT je DCL."
+    },
+    {
+      "id": 20,
+      "question": "Tabulka je ve druhé normální formě (2NF), pokud:",
+      "options": {
+        "A": "Neobsahuje tranzitivní závislosti mezi neklíčovými atributy",
+        "B": "Je v 1NF a všechny neklíčové atributy jsou plně závislé na celém primárním klíči",
+        "C": "Každá buňka obsahuje atomickou hodnotu a každý řádek je unikátní",
+        "D": "Pro každou funkční závislost X→Y platí, že X je superklíčem"
+      },
+      "correct": "B",
+      "explanation": "2NF: musí být v 1NF + všechny neklíčové atributy závisí na CELÉM primárním klíči (ne jen na jeho části). Relevant zejména u složených klíčů."
+    },
+    {
+      "id": 21,
+      "question": "Kdy je vhodné záměrně DENORMALIZOVAT databázi?",
+      "options": {
+        "A": "Vždy, protože denormalizace je modernější přístup",
+        "B": "Pro transakční systémy (OLTP) s frequentními aktualizacemi",
+        "C": "Pro analytické systémy (OLAP) a datové sklady, kde prioritou je rychlost složitých dotazů",
+        "D": "Pouze při nedostatku diskového prostoru"
+      },
+      "correct": "C",
+      "explanation": "Denormalizace se záměrně používá pro OLAP systémy a datové sklady, kde je prioritou rychlost složitých analytických dotazů před integritou dat."
+    },
+    {
+      "id": 22,
+      "question": "Co popisují DORA metriky v kontextu DevOps?",
+      "options": {
+        "A": "Bezpečnostní certifikační kritéria pro cloudové systémy",
+        "B": "Čtyři klíčové metriky efektivity vývoje: deployment frequency, lead time, time to restore, change failure rate",
+        "C": "Standardní metriky pro měření výkonnosti databázových systémů",
+        "D": "Kritéria pro hodnocení smluvních dodavatelů IT"
+      },
+      "correct": "B",
+      "explanation": "DORA (DevOps Research and Assessment) definuje 4 metriky: Deployment frequency (jak často nasazujeme), Lead time (čas od kódu po produkci), Time to restore (obnova po výpadku), Change failure rate (procento problematických nasazení)."
+    },
+    {
+      "id": 23,
+      "question": "Co popisuje CIA triáda v oblasti bezpečnosti IS?",
+      "options": {
+        "A": "Tři fáze bezpečnostního auditu: Compliance, Investigation, Assessment",
+        "B": "Tři základní pilíře bezpečnosti: Confidentiality, Integrity, Availability",
+        "C": "Tři úrovně přístupových práv: Classified, Internal, Accessible",
+        "D": "Tři typy bezpečnostních hrozeb: Cyber, Internal, Advanced"
+      },
+      "correct": "B",
+      "explanation": "CIA triáda = Confidentiality (důvěrnost), Integrity (integrita) a Availability (dostupnost) – tři základní pilíře bezpečnosti IS."
+    },
+    {
+      "id": 24,
+      "question": "Jaký je rozdíl mezi IaaS, PaaS a SaaS modely cloud služeb?",
+      "options": {
+        "A": "IaaS je soukromý cloud, PaaS hybridní, SaaS veřejný",
+        "B": "IaaS poskytuje virtuální hardware, PaaS platformu pro vývoj, SaaS hotovou aplikaci",
+        "C": "IaaS je pro malé firmy, PaaS pro střední, SaaS pro velké korporace",
+        "D": "Liší se pouze cenou; funkčně jsou ekvivalentní"
+      },
+      "correct": "B",
+      "explanation": "IaaS = virtuální infrastruktura (servery, storage); PaaS = platforma pro vývoj bez správy OS; SaaS = hotová aplikace přes prohlížeč (Gmail, Salesforce)."
+    },
+    {
+      "id": 25,
+      "question": "Co je Canary deployment?",
+      "options": {
+        "A": "Nasazení aplikace výhradně na serverech v Kanadě pro testování latence",
+        "B": "Metoda, kde se nová verze nasadí pro malé procento uživatelů (5 %) a postupně se zvyšuje",
+        "C": "Záložní strategie, kde se udržují dvě identická produkční prostředí",
+        "D": "Automatické rollback při detekci kritických chyb"
+      },
+      "correct": "B",
+      "explanation": "Canary deployment: nová verze nejprve pro 5 % uživatelů. Pokud vše funguje, procento se postupně zvyšuje na 100 %. Název vychází z 'kanaráků v dole' jako systém včasného varování."
+    },
+    {
+      "id": 26,
+      "question": "Co znamená SOLID princip Single Responsibility?",
+      "options": {
+        "A": "Aplikace by měla mít pouze jednoho hlavního správce (Single Admin)",
+        "B": "Databázová tabulka by měla mít pouze jeden primární klíč",
+        "C": "Každá třída by měla mít pouze jednu zodpovědnost a jeden důvod ke změně",
+        "D": "Každý vývojář je odpovědný za jeden modul systému"
+      },
+      "correct": "C",
+      "explanation": "Single Responsibility Principle (S v SOLID): každá třída má jednu zodpovědnost. Třída pro výpočet daně by neměla zároveň odesílat emaily ani ukládat do DB."
+    },
+    {
+      "id": 27,
+      "question": "Jaký je klíčový přínos Test-Driven Development (TDD)?",
+      "options": {
+        "A": "Testy se nepíší – kód se kontroluje pomocí statické analýzy",
+        "B": "Testy se píší po dokončení implementace jako ověření funkčnosti",
+        "C": "Nejprve se napíše test a teprve pak kód, který ho splní; vede k lepšímu designu",
+        "D": "Testování je plně automatizováno bez zásahu vývojáře"
+      },
+      "correct": "C",
+      "explanation": "TDD: Red → Green → Refactor. Nejprve napíšeš selháví test, pak minimální kód, který ho splní, nakonec refaktoruješ. Výsledkem je lepší design a vyšší test coverage."
+    },
+    {
+      "id": 28,
+      "question": "Jaký je účel SLA (Service Level Agreement)?",
+      "options": {
+        "A": "Právní dokument vymezující vlastnictví zdrojového kódu",
+        "B": "Dokument definující úroveň poskytovaných IT služeb, metriky a sankce za nedodržení",
+        "C": "Smlouva o mlčenlivosti (NDA) s dodavatelem software",
+        "D": "Technická specifikace požadavků na informační systém"
+      },
+      "correct": "B",
+      "explanation": "SLA definuje úroveň IT služeb: dostupnost (99,9 %), RTO, RPO, MTTR, eskalační procesy a sankce za nedodržení. Je součástí provozní smlouvy."
+    },
+    {
+      "id": 29,
+      "question": "Co je technický dluh (technical debt)?",
+      "options": {
+        "A": "Finanční závazky firmy vůči dodavatelům IT infrastruktury",
+        "B": "Zastaralá technologie, která je nekompatibilní s moderními standardy",
+        "C": "Důsledky rychlých řešení pod tlakem, které komplikují budoucí úpravy kódu",
+        "D": "Množství unittestů, které vývojový tým dluží k napsání"
+      },
+      "correct": "C",
+      "explanation": "Technický dluh = kompromisy přijaté pod tlakem (rychlé řešení místo správného). Jako finanční dluh platíte 'úroky' – každá změna trvá déle. Splácíte refaktorizací."
+    },
+    {
+      "id": 30,
+      "question": "Jaká je výhoda mikroservisní architektury oproti monolitické?",
+      "options": {
+        "A": "Nižší složitost nasazení a správy",
+        "B": "Každá služba může být vyvíjena, nasazena a škálována nezávisle",
+        "C": "Rychlejší komunikace mezi komponentami díky sdílené paměti",
+        "D": "Jednodušší ladění chyb díky centralizovanému logování"
+      },
+      "correct": "B",
+      "explanation": "Mikroservisy umožňují nezávislý vývoj, nasazení a škálování každé služby. Netflix nebo Amazon používají tisíce mikroservis. Nevýhoda: složitá orchestrace a distribuované transakce."
+    }
+  ,
+    {
+      "id": 31,
+      "question": "V čem se liší softwarové inženýrství od pouhého programování?",
+      "options": {
+        "A": "Softwarové inženýrství se zaměřuje pouze na psaní kódu, zatímco programování zahrnuje analýzu",
+        "B": "Softwarové inženýrství zahrnuje celý životní cyklus IS od analýzy po vyřazení, týmovou spolupráci a systematické plánování; programování se zaměřuje primárně na implementaci",
+        "C": "Programování a softwarové inženýrství jsou synonyma bez podstatného rozdílu",
+        "D": "Softwarové inženýrství se zabývá pouze hardware, programování pouze software"
+      },
+      "correct": "B",
+      "explanation": "Softwarové inženýrství pokrývá celý životní cyklus systému a zahrnuje plánování, analýzu, návrh, testování i údržbu. Programování je jen jednou z jeho fází."
+    },
+    {
+      "id": 32,
+      "question": "Jaké jsou hlavní cíle softwarového inženýrství?",
+      "options": {
+        "A": "Maximalizace počtu řádků kódu za den a minimalizace dokumentace",
+        "B": "Rychlé dodání produktu bez ohledu na kvalitu",
+        "C": "Vytváření kvalitních, spolehlivých a udržovatelných řešení v rámci daných omezení času, rozpočtu a zdrojů",
+        "D": "Zaměření výhradně na bezpečnost a výkonnost systému"
+      },
+      "correct": "C",
+      "explanation": "Cílem SWI je tvorba kvalitního, spolehlivého a udržovatelného software s respektováním omezení projektu – času, rozpočtu a dostupných zdrojů."
+    },
+    {
+      "id": 33,
+      "question": "Co je abstrakce v softwarovém inženýrství?",
+      "options": {
+        "A": "Technika duplikování kódu pro zvýšení výkonu",
+        "B": "Způsob přímého mapování hardwarových instrukci do kódu",
+        "C": "Metoda pro sdílení dat mezi procesy pomocí paměti",
+        "D": "Fundamentální princip umožňující zvládat složitost skrýváním nepodstatných detailů při modelování reálného světa do entit nebo tříd"
+      },
+      "correct": "D",
+      "explanation": "Abstrakce skrývá nepodstatné detaily a soustředí se na podstatné vlastnosti – umožňuje modelovat složité systémy pomocí entit a tříd."
+    },
+    {
+      "id": 34,
+      "question": "Co je modularita a jaké jsou její hlavní výhody?",
+      "options": {
+        "A": "Rozdělení systému na nezávislé, znovupoužitelné komponenty s jasně definovaným rozhraním; umožňuje paralelní vývoj, snadnější testování a údržbu",
+        "B": "Centralizace veškeré logiky do jednoho souboru pro snadnější orientaci",
+        "C": "Technologie pro komprimaci zdrojového kódu před nasazením",
+        "D": "Způsob automatického generování dokumentace ze zdrojového kódu"
+      },
+      "correct": "A",
+      "explanation": "Modularita rozděluje systém na oddělené komponenty s definovaným rozhraním, což usnadňuje paralelní vývoj, testování a budoucí údržbu."
+    },
+    {
+      "id": 35,
+      "question": "Co znamená zapouzdření (encapsulation) v softwarovém inženýrství?",
+      "options": {
+        "A": "Komprimace zdrojového kódu pro efektivnější přenos",
+        "B": "Skrývání vnitřní implementace modulu a vystavování pouze veřejného rozhraní; změny uvnitř modulu neovlivní zbytek systému",
+        "C": "Technika vkládání testů přímo do produkčního kódu",
+        "D": "Způsob verzování souborů při práci v týmu"
+      },
+      "correct": "B",
+      "explanation": "Zapouzdření skrývá interní implementaci a nabízí veřejné rozhraní. Díky tomu lze změnit implementaci bez dopadu na ostatní části systému."
+    },
+    {
+      "id": 36,
+      "question": "Vyjmenujte všech pět klíčových konceptů softwarového inženýrství.",
+      "options": {
+        "A": "Kompilace, linkování, testování, nasazení, monitoring",
+        "B": "Abstrakce, modularita, zapouzdření, hierarchie, standardizace",
+        "C": "Analýza, návrh, implementace, testování, provoz",
+        "D": "Dědičnost, polymorfismus, zapouzdření, rozhraní, abstrakce"
+      },
+      "correct": "B",
+      "explanation": "Pět klíčových konceptů SWI je: abstrakce, modularita, zapouzdření, hierarchie a standardizace."
+    },
+    {
+      "id": 37,
+      "question": "Jak funguje hierarchie v softwarovém inženýrství?",
+      "options": {
+        "A": "Určuje pořadí přístupu vývojářů k repozitáři podle seniority",
+        "B": "Definuje pravidla pro pojmenování proměnných a tříd",
+        "C": "Organizuje systém do úrovní abstrakce od vysokoúrovňové architektury po detailní implementaci a umožňuje postupné zpřesňování návrhu",
+        "D": "Řídí pořadí provádění databázových transakcí"
+      },
+      "correct": "C",
+      "explanation": "Hierarchie organizuje systém do vrstev abstrakce – od celkové architektury po konkrétní implementaci – a umožňuje postupné zpřesňování návrhu."
+    },
+    {
+      "id": 38,
+      "question": "Proč je standardizace důležitá v softwarovém inženýrství?",
+      "options": {
+        "A": "Zabraňuje vývojářům používat moderní programovací jazyky",
+        "B": "Snižuje potřebu testování díky předem ověřenému kódu",
+        "C": "Využívá osvědčené postupy a průmyslové standardy, snižuje riziko chyb, zlepšuje komunikaci v týmu a zajišťuje snadné porozumění",
+        "D": "Umožňuje automatické generování kódu bez lidského zásahu"
+      },
+      "correct": "C",
+      "explanation": "Standardizace přináší osvědčené postupy, snižuje riziko chyb a zlepšuje týmovou komunikaci díky sdílenému porozumění."
+    },
+    {
+      "id": 39,
+      "question": "Co je SDLC a k čemu slouží?",
+      "options": {
+        "A": "Programovací jazyk pro vývoj databázových aplikací",
+        "B": "Bezpečnostní protokol pro šifrování dat v síti",
+        "C": "Strukturovaný proces, který definuje fáze vývoje software od počátečního nápadu až po vyřazení systému; poskytuje rámec pro plánování, vytváření, testování a nasazení IS",
+        "D": "Nástroj pro automatické generování testů"
+      },
+      "correct": "C",
+      "explanation": "SDLC (Software Development Life Cycle) je strukturovaný rámec definující fáze vývoje IS od analýzy až po vyřazení systému z provozu."
+    },
+    {
+      "id": 40,
+      "question": "Vyjmenujte základní fáze SDLC.",
+      "options": {
+        "A": "Plánování, kódování, kompilace, prodej",
+        "B": "Analýza, plánování, návrh, implementace, testování, provoz, údržba, vyřazení",
+        "C": "Požadavky, sprint, retrospektiva, release",
+        "D": "Návrh, vývoj, produkce, monitoring"
+      },
+      "correct": "B",
+      "explanation": "Základní fáze SDLC jsou: analýza, plánování, návrh, implementace, testování, provoz, údržba a vyřazení."
+    },
+    {
+      "id": 41,
+      "question": "Proč je SDLC důležitý? Vyjmenujte pět důvodů.",
+      "options": {
+        "A": "Snižuje počet vývojářů potřebných v týmu, zrychluje psaní kódu, eliminuje testování, omezuje dokumentaci, snižuje náklady",
+        "B": "Předvídatelnost, kontrola kvality, řízení rizik, efektivita, dokumentace",
+        "C": "Rychlejší nasazení, nižší náklady, méně schůzek, jednodušší kód, menší tým",
+        "D": "Lepší grafické rozhraní, rychlejší databáze, automatická bezpečnost, cloud integrace, AI podpora"
+      },
+      "correct": "B",
+      "explanation": "SDLC přináší předvídatelnost průběhu, kontrolu kvality, řízení rizik, efektivitu vývoje a systematickou dokumentaci."
+    },
+    {
+      "id": 42,
+      "question": "Jaký je rozdíl v časovém rozložení fáze plánování a analýzy mezi tradičním a moderním přístupem?",
+      "options": {
+        "A": "Tradiční: 30–35 %, moderní: 10–15 % celkového času projektu",
+        "B": "Tradiční i moderní přístup alokují shodně 20 % celkového času",
+        "C": "Tradiční: 10–15 %, moderní: 30–35 % celkového času projektu",
+        "D": "Tradiční: 50 %, moderní: 5 % celkového času projektu"
+      },
+      "correct": "C",
+      "explanation": "Tradiční přístupy věnují plánování a analýze 10–15 % času, zatímco moderní přístupy věnují 30–35 % – více investují do pochopení požadavků."
+    },
+    {
+      "id": 43,
+      "question": "Co zahrnuje moderní cloud-native architecture?",
+      "options": {
+        "A": "Monolitické aplikace nasazené na fyzických serverech bez virtualizace",
+        "B": "Mikroslužby, kontejnerizaci a serverless, s automatickým škálováním a fault tolerance pro cloud prostředí",
+        "C": "Výhradně relační databáze a MVC architekturu",
+        "D": "Pouze webové aplikace bez mobilního přístupu"
+      },
+      "correct": "B",
+      "explanation": "Cloud-native architektura využívá mikroslužby, kontejnerizaci (Docker, Kubernetes) a serverless přístup s automatickým škálováním a odolností vůči výpadkům."
+    },
+    {
+      "id": 44,
+      "question": "Vyjmenujte tři typy SDLC.",
+      "options": {
+        "A": "Waterfall, iterativní/inkrementální model, agilní metodiky",
+        "B": "Scrum, Kanban, SAFe",
+        "C": "TDD, BDD, DDD",
+        "D": "ITIL, COBIT, ISO 27001"
+      },
+      "correct": "A",
+      "explanation": "Tři základní typy SDLC jsou: Waterfall (sekvenční), iterativní/inkrementální model a agilní metodiky."
+    },
+    {
+      "id": 45,
+      "question": "Charakterizujte Waterfall metodologii včetně výhod a nevýhod.",
+      "options": {
+        "A": "Sekvenční model s lineárním postupem fázemi; výhody: jednoduchý na řízení, jasná dokumentace; nevýhody: rigidní, zákazník vidí produkt až na konci, vysoké riziko při nejasných požadavcích",
+        "B": "Iterativní model s krátkými sprinty; výhody: rychlá zpětná vazba; nevýhody: nedostatečná dokumentace",
+        "C": "Model řízený daty; výhody: automatizace; nevýhody: závislost na kvalitě dat",
+        "D": "Vizuální model s kanban tabulí; výhody: přehlednost; nevýhody: chybí plánování"
+      },
+      "correct": "A",
+      "explanation": "Waterfall je sekvenční model – každá fáze musí být dokončena před zahájením další. Vhodný pro projekty s jasnými požadavky, ale problematický při jejich změnách."
+    },
+    {
+      "id": 46,
+      "question": "Co je charakteristické pro agilní metodiky?",
+      "options": {
+        "A": "Rozsáhlá počáteční dokumentace a přísné dodržování původního plánu",
+        "B": "Lineární postup od analýzy po nasazení bez zpětné vazby",
+        "C": "Krátké vývojové cykly, kontinuální zapojení zákazníka, sebeorganizující se týmy a preferování fungujícího softwaru před obsáhlou dokumentací",
+        "D": "Centralizované řízení a podrobná specifikace před zahájením vývoje"
+      },
+      "correct": "C",
+      "explanation": "Agilní metodiky kladou důraz na krátké iterace, pravidelnou zpětnou vazbu od zákazníka a funkční software místo dokumentace."
+    },
+    {
+      "id": 47,
+      "question": "Co je AI-assisted code generation?",
+      "options": {
+        "A": "Automatické nasazení kódu do produkce bez lidského schválení",
+        "B": "Nástroje jako GitHub Copilot, které analyzují kontext kódu a navrhují celé funkce nebo algoritmy na základě komentářů nebo částečně napsaného kódu",
+        "C": "Systém pro automatické verzování a zálohování zdrojového kódu",
+        "D": "Metoda statické analýzy pro detekci bezpečnostních zranitelností"
+      },
+      "correct": "B",
+      "explanation": "AI-assisted code generation (např. GitHub Copilot) analyzuje kontext a navrhuje kompletní funkce nebo algoritmy, čímž urychluje vývoj."
+    },
+    {
+      "id": 48,
+      "question": "Co umožňuje predictive analytics v software developmentu?",
+      "options": {
+        "A": "Automatické přepisování kódu do efektivnějšího jazyka",
+        "B": "Generování testovacích dat pro unit testy",
+        "C": "Predikci problémů a optimalizaci výkonu před jejich výskytem pomocí analýzy historických dat a metrik prostředí",
+        "D": "Automatické nasazování oprav bezpečnostních zranitelností"
+      },
+      "correct": "C",
+      "explanation": "Predictive analytics analyzuje historická data a metriky prostředí a umožňuje předpovídat problémy a optimalizovat výkon dříve, než nastanou."
+    },
+    {
+      "id": 49,
+      "question": "Stručně charakterizujte tři nejdůležitější role při vývoji IS.",
+      "options": {
+        "A": "Tester, designer, scrum master",
+        "B": "DBA, síťový inženýr, bezpečnostní expert",
+        "C": "Analytik popisuje co od systému chceme, softwarový inženýr doplní návrh technického řešení, projektový manager to řídí a zařídí vše okolo",
+        "D": "Frontend vývojář, backend vývojář, DevOps inženýr"
+      },
+      "correct": "C",
+      "explanation": "Analytik definuje požadavky (co), softwarový inženýr navrhuje technické řešení (jak), projektový manažer koordinuje celý průběh projektu."
+    },
+    {
+      "id": 50,
+      "question": "Vyjmenujte hlavní zodpovědnosti projektového manažera.",
+      "options": {
+        "A": "Psaní unit testů, code review a refaktorizace kódu",
+        "B": "Návrh databázového schématu, optimalizace dotazů, správa indexů",
+        "C": "Správa bezpečnostních certifikátů, firewall a penetrační testování",
+        "D": "Plánování projektu, řízení rozpočtu a zdrojů, koordinace týmu, řízení rizik, reporting managementu, zajištění kvality dodávek"
+      },
+      "correct": "D",
+      "explanation": "Projektový manažer zodpovídá za plánování, rozpočet, zdroje, koordinaci týmu, řízení rizik a reporting vůči managementu."
+    },
+    {
+      "id": 51,
+      "question": "Jaké jsou klíčové dovednosti projektového manažera?",
+      "options": {
+        "A": "Leadership a motivace týmu, time management, řešení konfliktů, znalost PM metodik, finanční gramotnost",
+        "B": "Znalost programovacích jazyků, ladění kódu, algoritmické myšlení",
+        "C": "Správa serverů, konfigurace sítě, zálohování dat",
+        "D": "Grafický design, UX výzkum, prototypování rozhraní"
+      },
+      "correct": "A",
+      "explanation": "PM potřebuje leadership, time management, schopnost řešit konflikty, znalost PM metodik a finanční gramotnost."
+    },
+    {
+      "id": 52,
+      "question": "Jaké jsou hlavní zodpovědnosti systémového analytika?",
+      "options": {
+        "A": "Správa verzovacího systému a CI/CD pipeline",
+        "B": "Překlad business požadavků do technických specifikací, vytváření funkčních specifikací, systémové modelování, koordinace s vývojáři, testování a validace",
+        "C": "Návrh a správa cloudové infrastruktury",
+        "D": "Vývoj mobilních aplikací a správa app store účtů"
+      },
+      "correct": "B",
+      "explanation": "Systémový analytik překládá business požadavky do technických specifikací a zajišťuje, že systém odpovídá potřebám uživatelů."
+    },
+    {
+      "id": 53,
+      "question": "V čem se liší softwarový inženýr od programátora?",
+      "options": {
+        "A": "Softwarový inženýr pracuje pouze s hardwarem, programátor pouze se softwarem",
+        "B": "Softwarový inženýr řeší problémy na vyšší úrovni abstrakce, participuje na architektonických rozhodnutích a mentoruje vývojáře; programátor se zaměřuje primárně na kódování",
+        "C": "Programátor má vyšší plat a větší zodpovědnost než softwarový inženýr",
+        "D": "Softwarový inženýr se zabývá pouze testováním a dokumentací"
+      },
+      "correct": "B",
+      "explanation": "Softwarový inženýr operuje na vyšší úrovni abstrakce – řeší architekturu, mentoruje a koordinuje. Programátor se soustředí na konkrétní implementaci."
+    },
+    {
+      "id": 54,
+      "question": "Čím se zabývá business analytik?",
+      "options": {
+        "A": "Správou účetnictví a finančních výkazů firmy",
+        "B": "Vývojem business intelligence dashboardů v Power BI",
+        "C": "Analýzou obchodních procesů a požadavků z pohledu byznysu, definicí business case a ROI, identifikací příležitostí pro zlepšení",
+        "D": "Konfigurací ERP systémů a jejich integrace s účetnictvím"
+      },
+      "correct": "C",
+      "explanation": "Business analytik analyzuje obchodní procesy, definuje business case a ROI a identifikuje příležitosti ke zlepšení z pohledu organizace."
+    },
+    {
+      "id": 55,
+      "question": "Vyjmenujte zodpovědnosti Product Ownera v agilních metodikách.",
+      "options": {
+        "A": "Psaní kódu, code review, správa repozitáře a CI/CD pipeline",
+        "B": "Definice product vision, správa backlogu, prioritizace, definice akceptačních kritérií",
+        "C": "Testování software, psaní testovacích scénářů, automatizace testů",
+        "D": "Správa infrastruktury, monitoring, incident management"
+      },
+      "correct": "B",
+      "explanation": "Product Owner definuje vizi produktu, spravuje a prioritizuje backlog a definuje akceptační kritéria pro jednotlivé user stories."
+    },
+    {
+      "id": 56,
+      "question": "Jaký je význam analýzy požadavků?",
+      "options": {
+        "A": "Slouží výhradně k vytvoření technické dokumentace pro vývojáře",
+        "B": "Analýza požadavků je systematický proces identifikace, dokumentace a správy potřeb stakeholderů; kvalitně provedená analýza minimalizuje rizika spojená s nepochopením uživatelských potřeb",
+        "C": "Jde o jednorázový úkol na začátku projektu bez dalších iterací",
+        "D": "Nahrazuje testování tím, že eliminuje chyby ještě před začátkem vývoje"
+      },
+      "correct": "B",
+      "explanation": "Analýza požadavků systematicky identifikuje, dokumentuje a spravuje potřeby stakeholderů. Kvalitní analýza minimalizuje rizika plynoucí z nepochopení požadavků."
+    },
+    {
+      "id": 57,
+      "question": "Jaký je rozdíl mezi funkčními a nefunkčními požadavky?",
+      "options": {
+        "A": "Funkční požadavky se týkají hardwaru, nefunkční softwaru",
+        "B": "Nefunkční požadavky určují, co systém dělá, funkční jak to dělá",
+        "C": "Funkční požadavky definují, co systém musí dělat (konkrétní funkcionality); nefunkční požadavky specifikují, jak dobře systém plní své funkce (výkon, spolehlivost, bezpečnost, použitelnost)",
+        "D": "Oba typy požadavků jsou synonyma lišící se pouze pojmenováním"
+      },
+      "correct": "C",
+      "explanation": "Funkční požadavky popisují konkrétní funkce systému (co dělá), nefunkční požadavky popisují kvalitativní vlastnosti systému (jak dobře to dělá)."
+    },
+    {
+      "id": 58,
+      "question": "Co znamenají kategorie v MoSCoW prioritizaci požadavků?",
+      "options": {
+        "A": "Must = povinné ze zákona, Should = doporučené, Could = volitelné, Won't = zakázané",
+        "B": "Must have (nezbytné pro fungování), Should have (důležité, ale lze odložit), Could have (užitečné při dostatku času), Won't have this time (vyloučené z aktuální verze)",
+        "C": "Must = hotovo, Should = v přípravě, Could = plánováno, Won't = zamítnuto",
+        "D": "Must = high priority, Should = medium priority, Could = low priority, Won't = no priority"
+      },
+      "correct": "B",
+      "explanation": "MoSCoW: Must (nezbytné), Should (důležité, ale odložitelné), Could (užitečné, nízká priorita), Won't (vyloučeno z aktuální verze)."
+    },
+    {
+      "id": 59,
+      "question": "Jaké jsou hlavní metody sběru požadavků a kdy se která používá?",
+      "options": {
+        "A": "Kompilátor, debugger, profiler, linter, IDE",
+        "B": "Waterfall, Scrum, Kanban, SAFe, XP",
+        "C": "Interview (přímá komunikace), dotazníky (kvantitativní data), pozorování (skutečné postupy), workshopy (rychlý konsenzus), prototypování (vizuální reprezentace)",
+        "D": "ERD, DFD, UML, BPMN, ArchiMate"
+      },
+      "correct": "C",
+      "explanation": "Hlavní metody sběru požadavků jsou: interview, dotazníky, pozorování, workshopy (JAD) a prototypování – každá má specifické využití."
+    },
+    {
+      "id": 60,
+      "question": "Jaký je formát User Stories a k čemu slouží?",
+      "options": {
+        "A": "\"Systém musí [akce] s výkonem [metrika] v čase [limit]\"",
+        "B": "\"Funkce [název]: vstup [typ], výstup [typ], chyby [výčet]\"",
+        "C": "\"Jako [role] chci [funkcionalita] abych [důvod/hodnota]\"; slouží k zachycení požadavků z perspektivy uživatele a jsou doplněny akceptačními kritérii",
+        "D": "\"Případ užití [ID]: aktér [role], předpoklady [podmínky], kroky [postup]\""
+      },
+      "correct": "C",
+      "explanation": "User Story formát: 'Jako [role] chci [funkcionalita] abych [důvod]'. Zachycuje požadavky z pohledu uživatele a je doplněna akceptačními kritérii."
+    },
+    {
+      "id": 61,
+      "question": "Jaké jsou výhody a nevýhody metody pozorování (observation/shadowing)?",
+      "options": {
+        "A": "Výhody: rychlé a levné; nevýhody: nízká kvalita dat a subjektivní výsledky",
+        "B": "Výhody: odhaluje skutečné pracovní postupy a skryté požadavky, poskytuje objektivní pohled; nevýhody: časově náročné, může ovlivnit chování pozorovaných osob",
+        "C": "Výhody: standardizované výsledky; nevýhody: nelze použít pro složité procesy",
+        "D": "Výhody: vysoká návratnost dat; nevýhody: nutná přítomnost moderátora"
+      },
+      "correct": "B",
+      "explanation": "Pozorování odhaluje skutečné pracovní postupy a skryté požadavky. Nevýhodou je časová náročnost a možné ovlivnění chování pozorovaných."
+    },
+    {
+      "id": 62,
+      "question": "Co jsou to JAD workshopy a jaké jsou jejich klíčové charakteristiky?",
+      "options": {
+        "A": "Java Application Development – framework pro vývoj enterprise aplikací",
+        "B": "Just-in-time Agile Delivery – metoda krátkých sprintů bez planningů",
+        "C": "Joint Application Development – strukturované skupinové sezení s facilitátorem; umožňuje rychlé dosažení konsenzu, řešení konfliktních požadavků a účast všech stakeholderů",
+        "D": "Java Architecture Design – vzor pro návrh vícevrstvých Java aplikací"
+      },
+      "correct": "C",
+      "explanation": "JAD (Joint Application Development) jsou strukturované workshopy s facilitátorem, kde stakeholdeři společně definují požadavky a dosahují konsenzu."
+    },
+    {
+      "id": 63,
+      "question": "Jaký je rozdíl mezi low-fidelity a high-fidelity prototypy?",
+      "options": {
+        "A": "Low-fidelity jsou dražší, high-fidelity levnější; liší se pouze cenou",
+        "B": "Low-fidelity jsou digitální interaktivní prototypy; high-fidelity jsou papírové náčrty",
+        "C": "Low-fidelity jsou jednoduché (papírové) prototypy pro základní koncepty; high-fidelity jsou interaktivní digitální prototypy blížící se finální podobě systému",
+        "D": "Oba typy jsou totožné, liší se pouze mírou detailu barevného zpracování"
+      },
+      "correct": "C",
+      "explanation": "Low-fidelity prototypy (papírové náčrty) slouží pro rychlé ověření konceptu. High-fidelity prototypy jsou interaktivní a blíží se výslednému produktu."
+    },
+    {
+      "id": 64,
+      "question": "Jaké jsou čtyři základní komponenty DFD a jak se zobrazují?",
+      "options": {
+        "A": "Entita (trojúhelník), vztah (kosočtverec), atribut (elipsa), klíč (podtržená elipsa)",
+        "B": "Proces (kruh/zaoblený obdélník), datový tok (šipka s názvem), externí entita (obdélník), datové úložiště (dvě paralelní čáry s názvem v množném čísle)",
+        "C": "Aktivita (obdélník), rozhodnutí (kosočtverec), start (kruh), konec (dvojitý kruh)",
+        "D": "Třída (obdélník se třemi sekcemi), asociace (čára), závislost (přerušovaná čára), realizace (přerušovaná šipka)"
+      },
+      "correct": "B",
+      "explanation": "DFD používá: proces (kruh/zaoblený obdélník), datový tok (šipka), externí entitu (obdélník) a datové úložiště (dvě paralelní čáry)."
+    },
+    {
+      "id": 65,
+      "question": "Co je kontextový diagram a jaké má vlastnosti?",
+      "options": {
+        "A": "Diagram zobrazující všechny databázové tabulky a jejich vazby",
+        "B": "Kontextový diagram (úroveň 0 DFD) zobrazuje celý systém jako jeden proces s externími entitami; neobsahuje datové sklady ani vnitřní procesy, pouze vnější rozhraní",
+        "C": "UML diagram zachycující posloupnost zpráv mezi objekty",
+        "D": "Graf závislostí mezi moduly softwarového systému"
+      },
+      "correct": "B",
+      "explanation": "Kontextový diagram (DFD level 0) zobrazuje systém jako jediný proces v kontextu vnějšího prostředí – ukazuje pouze vstupní a výstupní toky s externími entitami."
+    },
+    {
+      "id": 66,
+      "question": "Jaké jsou základní chyby v logice DFD – Black Holes, Miracles a Grey Holes?",
+      "options": {
+        "A": "Black Holes = duplicitní procesy, Miracles = chybějící entity, Grey Holes = cyklické toky",
+        "B": "Black Holes = nevalidní datové typy, Miracles = chybějící primární klíče, Grey Holes = neúplné záznamy",
+        "C": "Black Holes – proces má vstupy ale žádné výstupy; Miracles – proces má výstupy ale žádné vstupy; Grey Holes – proces vytváří více výstupů než je logicky možné ze vstupů",
+        "D": "Black Holes = neexistující procesy, Miracles = duplicitní toky, Grey Holes = chybějící datová úložiště"
+      },
+      "correct": "C",
+      "explanation": "Black Hole: vstupy bez výstupu. Miracle: výstup bez vstupu. Grey Hole: více výstupů, než je logicky možné z dostupných vstupů."
+    },
+    {
+      "id": 67,
+      "question": "Jaké pravidlo musí platit při hierarchické dekompozici v DFD?",
+      "options": {
+        "A": "Každý podproces musí mít maximálně tři vstupy a tři výstupy",
+        "B": "Při dekompozici musí zůstat zachovány datové toky – vstupy a výstupy rodičovského procesu se musí rovnat součtu vstupů a výstupů jeho potomků (pravidlo vyváženosti)",
+        "C": "Dekompozice je povolena maximálně do třetí úrovně hloubky",
+        "D": "Každý podproces musí mít vlastní datové úložiště"
+      },
+      "correct": "B",
+      "explanation": "Pravidlo vyváženosti: při dekompozici procesu musí součet vstupů a výstupů podprocesů odpovídat vstupům a výstupům nadřazeného procesu."
+    },
+    {
+      "id": 68,
+      "question": "Na jakém principu je založen objektový přístup a jaká je jeho základní otázka?",
+      "options": {
+        "A": "Modeluje systém jako sérii kroků; základní otázka je 'Co se stane, když?'",
+        "B": "Modeluje systém jako kolekci spolupracujících objektů, konstruuje se bottom-up; základní otázka je 'Z čeho se systém skládá?' – zaměřuje se na objekty kombinující data a operace",
+        "C": "Modeluje systém jako datové toky; základní otázka je 'Jaká data procházejí systémem?'",
+        "D": "Modeluje systém jako stavový automat; základní otázka je 'V jakém stavu systém je?'"
+      },
+      "correct": "B",
+      "explanation": "Objektový přístup modeluje systém jako kolekci spolupracujících objektů (data + operace), konstruuje se zdola nahoru (bottom-up)."
+    },
+    {
+      "id": 69,
+      "question": "Jaký je rozdíl mezi třídou a instancí třídy (objektem)?",
+      "options": {
+        "A": "Třída je dynamická a mění se za běhu, instance je statická šablona",
+        "B": "Instance je obecný popis, třída je konkrétní výskyt",
+        "C": "Třída je šablona nebo předpis pro vytváření objektů; instance třídy (objekt) je konkrétní výskyt vytvořený podle třídy",
+        "D": "Třída a instance jsou totožné – jde pouze o jiné označení stejné věci"
+      },
+      "correct": "C",
+      "explanation": "Třída je šablona definující vlastnosti a chování. Objekt (instance) je konkrétní výskyt vytvořený podle té třídy."
+    },
+    {
+      "id": 70,
+      "question": "Co je datový model a k čemu slouží?",
+      "options": {
+        "A": "Spustitelný skript pro inicializaci databázových tabulek",
+        "B": "Datový model je abstraktní reprezentace struktury, vztahů a omezení dat v IS; slouží jako komunikační nástroj, dokumentace, návod pro implementaci a validační nástroj",
+        "C": "Šifrovací algoritmus pro zabezpečení dat při přenosu",
+        "D": "Fyzická konfigurace diskového pole (RAID)"
+      },
+      "correct": "B",
+      "explanation": "Datový model abstraktně reprezentuje strukturu a vztahy dat. Slouží ke komunikaci, dokumentaci, jako podklad pro implementaci a k validaci požadavků."
+    },
+    {
+      "id": 71,
+      "question": "Jaký je rozdíl mezi konceptuálním, logickým a fyzickým datovým modelem?",
+      "options": {
+        "A": "Konceptuální = fyzická implementace, logický = technologická abstrakce, fyzický = business pohled",
+        "B": "Konceptuální – vysokoúrovňová abstrakce nezávislá na technologii; logický – přidává datové typy a implementační detaily pro konkrétní DB; fyzický – skutečná implementace s optimalizacemi",
+        "C": "Všechny tři modely jsou totožné a liší se pouze názvem",
+        "D": "Konceptuální = SQL schéma, logický = ERD diagram, fyzický = UML class diagram"
+      },
+      "correct": "B",
+      "explanation": "Tři úrovně: konceptuální (business pohled, bez tech. detailů), logický (datové typy, klíče, NF), fyzický (indexy, partitioning, optimalizace pro konkrétní DB)."
+    },
+    {
+      "id": 72,
+      "question": "Jaký je rozdíl mezi primárním a cizím klíčem?",
+      "options": {
+        "A": "Primární klíč může být NULL, cizí klíč musí být unikátní",
+        "B": "Primární klíč unikátně identifikuje každý řádek, nemůže být NULL a nemění se v čase; cizí klíč je odkaz na atribut jiné tabulky, zajišťuje referenční integritu a může být NULL",
+        "C": "Oba klíče mají stejnou funkci, liší se pouze pojmenováním",
+        "D": "Cizí klíč unikátně identifikuje každý řádek, primární klíč odkazuje na jinou tabulku"
+      },
+      "correct": "B",
+      "explanation": "Primární klíč jednoznačně identifikuje řádek (NOT NULL, unikátní, neměnný). Cizí klíč odkazuje na PK jiné tabulky a zajišťuje referenční integritu."
+    },
+    {
+      "id": 73,
+      "question": "Jaké jsou základní typy SQL příkazů?",
+      "options": {
+        "A": "FETCH, PARSE, EXECUTE, COMMIT, ROLLBACK",
+        "B": "SELECT, FROM, WHERE, GROUP BY, HAVING",
+        "C": "DDL (CREATE, ALTER, DROP pro struktury), DML (SELECT, INSERT, UPDATE, DELETE pro data), DCL (pro oprávnění)",
+        "D": "CONNECT, QUERY, MODIFY, SECURE, MONITOR"
+      },
+      "correct": "C",
+      "explanation": "SQL se dělí na DDL (definice struktury), DML (manipulace s daty), DCL (řízení přístupů) a TCL (řízení transakcí)."
+    },
+    {
+      "id": 74,
+      "question": "Jaký je účel datové normalizace a jaké problémy řeší?",
+      "options": {
+        "A": "Zvyšuje redundanci dat pro rychlejší čtení a reportování",
+        "B": "Slouží výhradně ke snížení velikosti databáze na disku",
+        "C": "Účel je odstranění redundance a zajištění integrity dat; řeší update anomálie, insert anomálie a delete anomálie",
+        "D": "Normalizace slouží k šifrování citlivých dat v databázi"
+      },
+      "correct": "C",
+      "explanation": "Normalizace odstraňuje redundanci a řeší update anomálie (změna na více místech), insert anomálie a delete anomálie (ztráta dat při mazání)."
+    },
+    {
+      "id": 75,
+      "question": "Co vyžaduje první normální forma (1NF)?",
+      "options": {
+        "A": "Každý neklíčový atribut závisí na celém primárním klíči",
+        "B": "Tabulka neobsahuje tranzitivní závislosti mezi neklíčovými atributy",
+        "C": "Každá buňka obsahuje pouze atomickou (nedělitelnou) hodnotu, každý řádek je unikátní a tabulka má definovaný primární klíč",
+        "D": "Všechny tabulky mají stejnou strukturu a počet sloupců"
+      },
+      "correct": "C",
+      "explanation": "1NF vyžaduje atomické hodnoty v buňkách, unikátní řádky a definovaný primární klíč. Nesmí být více hodnot oddělených čárkami v jedné buňce."
+    },
+    {
+      "id": 76,
+      "question": "Co vyžaduje třetí normální forma (3NF)?",
+      "options": {
+        "A": "Každá buňka musí obsahovat atomickou hodnotu",
+        "B": "Všechny neklíčové atributy závisí na celém primárním klíči",
+        "C": "Tabulka je ve 2NF a neobsahuje tranzitivní závislosti mezi neklíčovými atributy",
+        "D": "Pro každou funkční závislost X→Y platí, že X je superklíčem"
+      },
+      "correct": "C",
+      "explanation": "3NF: tabulka je ve 2NF + žádný neklíčový atribut nezávisí na jiném neklíčovém atributu (žádné tranzitivní závislosti)."
+    },
+    {
+      "id": 77,
+      "question": "Jaký je obecný postup při tvorbě datového modelu?",
+      "options": {
+        "A": "Vytvoření SQL skriptů, testování výkonu, optimalizace indexů, nasazení do produkce",
+        "B": "Identifikace entit z business požadavků, definice atributů, identifikace vztahů s kardinalitou, kontrola normalizace, validace s uživateli a iterativní vylepšování",
+        "C": "Výběr databázového systému, konfigurace serveru, vytvoření schématu, naplnění daty",
+        "D": "Naprogramování ORM vrstvy, definice migrací, seeding testovacích dat"
+      },
+      "correct": "B",
+      "explanation": "Postup při tvorbě datového modelu: identifikace entit → atributy → vztahy s kardinalitou → normalizace → validace → iterativní vylepšování."
+    },
+    {
+      "id": 78,
+      "question": "Kdy je potřeba změnit vazbu M:N na dvě vazby 1:N a M:1?",
+      "options": {
+        "A": "Vždy, protože M:N vazby nejsou v relačních databázích povoleny",
+        "B": "Pouze tehdy, když obě entity mají více než 1000 záznamů",
+        "C": "Když mezi entitami vazby M:N existuje důležitý atribut vztahující se ke konkrétní kombinaci entit (např. množství v objednávce, datum vrácení u výpůjčky)",
+        "D": "Pouze při použití NoSQL databáze"
+      },
+      "correct": "C",
+      "explanation": "Vazbu M:N rozložíme přes asociační entitu tehdy, když kombinace entit nese vlastní atributy (např. množství produktu v objednávce)."
+    },
+    {
+      "id": 79,
+      "question": "Co charakterizuje NoSQL databáze a čím se liší od relačních?",
+      "options": {
+        "A": "NoSQL databáze podporují pouze SQL dotazy, ale bez JOIN operací",
+        "B": "NoSQL databáze jsou výhradně určeny pro ukládání souborů a médií",
+        "C": "Flexibilní nebo žádné schéma, horizontální škálování, eventual consistency místo ACID; prioritizují škálovatelnost a rychlost nad konzistencí, vhodné pro nestrukturovaná data",
+        "D": "NoSQL databáze jsou starší typ relačních databází bez podpory transakcí"
+      },
+      "correct": "C",
+      "explanation": "NoSQL databáze mají flexibilní schéma, horizontálně škálují a používají eventual consistency. Jsou vhodné pro nestrukturovaná nebo semi-strukturovaná data."
+    },
+    {
+      "id": 80,
+      "question": "Co je IT strategie organizace a na jaké časové období se typicky sestavuje?",
+      "options": {
+        "A": "IT strategie je operativní plán na 1 měsíc pro řízení IT incidentů",
+        "B": "IT strategie je interní směrnice pro bezpečné používání firemních počítačů",
+        "C": "IT strategie je dlouhodobý plán definující, jak bude organizace využívat IT k dosažení obchodních cílů; typicky na 3–5 let",
+        "D": "IT strategie je katalog dostupných IT služeb a jejich cen"
+      },
+      "correct": "C",
+      "explanation": "IT strategie definuje směr rozvoje IT v organizaci na 3–5 let v souladu s obchodními cíli."
+    },
+    {
+      "id": 81,
+      "question": "Co znamená zkratka SMART v kontextu stanovování IT cílů?",
+      "options": {
+        "A": "Software Management And Release Tracking",
+        "B": "Specific, Measurable, Achievable, Relevant, Time-bound",
+        "C": "Security, Monitoring, Automation, Reliability, Testing",
+        "D": "Scalable, Modular, Agile, Robust, Tested"
+      },
+      "correct": "B",
+      "explanation": "SMART cíle jsou: Specific (specifické), Measurable (měřitelné), Achievable (dosažitelné), Relevant (relevantní), Time-bound (časově ohraničené)."
+    },
+    {
+      "id": 82,
+      "question": "Vysvětlete rozdíl mezi CAPEX a OPEX v kontextu IT investic.",
+      "options": {
+        "A": "CAPEX = pravidelné platby za cloud, OPEX = jednorázové investice do hardware",
+        "B": "CAPEX = náklady na mzdy vývojářů, OPEX = náklady na licence",
+        "C": "CAPEX (Capital Expenditure) = jednorázové investice do pořízení hardware, licencí nebo vývoje; OPEX (Operational Expenditure) = pravidelné provozní náklady jako cloud, údržba, podporu nebo platy",
+        "D": "CAPEX a OPEX jsou dvě různá označení pro totéž – provozní náklady IT"
+      },
+      "correct": "C",
+      "explanation": "CAPEX jsou jednorázové investice (pořízení hardware, vlastní vývoj). OPEX jsou průběžné náklady (cloud předplatné, licence, údržba, mzdy)."
+    },
+    {
+      "id": 83,
+      "question": "Který zákon upravuje zadávání veřejných zakázek v České republice?",
+      "options": {
+        "A": "Zákon č. 89/2012 Sb. (nový občanský zákoník)",
+        "B": "Zákon č. 563/1991 Sb. (zákon o účetnictví)",
+        "C": "Zákon č. 134/2016 Sb. o zadávání veřejných zakázek",
+        "D": "Zákon č. 480/2004 Sb. o některých službách informační společnosti"
+      },
+      "correct": "C",
+      "explanation": "Zákon č. 134/2016 Sb. o zadávání veřejných zakázek transponuje evropské směrnice a stanovuje povinné postupy pro transparentní zadávání."
+    },
+    {
+      "id": 84,
+      "question": "Co je COBIT a jaké jsou jeho hlavní oblasti procesů?",
+      "options": {
+        "A": "Programovací jazyk pro automatizaci IT procesů",
+        "B": "COBIT je framework pro governance a management podnikových IT; oblasti: Plánování a organizace, Akvizice a implementace, Dodávka a podpora, Monitoring a evaluace",
+        "C": "Nástroj pro sledování chyb a incidentů v softwaru",
+        "D": "Metodika pro agilní vývoj software v regulovaných odvětvích"
+      },
+      "correct": "B",
+      "explanation": "COBIT je framework pro IT governance a management. Jeho hlavní oblasti jsou: Plánování, Akvizice, Dodávka a podpora, Monitoring."
+    },
+    {
+      "id": 85,
+      "question": "Jaké jsou hlavní kroky strukturovaného change management procesu?",
+      "options": {
+        "A": "Programování, testování, nasazení, monitoring, rollback",
+        "B": "Identifikace, analýza, plánování, implementace, ověření",
+        "C": "Žádost o změnu (Change Request), vyhodnocení dopadu a rizik, rozhodnutí CCB, formalizace změny a realizace",
+        "D": "Sprint planning, daily standup, sprint review, retrospektiva"
+      },
+      "correct": "C",
+      "explanation": "Structured change management: Change Request → vyhodnocení dopadu → schválení CCB (Change Control Board) → formalizace → realizace."
+    },
+    {
+      "id": 86,
+      "question": "Co je Service Level Agreement (SLA) a jaký je jeho hlavní účel?",
+      "options": {
+        "A": "Smlouva o mlčenlivosti (NDA) chránící obchodní tajemství",
+        "B": "SLA je formální dohoda mezi poskytovatelem IT služeb a zákazníkem, která přesně definuje měřitelné parametry poskytovaných služeb a zajišťuje nastavení správných očekávání",
+        "C": "Licenční smlouva opravňující k používání software",
+        "D": "Smlouva o dílo pro vývoj informačního systému na zakázku"
+      },
+      "correct": "B",
+      "explanation": "SLA je formální dohoda definující měřitelné parametry IT služeb (dostupnost, RTO, RPO) a nastavuje očekávání obou stran."
+    },
+    {
+      "id": 87,
+      "question": "Co je RTO a RPO v kontextu SLA metrik?",
+      "options": {
+        "A": "RTO = Release Time Objective, RPO = Release Planning Overview",
+        "B": "RTO = maximální doba obnovení služby po výpadku; RPO = maximální doba, za kterou mohou být data ztracena při výpadku",
+        "C": "RTO = Response Time Overhead, RPO = Resource Planning Optimization",
+        "D": "RTO a RPO jsou synonyma označující totéž – přijatelnou dobu výpadku"
+      },
+      "correct": "B",
+      "explanation": "RTO (Recovery Time Objective) = jak rychle musíme obnovit službu. RPO (Recovery Point Objective) = kolik dat (v čase) si můžeme dovolit ztratit."
+    },
+    {
+      "id": 88,
+      "question": "Jak se počítá dostupnost systému v procentech?",
+      "options": {
+        "A": "Dostupnost = Počet úspěšných požadavků / Celkový počet požadavků × 100 %",
+        "B": "Dostupnost = (Celkový čas − Doba výpadků) / Celkový čas × 100 %",
+        "C": "Dostupnost = Počet funkčních serverů / Celkový počet serverů × 100 %",
+        "D": "Dostupnost = Průměrná doba odezvy / Maximální povolená doba odezvy × 100 %"
+      },
+      "correct": "B",
+      "explanation": "Dostupnost = (Celkový čas − Výpadky) / Celkový čas × 100 %. Při 99,9% dostupnosti je povoleno cca 8,76 hodin výpadku ročně."
+    },
+    {
+      "id": 89,
+      "question": "Podle jakých dvou hlavních kritérií se stanovuje priorita incidentu?",
+      "options": {
+        "A": "Podle věku zákazníka a doby trvání smlouvy",
+        "B": "Podle ceny SLA a velikosti firmy zákazníka",
+        "C": "Priorita incidentu se stanovuje podle dopadu (kolik uživatelů nebo procesů je ovlivněno) a naléhavosti (jak rychle musí být problém vyřešen)",
+        "D": "Podle dostupnosti technika a obtížnosti řešení problému"
+      },
+      "correct": "C",
+      "explanation": "Priorita incidentu se určuje kombinací dopadu (šíře zasažení) a naléhavosti (časová citlivost). Jejich kombinace dává výslednou prioritu (P1–P4)."
+    },
+    {
+      "id": 90,
+      "question": "Jaké jsou tři základní typy sankcí v SLA?",
+      "options": {
+        "A": "Varování, pokuta, ukončení smlouvy",
+        "B": "Service credits (sleva z platby), fixed penalty (pevná pokuta) a performance incentives (motivační bonusy za překročení cílů)",
+        "C": "Okamžité ukončení služby, soudní žaloba, mediace",
+        "D": "Snížení priorit podpory, omezení funkcionality, dočasné pozastavení služby"
+      },
+      "correct": "B",
+      "explanation": "Tři typy sankcí v SLA: service credits (sleva), fixed penalty (pevná pokuta) a performance incentives (bonusy za překročení cílů)."
+    },
+    {
+      "id": 91,
+      "question": "Vyjmenujte hlavní procesy ITIL pro podporu služeb.",
+      "options": {
+        "A": "Scrum, Kanban, XP, SAFe",
+        "B": "CAPEX, OPEX, TCO, ROI",
+        "C": "GDPR, ISO 27001, SOC 2, PCI DSS",
+        "D": "Incident Management, Problem Management, Change Management a Knowledge Management"
+      },
+      "correct": "D",
+      "explanation": "ITIL pro podporu služeb zahrnuje: Incident Management, Problem Management, Change Management a Knowledge Management."
+    },
+    {
+      "id": 92,
+      "question": "Co je vendor lock-in a proč představuje riziko?",
+      "options": {
+        "A": "Situace, kdy dodavatel odmítá upgradovat software; riziko stagnace technologií",
+        "B": "Vendor lock-in je situace, kdy je zákazník závislý na konkrétním dodavateli a přechod k jinému řešení je technicky nebo ekonomicky obtížný; riziko ztráty kontroly nad náklady",
+        "C": "Povinnost používat určitý programovací jazyk definovaný licenční smlouvou",
+        "D": "Situace, kdy dodavatel vlastní zdrojový kód zákazníkovy aplikace"
+      },
+      "correct": "B",
+      "explanation": "Vendor lock-in = závislost na konkrétním dodavateli, která ztěžuje nebo zdražuje přechod jinam. Zákazník ztrácí vyjednávací pozici a flexibilitu."
+    },
+    {
+      "id": 93,
+      "question": "Co je GDPR a co upravuje?",
+      "options": {
+        "A": "Globální standard pro certifikaci bezpečnosti webových aplikací",
+        "B": "Metodika pro řízení IT projektů v evropských institucích",
+        "C": "GDPR (General Data Protection Regulation) je evropské nařízení o ochraně osobních údajů upravující zpracování osobních údajů fyzických osob a práva subjektů údajů",
+        "D": "Směrnice EU pro zadávání veřejných IT zakázek"
+      },
+      "correct": "C",
+      "explanation": "GDPR reguluje zpracování osobních údajů v EU. Stanovuje práva subjektů údajů a povinnosti správců a zpracovatelů."
+    },
+    {
+      "id": 94,
+      "question": "Vysvětlete rozdíl mezi správcem a zpracovatelem podle GDPR.",
+      "options": {
+        "A": "Správce zpracovává data ručně, zpracovatel automaticky",
+        "B": "Správce je fyzická osoba, zpracovatel právnická osoba",
+        "C": "Správce určuje účely a prostředky zpracování osobních údajů; zpracovatel zpracovává osobní údaje jménem správce podle jeho pokynů",
+        "D": "Oba pojmy jsou synonyma – jde o totožnou roli s různým názvem"
+      },
+      "correct": "C",
+      "explanation": "Správce (controller) rozhoduje o účelech a prostředcích zpracování. Zpracovatel (processor) zpracovává data jménem správce na základě jeho pokynů."
+    },
+    {
+      "id": 95,
+      "question": "Vyjmenujte hlavní fáze procesu pořízení informačního systému.",
+      "options": {
+        "A": "Analýza, kódování, testování, nasazení",
+        "B": "Sprint planning, implementace, review, retrospektiva",
+        "C": "Definice požadavků, příprava zadávací dokumentace, výběr dodavatele, smluvní jednání, implementace, testování a předání do provozu",
+        "D": "Studie proveditelnosti, vývoj prototypu, pilotní provoz, full rollout"
+      },
+      "correct": "C",
+      "explanation": "Pořízení IS prochází fázemi: definice požadavků → zadávací dokumentace → výběr dodavatele → smluvní jednání → implementace → testování → předání do provozu."
+    },
+    {
+      "id": 96,
+      "question": "Co zahrnuje Total Cost of Ownership (TCO) informačního systému?",
+      "options": {
+        "A": "Pouze náklady na pořízení licencí a hardware",
+        "B": "TCO zahrnuje náklady na pořízení (licence, hardware), implementaci (customizace, migrace, školení), provoz (energie, podpora, aktualizace) a ukončení (migrace dat do nového systému)",
+        "C": "Pouze roční provozní náklady bez počátečních investic",
+        "D": "Náklady na vývoj vlastního systému bez zohlednění provozu"
+      },
+      "correct": "B",
+      "explanation": "TCO zahrnuje všechny náklady za celý životní cyklus: pořízení, implementaci, provoz i ukončení (exit). Je klíčový pro srovnávání alternativ."
+    },
+    {
+      "id": 97,
+      "question": "Co je softwarová architektura a jaký je rozdíl mezi architekturou a designem?",
+      "options": {
+        "A": "Softwarová architektura = vizuální design GUI; design = technická implementace backend logiky",
+        "B": "Oba pojmy jsou synonyma bez praktického rozdílu",
+        "C": "Softwarová architektura = základní struktura IS, způsob organizace komponent a jejich komunikace; architektura definuje celkový rámec, design řeší konkrétní implementaci",
+        "D": "Architektura = výběr programovacího jazyka; design = výběr databáze"
+      },
+      "correct": "C",
+      "explanation": "Architektura definuje celkový rámec systému (komponenty, jejich vztahy a pravidla). Design se zabývá konkrétní implementací jednotlivých částí."
+    },
+    {
+      "id": 98,
+      "question": "Jaké jsou klíčové výhody a nevýhody monolitické architektury?",
+      "options": {
+        "A": "Výhody: jednoduchost vývoje a nasazení, ideální pro menší projekty; nevýhody: problémy při růstu, změna části vyžaduje přestavění celé aplikace, obtížné škálování",
+        "B": "Výhody: snadné škálování a nezávislé nasazení; nevýhody: složitá orchestrace a síťová komunikace",
+        "C": "Výhody: automatická vysoká dostupnost; nevýhody: vysoké náklady na infrastrukturu",
+        "D": "Výhody: flexibilní schéma a rychlé čtení; nevýhody: eventual consistency a chybějící ACID"
+      },
+      "correct": "A",
+      "explanation": "Monolita je jednoduchá na vývoj a nasazení, vhodná pro menší projekty. Při růstu se stává problematickou – změna jedné části vyžaduje přestavění a nasazení celé aplikace."
+    },
+    {
+      "id": 99,
+      "question": "Co jsou SOLID principy a vyjmenujte alespoň tři z nich?",
+      "options": {
+        "A": "Principy databázové normalizace: 1NF, 2NF, 3NF, BCNF, 4NF",
+        "B": "SOLID jsou pět základních pravidel OOP: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+        "C": "Principy agilního vývoje: Sprint, Organized, Lean, Iterative, Delivery",
+        "D": "Bezpečnostní principy: Security, Obfuscation, Logging, Integrity, Defense-in-depth"
+      },
+      "correct": "B",
+      "explanation": "SOLID: Single Responsibility (jedna zodpovědnost), Open/Closed (otevřený pro rozšíření), Liskov Substitution, Interface Segregation, Dependency Inversion."
+    },
+    {
+      "id": 100,
+      "question": "Jaký je rozdíl mezi unit testy, integračními testy a systémovými testy?",
+      "options": {
+        "A": "Unit testy testují celou aplikaci, integrační testy části, systémové testy kód",
+        "B": "Unit testy kontrolují jednotlivé funkce nebo metody; integrační testy ověřují spolupráci různých částí systému; systémové testy kontrolují celou aplikaci v reálném prostředí",
+        "C": "Všechny tři typy jsou totožné – liší se pouze rozsahem nasazení",
+        "D": "Unit testy jsou manuální, integrační automatizované, systémové nástrojové"
+      },
+      "correct": "B",
+      "explanation": "Unit testy testují izolované funkce/metody. Integrační testy ověřují spolupráci modulů. Systémové testy testují celou aplikaci jako celek v reálném prostředí."
+    },
+    {
+      "id": 101,
+      "question": "Co je code review a jaké jsou jeho hlavní benefity?",
+      "options": {
+        "A": "Automatická kontrola syntaxe kódu kompilátor em před buildem",
+        "B": "Code review je proces kontroly napsaného kódu jiným vývojářem před začleněním; benefity: odhalení chyb, sdílení znalostí, kontrola standardů, zlepšení kvality",
+        "C": "Nástroj pro sledování výkonu aplikace v produkci",
+        "D": "Proces revize zákaznických požadavků před zahájením vývoje"
+      },
+      "correct": "B",
+      "explanation": "Code review = kontrola kódu kolegou před merge. Přináší odhalení chyb, sdílení znalostí v týmu a zajišťuje dodržování standardů."
+    },
+    {
+      "id": 102,
+      "question": "Jaké jsou tři základní pilíře bezpečnosti – CIA triáda?",
+      "options": {
+        "A": "Compliance, Investigation, Assessment",
+        "B": "Classified, Internal, Accessible",
+        "C": "Důvěrnost (Confidentiality) – citlivé informace vidí pouze oprávněné osoby; Integrita (Integrity) – data nebyla neoprávněně změněna; Dostupnost (Availability) – systém funguje když ho potřebujeme",
+        "D": "Centralization, Integration, Automation"
+      },
+      "correct": "C",
+      "explanation": "CIA triáda: Confidentiality (důvěrnost), Integrity (integrita dat), Availability (dostupnost). Jsou základem pro návrh bezpečnosti IS."
+    },
+    {
+      "id": 103,
+      "question": "Co je phishing a jaké jsou jeho hlavní varianty?",
+      "options": {
+        "A": "Typ SQL útoku využívající speciální znaky v dotazech; varianty: blind, union-based, error-based",
+        "B": "Phishing je manipulace lidí k prozrazení citlivých informací; varianty: spear phishing (cílený), whaling (management), vishing (telefon), smishing (SMS)",
+        "C": "Malware šifrující data za účelem výkupného; varianty: crypto, locker, scareware",
+        "D": "Útok přetěžující server požadavky; varianty: volumetric, protocol, application layer"
+      },
+      "correct": "B",
+      "explanation": "Phishing využívá sociální inženýrství k získání citlivých dat. Varianty: spear phishing (cílený), whaling (top management), vishing (hlas), smishing (SMS)."
+    },
+    {
+      "id": 104,
+      "question": "Jaké jsou základní typy autentizace a co je vícefaktorová autentizace?",
+      "options": {
+        "A": "Symetrická, asymetrická, hybridní; vícefaktorová kombinuje šifrovací algoritmy",
+        "B": "Základní typy: něco co víte (heslo), máte (telefon/token), jste (biometrie); vícefaktorová autentizace kombinuje dva nebo více těchto faktorů",
+        "C": "Lokální, síťová, cloudová; vícefaktorová kombinuje všechny tři úrovně",
+        "D": "Interní, externí, federovaná; vícefaktorová vyžaduje certifikát od třetí strany"
+      },
+      "correct": "B",
+      "explanation": "Faktory autentizace: znalost (heslo), vlastnictví (telefon/token), inherence (biometrie). MFA kombinuje alespoň dva z těchto faktorů."
+    },
+    {
+      "id": 105,
+      "question": "Vyjmenujte hlavní fáze řízení bezpečnostních incidentů.",
+      "options": {
+        "A": "Detekce, eskalace, záloha, reinstalace, monitoring",
+        "B": "Analýza, návrh, implementace, testování, nasazení",
+        "C": "Příprava, identifikace, omezení (containment), odstranění (eradication), obnova (recovery), poučení (lessons learned)",
+        "D": "Oznamovací povinnost, záloha důkazů, soudní řízení, kompenzace, prevence"
+      },
+      "correct": "C",
+      "explanation": "Fáze řízení bezpečnostních incidentů: příprava → identifikace → omezení → odstranění → obnova → poučení (lessons learned)."
+    },
+    {
+      "id": 106,
+      "question": "Jaké jsou hlavní výhody cloud computingu oproti on-premise řešení?",
+      "options": {
+        "A": "Vyšší bezpečnost, nižší latence a plná kontrola nad daty",
+        "B": "Žádné počáteční investice, platba podle spotřeby, elasticita a škálovatelnost, globální dostupnost, automatické zálohy",
+        "C": "Nižší celkové náklady vždy a za všech okolností",
+        "D": "Plná offline funkčnost bez závislosti na internetu"
+      },
+      "correct": "B",
+      "explanation": "Cloud přináší: nulové počáteční investice, platbu za spotřebu (pay-as-you-go), elastické škálování, globální dostupnost a automatické zálohy."
+    },
+    {
+      "id": 107,
+      "question": "Jaký je rozdíl mezi vertikálním a horizontálním škálováním?",
+      "options": {
+        "A": "Vertikální škálování přidává servery, horizontální zvyšuje výkon jednoho serveru",
+        "B": "Vertikální škálování (scale-up) přidává výkon jednomu serveru; horizontální škálování (scale-out) přidává další servery; horizontální je v cloudu preferované",
+        "C": "Oba pojmy označují totéž – zvyšování kapacity systému",
+        "D": "Vertikální je pouze pro databáze, horizontální pouze pro webové servery"
+      },
+      "correct": "B",
+      "explanation": "Scale-up (vertikální) = silnější hardware. Scale-out (horizontální) = více serverů. V cloudu se preferuje horizontální škálování pro nižší náklady a vyšší dostupnost."
+    },
+    {
+      "id": 108,
+      "question": "Jaká tři prostředí se obvykle připravují při nasazení informačního systému?",
+      "options": {
+        "A": "Alpha, beta, release candidate",
+        "B": "Hlavní, záložní, archivní",
+        "C": "Vývojové prostředí (development), testovací prostředí (testing), produkční prostředí (production)",
+        "D": "Lokální, síťové, cloudové"
+      },
+      "correct": "C",
+      "explanation": "Standardní tři prostředí jsou: development (vývoj), testing/staging (testování a UAT) a production (produkce pro koncové uživatele)."
+    },
+    {
+      "id": 109,
+      "question": "Co je pilotní provoz a jaký je jeho účel?",
+      "options": {
+        "A": "Provoz systému výhradně na testovacích datech bez reálných uživatelů",
+        "B": "Pilotní provoz testuje systém v reálných podmínkách s omezenou skupinou uživatelů před plným nasazením; účel: odhalení problémů, které se neprojevily při testování",
+        "C": "Provoz záložního systému v případě selhání primárního",
+        "D": "Automatické testování výkonu systému při simulovaném zatížení"
+      },
+      "correct": "B",
+      "explanation": "Pilotní provoz nasadí systém omezenému počtu uživatelů v reálném prostředí. Odhalí problémy, které laboratorní testování nezachytilo."
+    },
+    {
+      "id": 110,
+      "question": "Co je kontejnerizace a jaké jsou její hlavní výhody?",
+      "options": {
+        "A": "Šifrování dat do kontejnerů pro bezpečný přenos přes síť",
+        "B": "Kontejnerizace balí aplikaci se všemi závislostmi do standardizovaného kontejneru; výhody: konzistence prostředí, izolace aplikací, efektivita, rychlost nasazení",
+        "C": "Způsob zálohování databáze do archivních souborů",
+        "D": "Virtualizace celého operačního systému včetně kernelu"
+      },
+      "correct": "B",
+      "explanation": "Kontejnerizace (Docker) balí aplikaci se všemi závislostmi. Přináší konzistentní prostředí, izolaci, efektivitu zdrojů a rychlé nasazení."
+    },
+    {
+      "id": 111,
+      "question": "Jaký je rozdíl mezi Docker image a Docker kontejnerem?",
+      "options": {
+        "A": "Docker image je spuštěná instance, kontejner je šablona pro vytváření images",
+        "B": "Docker image je read-only šablona obsahující vše potřebné pro běh aplikace; Docker kontejner je běžící instance image – z jednoho image lze vytvořit více kontejnerů",
+        "C": "Oba pojmy jsou synonyma bez technického rozdílu",
+        "D": "Docker image se používá lokálně, kontejner pouze v cloudu"
+      },
+      "correct": "B",
+      "explanation": "Docker image je neměnná (read-only) šablona. Kontejner je spuštěná instance image – z jednoho image lze spustit mnoho kontejnerů."
+    },
+    {
+      "id": 112,
+      "question": "Co je Kubernetes a jaké jsou jeho hlavní funkce?",
+      "options": {
+        "A": "Databázový cluster pro horizontální škálování SQL databází",
+        "B": "Kubernetes je orchestrační nástroj pro správu kontejnerů; hlavní funkce: scheduling, auto-scaling, self-healing, load balancing, service discovery, rolling updates",
+        "C": "CI/CD pipeline nástroj pro automatické nasazení aplikací",
+        "D": "Monitorovací platforma pro sledování výkonu mikroservis"
+      },
+      "correct": "B",
+      "explanation": "Kubernetes orchestruje kontejnery: plánuje jejich běh (scheduling), automaticky škáluje, léčí se (self-healing), balancuje provoz a umožňuje rolling updates."
+    },
+    {
+      "id": 113,
+      "question": "Co je API a k čemu slouží?",
+      "options": {
+        "A": "Application Performance Index – metrika pro měření výkonu aplikací",
+        "B": "Automated Process Integration – nástroj pro automatizaci podnikových procesů",
+        "C": "Advanced Programming Interface – proprietární protokol pro komunikaci Oracle databází",
+        "D": "API (Application Programming Interface) je rozhraní umožňující komunikaci mezi aplikacemi; slouží ke sdílení dat, využívání cizích služeb a oddělení částí systému"
+      },
+      "correct": "D",
+      "explanation": "API je rozhraní pro komunikaci mezi aplikacemi. Umožňuje sdílení dat, integraci externích služeb a oddělení frontend/backend vrstev."
+    },
+    {
+      "id": 114,
+      "question": "Vyjmenujte čtyři základní HTTP metody používané v REST API a jejich účel.",
+      "options": {
+        "A": "FETCH (získání), SEND (odeslání), MODIFY (změna), REMOVE (odebrání)",
+        "B": "READ, WRITE, UPDATE, DELETE",
+        "C": "GET (získání dat), POST (vytvoření nových dat), PUT (aktualizace celého záznamu), DELETE (smazání dat)",
+        "D": "HEAD, OPTIONS, PATCH, TRACE"
+      },
+      "correct": "C",
+      "explanation": "Základní HTTP metody v REST: GET (čtení), POST (vytvoření), PUT (plná aktualizace), DELETE (smazání). PATCH se používá pro částečné aktualizace."
+    },
+    {
+      "id": 115,
+      "question": "Jaký je rozdíl mezi REST a GraphQL?",
+      "options": {
+        "A": "REST je novější technologie, GraphQL je zastaralé řešení",
+        "B": "REST umožňuje přesnou specifikaci dat; GraphQL trpí over-fetchingem a under-fetchingem",
+        "C": "REST trpí over-fetchingem (příliš mnoho dat) nebo under-fetchingem (málo dat); GraphQL umožňuje klientovi přesně specifikovat potřebná data v jednom požadavku",
+        "D": "Oba přístupy jsou technicky totožné, liší se pouze syntaxí"
+      },
+      "correct": "C",
+      "explanation": "REST vrací předdefinované datové struktury – klient dostane víc nebo míň než potřebuje. GraphQL umožňuje klientovi definovat přesně ta data, která chce."
+    },
+    {
+      "id": 116,
+      "question": "Co je GIT a k čemu slouží?",
+      "options": {
+        "A": "Graphical Interface Tool – nástroj pro vizualizaci databázových schémat",
+        "B": "GIT je distribuovaný verzovací systém pro sledování změn v kódu; umožňuje historii změn, paralelní vývoj, experimentování bez rizika a spolupráci na projektech",
+        "C": "General Integration Toolkit – middleware pro integraci IS",
+        "D": "Government IT Standard – norma pro vývoj státních informačních systémů"
+      },
+      "correct": "B",
+      "explanation": "Git je distribuovaný verzovací systém. Každý vývojář má kompletní kopii repozitáře včetně celé historie změn."
+    },
+    {
+      "id": 117,
+      "question": "Jaký je rozdíl mezi centralizovanými a distribuovanými verzovacími systémy?",
+      "options": {
+        "A": "Centralizované jsou rychlejší, distribuované bezpečnější",
+        "B": "Distribuované systémy jsou starší a centralizované modernější",
+        "C": "Centralizované (např. SVN) mají jeden centrální server s historií, vývojáři mají jen aktuální verzi; distribuované (např. Git) mají každý vývojář kompletní kopii včetně historie",
+        "D": "Oba typy jsou funkčně totožné, liší se pouze místem uložení"
+      },
+      "correct": "C",
+      "explanation": "Centralizované VCS (SVN): jedna kopie na serveru. Distribuované VCS (Git): každý vývojář má plnou kopii repozitáře i s historií – umožňuje offline práci."
+    },
+    {
+      "id": 118,
+      "question": "Co je pull request/merge request a jaký je jeho účel?",
+      "options": {
+        "A": "Žádost o stažení nejnovější verze kódu ze vzdáleného repozitáře",
+        "B": "Automatický proces slučování větví bez lidského zásahu",
+        "C": "Pull request je žádost o začlenění změn do hlavní větve; umožňuje code review, diskuzi o změnách a zajišťuje kvalitu kódu před začleněním",
+        "D": "Způsob zálohování repozitáře na vzdálený server"
+      },
+      "correct": "C",
+      "explanation": "Pull request (PR) je formální žádost o merge větve. Umožňuje code review, diskuzi a kontrolu kvality před začleněním kódu do hlavní větve."
+    },
+    {
+      "id": 119,
+      "question": "Jak funguje intelligent testing v kontextu AI?",
+      "options": {
+        "A": "AI automaticky opravuje chyby v kódu bez zásahu vývojáře",
+        "B": "AI analyzuje kód a automaticky vytváří testy pro krajní případy, hraniční podmínky a potenciální scénáře chyb, které by lidé pravděpodobně přehlédli",
+        "C": "AI nahrazuje manuální testování sledováním chování uživatelů v produkci",
+        "D": "AI generuje testovací data z produkční databáze pomocí anonymizace"
+      },
+      "correct": "B",
+      "explanation": "Intelligent testing využívá AI k analýze kódu a automatickému generování testů pro hraničí případy a scénáře, které by lidé mohli přehlédnout."
+    },
+    {
+      "id": 120,
+      "question": "Co jsou JAD workshopy a jaké jsou jejich klíčové charakteristiky?",
+      "options": {
+        "A": "Java Application Deployment – proces nasazení Java aplikace na server",
+        "B": "Joint Application Development – strukturované skupinové sezení s facilitátorem pro rychlé dosažení konsenzu a řešení konfliktních požadavků",
+        "C": "Just-in-time Agile Delivery – způsob dodávky software bez předchozího plánování",
+        "D": "JSON API Design – standardizovaná specifikace pro návrh REST API"
+      },
+      "correct": "B",
+      "explanation": "JAD workshopy jsou strukturovaná skupinová sezení s facilitátorem, kde se stakeholdeři setkávají pro definici požadavků a dosažení konsenzu."
+    },
+    {
+      "id": 121,
+      "question": "Jaké jsou charakteristiky strukturovaných, nestrukturovaných a semi-strukturovaných interview?",
+      "options": {
+        "A": "Strukturované jsou nejlevnější, nestrukturované nejdražší, semi-strukturované středně drahé",
+        "B": "Strukturované jsou online, nestrukturované osobní, semi-strukturované telefonické",
+        "C": "Strukturované mají předem připravené otázky a jsou systematické; nestrukturované jsou volnou diskusí, explorativní; semi-strukturované kombinují obojí a jsou nejflexibilnější",
+        "D": "Strukturované jsou pro technické role, nestrukturované pro management, semi-strukturované pro analytiky"
+      },
+      "correct": "C",
+      "explanation": "Strukturované interview = pevné otázky, systematické. Nestrukturované = volná diskuze, explorativní. Semi-strukturované kombinuje flexibilitu obou."
+    },
+    {
+      "id": 122,
+      "question": "Jaké jsou hlavní problémy dotazníků jako metody sběru požadavků?",
+      "options": {
+        "A": "Příliš vysoká cena a složitá příprava otázek",
+        "B": "Nízká návratnost (20–30 %), omezená možnost kladení doplňujících otázek, nižší míra detailu oproti interview",
+        "C": "Nelze je použít pro více než 10 respondentů najednou",
+        "D": "Výsledky jsou vždy zkreslené kvůli sociálnímu tlaku"
+      },
+      "correct": "B",
+      "explanation": "Dotazníky mají nízkou návratnost (20–30 %), nelze klást doplňující otázky a poskytují méně detailní informace než osobní interview."
+    },
+    {
+      "id": 123,
+      "question": "Jaké jsou vlastnosti asociací v datovém modelování a jak je správně číst?",
+      "options": {
+        "A": "Asociace jsou jednosměrné; čteme je vždy zleva doprava",
+        "B": "Asociace jsou vždy obousměrné a musí se číst z obou stran; při vytváření si asociaci vždy vyslovte nahlas a ověřte logiku z obou směrů",
+        "C": "Asociace lze číst pouze ve směru závislosti (od závislé entity k nadřízené)",
+        "D": "Asociace nemají smysl číst – jde o implementační detail bez business výkladu"
+      },
+      "correct": "B",
+      "explanation": "Asociace jsou obousměrné – musíme ověřit smysl vztahu z obou stran. Př.: 'Zákazník zadává Objednávku' i 'Objednávka patří Zákazníkovi'."
+    },
+    {
+      "id": 124,
+      "question": "Uveďte příklad problematické vazby M:N a její řešení.",
+      "options": {
+        "A": "Zaměstnanec – Oddělení (M:N); řešení: sloučit do jedné tabulky s redundantními záznamy",
+        "B": "Student – Předmět (M:N) má problém s datem zápisu; řešení: přidat sloupec datum přímo do tabulky Student",
+        "C": "Objednávka – Produkt (M:N) má problém s množstvím produktu; řešení: Objednávka – Položka_objednávky – Produkt (1:N, N:1), kde Položka_objednávky obsahuje množství",
+        "D": "Autor – Kniha (M:N); řešení: přidat pole ARRAY do tabulky Autor"
+      },
+      "correct": "C",
+      "explanation": "Objednávka–Produkt (M:N) nelze uchovávat množství přímo. Řeší to asociační entita Položka_objednávky s vlastními atributy (množství, cena)."
+    },
+    {
+      "id": 125,
+      "question": "Jaký je vztah JSON k NoSQL databázím?",
+      "options": {
+        "A": "JSON je výhradně pro REST API a s NoSQL databázemi nemá přímý vztah",
+        "B": "JSON nelze přímo ukládat do databází – musí se nejdříve převést do XML",
+        "C": "JSON je přirozeným formátem pro mnohé NoSQL databáze, zejména document databáze; umožňuje flexibilní ukládání semi-strukturovaných dat bez pevného schématu",
+        "D": "JSON je podporován pouze v SQL databázích jako datový typ JSONB"
+      },
+      "correct": "C",
+      "explanation": "JSON je přirozený formát pro dokumentové NoSQL databáze (MongoDB, CouchDB). Umožňuje ukládat flexibilní, semi-strukturovaná data bez pevného schématu."
+    },
+    {
+      "id": 126,
+      "question": "Co je výsledkem vyhodnocení dopadu a rizik v change management procesu?",
+      "options": {
+        "A": "Automatické schválení změny bez dalšího přezkumu",
+        "B": "Zamítnutí všech změn s rizikem vyšším než nízký",
+        "C": "Podklad pro rozhodnutí Change Control Board (CCB) o schválení, zamítnutí nebo odložení změny",
+        "D": "Přidělení změny konkrétnímu vývojáři bez dalšího procesu"
+      },
+      "correct": "C",
+      "explanation": "Analýza dopadu a rizik je vstupem pro CCB (Change Control Board), který rozhodne o schválení, zamítnutí nebo odložení změny."
+    },
+    {
+      "id": 127,
+      "question": "Vyjmenujte tři klíčové komponenty exit strategie při ukončení spolupráce s dodavatelem.",
+      "options": {
+        "A": "Výpověď smlouvy, soudní žaloba, mediace",
+        "B": "Plán migrace dat, zajištění kontinuity služeb během přechodu a právní aspekty ukončení spolupráce včetně vratky licencí",
+        "C": "Audit systému, penalizace dodavatele, výběr nového systému",
+        "D": "Zálohování dat, deaktivace účtů, archivace dokumentace"
+      },
+      "correct": "B",
+      "explanation": "Exit strategie pokrývá: migraci dat, zajištění kontinuity provozu při přechodu a právní aspekty (ukončení smluv, licence)."
+    },
+    {
+      "id": 128,
+      "question": "Vyjmenujte tři základní typy IT služeb pokrytých SLA.",
+      "options": {
+        "A": "Vývoj nových funkcí, penetrační testování, bezpečnostní audit",
+        "B": "Školení uživatelů, implementace, projektové řízení",
+        "C": "Provozní služby (hosting, správa aplikací), podpora (Help Desk, incident management) a rozvojové služby (drobné úpravy, change requesty)",
+        "D": "Licence, hardware, síťová infrastruktura"
+      },
+      "correct": "C",
+      "explanation": "SLA pokrývá: provozní služby (hosting, správa), podporu (Help Desk, incidenty) a rozvojové služby (opravy, drobné úpravy)."
+    },
+    {
+      "id": 129,
+      "question": "Co jsou maintenance a support modely v kontextu IT?",
+      "options": {
+        "A": "Modely popisující způsob fyzické údržby serverových sálů",
+        "B": "Maintenance a support modely definují strategické přístupy k údržbě a podpoře softwarových systémů po jejich uvedení do provozu – stanovují jak, kdy a kým budou prováděny opravy a podpora",
+        "C": "Finanční modely pro amortizaci IT investic",
+        "D": "Modely pro plánování kapacity datových center"
+      },
+      "correct": "B",
+      "explanation": "Maintenance a support modely definují, jak organizace zajistí opravy, aktualizace a podporu systému po jeho spuštění do produkce."
+    },
+    {
+      "id": 130,
+      "question": "Jaké jsou hlavní fáze životního cyklu ticketu v Help Desk systému?",
+      "options": {
+        "A": "Přijetí, eskalace, zamítnutí nebo schválení, archivace",
+        "B": "Vytvoření ticketu, kategorizace a přiřazení, řešení, verifikace, uzavření a feedback",
+        "C": "Registrace, analýza, oprava, test, produkce",
+        "D": "Příjem, třídění, eskalace na L2, eskalace na L3, uzavření"
+      },
+      "correct": "B",
+      "explanation": "Životní cyklus ticketu: vytvoření → kategorizace a přiřazení → řešení → verifikace zákazníkem → uzavření → feedback."
+    },
+    {
+      "id": 131,
+      "question": "Vyjmenujte čtyři základní vrstvy IT architektury.",
+      "options": {
+        "A": "Prezentační, business logika, datová, infrastrukturní",
+        "B": "Aplikační architektura, datová architektura, technická architektura a integrační standardy",
+        "C": "Business, Application, Technology, Motivation",
+        "D": "Physical, Logical, Conceptual, Strategic"
+      },
+      "correct": "B",
+      "explanation": "Čtyři základní vrstvy IT architektury: aplikační, datová, technická (infrastruktura) a integrační standardy."
+    },
+    {
+      "id": 132,
+      "question": "Vyjmenujte čtyři typy způsobilosti dodavatele hodnocené při výběru.",
+      "options": {
+        "A": "Cenová, časová, personální a technologická způsobilost",
+        "B": "ISO certifikace, reference, finanční audit, bezpečnostní prověrka",
+        "C": "Základní způsobilost, profesní způsobilost, ekonomická kvalifikace a technická kvalifikace",
+        "D": "Právní, obchodní, projektová a servisní způsobilost"
+      },
+      "correct": "C",
+      "explanation": "Při výběru dodavatele se hodnotí: základní způsobilost (bezúhonnost), profesní (oprávnění), ekonomická (finanční stabilita) a technická kvalifikace."
+    },
+    {
+      "id": 133,
+      "question": "Co řeší datová architektura v rámci IT strategie?",
+      "options": {
+        "A": "Výběr programovacích jazyků a frameworků pro vývoj aplikací",
+        "B": "Fyzické rozmístění serverů a síťové topologie",
+        "C": "Datová architektura řeší správu dat – kde jsou uložena, jak jsou strukturována, jak zajistit jejich kvalitu a konzistenci napříč systémy a jak implementovat master data management",
+        "D": "Definici uživatelských přístupových práv a rolí v IS"
+      },
+      "correct": "C",
+      "explanation": "Datová architektura řeší uložení, strukturu, kvalitu a konzistenci dat napříč systémy, včetně master data managementu."
+    },
+    {
+      "id": 134,
+      "question": "Vyjmenujte tři kategorie KPI pro měření úspěšnosti IT.",
+      "options": {
+        "A": "Technické, bezpečnostní a compliance KPI",
+        "B": "Vstupní, procesní a výstupní KPI",
+        "C": "Provozní KPI (kvalita IT služeb), projektové KPI (úspěšnost IT projektů) a business KPI (přínos IT pro organizaci)",
+        "D": "Hardwarové, softwarové a síťové KPI"
+      },
+      "correct": "C",
+      "explanation": "Tři kategorie IT KPI: provozní (kvalita služeb – uptime, MTTR), projektové (on time/budget delivery) a business (ROI, digitalizace procesů)."
+    },
+    {
+      "id": 135,
+      "question": "Co musí obsahovat technická specifikace informačního systému?",
+      "options": {
+        "A": "Životopis klíčových vývojářů a jejich zkušenosti",
+        "B": "Harmonogram plateb a smluvní pokuty",
+        "C": "Technická specifikace musí obsahovat funkční požadavky (co systém má umět), nefunkční požadavky (výkon, bezpečnost), integrační požadavky a technické omezení",
+        "D": "Výběr programovacího jazyka a databázového systému"
+      },
+      "correct": "C",
+      "explanation": "Technická specifikace IS obsahuje: funkční požadavky, nefunkční požadavky (výkon, bezpečnost, škálovatelnost), integrační požadavky a technická omezení."
+    },
+    {
+      "id": 136,
+      "question": "Jaké faktory by měly být hodnoceny při výběru dodavatele IS?",
+      "options": {
+        "A": "Výhradně nejnižší cena – zákon vyžaduje vybrat nejlevnější nabídku",
+        "B": "Technické schopnosti, reference od zákazníků, finanční stabilita, kvalita a rychlost podpory, celkové náklady, míra vendor lock-in",
+        "C": "Pouze geografická vzdálenost a jazyková vybavenost týmu",
+        "D": "Počet zaměstnanců, rok vzniku firmy a velikost obratu"
+      },
+      "correct": "B",
+      "explanation": "Výběr dodavatele zahrnuje hodnocení technických schopností, referencí, finanční stability, kvality podpory, TCO a rizika vendor lock-in."
+    },
+    {
+      "id": 137,
+      "question": "Co obsahuje SLA v kontextu provozu IS?",
+      "options": {
+        "A": "Zdrojový kód systému a technickou dokumentaci k API",
+        "B": "Definici kvality služeb – dostupnost systému, doba odezvy na incidenty, doba vyřešení problémů, podporované hodiny",
+        "C": "Finanční podmínky smlouvy a platební kalendář",
+        "D": "Plán vývoje nových funkcí a roadmapu produktu"
+      },
+      "correct": "B",
+      "explanation": "SLA v provozu IS definuje dostupnost systému, doby odezvy a řešení incidentů a rozsah podporovaných hodin."
+    },
+    {
+      "id": 138,
+      "question": "Jaké jsou klíčové faktory úspěchu change managementu při nasazení IS?",
+      "options": {
+        "A": "Rychlost nasazení, minimální testování a nulová komunikace se uživateli",
+        "B": "Podpora vedení, komunikace důvodů změny, zapojení uživatelů do projektu, quick wins pro získání důvěry, odpovídající školení a podpora",
+        "C": "Výhradně technická dokonalost systému bez ohledu na uživatelskou zkušenost",
+        "D": "Povinný upgrade veškerého hardware před nasazením nového systému"
+      },
+      "correct": "B",
+      "explanation": "Úspěšný change management vyžaduje podporu vedení, jasnou komunikaci, zapojení uživatelů, viditelné quick wins a dostatečné školení."
+    },
+    {
+      "id": 139,
+      "question": "Vyjmenujte alespoň tři základní Kubernetes objekty.",
+      "options": {
+        "A": "Image, Registry, Dockerfile",
+        "B": "Master, Worker, etcd",
+        "C": "Pod (nejmenší jednotka s kontejnery), Deployment (deklarace počtu podů), Service (stabilní endpoint), Ingress (HTTP routing)",
+        "D": "Namespace, Cluster, Node"
+      },
+      "correct": "C",
+      "explanation": "Základní Kubernetes objekty: Pod (jeden nebo více kontejnerů), Deployment (deklarativní správa podů), Service (stabilní adresa) a Ingress (HTTP směrování)."
+    },
+    {
+      "id": 140,
+      "question": "Jaké jsou hlavní výzvy kontejnerizace?",
+      "options": {
+        "A": "Příliš nízký výkon a vysoká spotřeba paměti oproti virtuálním strojům",
+        "B": "Složitost (především Kubernetes), monitoring a debugging distribuovaných systémů, perzistentní data, síťování mezi kontejnery, bezpečnost",
+        "C": "Nekompatibilita s majoritou cloudových poskytovatelů",
+        "D": "Nemožnost použití kontejnerů pro produkční workloady"
+      },
+      "correct": "B",
+      "explanation": "Hlavní výzvy kontejnerizace: složitost Kubernetes, monitoring distribuovaných systémů, správa perzistentních dat, síťování a bezpečnost kontejnerů."
+    },
+    {
+      "id": 141,
+      "question": "Vyjmenujte alespoň čtyři běžné typy bezpečnostních hrozeb pro IS.",
+      "options": {
+        "A": "Přetížení CPU, nedostatek paměti, pomalé I/O, síťová latence",
+        "B": "Chybná dokumentace, nekvalitní kód, technický dluh, zastaralé knihovny",
+        "C": "Malware (viry, trojské koně, ransomware), phishing, SQL injection, Cross-Site Scripting (XSS), Man-in-the-Middle útoky",
+        "D": "Nesprávná normalizace DB, chybné indexy, N+1 problem, deadlocky"
+      },
+      "correct": "C",
+      "explanation": "Mezi běžné bezpečnostní hrozby patří: malware, phishing (sociální inženýrství), SQL injection, XSS a Man-in-the-Middle útoky."
+    },
+    {
+      "id": 142,
+      "question": "Vyjmenujte tři hlavní strategie přechodu na nový IS.",
+      "options": {
+        "A": "Waterfall, Agile, Hybrid",
+        "B": "Big Bang (vypnutí starého a zapnutí nového najednou), postupný rollout (zavádění po částech), paralelní provoz (oba systémy běží současně)",
+        "C": "Blue-Green, Canary, Feature flags",
+        "D": "Import, export, synchronizace"
+      },
+      "correct": "B",
+      "explanation": "Tři strategie přechodu na nový IS: Big Bang (okamžité přepnutí), postupný rollout (po částech/modulech) a paralelní provoz (oba systémy souběžně)."
+    },
+    {
+      "id": 143,
+      "question": "Co je hybridní cloud řešení a jaké jsou jeho výhody?",
+      "options": {
+        "A": "Kombinace dvou různých cloudových poskytovatelů (multi-cloud) bez on-premise složky",
+        "B": "Hybridní řešení kombinuje cloud a on-premise infrastrukturu; výhody: kritické systémy zůstávají lokálně, webové aplikace využívají cloud, postupná migrace, optimalizace nákladů",
+        "C": "Sdílená veřejná cloud infrastruktura pro více organizací najednou",
+        "D": "Cloud hosting výhradně pro testovací a vývojová prostředí"
+      },
+      "correct": "B",
+      "explanation": "Hybridní cloud kombinuje on-premise a cloudové prostředí. Kritická nebo regulovaná data zůstávají lokálně, zatímco škálovatelné workloady běží v cloudu."
+    },
+    {
+      "id": 144,
+      "question": "Co jsou verzovací systémy a jaké problémy řeší?",
+      "options": {
+        "A": "Systémy pro správu verzí API a jejich zpětné kompatibility",
+        "B": "Verzovací systémy sledují změny v kódu; řeší historii změn, paralelní vývoj, zálohu kódu, experimentování bez rizika a code review před začleněním",
+        "C": "Nástroje pro sémantické verzování knihoven (major.minor.patch)",
+        "D": "Systémy pro správu verzí dokumentů a výkresové dokumentace"
+      },
+      "correct": "B",
+      "explanation": "Verzovací systémy (VCS) sledují historii změn kódu a umožňují paralelní vývoj, bezpečné experimenty ve větvích a code review před merge."
+    },
+    {
+      "id": 145,
+      "question": "Vyjmenujte hlavní dimenze kvality software.",
+      "options": {
+        "A": "Cena, rychlost vývoje, počet vývojářů, velikost kódové základny",
+        "B": "Funkčnost a spolehlivost, použitelnost, výkonnost a škálovatelnost, bezpečnost, udržovatelnost",
+        "C": "Počet testů, code coverage, počet bugů, rychlost CI pipeline",
+        "D": "Počet řádků kódu, komplexita, technický dluh, dokumentace"
+      },
+      "correct": "B",
+      "explanation": "Dimenze kvality software: funkčnost a spolehlivost, použitelnost (UX), výkonnost a škálovatelnost, bezpečnost a udržovatelnost."
+    },
+    {
+      "id": 146,
+      "question": "Vysvětlete rozdíl mezi perpetuální licencí a subscription modelem.",
+      "options": {
+        "A": "Perpetuální licence = open source, subscription = proprietární software",
+        "B": "Perpetuální licence = jednorázová platba s trvalým vlastnictvím software; subscription model = pravidelné platby (obvykle roční) po dobu používání",
+        "C": "Oba modely jsou totožné – liší se pouze způsobem fakturace",
+        "D": "Subscription je vždy levnější než perpetuální licence"
+      },
+      "correct": "B",
+      "explanation": "Perpetuální licence = jednorázová koupě, software vlastníte natrvalo. Subscription = pravidelné platby, software používáte, dokud platíte."
+    },
+    {
+      "id": 147,
+      "question": "Co obsahuje konceptuální diagram a jaký je jeho účel?",
+      "options": {
+        "A": "Fyzické tabulky s indexy a uloženými procedurami",
+        "B": "SQL skripty pro vytvoření databázového schématu",
+        "C": "Obsahuje entity, základní atributy a vztahy s kardinalitou bez implementačních detailů; účel je pochopení domény problému a komunikace srozumitelná pro všechny účastníky",
+        "D": "Kompletní datový slovník se všemi datovými typy a omezeními"
+      },
+      "correct": "C",
+      "explanation": "Konceptuální diagram zachycuje entity, atributy a vztahy bez technických detailů. Je určen pro komunikaci mezi business uživateli a IT týmem."
+    },
+    {
+      "id": 148,
+      "question": "Vyjmenujte alespoň čtyři hlavní důvody, proč organizace potřebuje IT strategii.",
+      "options": {
+        "A": "Splnění zákonných povinností, vyhnutí se pokutám, audit a certifikace",
+        "B": "Sladění IT s businessem, efektivní využití zdrojů, řízení rizik, konkurenční výhoda a plánování rozpočtu",
+        "C": "Zrychlení vývoje software, snížení počtu chyb, automatizace testování, lepší dokumentace",
+        "D": "Výběr technologického stacku, standardizace nástrojů, snížení technického dluhu"
+      },
+      "correct": "B",
+      "explanation": "Organizace potřebuje IT strategii pro sladění IT s businessem, efektivní alokaci zdrojů, řízení rizik a získání konkurenční výhody."
+    },
+    {
+      "id": 149,
+      "question": "Kdy je vhodné použít objektový přístup při modelování IS?",
+      "options": {
+        "A": "Pro jednoduché formulářové aplikace bez složité doménové logiky",
+        "B": "Ideální pro doménově bohaté aplikace (ERP, CRM, bankovní systémy), interaktivní aplikace s GUI, rozšiřitelné systémy a projekty velkých týmů",
+        "C": "Výhradně pro mobilní aplikace a hry",
+        "D": "Pouze pro systémy s relační databází"
+      },
+      "correct": "B",
+      "explanation": "Objektový přístup je ideální pro doménově bohaté aplikace (ERP, CRM, banky), GUI aplikace a projekty velkých týmů vyžadující rozšiřitelnost."
+    },
+    {
+      "id": 150,
+      "question": "Co jsou DORA metriky v DevOps a jaký je jejich účel?",
+      "options": {
+        "A": "Bezpečnostní skóre definované NIST pro hodnocení IT systémů",
+        "B": "Čtyři klíčové metriky efektivity vývoje: deployment frequency, lead time for changes, time to restore service a change failure rate",
+        "C": "Sada testovacích metrik definující pokrytí kódu a počet bugů",
+        "D": "Standardizované metriky pro SLA v oblasti cloud computingu"
+      },
+      "correct": "B",
+      "explanation": "DORA metriky: Deployment frequency (jak často nasazujeme), Lead time (od commitu po produkci), Time to restore (obnova po incidentu), Change failure rate (% problematických nasazení)."
+    },
+    {
+      "id": 151,
+      "question": "Co znamená předvídatelnost v kontextu SDLC?",
+      "options": {
+        "A": "Schopnost systému předpovídat chování uživatelů pomocí strojového učení",
+        "B": "Automatické generování harmonogramu projektu bez lidského vstupu",
+        "C": "Všichni účastníci vývoje IS včetně zákazníka vědí, jaké kroky byly splněny a jaké následují",
+        "D": "Možnost spustit projekt kdykoli bez předchozí přípravy"
+      },
+      "correct": "C",
+      "explanation": "Předvídatelnost v SDLC znamená, že všichni zúčastnění (tým i zákazník) mají přehled o tom, co bylo hotovo a co ještě přijde."
+    },
+    {
+      "id": 152,
+      "question": "Proč moderní návrh systému zabírá více času než tradiční?",
+      "options": {
+        "A": "Moderní vývojáři jsou méně zkušení a potřebují více konzultací",
+        "B": "Současná architektura musí řešit problémy jako globální škálování, kybernetické útoky a cloud prostředí, což vyžaduje robustnější systémy",
+        "C": "Moderní projekty mají vždy větší tým, který potřebuje více koordinace",
+        "D": "Zákazníci v moderních projektech mění požadavky každý den"
+      },
+      "correct": "B",
+      "explanation": "Moderní systémy musí řešit globální škálování, kybernetické hrozby, cloud prostředí a fault tolerance – to vyžaduje více přemýšlení o architektuře."
+    },
+    {
+      "id": 153,
+      "question": "O co se zajímá analytik, softwarový inženýr a projektový manager v rámci svých rolí?",
+      "options": {
+        "A": "Analytik: jak a kdy; softwarový inženýr: co a proč; projektový manager: technické detaily",
+        "B": "Analytik: obsah – co a proč; softwarový inženýr: provedení a navázání – technické detaily; projektový manager: proces – jak a kdy",
+        "C": "Analytik: cena projektu; softwarový inženýr: termín dodání; projektový manager: kvalita kódu",
+        "D": "Všechny tři role se zajímají o totéž, jen z různých perspektiv stakeholderů"
+      },
+      "correct": "B",
+      "explanation": "Analytik se soustředí na obsah (co a proč), softwarový inženýr na technické provedení (jak), projektový manager na proces, čas a zdroje (kdy a za kolik)."
+    },
+    {
+      "id": 154,
+      "question": "Jaké dovednosti potřebuje systémový analytik?",
+      "options": {
+        "A": "Znalost síťových protokolů, konfigurace firewallů a penetrační testování",
+        "B": "Programování v Javě, správa databází a DevOps dovednosti",
+        "C": "Analytické a systémové myšlení, znalost modelovacích technik, technické znalosti, komunikace mezi business a technical týmy",
+        "D": "Grafický design, psaní marketingových textů a správa sociálních sítí"
+      },
+      "correct": "C",
+      "explanation": "Systémový analytik potřebuje analytické myšlení, znalost modelovacích technik (ERD, DFD, UML) a schopnost komunikovat jak s businessem, tak s technickým týmem."
+    },
+    {
+      "id": 155,
+      "question": "Vyjmenujte pět hlavních zodpovědností softwarového inženýra.",
+      "options": {
+        "A": "Návrh technických řešení, implementace složitých algoritmů, code review a mentoring, optimalizace výkonu, návrhové vzory a best practices",
+        "B": "Řízení projektu, správa rozpočtu, komunikace se zákazníkem, nábor vývojářů, reporting",
+        "C": "Správa serverů, konfigurace sítě, zálohování, monitoring, incident response",
+        "D": "Psaní testovacích plánů, provádění UAT, správa defektů, release management, dokumentace"
+      },
+      "correct": "A",
+      "explanation": "Softwarový inženýr navrhuje technická řešení, implementuje složité algoritmy, provádí code review, mentoruje, optimalizuje výkon a aplikuje návrhové vzory."
+    },
+    {
+      "id": 156,
+      "question": "Jaké jsou hlavní oblasti působnosti security specialisty?",
+      "options": {
+        "A": "Vývoj mobilních aplikací, správa databází a optimalizace dotazů",
+        "B": "Projektové řízení, plánování sprintů, vedení retrospektiv",
+        "C": "Návrh bezpečnostní architektury, security audit a penetrační testování, definice bezpečnostních politik, incident response, compliance management",
+        "D": "UX výzkum, testování použitelnosti, návrh uživatelských rozhraní"
+      },
+      "correct": "C",
+      "explanation": "Security specialista navrhuje bezpečnostní architekturu, provádí audity a penetrační testy, definuje bezpečnostní politiky a řeší incidenty a compliance."
+    },
+    {
+      "id": 157,
+      "question": "Co děláme s daty při procesu normalizace?",
+      "options": {
+        "A": "Sloučíme tabulky do jedné velké pro rychlejší dotazy",
+        "B": "Přidáváme redundantní sloupce pro urychlení reportů",
+        "C": "Rozdělujeme data do stále menších logických celků – zvyšuje se složitost propojení, ale zabraňujeme redundanci a zvyšujeme integritu",
+        "D": "Šifrujeme citlivé atributy pomocí symetrického klíče"
+      },
+      "correct": "C",
+      "explanation": "Normalizace rozděluje data do menších logických celků. Výsledkem je vyšší integrita a eliminace redundance, ale za cenu složitějších JOIN operací."
+    },
+    {
+      "id": 158,
+      "question": "Co vyžaduje druhá normální forma (2NF)?",
+      "options": {
+        "A": "Každá buňka obsahuje pouze atomickou hodnotu a každý řádek je unikátní",
+        "B": "Tabulka je ve 2NF a neobsahuje tranzitivní závislosti mezi neklíčovými atributy",
+        "C": "Tabulka je v 1NF a všechny neklíčové atributy jsou plně funkčně závislé na celém primárním klíči",
+        "D": "Pro každou funkční závislost X→Y platí, že X je superklíčem"
+      },
+      "correct": "C",
+      "explanation": "2NF: musí být splněna 1NF + všechny neklíčové atributy závisejí na CELÉM složeném primárním klíči, ne jen na jeho části."
+    },
+    {
+      "id": 159,
+      "question": "Kdy normalizovat a kdy denormalizovat databázi?",
+      "options": {
+        "A": "Vždy normalizovat – denormalizace nemá v moderních systémech opodstatnění",
+        "B": "Normalizovat pro transakční systémy (OLTP) s častými změnami; denormalizovat pro analytické systémy (OLAP) s důrazem na rychlost dotazů",
+        "C": "Denormalizovat vždy, protože výkon je důležitější než integrita dat",
+        "D": "Rozhodnutí záleží výhradně na použitém programovacím jazyce"
+      },
+      "correct": "B",
+      "explanation": "OLTP systémy (e-shop, bankovnictví) normalizujeme kvůli integritě. OLAP systémy a datové sklady denormalizujeme pro rychlost analytických dotazů."
+    },
+    {
+      "id": 160,
+      "question": "Jaké jsou vlastnosti správně definované IT vize?",
+      "options": {
+        "A": "Musí být co nejpodrobnější a obsahovat konkrétní technologická rozhodnutí",
+        "B": "Vize IT musí být dostatečně ambiciózní, aby motivovala k změně, ale zároveň realistická a dosažitelná v horizontu 3–5 let",
+        "C": "Vize musí být formulována výhradně v technickém jazyce pro IT oddělení",
+        "D": "Vize se sestavuje na 10–20 let a nesmí se měnit"
+      },
+      "correct": "B",
+      "explanation": "IT vize musí balancovat ambici (motivující změnu) s realismem (dosažitelná do 3–5 let). Příliš konzervativní vize nestimuluje, příliš ambiciózní odradí."
+    },
+    {
+      "id": 161,
+      "question": "Vysvětlete rozdíl mezi smlouvou o poskytování služeb a SLA.",
+      "options": {
+        "A": "Smlouva a SLA jsou totožné dokumenty s různým názvem",
+        "B": "SLA je nadřazený dokument, smlouva je jeho technická příloha",
+        "C": "Smlouva řeší právní rámec, cenu a platební podmínky; SLA jako technická příloha definuje konkrétní služby, měřitelné metriky, způsob měření a sankce za nedodržení",
+        "D": "Smlouva definuje technické metriky, SLA právní závazky a sankce"
+      },
+      "correct": "C",
+      "explanation": "Smlouva = právní a obchodní rámec (cena, strany, práva). SLA = technická příloha definující měřitelné parametry, způsob měření a penalizace."
+    },
+    {
+      "id": 162,
+      "question": "Co je JSON a jaké jsou jeho základní datové typy?",
+      "options": {
+        "A": "Java Standard Object Notation – proprietární formát Oraclu pro persistenci Java objektů",
+        "B": "JavaScript Object Notation – formát pro výměnu dat; základní typy: string, number, boolean, null, object (key-value páry), array (seřazená lista hodnot)",
+        "C": "JSON je binární formát pro efektivní přenos dat v síti bez lidsky čitelné formy",
+        "D": "JSON je šablonovací jazyk pro generování HTML stránek"
+      },
+      "correct": "B",
+      "explanation": "JSON (JavaScript Object Notation) je textový, jazykově nezávislý formát. Základní datové typy: string, number, boolean, null, object a array."
+    },
+    {
+      "id": 163,
+      "question": "Vyjmenujte alespoň čtyři základní architektonické vzory IS.",
+      "options": {
+        "A": "Monolitická architektura, vrstvená architektura, mikroservisní architektura, MVC",
+        "B": "Waterfall, Scrum, Kanban, SAFe",
+        "C": "ERD, DFD, UML class diagram, BPMN",
+        "D": "IaaS, PaaS, SaaS, FaaS"
+      },
+      "correct": "A",
+      "explanation": "Základní architektonické vzory: monolita (celek), vrstvená architektura (logické vrstvy), mikroservisy (nezávislé služby), MVC (oddělení dat, zobrazení a logiky)."
+    },
+    {
+      "id": 164,
+      "question": "Vyjmenujte alespoň pět kritérií pro výběr dodavatele IS.",
+      "options": {
+        "A": "Barva loga, počet zaměstnanců, věk firmy, sídlo firmy, počet pobočk",
+        "B": "Technické schopnosti, reference, finanční stabilita, podpora, cena a vendor lock-in riziko",
+        "C": "Rychlost odpovídání na emaily, délka záruky, počet certifikací, velikost kanceláří",
+        "D": "Programovací jazyk, databáze, cloud provider, CI/CD nástroj, monitoring"
+      },
+      "correct": "B",
+      "explanation": "Klíčová kritéria výběru dodavatele: technické schopnosti, reference, finanční stabilita, úroveň podpory, celková cena a míra vendor lock-in."
+    },
+    {
+      "id": 165,
+      "question": "Jaké jsou základní pravidlo napojení datových toků v DFD?",
+      "options": {
+        "A": "Datové toky musí vždy procházet datovým úložištěm",
+        "B": "Každý datový tok musí být napojen alespoň na jeden proces; nelze spojit externí entitu s datovým skladem, dvě externí entity nebo dva datové sklady přímo",
+        "C": "Datové toky mohou spojit libovolné dvě komponenty DFD",
+        "D": "Každý proces musí mít přesně jeden vstup a jeden výstup"
+      },
+      "correct": "B",
+      "explanation": "V DFD platí: každý datový tok musí procházet procesem. Přímé propojení externích entit, dvou datových skladů nebo entity se skladem je chybou."
+    },
+    {
+      "id": 166,
+      "question": "Vyjmenujte tradiční aktivity fáze plánování a analýzy v SDLC.",
+      "options": {
+        "A": "Kódování, testování, code review, refaktorizace, dokumentace",
+        "B": "Studie proveditelnosti, analýza požadavků, definice rozsahu, identifikace rizik, odhad nákladů a času",
+        "C": "Sprint planning, daily standup, sprint review, retrospektiva",
+        "D": "Výběr frameworku, konfigurace CI/CD, nastavení prostředí, deployment pipeline"
+      },
+      "correct": "B",
+      "explanation": "Tradiční fáze plánování/analýzy zahrnuje: studii proveditelnosti, analýzu požadavků, definici rozsahu, identifikaci rizik a odhad nákladů/časového harmonogramu."
+    },
+    {
+      "id": 167,
+      "question": "Vyjmenujte alespoň čtyři hlavní důvody, proč moderní vývoj alokuje více času na plánování.",
+      "options": {
+        "A": "Moderní projekty mají více vývojářů a potřebují více meetingů",
+        "B": "Agilní metodiky vyžadují denní standupy a týdenní retrospektivy",
+        "C": "Současné systémy musí řešit globální škálování, kybernetické útoky, cloud prostředí a složité integrace – komplexita vyžaduje důkladnější přípravu",
+        "D": "Zákazníci v moderních projektech nedůvěřují vývojářům a vyžadují více dokumentace"
+      },
+      "correct": "C",
+      "explanation": "Moderní systémy jsou komplexnější – globální škálování, bezpečnost, cloud-native architektura a mnoho integrací vyžadují důkladnější přípravnou fázi."
+    },
+    {
+      "id": 168,
+      "question": "Co je výsledkem procesu normalizace z pohledu struktury databáze?",
+      "options": {
+        "A": "Méně tabulek s více sloupci a redundantními záznamy",
+        "B": "Více tabulek propojených cizími klíči, eliminace redundance, vyšší integrita dat",
+        "C": "Jedna centrální tabulka se všemi atributy systému",
+        "D": "Tabulky bez primárních klíčů pro rychlejší INSERT operace"
+      },
+      "correct": "B",
+      "explanation": "Výsledkem normalizace je více menších tabulek propojených relacemi (cizími klíči). Data jsou bez redundance a databáze udržuje integritu."
+    }
+  ]
+}

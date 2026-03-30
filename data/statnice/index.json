@@ -1,0 +1,80 @@
+[
+  {
+    "id": "info",
+    "name": "Informatika",
+    "topics": [
+      { "id": 1, "title": "Základní (von Neumanova) architektura počítače. Formát instrukce, instrukční sada. Princip činnosti současných počítačů OS a HW – procesor, registry, přerušení a jeho správa, I/O operace, struktura a hierarchie pamětí, DMA, základní deska." },
+      { "id": 2, "title": "Výpočetní model a operační systémy (batch procesing, host/terminál, klient/server, cloud computing)." },
+      { "id": 3, "title": "Systémy a aplikace na platformě World Wide Web. Princip, činnost, správa. Značkovací, skriptovací a programovací jazyky, technologie na straně klienta/serveru." },
+      { "id": 4, "title": "Služby OS a generické komponenty OS, správa procesů, správa pamětí, I/O systému, správa vnější paměti, souborů, networking, ochrany, interpret příkazů, GUI." },
+      { "id": 5, "title": "Architektura OS a principy výstavby OS, hierarchická vrstvená architektura, mikrojádro, modulová architektura, virtuální stroje." },
+      { "id": 6, "title": "Role operačního systému u současného počítače. Základní typy (rozdělení operačních systémů) a principy jejich činnosti. Multitasking (kooperativní, preemptivní), multithreading. Porovnání operačních systémů třídy MS Windows a Unix/Linux." },
+      { "id": 7, "title": "Operační systémy MacOS, Linux – distribuce, operační systémy pro mobilní zařízení (iOS, Android, Windows), další systémy (firmware, BIOS, UEFI)." },
+      { "id": 8, "title": "Operační systémy a SW pro jednoúčelová zařízení, speciální zařízení, Smart... (SmartHome, SmartCar, SmartHealth, SmartWearables)." },
+      { "id": 9, "title": "Souborové systémy, správa uživatelů, uživatelská práva, správa procesů, interprety v OS." },
+      { "id": 10, "title": "Síťové prvky, síťová řešení a jejich realizace, topologie sítí." },
+      { "id": 11, "title": "Vlastnosti algoritmu. Strukturované algoritmy. Zápis algoritmu pomocí plošných strukturovaných diagramů." },
+      { "id": 12, "title": "Řídící struktury. Podmínky if/else/else if. Větvení pomocí switch. Cyklus typu while. Cyklus typu do-while." },
+      { "id": 13, "title": "Modulární programování. Funkce a parametry funkcí. Návratová hodnota funkce. Rekurze. Proměnné a jejich reprezentace v paměti. Ukazatele - pointry." },
+      { "id": 14, "title": "Výroková logika. Výrok. Logická proměnná. Logické spojky a příklady použití. Výrokové formule." },
+      { "id": 15, "title": "Statické a dynamické datové struktury. Fronta, zásobník, spojový seznam, strom." },
+      { "id": 16, "title": "Relační datový model, relační algebra, relační databázová terminologie, Coddova pravidla." },
+      { "id": 17, "title": "Integrita dat, druhy integritních omezení, database triggers. Datová normalizace, redundance dat, normální formy." },
+      { "id": 18, "title": "Databázové transakce, smysl a principy, varianty řešení." },
+      { "id": 19, "title": "Dotazovací jazyky, předpoklady a principy, SQL, a QBE, standardizace SQL, kritika SQL." },
+      { "id": 20, "title": "Relační a objektová databázová řešení, uložení dat, přístup k datům, ochrana dat." }
+    ]
+  },
+  {
+    "id": "kvant",
+    "name": "Kvantitativní metody",
+    "topics": [
+      { "id": 1, "title": "Lineární optimalizační modely a jejich praktické aplikace." },
+      { "id": 2, "title": "Dopravní úlohy bez tranzitu a okružní dopravní úlohy." },
+      { "id": 3, "title": "Teorie rozhodování, rozhodovací modely, modely teorie her." },
+      { "id": 4, "title": "Vícekriteriální rozhodování a vícekriteriální analýza variant." },
+      { "id": 5, "title": "Systémový přístup, měkké a tvrdé systémové myšlení, systémová analýza a její kroky, definice a klasifikace systémů." },
+      { "id": 6, "title": "Význam a postup matematického modelování, definice, struktura a typy modelů." },
+      { "id": 7, "title": "Systémová dynamika – východiska, nástroje (CLD, SFD), proces systémové dynamiky, elementární modelovací struktury, systémové archetypy, oblasti aplikace." },
+      { "id": 8, "title": "Simulační modely a postupy – simulace Monte Carlo, diskrétní a spojitá simulace, multiagentní simulace." },
+      { "id": 9, "title": "Stochastické modely – Markovské řetězce, modely teorie hromadné obsluhy, Bernoulliho schéma." },
+      { "id": 10, "title": "Aplikace teorie grafů v projektovém řízení – CPM, PERT, GERT, MPM." },
+      { "id": 11, "title": "Projektové řízení, principy a nástroje." },
+      { "id": 12, "title": "Teorie omezení a lidský činitel v projektovém řízení." },
+      { "id": 13, "title": "Softwarové nástroje jako podpora při řízení projektů – MS Excel, MS Project." },
+      { "id": 14, "title": "Náhodný jev, náhodná veličina. Náhodné jevy, definice pravděpodobnosti, věty o sčítání a násobení pravděpodobností. Číselné charakteristiky náhodné veličiny, rozdělení náhodných veličin." },
+      { "id": 15, "title": "Základní statistické charakteristiky. Výběrové techniky. Průzkumová analýza dat." },
+      { "id": 16, "title": "Teorie odhadu. Základní principy, bodový odhad, intervalový odhad průměru základního souboru, rozptylu základního souboru, parametru p alternativního rozdělení." },
+      { "id": 17, "title": "Testování statistických hypotéz. Parametrické testovací postupy. Neparametrické testy." },
+      { "id": 18, "title": "Analýza závislosti kvalitativních znaků. Kontingenční tabulky. Testování v kontingenčních tabulkách." },
+      { "id": 19, "title": "Regresní a korelační analýza. Jednoduchá lineární regrese a korelace, nelineární regrese a korelace, vícenásobná regrese a korelace, pořadová korelace." },
+      { "id": 20, "title": "Analýza časových řad. Základní charakteristiky, analýza periodických časových řad, analýza neperiodických časových řad." }
+    ]
+  },
+  {
+    "id": "eko",
+    "name": "Ekonomika a management",
+    "topics": [
+      { "id": 1, "title": "Poptávka, nabídka (základní tvar, funkce, determinanty). Utváření rovnováhy na trhu, rovnovážný bod, tržní oscilace, renta výrobců a spotřebitelů. Elasticita poptávky, nabídky (druhy, co vyjadřuje)." },
+      { "id": 2, "title": "Základní a alternativní cíle firmy. Zisk účetní a ekonomický. Rozdíl mezi krátkým a dlouhým obdobím. Zisk v krátkém a dlouhém období." },
+      { "id": 3, "title": "Produkční funkce, nákladová funkce (co vyjadřují, mezní a průměrné veličiny). Podstata maximalizace zisku, maximalizace tržeb." },
+      { "id": 4, "title": "Dokonalá, monopolistická konkurence (podstata, zisk v krátkém a dlouhém období). Vysvětlení pojmů oligopol, duopol, monopol, monopson. Úřad pro ochranu hospodářské soutěže (význam, činnost)." },
+      { "id": 5, "title": "Základní makroekonomické ukazatele. Hrubý domácí produkt, národní produkt, čistý produkt. Rozdíl mezi reálným a nominálním. Metody výpočtu HDP." },
+      { "id": 6, "title": "Inflace (podstata, druhy podle tempa růstu, měření). Míra nezaměstnanosti, druhy nezaměstnanosti podle příčin vzniku, dopady nezaměstnanosti, aktivní a pasivní politika zaměstnanosti." },
+      { "id": 7, "title": "Peníze (vývojové stupně, formy a význam peněz). Fiskální a monetární politika (tvůrce, nástroje, cíle). Úloha centrální banky." },
+      { "id": 8, "title": "Majetek podniku – vymezení, druhy majetku a jejich význam, náklady vyvolané existencí a využíváním majetku, postup hodnocení vývoje a struktury majetku, vztah odpisů k nákladům a zisku, ukazatele hodnotící obrat dlouhodobého a krátkodobého majetku." },
+      { "id": 9, "title": "Kapitál podniku – vymezení, druhy kapitálu a jejich význam, postup hodnocení vývoje a struktury kapitálu, cena vlastního a cizího kapitálu a optimalizace nákladů na kapitál, zadlužení, překapitalizování a podkapitalizování podniku. Likvidita – význam a ukazatele." },
+      { "id": 10, "title": "Výnosy, náklady a zisk podniku – vymezení, hodnocení vývoje a struktury. Rentabilita – vymezení, ukazatele rentability, faktory ovlivňující rentabilitu. Cash flow." },
+      { "id": 11, "title": "Kalkulace nákladů na výkony – obsah a využití úplných kalkulací a neúplných kalkulací nákladů, analýza bodu zvratu a její využití při plánování výnosů, nákladů, zisku." },
+      { "id": 12, "title": "Investice v podnicích – druhy, způsoby pořízení, vymezení investičních výdajů a ekonomických efektů, statické a dynamické ukazatele ekonomické efektivnosti." },
+      { "id": 13, "title": "Mzdová soustava podniku – právní úprava podmínek pro stanovení mezd, pevná a pohyblivá složka mzdy, formy mzdy a jejich použitelnost, mzdové a ostatní osobní náklady podniku. Přidaná hodnota podniku. Vztah osobních nákladů přidané hodnoty." },
+      { "id": 14, "title": "Charakteristika managementu, řízení jako informační působení, řízení jako proces, řízení jako činnost." },
+      { "id": 15, "title": "Organizační systém podniku, jeho dekompozice a vztahy mezi jeho subsystémy." },
+      { "id": 16, "title": "Organizační a řídící struktura podniku, jejich prvky, typy těchto struktur, řídící kapacita a faktory určující její velikost." },
+      { "id": 17, "title": "Osobnost manažera, role manažera, manažerské funkce a jejich vymezení." },
+      { "id": 18, "title": "Styl řízení, jeho základní typy, individuální styl řízení, vnitřní a vnější stránka stylu, princip delegování, jeho formální a obsahová stránka." },
+      { "id": 19, "title": "Vedení lidí, motivace jako způsob vedení, motivační mechanismus, motivační teorie." },
+      { "id": 20, "title": "Racionalizace řídící práce manažera, komunikace v organizaci, její význam, formy komunikace, komunikační kanály, komunikační modely." }
+    ]
+  }
+]

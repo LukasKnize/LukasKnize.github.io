@@ -1,0 +1,25 @@
+{
+  "title": "Ukázkové kartičky",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Co je CPU?",
+      "back": "Central Processing Unit — hlavní procesor počítače, který vykonává instrukce programů."
+    },
+    {
+      "id": 2,
+      "front": "Co je RAM?",
+      "back": "Random Access Memory — operační paměť, do které se načítají běžící programy. Je rychlá, ale dočasná (obsah se maže po vypnutí)."
+    },
+    {
+      "id": 3,
+      "front": "Jaký je rozdíl mezi HDD a SSD?",
+      "back": "HDD (Hard Disk Drive) ukládá data na magnetické plotny — je levnější, ale pomalejší. SSD (Solid State Drive) používá flash paměť — je rychlejší, tišší a odolnější, ale dražší."
+    },
+    {
+      "id": 4,
+      "front": "Co je operační systém?",
+      "back": "Software, který spravuje hardwarové prostředky počítače a poskytuje rozhraní (abstrakci) pro aplikační programy. Příklady: Windows, Linux, macOS."
+    }
+  ]
+}

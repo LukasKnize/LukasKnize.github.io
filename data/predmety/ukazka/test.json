@@ -1,0 +1,40 @@
+{
+  "title": "Ukázkový test",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co znamená zkratka CPU?",
+      "options": {
+        "A": "Central Processing Unit",
+        "B": "Computer Power Unit",
+        "C": "Central Program Utility",
+        "D": "Core Processing Unified"
+      },
+      "correct": "A",
+      "explanation": "CPU (Central Processing Unit) je hlavní procesor počítače, který vykonává instrukce programů."
+    },
+    {
+      "id": 2,
+      "question": "Jaký je účel operačního systému?",
+      "options": {
+        "A": "Pouze spouštět webový prohlížeč",
+        "B": "Spravovat hardware a poskytovat rozhraní pro aplikace",
+        "C": "Ukládat data na disk",
+        "D": "Připojovat se k internetu"
+      },
+      "correct": "B",
+      "explanation": "Operační systém zajišťuje správu hardwarových prostředků a poskytuje abstrakci pro aplikace."
+    },
+    {
+      "id": 3,
+      "question": "Co je to RAM?",
+      "options": {
+        "A": "Read Access Memory — paměť pouze pro čtení",
+        "B": "Random Access Memory — operační paměť počítače",
+        "C": "Remote Application Module",
+        "D": "Rapid Arithmetic Machine"
+      },
+      "correct": "B"
+    }
+  ]
+}

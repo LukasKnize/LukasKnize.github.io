@@ -1,0 +1,18 @@
+[
+  {
+    "id": "swi",
+    "name": "Softwarové inženýrství",
+    "description": "SDLC, metodologie (Waterfall, Agile, Scrum), modelování IS (ERD, DFD, UML), datové modelování, normalizace, architektura, bezpečnost, cloud.",
+    "hasSummary": true,
+    "hasTest": true,
+    "hasFlashcards": true
+  },
+  {
+    "id": "ukazka",
+    "name": "Ukázkový předmět",
+    "description": "Šablona pro přidávání vlastních předmětů. Obsahuje ukázkový souhrn, test i kartičky.",
+    "hasSummary": true,
+    "hasTest": true,
+    "hasFlashcards": true
+  }
+]

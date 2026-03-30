@@ -1,0 +1,230 @@
+{
+  "title": "Kartičky – Softwarové inženýrství",
+  "cards": [
+    {
+      "id": 1,
+      "front": "Co je Softwarové inženýrství (SWI)?",
+      "back": "Systematický, disciplinovaný a měřitelný přístup k vývoji, provozu a údržbě software (IEEE). Zahrnuje celý životní cyklus IS – od analýzy požadavků po vyřazení."
+    },
+    {
+      "id": 2,
+      "front": "Co je SDLC?",
+      "back": "Software Development Life Cycle – strukturovaný proces definující fáze vývoje software: Plánování → Návrh → Implementace → Testování → Nasazení → Údržba → Vyřazení."
+    },
+    {
+      "id": 3,
+      "front": "Jaké jsou 4 hodnoty Agile Manifesta?",
+      "back": "1. Jednotlivci a interakce > procesy a nástroje\n2. Fungující software > vyčerpávající dokumentace\n3. Spolupráce se zákazníkem > vyjednávání o smlouvě\n4. Reagování na změny > dodržování plánu"
+    },
+    {
+      "id": 4,
+      "front": "Waterfall vs. Agile – hlavní rozdíl",
+      "back": "Waterfall: lineární, sekvenční, požadavky pevně dané na začátku, zákazník vidí produkt až na konci.\nAgile: iterativní, flexibilní, průběžná spolupráce se zákazníkem, funkční software po každém sprintu."
+    },
+    {
+      "id": 5,
+      "front": "Co jsou Scrum ceremonie?",
+      "back": "Sprint Planning – plánování práce na sprint\nDaily Standup – denní 15min synchronizace\nSprint Review – prezentace výsledků zákazníkovi\nRetrospective – zpětná vazba a zlepšení procesu"
+    },
+    {
+      "id": 6,
+      "front": "Role v Scrumu",
+      "back": "Product Owner – hlas zákazníka, spravuje backlog\nScrum Master – facilitátor, odstraňuje překážky\nDevelopment Team – samoorganizující se tým vývojářů"
+    },
+    {
+      "id": 7,
+      "front": "Co je Blue-Green deployment?",
+      "back": "Dvě identická produkční prostředí (modré a zelené). Nová verze se nasadí do neaktivního, otestuje se, a pak se přepne provoz. Rollback = přepnutí zpět za sekundy."
+    },
+    {
+      "id": 8,
+      "front": "Co je Canary deployment?",
+      "back": "Nová verze se nasadí pro malé procento uživatelů (5 %) a postupně se zvyšuje na 100 %. Problémy ovlivní minimum uživatelů. Název = kanaráci v dole jako systém včasného varování."
+    },
+    {
+      "id": 9,
+      "front": "Jaký je rozdíl mezi systémovým analytikem a softwarovým inženýrem?",
+      "back": "Systémový analytik: CO systém dělá (business požadavky → technické specifikace, modelování ERD/UML/DFD).\nSoftwarový inženýr: JAK technicky realizovat (návrh architektury, implementace, code review)."
+    },
+    {
+      "id": 10,
+      "front": "Co je Entita, Atribut a Vztah v ERD?",
+      "back": "Entita = objekt reálného světa (Student, Objednávka) → tabulka v DB\nAtribut = vlastnost entity (jméno, věk) → sloupec v tabulce\nVztah = asociace mezi entitami s kardinalitou (1:1, 1:N, M:N)"
+    },
+    {
+      "id": 11,
+      "front": "Jak se implementuje vztah M:N v relační databázi?",
+      "back": "Asociační (vazební) tabulkou se složeným primárním klíčem z cizích klíčů obou entit.\nPříklad: Student M:N Předmět → tabulka Zápis(student_id, predmet_id, znamka)"
+    },
+    {
+      "id": 12,
+      "front": "Crow's Foot notace – symboly kardinality",
+      "back": "Kruh (○) = 0 (nepovinné, volitelné)\nSvislá čára (|) = 1\nCrow's foot (>) = mnoho (n)\nKombinace: ○| = 0 nebo 1; |< = 1 nebo více; ○< = 0 nebo více"
+    },
+    {
+      "id": 13,
+      "front": "Jaké jsou 4 komponenty DFD?",
+      "back": "1. Proces – transformace dat (kruh/zaoblený obdélník)\n2. Datový tok – pohyb dat (šipka s názvem)\n3. Externí entita – zdroj/příjemce mimo systém (obdélník)\n4. Datové úložiště – persistentní data (dvě paralelní čáry)"
+    },
+    {
+      "id": 14,
+      "front": "Co jsou Black Hole, Miracle a Grey Hole v DFD?",
+      "back": "Black Hole = proces má vstup, ale žádný výstup (data zmizí)\nMiracle = proces má výstup, ale žádný vstup (data se berou z ničeho)\nGrey Hole = výstupy obsahují více informací, než je možné ze vstupů"
+    },
+    {
+      "id": 15,
+      "front": "Co je kontextový diagram v DFD?",
+      "back": "Úroveň 0 DFD – zobrazuje celý systém jako jeden proces s externími entitami a datovými toky. Nejvyšší úroveň abstrakce; žádné datové sklady, žádné číslování."
+    },
+    {
+      "id": 16,
+      "front": "Tři principy OOP (objektově orientovaného programování)",
+      "back": "Zapouzdření – skrytí implementace, přístup přes metody\nDědičnost – potomek získává vlastnosti rodiče\nPolymorfismus – stejná metoda, různé implementace v různých třídách"
+    },
+    {
+      "id": 17,
+      "front": "Jaký je rozdíl mezi agregací a kompozicí v Class diagramu?",
+      "back": "Agregace (◇) – 'skládá se z'; části existují nezávisle. Tým ◇── Hráč → hráč existuje i bez týmu.\nKompozice (◆) – silné vlastnictví; části bez celku neexistují. Faktura ◆── Položka → položka bez faktury neexistuje."
+    },
+    {
+      "id": 18,
+      "front": "Co je Use Case Diagram a jaké jsou jeho hlavní prvky?",
+      "back": "Diagram zachycující funkcionality systému z pohledu uživatele.\nPrvky: Systém (obdélník), Aktor (panáček), Use Case (ovál, sloveso infinitiv), «include» (povinná funkce), «extend» (volitelné rozšíření)"
+    },
+    {
+      "id": 19,
+      "front": "Tři vrstvy ArchiMate",
+      "back": "Business Layer – obchodní role, procesy, služby (co organizace dělá)\nApplication Layer – informační systémy, aplikační komponenty (jak IT podporuje business)\nTechnology Layer – fyzická infrastruktura, servery, sítě, databáze"
+    },
+    {
+      "id": 20,
+      "front": "K čemu se používá BPMN?",
+      "back": "Business Process Model and Notation – modelování obchodních procesů.\nGateway typy: XOR (výhradní větvení), AND (paralelní), OR (inkluzivní).\nPoužití: process improvement, ISO certifikace, automatizace workflow, školení."
+    },
+    {
+      "id": 21,
+      "front": "Funkční vs. nefunkční požadavky – rozdíl",
+      "back": "Funkční = CO systém musí dělat (přihlášení, výpočet DPH, odeslání emailu)\nNefunkční = JAK DOBŘE (výkonnost, spolehlivost 99,9 %, bezpečnost, škálovatelnost, použitelnost)"
+    },
+    {
+      "id": 22,
+      "front": "Metoda MoSCoW – co znamenají jednotlivá písmena?",
+      "back": "M – Must have (kritické; bez nich systém nefunguje)\nS – Should have (důležité; výrazně zlepší systém)\nC – Could have (žádoucí; implementace při dostatku zdrojů)\nW – Won't have (v této verzi se neimplementuje)"
+    },
+    {
+      "id": 23,
+      "front": "Co je SRS dokument?",
+      "back": "Software Requirements Specification – formální dokumentace požadavků. Funguje jako kontrakt mezi zadavatelem a vývojovým týmem. Musí být jednoznačná, měřitelná, úplná a konzistentní."
+    },
+    {
+      "id": 24,
+      "front": "Tři úrovně datového modelu",
+      "back": "Konceptuální – nezávislý na technologii; entity, vztahy, atributy; srozumitelný pro zákazníka\nLogický – přizpůsoben databázovému paradigmatu; datové typy, PK, FK, řešení M:N\nFyzický – konkrétní implementace; indexy, partitioning, vendor-specifické optimalizace"
+    },
+    {
+      "id": 25,
+      "front": "Vlastnosti ACID transakcí",
+      "back": "Atomicity – transakce je nedělitelná (vše nebo nic)\nConsistency – DB je vždy v konzistentním stavu\nIsolation – souběžné transakce se neovlivňují\nDurability – potvrzené změny jsou permanentní i po pádu"
+    },
+    {
+      "id": 26,
+      "front": "SQL kategorie příkazů",
+      "back": "DDL (Data Definition Language) – CREATE, ALTER, DROP → struktura\nDML (Data Manipulation Language) – SELECT, INSERT, UPDATE, DELETE → data\nDCL (Data Control Language) – GRANT, REVOKE → přístupová práva\nTCL (Transaction Control Language) – COMMIT, ROLLBACK, SAVEPOINT → transakce"
+    },
+    {
+      "id": 27,
+      "front": "Normální formy – stručný přehled",
+      "back": "1NF – atomické hodnoty, každý řádek unikátní\n2NF – 1NF + závislost na celém PK (ne jen části)\n3NF – 2NF + žádné tranzitivní závislosti\nBCNF – 3NF + každý determinant je superklíč\n4NF – BCNF + žádné multivalued dependencies\n5NF – 4NF + žádné join dependencies"
+    },
+    {
+      "id": 28,
+      "front": "Kdy normalizovat vs. denormalizovat databázi?",
+      "back": "Normalizovat pro OLTP (transakční systémy) – priorita je integrita dat a efektivita aktualizací.\nDenormalizovat pro OLAP (analytické systémy) – priorita je rychlost složitých analytických dotazů. Záměrně se porušují normalizační pravidla."
+    },
+    {
+      "id": 29,
+      "front": "CIA triáda bezpečnosti IS",
+      "back": "Confidentiality (Důvěrnost) – pouze oprávnění vidí data; šifrování, přístupová práva\nIntegrity (Integrita) – data nebyla neoprávněně změněna; kontrolní součty, digitální podpisy\nAvailability (Dostupnost) – systém funguje, kdy je potřeba; redundance, zálohy"
+    },
+    {
+      "id": 30,
+      "front": "SQL injection – co to je a jak se brání?",
+      "back": "SQL injection = vložení SQL kódu do vstupního pole, které aplikace neošetří a provede ho. Útočník může obejít přihlášení nebo smazat data.\nOchrana: parametrizované dotazy (prepared statements), validace vstupu, ORM."
+    },
+    {
+      "id": 31,
+      "front": "IaaS vs. PaaS vs. SaaS",
+      "back": "IaaS (Infrastructure as a Service) – virtuální servery, storage, síť (AWS EC2, Azure VM)\nPaaS (Platform as a Service) – platforma pro vývoj, bez správy OS (Heroku)\nSaaS (Software as a Service) – hotová aplikace (Gmail, Salesforce)"
+    },
+    {
+      "id": 32,
+      "front": "Co je Docker a k čemu slouží?",
+      "back": "Docker = nástroj pro kontejnerizaci. Balíčkuje aplikaci i všechny její závislosti do kontejneru. Výhoda: 'funguje na mém počítači' = 'funguje všude'. Kontejner je izolovaný, přenosný a rychlý."
+    },
+    {
+      "id": 33,
+      "front": "SOLID principy – přehled",
+      "back": "S – Single Responsibility: jedna třída = jedna zodpovědnost\nO – Open/Closed: otevřené pro rozšíření, uzavřené pro modifikaci\nL – Liskov Substitution: potomek nahradí rodiče\nI – Interface Segregation: více malých rozhraní\nD – Dependency Inversion: závisej na abstrakcích"
+    },
+    {
+      "id": 34,
+      "front": "Co jsou DORA metriky?",
+      "back": "4 klíčové metriky efektivity DevOps (DevOps Research and Assessment):\n1. Deployment frequency – jak často nasazujeme\n2. Lead time for changes – čas od kódu po produkci\n3. Time to restore service – obnova po výpadku\n4. Change failure rate – % problematických nasazení"
+    },
+    {
+      "id": 35,
+      "front": "Typy testů podle úrovně",
+      "back": "Unit testy – testování jedné funkce/metody izolovaně\nIntegrační testy – spolupráce více komponent\nSystémové testy – celá aplikace dle specifikace\nAkceptační testy – zákazník ověřuje splnění požadavků\nRegresní testy – nová změna nic nerozbila"
+    },
+    {
+      "id": 36,
+      "front": "Co je TDD (Test-Driven Development)?",
+      "back": "Přístup kde se nejprve napíše test, pak kód který ho splní, pak refaktorizace.\nCyklus: Red (test selže) → Green (minimální kód splňující test) → Refactor (čistý kód).\nVýsledek: lepší design, vyšší coverage, méně bugů."
+    },
+    {
+      "id": 37,
+      "front": "Co je technický dluh (technical debt)?",
+      "back": "Důsledky rychlých, nekvalitních řešení přijatých pod tlakem. Jako finanční dluh platíš 'úroky' – každá změna trvá déle a je složitější. Splácíš refaktorizací. Měříš: code coverage, cyclomatic complexity."
+    },
+    {
+      "id": 38,
+      "front": "Co je SLA a jaké jsou klíčové metriky?",
+      "back": "Service Level Agreement – smlouva definující úroveň IT služeb.\nKlíčové metriky:\n- Dostupnost (99,9 % = max. 8,76 hod/rok výpadku)\n- RTO – Recovery Time Objective (max. čas obnovy)\n- RPO – Recovery Point Objective (max. ztráta dat)\n- MTTR – Mean Time to Repair"
+    },
+    {
+      "id": 39,
+      "front": "Fixed Price vs. Time & Materials (T&M) – rozdíl",
+      "back": "Fixed Price – pevná cena za přesně definovaný rozsah; jistota pro zákazníka; riziko pro dodavatele při špatném odhadu.\nTime & Materials – platba za skutečně odpracované hodiny + materiál; flexibilní, ale nejistá výsledná cena."
+    },
+    {
+      "id": 40,
+      "front": "Architektonické vzory – monolith vs. mikroservisy",
+      "back": "Monolith – celá aplikace jako jeden celek; jednoduché, rychlé spuštění, ale těžko škálovatelné\nMikroservisy – malé nezávislé služby komunikující přes síť; každá má vlastní DB; nezávislý vývoj a škálování; složitá orchestrace (Kubernetes)"
+    },
+    {
+      "id": 41,
+      "front": "Co je DevOps?",
+      "back": "Metodologický a kulturní přístup integrující vývojové (Dev) a provozní (Ops) procesy. Klíčové principy: CI/CD, Infrastructure as Code, automatizované testování, monitoring a sdílená odpovědnost za celý životní cyklus aplikace."
+    },
+    {
+      "id": 42,
+      "front": "Co je COBIT?",
+      "back": "Control Objectives for Information and Related Technologies – framework pro správu a řízení IT. Pokrývá: plánování, realizaci, provoz a monitoring IT. Používá se pro IT governance, compliance a měření efektivity IT pomocí KPI."
+    },
+    {
+      "id": 43,
+      "front": "Strategie mapování dědičnosti na DB",
+      "back": "Single Table Inheritance – jedna tabulka + sloupec 'type'; jednoduché, ale mnoho NULL hodnot\nTable per Class – tabulka pro každou třídu; bez NULL, ale duplikace sloupců\nJoined Tables – tabulka pro každou úroveň hierarchie; normalizované, ale složité JOIN dotazy"
+    },
+    {
+      "id": 44,
+      "front": "Co je REST API a jaké HTTP metody používá?",
+      "back": "Representational State Transfer – bezstavové webové API s jasně definovanými endpointy.\nHTTP metody: GET (čtení), POST (vytvoření), PUT/PATCH (aktualizace), DELETE (smazání).\nData ve formátu JSON nebo XML. Standard pro integraci systémů."
+    },
+    {
+      "id": 45,
+      "front": "Princip DRY a KISS",
+      "back": "DRY (Don't Repeat Yourself) – každá informace/logika na jednom místě. Duplikace vede k chybám při změnách.\nKISS (Keep It Simple and Stupid) – nejjednodušší řešení je nejlepší. Složitý kód je těžší pochopit, testovat a udržovat."
+    }
+  ]
+}
