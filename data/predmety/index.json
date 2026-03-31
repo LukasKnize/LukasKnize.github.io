@@ -10,7 +10,7 @@
 {
     "id": "stat",
     "name": "Statistika",
-    "description": "Zaklady statistiky pro předměty statistika a statistické softwarové systémy",
+    "description": "Zaklady statistiky pro předměty statistika a statistické softwarové systémy.",
     "hasSummary": true,
     "hasTest": true,
     "hasFlashcards": false
