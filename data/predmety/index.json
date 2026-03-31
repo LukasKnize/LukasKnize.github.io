@@ -7,6 +7,14 @@
     "hasTest": true,
     "hasFlashcards": true
   },
+{
+    "id": "stat",
+    "name": "Statistika",
+    "description": "Zaklady statistiky pro předměty statistika a statistické softwarové systémy",
+    "hasSummary": true,
+    "hasTest": true,
+    "hasFlashcards": false
+  },
   {
     "id": "ukazka",
     "name": "Ukázkový předmět",
