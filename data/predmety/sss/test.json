@@ -1,0 +1,569 @@
+{
+  "title": "Test ze statistických softwarových systémů",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Který typ proměnné představuje výška člověka?",
+      "options": {
+        "A": "Kvalitativní nominální",
+        "B": "Kvalitativní ordinální",
+        "C": "Kvantitativní diskrétní",
+        "D": "Kvantitativní spojitá"
+      },
+      "correct": "D",
+      "explanation": "Výška je spojitá kvantitativní proměnná, protože může nabývat libovolných hodnot v intervalu (např. 175,3 cm)."
+    },
+    {
+      "id": 2,
+      "question": "Co je medián v souboru dat?",
+      "options": {
+        "A": "Průměrná hodnota všech pozorování",
+        "B": "Nejčastěji se vyskytující hodnota",
+        "C": "Prostřední hodnota seřazeného souboru",
+        "D": "Rozdíl mezi maximem a minimem"
+      },
+      "correct": "C",
+      "explanation": "Medián je hodnota uprostřed seřazeného souboru dat, která dělí data na dvě stejné poloviny."
+    },
+    {
+      "id": 3,
+      "question": "Jaký graf se nejlépe hodí pro zobrazení tvaru rozdělení kvantitativních dat?",
+      "options": {
+        "A": "Koláčový graf",
+        "B": "Sloupcový graf",
+        "C": "Histogram",
+        "D": "Bodový graf"
+      },
+      "correct": "C",
+      "explanation": "Histogram zobrazuje četnosti hodnot v intervalových třídách a ukazuje tvar rozdělení dat."
+    },
+    {
+      "id": 4,
+      "question": "Která charakteristika popisuje asymetrii rozdělení dat?",
+      "options": {
+        "A": "Šikmost",
+        "B": "Špičatost",
+        "C": "Rozptyl",
+        "D": "Variační koeficient"
+      },
+      "correct": "A",
+      "explanation": "Šiknost (skewness) popisuje asymetrii rozdělení – zda má rozdělení pravostrannou nebo levostrannou asymetrii."
+    },
+    {
+      "id": 5,
+      "question": "Jak se nazývá hodnota, pod kterou spadne 25 % pozorování?",
+      "options": {
+        "A": "Medián",
+        "B": "První kvartil (Q1)",
+        "C": "Třetí kvartil (Q3)",
+        "D": "První decil (D1)"
+      },
+      "correct": "B",
+      "explanation": "První kvartil (Q1) je hodnota, pod kterou spadá 25 % pozorování; medián je Q2 (50 %)."
+    },
+    {
+      "id": 6,
+      "question": "Který typ proměnné představuje známka ze zkoušky (1-5)?",
+      "options": {
+        "A": "Kvantitativní spojitá",
+        "B": "Kvantitativní diskrétní",
+        "C": "Kvalitativní nominální",
+        "D": "Kvalitativní ordinální"
+      },
+      "correct": "D",
+      "explanation": "Známka je ordinální proměnná – kategorie s uspořádáním (1 je lepší než 2, ale rozdíl mezi 1 a 2 nemusí být stejný jako mezi 2 a 3)."
+    },
+    {
+      "id": 7,
+      "question": "Co zobrazuje box plot (krabicový graf)?",
+      "options": {
+        "A": "Jen průměr a směrodatnou odchylku",
+        "B": "Pouze četnosti kategorií",
+        "C": "Kvartily, medián a odlehlá pozorování",
+        "D": "Korelaci dvou proměnných"
+      },
+      "correct": "C",
+      "explanation": "Box plot zobrazuje kvartily (Q1, Q2, Q3), rozsah dat a identifikuje odlehlá pozorování."
+    },
+    {
+      "id": 8,
+      "question": "Jaký je hlavní rozdíl mezi absolutní a relativní četností?",
+      "options": {
+        "A": "Absolutní je v procentech, relativní v počtech",
+        "B": "Absolutní je počet výskytů, relativní je podíl na celku",
+        "C": "Absolutní je pro spojité data, relativní pro diskrétní",
+        "D": "Žádný rozdíl, jde o synonyma"
+      },
+      "correct": "B",
+      "explanation": "Absolutní četnost je počet výskytů kategorie, relativní četnost je podíl kategorie na celkovém počtu (v %)."
+    },
+    {
+      "id": 9,
+      "question": "Co měří korelační analýza?",
+      "options": {
+        "A": "Příčinnou souvislost mezi dvěma proměnnými",
+        "B": "Sílu a směr lineární závislosti mezi proměnnými",
+        "C": "Průměrnou hodnotu datového souboru",
+        "D": "Rozptyl hodnot v datasetu"
+      },
+      "correct": "B",
+      "explanation": "Korelace měří sílu a směr lineární závislosti mezi dvěma proměnnými, nikoli příčinnou souvislost (kauzalitu)."
+    },
+    {
+      "id": 10,
+      "question": "Jaký je rozdíl mezi korelací a kauzalitou?",
+      "options": {
+        "A": "Žádný, jsou to synonyma",
+        "B": "Korelace znamená, že jedna proměnná způsobuje druhou",
+        "C": "Korelace ukazuje souvislost, ale neznamená příčinný vztah",
+        "D": "Kauzalita se počítá z kovariance, korelace ne"
+      },
+      "correct": "C",
+      "explanation": "Korelace pouze ukazuje, že se dvě proměnné mění společně, ale neříká, že jedna způsobuje změnu druhé."
+    },
+    {
+      "id": 11,
+      "question": "Proč se používá standardizace při výpočtu korelace?",
+      "options": {
+        "A": "Aby se zvýšila přesnost měření",
+        "B": "Aby korelace nezávisela na jednotkách měření",
+        "C": "Aby se odstranily odlehlé hodnoty",
+        "D": "Aby se zjednodušil výpočet průměru"
+      },
+      "correct": "B",
+      "explanation": "Standardizace odstraňuje závislost na měřítku a jednotkách – kovariance závisí na jednotkách, korelace (jako standardizovaná kovariance) je bezrozměrná."
+    },
+    {
+      "id": 12,
+      "question": "Co znamená hodnota Pearsonova korelačního koeficientu r = -0.85?",
+      "options": {
+        "A": "Velmi slabá záporná závislost",
+        "B": "Střední záporná závislost",
+        "C": "Silná záporná závislost",
+        "D": "Žádná závislost"
+      },
+      "correct": "C",
+      "explanation": "Hodnota -0.85 spadá do intervalu 0.80–1.00 (absolutní hodnota), což znamená velmi silnou zápornou lineární závislost."
+    },
+    {
+      "id": 13,
+      "question": "Kdy je vhodnější použít Spearmanův místo Pearsonova koeficientu?",
+      "options": {
+        "A": "Když je vztah přesně lineární",
+        "B": "Když jsou v datech odlehlé hodnoty nebo nelineární monotónní vztah",
+        "C": "Když potřebujeme měřit kauzalitu",
+        "D": "Když jsou data standardizovaná"
+      },
+      "correct": "B",
+      "explanation": "Spearmanův koeficient je odolnější vůči odlehlým hodnotám a měří monotónní (rostoucí/klesající) vztahy, které nemusí být lineární."
+    },
+    {
+      "id": 14,
+      "question": "Jaký je první krok před výpočtem korelace?",
+      "options": {
+        "A": "Výpočet kovariance",
+        "B": "Vizualizace dat pomocí scatterplotu (bodového grafu)",
+        "C": "Standardizace proměnných",
+        "D": "Odstranění všech odlehlých hodnot"
+      },
+      "correct": "B",
+      "explanation": "Před výpočtem korelace je důležité se podívat na scatterplot – zkontrolovat tvar vztahu, směr a případné odlehlé hodnoty."
+    },
+    {
+      "id": 15,
+      "question": "Co znamená, když je kovariance kladná?",
+      "options": {
+        "A": "Že jsou obě proměnné vždy kladné",
+        "B": "Že se obě proměnné odchylují od průměru stejným směrem",
+        "C": "Že je korelace rovna 1",
+        "D": "Že mezi proměnnými není žádný vztah"
+      },
+      "correct": "B",
+      "explanation": "Kladná kovariance znamená, že když jedna proměnná je nad průměrem, druhá bývá také nad průměrem (a naopak pod průměrem)."
+    },
+    {
+      "id": 16,
+      "question": "Co je hlavním cílem jednoduché lineární regrese?",
+      "options": {
+        "A": "Predikce budoucích hodnot časových řad",
+        "B": "Nalezení přímky, která nejlépe aproximuje závislost Y na X",
+        "C": "Testování normality rozdělení dat",
+        "D": "Identifikace korelace mezi více nezávislými proměnnými"
+      },
+      "correct": "B",
+      "explanation": "Jednoduchá lineární regrese hledá přímku, která vystihuje systematickou část závislosti závislé proměnné Y na vysvětlující proměnné X."
+    },
+    {
+      "id": 17,
+      "question": "Co minimalizuje metoda nejmenších čtverců (MNČ)?",
+      "options": {
+        "A": "Součet absolutních hodnot reziduí",
+        "B": "Součet čtverců reziduí",
+        "C": "Podíl vysvětlené a celkové variability",
+        "D": "Směrodatnou odchylku závislé proměnné"
+      },
+      "correct": "B",
+      "explanation": "MNČ volí parametry tak, aby součet čtverců svislých odchylek (reziduí) pozorování od regresní přímky byl minimální."
+    },
+    {
+      "id": 18,
+      "question": "Co vyjadřuje koeficient determinace R²?",
+      "options": {
+        "A": "Pravděpodobnost, že model je správný",
+        "B": "Podíl vysvětlené variability závislé proměnné modelem",
+        "C": "Korelaci mezi dvěma vysvětlujícími proměnnými",
+        "D": "Počet stupňů volnosti modelu"
+      },
+      "correct": "B",
+      "explanation": "R² udává, jaký podíl celkové variability Y je vysvětlen regresním modelem. Hodnota 0.80 znamená, že model vysvětluje 80% variability."
+    },
+    {
+      "id": 19,
+      "question": "Co testuje t-test regresního koeficientu ve jednoduché regresi?",
+      "options": {
+        "A": "Normalitu reziduí",
+        "B": "Homoskedasticitu chyb",
+        "C": "Statistickou významnost lineárního vztahu (H₀: β₁ = 0)",
+        "D": "Přítomnost multikolinearity"
+      },
+      "correct": "C",
+      "explanation": "t-test ověřuje, zda je směrnice statisticky významně odlišná od nuly, tedy zda mezi X a Y existuje lineární vztah."
+    },
+    {
+      "id": 20,
+      "question": "Jaký je vztah mezi F-statistikou a t-statistikou ve jednoduché lineární regresi?",
+      "options": {
+        "A": "F = t",
+        "B": "F = t²",
+        "C": "F = √t",
+        "D": "F = 1/t"
+      },
+      "correct": "B",
+      "explanation": "Ve jednoduché regresi platí F = t², protože testujeme významnost jediného koeficientu. F-test a t-test jsou ekvivalentní."
+    },
+    {
+      "id": 21,
+      "question": "Co je hlavní výhoda upraveného R² (adjusted R²) oproti běžnému R²?",
+      "options": {
+        "A": "Vždy má vyšší hodnotu než běžné R²",
+        "B": "Penalizuje přidávání nadbytečných proměnných do modelu",
+        "C": "Je jednodušší na výpočet",
+        "D": "Funguje pouze pro lineární modely"
+      },
+      "correct": "B",
+      "explanation": "Upravené R² koriguje skutečnost, že běžné R² by vždy rostlo s přidáním nové proměnné, i když je statisticky nevýznamná."
+    },
+    {
+      "id": 22,
+      "question": "Co měří Cookova vzdálenost?",
+      "options": {
+        "A": "Kvalitu přizpůsobení modelu datům",
+        "B": "Vliv konkrétního pozorování na odhady parametrů modelu",
+        "C": "Rozptyl náhodné složky",
+        "D": "Stupeň multikolinearity mezi proměnnými"
+      },
+      "correct": "B",
+      "explanation": "Cookova vzdálenost měří, jak moc by se změnily odhady parametrů, kdybychom dané pozorování vynechali z modelu."
+    },
+    {
+      "id": 23,
+      "question": "Co znamená předpoklad homoskedasticity v MNČ?",
+      "options": {
+        "A": "Rezidua mají normální rozdělení",
+        "B": "Rozptyl chyb je konstantní a nezávisí na hodnotách X",
+        "C": "Chyby jsou vzájemně nezávislé",
+        "D": "Model je lineární v parametrech"
+      },
+      "correct": "B",
+      "explanation": "Homoskedasticita znamená konstantní rozptyl náhodné složky (Var(εᵢ) = σ²). Její porušení (heteroskedasticita) vede k neefektivním odhadům."
+    },
+    {
+      "id": 24,
+      "question": "K čemu slouží Whiteův test?",
+      "options": {
+        "A": "Testování normality reziduí",
+        "B": "Detekce heteroskedasticity",
+        "C": "Ověření absence multikolinearity",
+        "D": "Výběr optimálního počtu proměnných"
+      },
+      "correct": "B",
+      "explanation": "Whiteův test ověřuje, zda má náhodná složka konstantní rozptyl (homoskedasticita), pomocí pomocné regrese čtverců reziduí."
+    },
+    {
+      "id": 25,
+      "question": "Jaký problém způsobuje multikolinearita ve vícenásobné regresi?",
+      "options": {
+        "A": "Zkreslené odhady parametrů",
+        "B": "Nestabilní odhady a velké směrodatné chyby koeficientů",
+        "C": "Porušení normality reziduí",
+        "D": "Zvýšení R² na nežádoucí hodnoty"
+      },
+      "correct": "B",
+      "explanation": "Multikolinearita (lineární závislost vysvětlujících proměnných) způsobuje nestabilitu odhadů, velké směrodatné chyby a problémy s interpretací."
+    },
+    {
+      "id": 26,
+      "question": "Jak se liší linearizovatelný nelineární model od skutečně nelineárního?",
+      "options": {
+        "A": "Linearizovatelný model je lineární v proměnných, skutečně nelineární v parametrech",
+        "B": "Linearizovatelný lze transformací převést na lineární regresi, skutečně nelineární vyžaduje numerickou optimalizaci",
+        "C": "Linearizovatelný má vždy jen jeden parametr",
+        "D": "Skutečně nelineární modely nelze odhadovat metodou nejmenších čtverců"
+      },
+      "correct": "B",
+      "explanation": "Linearizovatelné modely (např. exponenciální, logaritmický) lze vhodnou transformací převést na standardní lineární regresi. Skutečně nelineární vyžadují iterativní numerické metody."
+    },
+    {
+      "id": 27,
+      "question": "Jak se interpretuje parametr b v logaritmickém modelu Y = a + b·ln(X)?",
+      "options": {
+        "A": "Změna Y při absolutní změně X o 1 jednotku",
+        "B": "Změna Y při relativní (procentuální) změně X",
+        "C": "Konstantní tempo růstu Y",
+        "D": "Procentuální změna Y při změně X o 1 jednotku"
+      },
+      "correct": "B",
+      "explanation": "V logaritmickém modelu parametr b vyjadřuje změnu Y při relativní (procentuální) změně X, nikoli absolutní. Model je vhodný pro zpomalující růst."
+    },
+    {
+      "id": 28,
+      "question": "Co je časová řada?",
+      "options": {
+        "A": "Statistický ukazatel v jednom konkrétním čase",
+        "B": "Posloupnost hodnot statistického znaku uspořádaných v čase",
+        "C": "Graf znázorňující rozložení dat",
+        "D": "Průměrná hodnota za určité období"
+      },
+      "correct": "B",
+      "explanation": "Časová řada je posloupnost hodnot statistického znaku uspořádaných v čase, např. měsíční tržby nebo denní teplota."
+    },
+    {
+      "id": 29,
+      "question": "Jaký je hlavní cíl analýzy časových řad?",
+      "options": {
+        "A": "Vypočítat průměr všech hodnot",
+        "B": "Popsat vývoj ukazatele v čase, identifikovat tendence a predikovat budoucnost",
+        "C": "Najít minimální a maximální hodnotu",
+        "D": "Seřadit data podle velikosti"
+      },
+      "correct": "B",
+      "explanation": "Hlavním cílem je popsat vývoj v čase, identifikovat základní tendence, měřit dynamiku změn a predikovat budoucí vývoj."
+    },
+    {
+      "id": 30,
+      "question": "Co vyjadřuje trend v časové řadě?",
+      "options": {
+        "A": "Náhodné kolísání hodnot",
+        "B": "Pravidelné sezónní výkyvy",
+        "C": "Dlouhodobou tendenci růstu nebo poklesu",
+        "D": "Krátkodobé odchylky od průměru"
+      },
+      "correct": "C",
+      "explanation": "Trend vyjadřuje dlouhodobou tendenci vývoje sledovaného ukazatele – může být rostoucí, klesající nebo stagnující."
+    },
+    {
+      "id": 31,
+      "question": "Jaký je rozdíl mezi okamžikovou a intervalovou časovou řadou?",
+      "options": {
+        "A": "Okamžiková zachycuje stav k určitému datu, intervalová objem za období",
+        "B": "Okamžiková má denní data, intervalová roční data",
+        "C": "Okamžiková je vždy klesající, intervalová rostoucí",
+        "D": "Okamžiková sleduje jeden ukazatel, intervalová více ukazatelů"
+      },
+      "correct": "A",
+      "explanation": "Okamžiková řada zachycuje stav k určitému okamžiku (např. počet obyvatel k 31.12.), intervalová zachycuje objem za určité období (např. měsíční tržby)."
+    },
+    {
+      "id": 32,
+      "question": "Co je metoda klouzavých průměrů?",
+      "options": {
+        "A": "Analytická metoda vyžadující známý tvar trendu",
+        "B": "Mechanické vyrovnání, kde je každá hodnota nahrazena průměrem sousedních hodnot",
+        "C": "Metoda pro výpočet budoucích hodnot pomocí extrapolace",
+        "D": "Statistický test normality dat"
+      },
+      "correct": "B",
+      "explanation": "Metoda klouzavých průměrů je mechanické vyrovnání, kde každá hodnota je nahrazena průměrem několika sousedních hodnot – slouží k vyhlazení náhodných výkyvů."
+    },
+    {
+      "id": 33,
+      "question": "Co vyjadřuje koeficient determinace R² u trendové funkce?",
+      "options": {
+        "A": "Směrnici trendové přímky",
+        "B": "Podíl variability časové řady vysvětlené trendem",
+        "C": "Průměrnou chybu predikce",
+        "D": "Počet pozorování v časové řadě"
+      },
+      "correct": "B",
+      "explanation": "Koeficient determinace R² vyjadřuje, jak velkou část variability časové řady vysvětluje trendová funkce. Hodnota 0,85 znamená, že 85 % variability je vysvětleno trendem."
+    },
+    {
+      "id": 34,
+      "question": "Co je sezónní index v multiplikativním modelu?",
+      "options": {
+        "A": "Součet trendové a náhodné složky",
+        "B": "Podíl skutečné a trendové hodnoty vyjadřující odchylku od trendu",
+        "C": "Průměrná hodnota za celý rok",
+        "D": "Rozdíl mezi maximální a minimální hodnotou v roce"
+      },
+      "correct": "B",
+      "explanation": "Sezónní index je podíl skutečné a trendové hodnoty (S = y/T). Index > 1 znamená hodnotu nad trendem, < 1 pod trendem."
+    },
+    {
+      "id": 35,
+      "question": "Jaký je rozdíl mezi bodovým a intervalovým odhadem predikce?",
+      "options": {
+        "A": "Bodový odhad je přesnější, intervalový méně přesný",
+        "B": "Bodový udává jednu hodnotu, intervalový rozmezí s danou pravděpodobností",
+        "C": "Bodový se používá pro minulost, intervalový pro budoucnost",
+        "D": "Bodový je výpočetní, intervalový grafický"
+      },
+      "correct": "B",
+      "explanation": "Bodový odhad poskytuje jednu konkrétní predikovanou hodnotu, zatímco intervalový odhad udává rozmezí, ve kterém se budoucí hodnota nachází s danou pravděpodobností (např. 95%)."
+    },
+    {
+      "id": 36,
+      "question": "Co je pseudoprognoza?",
+      "options": {
+        "A": "Predikce pro velmi vzdálenou budoucnost",
+        "B": "Metoda ověření kvality predikce pomocí zkrácení řady a porovnání s realitou",
+        "C": "Falešná predikce, která se nesplní",
+        "D": "Grafické znázornění trendu"
+      },
+      "correct": "B",
+      "explanation": "Pseudoprognoza slouží k ověření kvality predikce: zkrátíme řadu o poslední období, odhadneme model na zkrácených datech a porovnáme predikci se skutečnou hodnotou."
+    },
+    {
+      "id": 37,
+      "question": "Kdy je vhodné použít chronologický průměr místo aritmetického?",
+      "options": {
+        "A": "Při analýze ročních dat",
+        "B": "U momentových řad pro přesnější vyjádření průměrného stavu v čase",
+        "C": "Když jsou data sezónní",
+        "D": "Při výpočtu koeficientu determinace"
+      },
+      "correct": "B",
+      "explanation": "Chronologický průměr se používá u momentových časových řad (zachycujících stav k určitému datu), zejména při nestejně dlouhých intervalech nebo pro přesnější vyjádření průměrného stavu v čase."
+    },
+    {
+      "id": 37,
+      "question": "K čemu slouží chi-kvadrát test v analýze kvalitativních dat?",
+      "options": {
+        "A": "K porovnání průměrů dvou skupin",
+        "B": "K testování nezávislosti dvou kategoriálních proměnných",
+        "C": "K výpočtu korelace mezi spojitými proměnnými",
+        "D": "K odhadu parametrů normálního rozdělení"
+      },
+      "correct": "B",
+      "explanation": "Chi-kvadrát test testuje, zda jsou dvě kategoriální proměnné nezávislé, porovnáním pozorovaných a očekávaných četností v kontingenční tabulce."
+    },
+    {
+      "id": 38,
+      "question": "Kdy je vhodné použít Fisherův exaktní test místo chi-kvadrát testu?",
+      "options": {
+        "A": "Při velkých vzorcích nad 1000 pozorování",
+        "B": "Při testování normality dat",
+        "C": "Když jsou očekávané četnosti v tabulce malé (<5)",
+        "D": "Při analýze časových řad"
+      },
+      "correct": "C",
+      "explanation": "Fisherův exaktní test se používá pro malé četnosti, kdy chi-kvadrát aproximace není přesná – typicky pro tabulky 2×2 s očekávanými četnostmi menšími než 5."
+    },
+    {
+      "id": 39,
+      "question": "Co vyjadřuje relativní riziko (RR)?",
+      "options": {
+        "A": "Absolutní počet případů onemocnění ve studii",
+        "B": "Poměr pravděpodobnosti výskytu jevu u exponované vs. neexponované skupiny",
+        "C": "Statistickou významnost rozdílu mezi skupinami",
+        "D": "Velikost vzorku potřebnou pro studii"
+      },
+      "correct": "B",
+      "explanation": "Relativní riziko (RR) měří, kolikrát je pravděpodobnost výskytu jevu (např. onemocnění) vyšší u exponované skupiny oproti neexponované. Používá se hlavně v kohortových studiích."
+    },
+    {
+      "id": 40,
+      "question": "Jak se interpretuje hodnota RR = 0,7?",
+      "options": {
+        "A": "Vyšší riziko u exponované skupiny",
+        "B": "Žádný rozdíl v riziku mezi skupinami",
+        "C": "Nižší riziko u exponované skupiny (ochranný efekt)",
+        "D": "Chyba výpočtu, RR nemůže být menší než 1"
+      },
+      "correct": "C",
+      "explanation": "RR < 1 znamená nižší riziko u exponované skupiny, což naznačuje ochranný efekt expozice. RR = 1 by znamenalo žádný rozdíl, RR > 1 vyšší riziko."
+    },
+    {
+      "id": 41,
+      "question": "V jakém typu studií se nejčastěji používá poměr šancí (OR)?",
+      "options": {
+        "A": "V randomizovaných kontrolovaných studiích",
+        "B": "V případových studiích (case-control)",
+        "C": "V longitudinálních průřezových studiích",
+        "D": "V experimentech s dvojitě slepým protokolem"
+      },
+      "correct": "B",
+      "explanation": "OR se používá hlavně v případových studiích, kde nelze přímo vypočítat pravděpodobnosti (jako u RR), ale lze pracovat se šancemi. Je také základem logistické regrese."
+    },
+    {
+      "id": 42,
+      "question": "K čemu slouží analýza reziduí po provedení chi-kvadrát testu?",
+      "options": {
+        "A": "K ověření normality dat",
+        "B": "K identifikaci konkrétních buněk, kde se pozorované četnosti liší od očekávaných",
+        "C": "K výpočtu velikosti efektu",
+        "D": "K určení potřebného vzorku pro replikaci studie"
+      },
+      "correct": "B",
+      "explanation": "Zatímco chi-kvadrát říká, že závislost existuje, rezidua ukazují konkrétně kde – které buňky tabulky se významně odlišují od očekávání při nezávislosti."
+    },
+    {
+      "id": 43,
+      "question": "Co znamená znaménko plus (+) v znaménkovém schématu adjustovaných reziduí?",
+      "options": {
+        "A": "V buňce je menší pozorovaná četnost než očekávaná",
+        "B": "V buňce je vyšší pozorovaná četnost než očekávaná",
+        "C": "Bunka je statisticky nevýznamná",
+        "D": "Data v buňce chybí"
+      },
+      "correct": "B",
+      "explanation": "Plus znamená, že v buňce je více pozorování než bychom čekali při nezávislosti proměnných. Mínus znamená naopak méně pozorování než očekáváno."
+    },
+    {
+      "id": 44,
+      "question": "Jaký je hlavní rozdíl mezi relativním rizikem (RR) a poměrem šancí (OR)?",
+      "options": {
+        "A": "RR se používá pro spojité proměnné, OR pro kategoriální",
+        "B": "RR porovnává pravděpodobnosti, OR porovnává šance (odds)",
+        "C": "RR je vždy větší než OR",
+        "D": "OR nelze použít pro tabulky 2×2"
+      },
+      "correct": "B",
+      "explanation": "RR pracuje s poměrem pravděpodobností P(jev|expozice)/P(jev|bez expozice), zatímco OR pracuje s poměrem šancí (p/(1-p)). Při vzácných jevech jsou si podobné, ale konceptuálně jsou to různé měřítka."
+    },
+    {
+      "id": 45,
+      "question": "Kolik stupňů volnosti má chi-kvadrát test pro tabulku 3×4?",
+      "options": {
+        "A": "12",
+        "B": "6",
+        "C": "7",
+        "D": "2"
+      },
+      "correct": "B",
+      "explanation": "Stupně volnosti se počítají jako (r-1)(s-1), kde r je počet řádků a s počet sloupců. Pro tabulku 3×4: (3-1)(4-1) = 2×3 = 6."
+    },
+    {
+      "id": 46,
+      "question": "Co je kontingenční tabulka?",
+      "options": {
+        "A": "Tabulka sousednosti pro geografická data",
+        "B": "Tabulka četností pro dvě kategoriální proměnné",
+        "C": "Tabulka kritických hodnot statistických testů",
+        "D": "Tabulka kontingenčních plánů pro krizové situace"
+      },
+      "correct": "B",
+      "explanation": "Kontingenční tabulka (tabulka asociace) zobrazuje četnosti kombinací kategorií dvou proměnných. Je základem pro chi-kvadrát test a další analýzy závislosti."
+    }
+  ]
+}
