@@ -7,6 +7,7 @@
 - Přepínání světlého/tmavého režimu s uložením preference
 - Opraveno přetékání tabulek na mobilech
 - Přidán tento changelog
+- Hotfix produkčních dat protože jsem neschopnej XD
 
 ## 2026-03-31 — Spuštění aplikace
 - Matematické vzorce (LaTeX) v souhrnu
