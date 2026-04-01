@@ -144,7 +144,9 @@ ERD popisuje **datový model** – jak systém strukturuje data.
 
 **Notace:**
 - **Chenova notace** – obdélníky (entity), ovály (atributy), kosočtverce (vztahy)
+![Chenova notace](https://raw.githubusercontent.com/LukasKnize/LukasKnize.github.io/refs/heads/main/data/predmety/swi/chen.png)
 - **Crow's Foot** – kompaktnější průmyslový standard; symboly: kruh (0), svislá čára (1), crow's foot (mnoho)
+![Crow's foot notace](https://raw.githubusercontent.com/LukasKnize/LukasKnize.github.io/refs/heads/main/data/predmety/swi/crow.png)
 
 ### Data Flow Diagram (DFD)
 
@@ -155,6 +157,7 @@ DFD zobrazuje **tok informací** systémem – co systém dělá s daty.
 - **Datový tok** – pohyb dat (šipka s názvem podstatného jména); musí být napojen na proces
 - **Externí entita (Terminátor)** – zdroj/příjemce dat mimo systém (obdélník)
 - **Datové úložiště** – persistentní data (dvě paralelní čáry, název v množném čísle)
+![Data flow diagram](https://raw.githubusercontent.com/LukasKnize/LukasKnize.github.io/refs/heads/main/data/predmety/swi/flow.png)
 
 **Hierarchická dekompozice:**
 - **Kontextový diagram (úroveň 0)** – celý systém jako jeden proces
