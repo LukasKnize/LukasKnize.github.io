@@ -5,19 +5,6 @@
 
 ---
 
-## Obsah
-
-1. [Základní zobrazení dat](#1-základní-zobrazení-dat)
-2. [Frekvenční tabulky a překódování proměnných](#2-frekvenční-tabulky-a-překódování-proměnných)
-3. [Řazení a vizualizace kategorických proměnných](#3-řazení-a-vizualizace-kategorických-proměnných)
-4. [Popisná statistika číselných proměnných](#4-popisná-statistika-číselných-proměnných)
-5. [Kategorizace číselné proměnné a výpočet nové proměnné](#5-kategorizace-číselné-proměnné-a-výpočet-nové-proměnné)
-6. [Korelační analýza a jednoduchá lineární regrese](#6-korelační-analýza-a-jednoduchá-lineární-regrese)
-7. [Vícenásobná lineární regrese a diagnostika](#7-vícenásobná-lineární-regrese-a-diagnostika)
-8. [Analýza časových řad](#8-analýza-časových-řad)
-
----
-
 ## 1. Základní zobrazení dat
 
 ### Zobrazení celé tabulky
