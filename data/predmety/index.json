@@ -10,19 +10,10 @@
 {
     "id": "stat",
     "name": "Statistika",
-    "description": "Zaklady statistiky pro předměty statistika.",
+    "description": "Zaklady statistiky pro předměty statistika a statistické softwarové systémy",
     "hasSummary": true,
     "hasTest": true,
     "hasFlashcards": false
-  },
-  {
-    "id": "sss",
-    "name": "Statistické softwarové systémy",
-    "description": "Výpisky a testy k SSS.",
-    "hasSummary": true,
-    "hasTest": true,
-    "hasFlashcards": false,
-    "extraTabs": [{"label": "SAS Studio", "file": "SAS_Syntax.md"}]
   },
   {
     "id": "ukazka",
