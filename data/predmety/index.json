@@ -7,7 +7,7 @@
     "hasTest": true,
     "hasFlashcards": true
   },
-{
+  {
     "id": "stat",
     "name": "Statistika",
     "description": "Zaklady statistiky pro předměty statistika.",
@@ -21,7 +21,6 @@
     "description": "Výpisky a testy k SSS.",
     "hasSummary": true,
     "hasTest": true,
-    "hasFlashcards": false
     "hasFlashcards": false,
     "extraTabs": [{"label": "SAS Studio", "file": "SAS_Syntax.md"}]
   },
