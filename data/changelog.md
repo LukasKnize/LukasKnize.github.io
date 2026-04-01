@@ -8,6 +8,7 @@
 - Opraveno přetékání tabulek na mobilech
 - Přidán tento changelog
 - Hotfix produkčních dat protože jsem neschopnej XD
+- Doufám vyřešený agresivní cachování
 
 ## 2026-03-31 — Spuštění aplikace
 - Matematické vzorce (LaTeX) v souhrnu
