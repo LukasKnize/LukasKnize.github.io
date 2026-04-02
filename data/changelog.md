@@ -1,3 +1,7 @@
+## 2026-04-02 - Změny v materiálech
+- Přídán předmět MPŘ vytvořený na základě prezentací z přednášek
+- Statistika je dočasně nedostupná (vyžaduje větší změny v materiálech)
+- Odebrán zbytečný testovací předmět
 ## 2026-04-01 - Změny v materiálech
 - Do SWI byly přidány obrázky diagramů pro ERD a DFD
 - Do SSS byl přidán tab popisující SAS syntaxi s popsanými příklady ze cvičení
