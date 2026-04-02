@@ -1,0 +1,845 @@
+{
+  "title": "Test – Metody projektového řízení",
+  "questions":[
+  {
+    "id": 1,
+    "question": "Co je trojimperativ projektového řízení?",
+    "options": {
+      "A": "CO – KDY – ZA KOLIK",
+      "B": "KDO – KDE – JAK",
+      "C": "PROČ – KDY – KDE",
+      "D": "CO – KDO – PROČ"
+    },
+    "correct": "A",
+    "explanation": "Trojimperativ projektového řízení vyjadřuje tři základní omezení projektu: rozsah (CO), čas (KDY) a náklady (ZA KOLIK)."
+  },
+  {
+    "id": 2,
+    "question": "Která z následujících vlastností NECHARAKTERIZUJE projekt?",
+    "options": {
+      "A": "Jasně definovaný začátek a konec",
+      "B": "Kontinuální opakování bez definovaného cíle",
+      "C": "Omezené náklady a čas",
+      "D": "Jedinečnost a nejistota s rizikem"
+    },
+    "correct": "B",
+    "explanation": "Projekt je vždy jedinečný s jasným začátkem, koncem a cílem. Kontinuální procesy bez definovaného cíle nejsou projektem."
+  },
+  {
+    "id": 3,
+    "question": "Kdo je považován za zakladatele projektového řízení a autora prvního diagramu?",
+    "options": {
+      "A": "Frederick Taylor",
+      "B": "Henry L. Gantt",
+      "C": "Bernard Roy",
+      "D": "Eliahu Goldratt"
+    },
+    "correct": "B",
+    "explanation": "Henry L. Gantt (1861–1919) je zakladatelem projektového řízení a autorem Ganttova diagramu."
+  },
+  {
+    "id": 4,
+    "question": "Co jsou z pohledu projektového řízení obnovitelné zdroje?",
+    "options": {
+      "A": "Písek, PHM, materiál",
+      "B": "Finance a rozpočet",
+      "C": "Pracovní zdroje – lidé, stroje",
+      "D": "Energie a elektřina"
+    },
+    "correct": "C",
+    "explanation": "Obnovitelné (pracovní) zdroje jsou ty, které mohou být opakovaně využity – např. zedník, řidič, traktor."
+  },
+  {
+    "id": 5,
+    "question": "Jsou finance z pohledu projektového řízení považovány za zdroj?",
+    "options": {
+      "A": "Ano, jsou hlavním zdrojem",
+      "B": "Ano, ale pouze jako obnovitelný zdroj",
+      "C": "Ne, finance nejsou zdrojem",
+      "D": "Ano, jsou neobnovitelným zdrojem"
+    },
+    "correct": "C",
+    "explanation": "Z pohledu projektového řízení finance nejsou zdrojem. Zdroje jsou pracovní (obnovitelné) a materiálové (neobnovitelné)."
+  },
+  {
+    "id": 6,
+    "question": "Co je milník (Milestone) v projektu?",
+    "options": {
+      "A": "Souhrnný úkol obsahující podčinnosti",
+      "B": "Důležitá činnost, často fiktivní s nulovou délkou trvání",
+      "C": "Periodicky opakovaný úkol",
+      "D": "Externí úkol s jiným správcem"
+    },
+    "correct": "B",
+    "explanation": "Milník je důležitá činnost v projektu, která bývá často fiktivní (s nulovou délkou trvání), např. zahájení stavby."
+  },
+  {
+    "id": 7,
+    "question": "Jaký typ omezení činnosti znamená zkratka ASAP?",
+    "options": {
+      "A": "Musí být zahájeno v přesný termín",
+      "B": "Co nejpozději",
+      "C": "Co nejdříve",
+      "D": "Zahájit po určitém dni"
+    },
+    "correct": "C",
+    "explanation": "ASAP (As Soon As Possible) znamená co nejdříve – činnost není ukotvena v čase a je omezena pouze vazbami."
+  },
+  {
+    "id": 8,
+    "question": "Kdy je činnost v projektu kritická?",
+    "options": {
+      "A": "Když má volnou rezervu větší než 5 dní",
+      "B": "Když je její celková časová rezerva rovna nule (ST = 0)",
+      "C": "Když na ní pracuje nejvíce zdrojů",
+      "D": "Když má nejvyšší náklady"
+    },
+    "correct": "B",
+    "explanation": "Činnost je kritická, pokud je její celková časová rezerva (Total Slack) rovna nule. Jakékoli zpoždění kritické činnosti zpožďuje celý projekt."
+  },
+  {
+    "id": 9,
+    "question": "Jaký je vzorec pro výpočet doby trvání činnosti s přiřazenými zdroji?",
+    "options": {
+      "A": "Doba trvání = min(Práce / Jednotky)",
+      "B": "Doba trvání = Práce × Jednotky",
+      "C": "Doba trvání = max(Práce / Jednotky)",
+      "D": "Doba trvání = Jednotky / Práce"
+    },
+    "correct": "C",
+    "explanation": "Doba trvání činnosti se vypočítá jako maximum z poměrů Práce/Jednotky pro všechny přiřazené zdroje."
+  },
+  {
+    "id": 10,
+    "question": "Co se stane při metodě Pevné jednotky, když se zvýší práce?",
+    "options": {
+      "A": "Změní se počet jednotek zdroje",
+      "B": "Prodlouží se doba trvání činnosti",
+      "C": "Sníží se náklady",
+      "D": "Nic se nezmění"
+    },
+    "correct": "B",
+    "explanation": "Při pevných jednotkách je intenzita čerpání zdroje konstantní, takže zvýšení práce vede k prodloužení doby trvání činnosti."
+  },
+  {
+    "id": 11,
+    "question": "Která vazba mezi činnostmi je nejběžnější?",
+    "options": {
+      "A": "Start to Start (SS)",
+      "B": "Finish to Finish (FF)",
+      "C": "Start to Finish (SF)",
+      "D": "Finish to Start (FS)"
+    },
+    "correct": "D",
+    "explanation": "Vazba Finish to Start (FS) je nejběžnější – následující činnost začíná po dokončení předcházející."
+  },
+  {
+    "id": 12,
+    "question": "Co je graf typu SÍŤ?",
+    "options": {
+      "A": "Nekonečný, nesouvislý, neorientovaný graf",
+      "B": "Konečný, souvislý, orientovaný, acyklický graf s jedním počátkem a koncem",
+      "C": "Souvislý graf neobsahující kružnici",
+      "D": "Orientovaný graf s cykly"
+    },
+    "correct": "B",
+    "explanation": "Síť je konečný, souvislý, orientovaný a acyklický graf s jedním počátkem a jedním koncem."
+  },
+  {
+    "id": 13,
+    "question": "Co je graf typu STROM?",
+    "options": {
+      "A": "Orientovaný graf s cykly",
+      "B": "Souvislý graf neobsahující kružnici",
+      "C": "Graf s více počátky a konci",
+      "D": "Nesouvislý acyklický graf"
+    },
+    "correct": "B",
+    "explanation": "Strom je souvislý graf neobsahující kružnici. Mezi každými dvěma vrcholy existuje právě jeden řetěz a má n vrcholů a n-1 hran."
+  },
+  {
+    "id": 14,
+    "question": "Jak se nazývá podgraf typu strom v souvislém grafu?",
+    "options": {
+      "A": "Hamiltonovská kružnice",
+      "B": "Kostra grafu",
+      "C": "Incidenční matice",
+      "D": "Cyklus"
+    },
+    "correct": "B",
+    "explanation": "Kostra grafu je podgraf typu strom nalezený v každém souvislém grafu."
+  },
+  {
+    "id": 15,
+    "question": "Jakou výhodu mají hranově definované grafy (AOA) oproti AON?",
+    "options": {
+      "A": "Lepší přehlednost",
+      "B": "Možnost modelování různých vazeb",
+      "C": "Teoretická rozpracovanost a snadná aplikace CPM",
+      "D": "Jednodušší modelace stochastických struktur"
+    },
+    "correct": "C",
+    "explanation": "AOA grafy mají výhodu ve větší teoretické rozpracovanosti, snadné aplikaci CPM a snazším výpočtu časových rezerv."
+  },
+  {
+    "id": 16,
+    "question": "K čemu slouží metoda přeškrtávání hran?",
+    "options": {
+      "A": "K výpočtu kritické cesty",
+      "B": "K číslování uzlů v síti podle řádu",
+      "C": "K nalezení minimální kostry",
+      "D": "K výpočtu nákladů"
+    },
+    "correct": "B",
+    "explanation": "Metoda přeškrtávání hran slouží k správnému očíslování uzlů v síti na základě řádu uzlu."
+  },
+  {
+    "id": 17,
+    "question": "Co určuje délka kritické cesty v projektu?",
+    "options": {
+      "A": "Maximální možnou dobu trvání projektu",
+      "B": "Nejkratší možnou dobu trvání projektu",
+      "C": "Průměrnou dobu trvání projektu",
+      "D": "Dobu trvání nejkratší cesty"
+    },
+    "correct": "B",
+    "explanation": "Kritická cesta je nejdelší posloupnost činností v projektu a její délka určuje nejkratší možnou dobu trvání celého projektu."
+  },
+  {
+    "id": 18,
+    "question": "Co je celková časová rezerva (Total Slack)?",
+    "options": {
+      "A": "O kolik lze prodloužit činnost bez narušení začátku následující činnosti",
+      "B": "O kolik lze zpozdit činnost bez narušení termínu ukončení projektu",
+      "C": "Rozdíl mezi nejdříve možným a skutečným začátkem",
+      "D": "Celkový čas strávený na projektu"
+    },
+    "correct": "B",
+    "explanation": "Celková časová rezerva udává, o kolik lze zpozdit nejdříve možný začátek činnosti, aniž by došlo k narušení termínu ukončení projektu."
+  },
+  {
+    "id": 19,
+    "question": "Pro jaký účel byla odvozena metoda PERT?",
+    "options": {
+      "A": "Pro stavební projekty",
+      "B": "Pro vývoj raketového systému Polaris (USA, 1958)",
+      "C": "Pro automobilový průmysl (DuPont)",
+      "D": "Pro softwarový vývoj"
+    },
+    "correct": "B",
+    "explanation": "PERT byla odvozena v roce 1958 pro Úřad válečného námořnictva USA při vývoji raketového systému Polaris."
+  },
+  {
+    "id": 20,
+    "question": "Jaké pravděpodobnostní rozdělení se používá pro dobu trvání činnosti v PERT?",
+    "options": {
+      "A": "Normální rozdělení",
+      "B": "Rovnoměrné rozdělení",
+      "C": "Beta rozdělení",
+      "D": "Exponenciální rozdělení"
+    },
+    "correct": "C",
+    "explanation": "V metodě PERT se doba trvání činnosti modeluje jako náhodná veličina s Beta rozdělením, definovaná třemi odhady (a, m, b)."
+  },
+  {
+    "id": 21,
+    "question": "Jaký je vzorec pro střední hodnotu doby trvání v PERT?",
+    "options": {
+      "A": "t = (a + b) / 2",
+      "B": "t = (a + 4m + b) / 6",
+      "C": "t = (a + m + b) / 3",
+      "D": "t = (a + 2m + b) / 4"
+    },
+    "correct": "B",
+    "explanation": "Střední hodnota doby trvání v PERT se počítá jako t = (a + 4m + b) / 6."
+  },
+  {
+    "id": 22,
+    "question": "S jakou pravděpodobností projekt skončí v intervalu ±2σ od střední doby trvání (PERT)?",
+    "options": {
+      "A": "68 %",
+      "B": "95 %",
+      "C": "99 %",
+      "D": "50 %"
+    },
+    "correct": "B",
+    "explanation": "Dle normálního rozdělení: ±1σ = 68 %, ±2σ = 95 %, ±3σ = 99 %."
+  },
+  {
+    "id": 23,
+    "question": "Co je hlavní rozdíl metody GERT oproti CPM?",
+    "options": {
+      "A": "GERT pracuje s deterministickými dobami trvání",
+      "B": "V GERT je realizace činností a uzlů dána pravděpodobností",
+      "C": "GERT neumožňuje výpočet kritické cesty",
+      "D": "GERT používá pouze uzlové grafy"
+    },
+    "correct": "B",
+    "explanation": "V GERT je realizace činností a uzlů dána pravděpodobností, což je stochastická modifikace zahrnující nejistotu ve struktuře projektu."
+  },
+  {
+    "id": 24,
+    "question": "Jaký typ uzlu v GERT odpovídá klasickému CPM/PERT?",
+    "options": {
+      "A": "Disjunktivně deterministický",
+      "B": "Inkluzívně stochastický",
+      "C": "Konjunktivně deterministický",
+      "D": "Disjunktivně stochastický"
+    },
+    "correct": "C",
+    "explanation": "V konjunktivně deterministickém uzlu se realizují všechny vstupní/výstupní hrany, což odpovídá klasickému CPM a PERT."
+  },
+  {
+    "id": 25,
+    "question": "Kdo odvodil metodu MPM (Metra Potential Method)?",
+    "options": {
+      "A": "Henry L. Gantt",
+      "B": "Eliahu Goldratt",
+      "C": "Bernard Roy",
+      "D": "James E. Kelley"
+    },
+    "correct": "C",
+    "explanation": "MPM byla odvozena v roce 1958 Bernardem Royem pro deterministické grafy AON."
+  },
+  {
+    "id": 26,
+    "question": "Co je specifické pro výpočet MPM oproti CPM?",
+    "options": {
+      "A": "Používá stochastické doby trvání",
+      "B": "Výpočet probíhá za použití zpětných korekcí",
+      "C": "Nepotřebuje výpočet vzad",
+      "D": "Používá pouze kladné potenciály"
+    },
+    "correct": "B",
+    "explanation": "V MPM výpočet neprobíhá přímo, ale za použití zpětných korekcí se zápornými potenciály."
+  },
+  {
+    "id": 27,
+    "question": "Jaký typ úloh matematického programování jsou úlohy celočíselného programování (IP)?",
+    "options": {
+      "A": "Polynomiálně řešitelné",
+      "B": "Obecně NP obtížné",
+      "C": "Vždy řešitelné simplexovou metodou",
+      "D": "Triviální"
+    },
+    "correct": "B",
+    "explanation": "Úlohy IP, MIP a 0-1 IP jsou obecně NP obtížné – neexistuje pro ně polynomiální algoritmus řešení."
+  },
+  {
+    "id": 28,
+    "question": "Co je simulace v užším smyslu?",
+    "options": {
+      "A": "Analytické řešení soustavy rovnic",
+      "B": "Numerická metoda experimentování s matematickým modelem na počítači",
+      "C": "Grafické zobrazení projektu",
+      "D": "Manuální výpočet kritické cesty"
+    },
+    "correct": "B",
+    "explanation": "Simulace je numerická metoda experimentování se speciálním matematickým modelem reálného systému na počítači."
+  },
+  {
+    "id": 29,
+    "question": "Jaká je hlavní nevýhoda simulačních modelů?",
+    "options": {
+      "A": "Vyžadují experimentování přímo se systémem",
+      "B": "Model není obecně platný a nezjistíme závislost mezi vstupy a výstupy",
+      "C": "Nelze je realizovat na počítači",
+      "D": "Neumožňují zahrnutí náhodných vlivů"
+    },
+    "correct": "B",
+    "explanation": "Simulační modely nejsou obecně platné a neumožňují zjistit přímou závislost mezi vstupy a výstupy."
+  },
+  {
+    "id": 30,
+    "question": "Co vyjadřuje mohutnost zdroje Aₖ?",
+    "options": {
+      "A": "Náklady na zdroj",
+      "B": "Maximální počet jednotek daného zdroje",
+      "C": "Dobu dostupnosti zdroje",
+      "D": "Počet projektů, na kterých zdroj pracuje"
+    },
+    "correct": "B",
+    "explanation": "Mohutnost zdroje Aₖ vyjadřuje maximální počet jednotek k-tého zdroje, které jsou k dispozici."
+  },
+  {
+    "id": 31,
+    "question": "Kdy je projekt zdrojově přípustný?",
+    "options": {
+      "A": "Když má alespoň jeden dostupný zdroj",
+      "B": "Když rₖ(t) ≤ Aₖ pro všechny časy t a zdroje k",
+      "C": "Když náklady nepřekročí rozpočet",
+      "D": "Když žádná činnost nemá rezervu"
+    },
+    "correct": "B",
+    "explanation": "Projekt je zdrojově přípustný, pokud souhrnná intenzita čerpání každého zdroje nepřekročí jeho mohutnost v žádném čase."
+  },
+  {
+    "id": 32,
+    "question": "Které řešení zdrojového konfliktu má vliv na náklady, ale NE na práci?",
+    "options": {
+      "A": "Zrušení úkolu",
+      "B": "Substituce (nahrazení zdroje jiným)",
+      "C": "Navýšení mohutnosti zdrojů",
+      "D": "Přerušení práce"
+    },
+    "correct": "B",
+    "explanation": "Substituce ovlivňuje náklady a dobu trvání, ale nemá vliv na práci."
+  },
+  {
+    "id": 33,
+    "question": "Co znamená zkratka BCWP v analýze vytvořené hodnoty (EVA)?",
+    "options": {
+      "A": "Budgeted Cost of Work Planned",
+      "B": "Budgeted Cost of Work Performed",
+      "C": "Base Cost of Work Projected",
+      "D": "Business Cost of Work Processed"
+    },
+    "correct": "B",
+    "explanation": "BCWP (Budgeted Cost of Work Performed) = rozpočtové náklady provedených prací, neboli vytvořená hodnota (Earned Value)."
+  },
+  {
+    "id": 34,
+    "question": "Jak se vypočítá odchylka nákladů (CV) v EVA?",
+    "options": {
+      "A": "CV = BCWS − ACWP",
+      "B": "CV = BCWP − BCWS",
+      "C": "CV = BCWP − ACWP",
+      "D": "CV = ACWP − BCWP"
+    },
+    "correct": "C",
+    "explanation": "Odchylka nákladů CV = BCWP − ACWP, rozdíl mezi plánovanými náklady na provedenou práci a skutečnými náklady."
+  },
+  {
+    "id": 35,
+    "question": "Co vyjadřuje index CPI (Cost Performance Index)?",
+    "options": {
+      "A": "Poměr plánovaných a skutečných nákladů na provedenou práci (BCWP/ACWP)",
+      "B": "Poměr skutečného a plánovaného postupu",
+      "C": "Celkové náklady projektu",
+      "D": "Procento dokončení projektu"
+    },
+    "correct": "A",
+    "explanation": "CPI = BCWP / ACWP. Hodnota > 1 znamená úsporu, hodnota < 1 znamená přečerpání nákladů."
+  },
+  {
+    "id": 36,
+    "question": "Jaký je vztah mezi náklady a dobou trvání činnosti v modelu Cost CPM?",
+    "options": {
+      "A": "Náklady jsou přímo úměrné době trvání",
+      "B": "Náklady jsou nepřímo úměrné době trvání",
+      "C": "Náklady nezávisí na době trvání",
+      "D": "Náklady jsou kvadraticky závislé"
+    },
+    "correct": "B",
+    "explanation": "V modelu Cost CPM jsou náklady na činnost nepřímo úměrné její době trvání – zkrácení činnosti stojí více."
+  },
+  {
+    "id": 37,
+    "question": "Jaký je základní princip teorie omezení?",
+    "options": {
+      "A": "Optimalizovat všechny procesy současně",
+      "B": "Najít slabé místo a zlepšit ho",
+      "C": "Maximalizovat počet zdrojů",
+      "D": "Minimalizovat počet činností"
+    },
+    "correct": "B",
+    "explanation": "Základní princip teorie omezení: Najděme slabé (úzké, kritické) místo a zlepšeme ho. Poté hledáme další nejslabší místo."
+  },
+  {
+    "id": 38,
+    "question": "Kolik kroků má základní postup teorie omezení?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "7"
+    },
+    "correct": "C",
+    "explanation": "Teorie omezení má 5 kroků: 1) Identifikace, 2) Maximální využití, 3) Podřízení ostatních, 4) Odstranění omezení, 5) Neustálé opakování."
+  },
+  {
+    "id": 39,
+    "question": "Co říká Parkinsonův zákon v kontextu projektového řízení?",
+    "options": {
+      "A": "Práce se vždy zkracuje s počtem lidí",
+      "B": "Práce přibývá úměrně s tím, kolik času na ni můžeme vynaložit",
+      "C": "Každý projekt překročí rozpočet o 50 %",
+      "D": "Kritická cesta se vždy prodlužuje"
+    },
+    "correct": "B",
+    "explanation": "Parkinsonův zákon říká, že práce trvá minimálně tak dlouho, kolik je na ni přiděleno času."
+  },
+  {
+    "id": 40,
+    "question": "Co je Studentský syndrom v kontextu metody kritického řetězu?",
+    "options": {
+      "A": "Studenti dělají lepší odhady",
+      "B": "Časová rezerva je spotřebována dříve, než je potřeba",
+      "C": "Studenti vždy dokončí práci včas",
+      "D": "Odhady studentů jsou přesnější"
+    },
+    "correct": "B",
+    "explanation": "Studentský syndrom říká, že časová rezerva je spotřebována dříve, než je skutečně potřeba – málokdo dokončí práci dříve, než je nezbytně nutné."
+  },
+  {
+    "id": 41,
+    "question": "Na kolik procent doporučuje Goldratt zkrátit doby trvání činností v metodě CC?",
+    "options": {
+      "A": "25 %",
+      "B": "50 %",
+      "C": "75 %",
+      "D": "90 %"
+    },
+    "correct": "B",
+    "explanation": "Goldratt doporučuje očistit doby trvání činností až na 50 % původní hodnoty."
+  },
+  {
+    "id": 42,
+    "question": "Jaké tři typy bufferů používá metoda kritického řetězu?",
+    "options": {
+      "A": "Time Buffer, Cost Buffer, Scope Buffer",
+      "B": "Project Buffer, Feeding Buffer, Resource Buffer",
+      "C": "Start Buffer, Middle Buffer, End Buffer",
+      "D": "Critical Buffer, Slack Buffer, Float Buffer"
+    },
+    "correct": "B",
+    "explanation": "Metoda CC používá: Project Buffer (konec krit. řetězu), Feeding Buffer (podpůrné cesty) a Resource Buffer (příprava zdroje)."
+  },
+  {
+    "id": 43,
+    "question": "Čím se kritický řetěz liší od kritické cesty?",
+    "options": {
+      "A": "Kritický řetěz je vždy kratší",
+      "B": "Kritický řetěz zahrnuje i dostupnost zdrojů",
+      "C": "Kritický řetěz nepoužívá síťové grafy",
+      "D": "Kritický řetěz nezahrnuje buffery"
+    },
+    "correct": "B",
+    "explanation": "Kritický řetěz je zobecněním kritické cesty – kromě logických a časových návazností zohledňuje také dostupnost zdrojů."
+  },
+  {
+    "id": 44,
+    "question": "Jaké jsou 4 základní hodnoty Agilního manifestu?",
+    "options": {
+      "A": "Plánování, dokumentace, smlouvy, procesy",
+      "B": "Jedinci a interakce, fungující software, spolupráce se zákazníkem, reakce na změny",
+      "C": "Rychlost, kvalita, flexibilita, transparentnost",
+      "D": "Scrum, Kanban, XP, Lean"
+    },
+    "correct": "B",
+    "explanation": "Agilní manifest (2001) definuje prioritu: lidí nad procesy, fungujícího SW nad dokumentací, spolupráce nad smlouvami, změny nad plánem."
+  },
+  {
+    "id": 45,
+    "question": "Co je v tradičním přístupu fixní a co flexibilní?",
+    "options": {
+      "A": "Fixní: náklady a čas; Flexibilní: rozsah",
+      "B": "Fixní: rozsah (scope); Flexibilní: náklady a čas",
+      "C": "Fixní: kvalita; Flexibilní: vše ostatní",
+      "D": "Fixní: zdroje; Flexibilní: rozsah a čas"
+    },
+    "correct": "B",
+    "explanation": "V tradičním přístupu je scope fixní, náklady a čas flexibilní. V agilním je to naopak."
+  },
+  {
+    "id": 46,
+    "question": "Podle CHAOS Reportu (1994), kolik projektů bylo zrušeno během implementace?",
+    "options": {
+      "A": "Přibližně 1/10",
+      "B": "Přibližně 1/4",
+      "C": "Přibližně 1/3",
+      "D": "Přibližně 1/2"
+    },
+    "correct": "C",
+    "explanation": "Přibližně třetina projektů byla zrušena během implementace a polovina překročila rozpočet nebo termín."
+  },
+  {
+    "id": 47,
+    "question": "Které fáze životního cyklu projektu existují podle procesního pohledu?",
+    "options": {
+      "A": "Analýza, návrh, vývoj, testování",
+      "B": "Zahajovací, plánovací, prováděcí, sledovací, uzavírací",
+      "C": "Iniciace, realizace, ukončení",
+      "D": "Příprava, provedení, kontrola"
+    },
+    "correct": "B",
+    "explanation": "Z hlediska procesů se rozlišuje 5 skupin: zahajovací, plánovací, prováděcí, sledovací a uzavírací procesy."
+  },
+  {
+    "id": 48,
+    "question": "Co je logický rámec (Logical Framework)?",
+    "options": {
+      "A": "Metoda pro výpočet kritické cesty",
+      "B": "Mezinárodně uznávaný nástroj pro inicializaci projektu",
+      "C": "Software pro řízení projektů",
+      "D": "Metoda pro řízení zdrojů"
+    },
+    "correct": "B",
+    "explanation": "Logický rámec je mezinárodně uznávaný nástroj pro inicializaci projektu, definující logické vazby a parametry projektu."
+  },
+  {
+    "id": 49,
+    "question": "Jaké sloupce má logický rámec?",
+    "options": {
+      "A": "Popis, Ukazatele, Způsob ověření, Předpoklady a rizika",
+      "B": "Činnosti, Zdroje, Náklady, Termíny",
+      "C": "Vstupy, Procesy, Výstupy, Výsledky",
+      "D": "Cíle, Metody, Nástroje, Metriky"
+    },
+    "correct": "A",
+    "explanation": "Logický rámec má 4 sloupce: Popis (strom cílů), Objektivně ověřitelné ukazatele, Způsob ověření, Předpoklady a rizika."
+  },
+  {
+    "id": 50,
+    "question": "Co je riziko projektu podle PMBOK?",
+    "options": {
+      "A": "Jistá událost s negativním dopadem",
+      "B": "Neurčitý jev s pozitivním nebo negativním efektem na cíle",
+      "C": "Pouze negativní události ohrožující rozpočet",
+      "D": "Pravděpodobnost překročení termínu"
+    },
+    "correct": "B",
+    "explanation": "Dle PMBOK je riziko neurčitý jev nebo podmínka s pozitivním NEBO negativním efektem na cíle projektu."
+  },
+  {
+    "id": 51,
+    "question": "Jak se vypočítá očekávaná hodnota rizika?",
+    "options": {
+      "A": "Pravděpodobnost + Dopad",
+      "B": "Pravděpodobnost × Dopad",
+      "C": "Dopad / Pravděpodobnost",
+      "D": "Pravděpodobnost − Dopad"
+    },
+    "correct": "B",
+    "explanation": "Očekávaná hodnota rizika = Pravděpodobnost vzniku × Velikost dopadu."
+  },
+  {
+    "id": 52,
+    "question": "Která z následujících NENÍ obrannou strategií proti rizikům?",
+    "options": {
+      "A": "Odmítnutí podstoupení rizika",
+      "B": "Akceptace rizika s vytvořením rezerv",
+      "C": "Ignorování rizika bez jakýchkoli opatření",
+      "D": "Převod rizika na jiný subjekt (pojištění)"
+    },
+    "correct": "C",
+    "explanation": "Obranné strategie zahrnují odmítnutí, omezení, akceptaci, převod a simulaci. Ignorování bez opatření není legitimní strategií."
+  },
+  {
+    "id": 53,
+    "question": "Jaké metody lze použít pro identifikaci rizik?",
+    "options": {
+      "A": "CPM, PERT, GERT",
+      "B": "Brainstorming, Delphi, SWOT analýza",
+      "C": "EVA, CPI, SPI",
+      "D": "Ganttův diagram, WBS, síťový graf"
+    },
+    "correct": "B",
+    "explanation": "Pro identifikaci rizik se používají metody jako brainstorming, metoda Delphi a SWOT analýza."
+  },
+  {
+    "id": 54,
+    "question": "Jak se vyvíjí hodnota v ohrožení a riziko během životního cyklu projektu?",
+    "options": {
+      "A": "Obojí roste",
+      "B": "Obojí klesá",
+      "C": "Hodnota v ohrožení roste, riziko klesá",
+      "D": "Hodnota v ohrožení klesá, riziko roste"
+    },
+    "correct": "C",
+    "explanation": "V průběhu životního cyklu hodnota v ohrožení roste (více investováno), zatímco riziko klesá (méně nejistoty)."
+  },
+  {
+    "id": 55,
+    "question": "Které čtyři standardy projektového řízení jsou dnes nejpoužívanější?",
+    "options": {
+      "A": "Scrum, Kanban, XP, Lean",
+      "B": "ICB4 (IPMA), PMBOK (PMI), PRINCE2, ISO 21 500",
+      "C": "CPM, PERT, GERT, MPM",
+      "D": "Waterfall, V-model, Spiral, RAD"
+    },
+    "correct": "B",
+    "explanation": "Čtyři nejpoužívanější standardy: ICB4 (IPMA), PMBOK (PMI), PRINCE2 a ISO 21 500."
+  },
+  {
+    "id": 56,
+    "question": "Kolik kompetencí definuje ICB verze 4 (IPMA)?",
+    "options": {
+      "A": "46",
+      "B": "29",
+      "C": "12",
+      "D": "10"
+    },
+    "correct": "B",
+    "explanation": "ICB verze 4 definuje 29 kompetencí: kontextové (5), behaviorální (10) a technické (13). Oproti verzi 3 se počet snížil ze 46."
+  },
+  {
+    "id": 57,
+    "question": "Jaké tři kompetenční oblasti definuje Oko kompetencí IPMA?",
+    "options": {
+      "A": "Technické, finanční, právní",
+      "B": "Kontextové, behaviorální, technické",
+      "C": "Strategické, operativní, taktické",
+      "D": "Plánovací, realizační, kontrolní"
+    },
+    "correct": "B",
+    "explanation": "Oko kompetencí IPMA definuje tři oblasti: kontextové, behaviorální a technické."
+  },
+  {
+    "id": 58,
+    "question": "Kolik znalostních oblastí rozlišuje PMBOK?",
+    "options": {
+      "A": "5",
+      "B": "7",
+      "C": "10",
+      "D": "12"
+    },
+    "correct": "C",
+    "explanation": "PMBOK rozlišuje 10 znalostních oblastí: integrace, rozsah, čas, náklady, kvalita, lidské zdroje, komunikace, rizika, subdodávky, zainteresované strany."
+  },
+  {
+    "id": 59,
+    "question": "Jakou strukturu má standard PRINCE2?",
+    "options": {
+      "A": "5 procesů, 10 oblastí, 46 kompetencí",
+      "B": "7 principů, 7 procesů, 7 témat",
+      "C": "4 fáze, 8 procesů, 12 principů",
+      "D": "3 úrovně, 6 procesů, 9 témat"
+    },
+    "correct": "B",
+    "explanation": "PRINCE2 je strukturován kolem 7 principů, 7 procesů a 7 témat."
+  },
+  {
+    "id": 60,
+    "question": "Která agilní metodika je nejpoužívanější (87 % dle State of Agile Report)?",
+    "options": {
+      "A": "Kanban",
+      "B": "XP (Extrémní programování)",
+      "C": "Scrum",
+      "D": "SAFe"
+    },
+    "correct": "C",
+    "explanation": "Scrum je nejpoužívanější agilní metodikou – 87 % organizací dle State of Agile Report (2022)."
+  },
+  {
+    "id": 61,
+    "question": "Jaké tři role definuje Scrum?",
+    "options": {
+      "A": "Projektový manažer, Analytik, Programátor",
+      "B": "Scrum Master, Product Owner, Developer(s)",
+      "C": "Sponzor, Vedoucí, Tester",
+      "D": "Architekt, Designer, Vývojář"
+    },
+    "correct": "B",
+    "explanation": "Scrum definuje tři role: Scrum Master, Product Owner a Developer(s)."
+  },
+  {
+    "id": 62,
+    "question": "Co je Sprint ve Scrumu?",
+    "options": {
+      "A": "Jednorázová fáze na začátku projektu",
+      "B": "Časově ohraničená iterace trvající obvykle 1–4 týdny",
+      "C": "Závěrečné testování produktu",
+      "D": "Denní standup meeting"
+    },
+    "correct": "B",
+    "explanation": "Sprint je časově ohraničená iterace (1–4 týdny), na jejímž konci tým prezentuje hotový inkrement."
+  },
+  {
+    "id": 63,
+    "question": "Co je Product Backlog?",
+    "options": {
+      "A": "Seznam úkolů pro aktuální sprint",
+      "B": "Prioritizovaný seznam všech User Stories",
+      "C": "Denní zápis z Daily Scrumu",
+      "D": "Dokumentace hotového produktu"
+    },
+    "correct": "B",
+    "explanation": "Product Backlog je prioritizovaný seznam všech User Stories, průběžně aktualizovaný podle potřeb zákazníka."
+  },
+  {
+    "id": 64,
+    "question": "Co jsou Story Points?",
+    "options": {
+      "A": "Přesný počet hodin na dokončení úkolu",
+      "B": "Abstraktní jednotky pracovního úsilí",
+      "C": "Body za kvalitu kódu",
+      "D": "Počet členů týmu přiřazených k úkolu"
+    },
+    "correct": "B",
+    "explanation": "Story Points jsou abstraktní jednotky pracovního úsilí. Záměrně se nepoužívají absolutní hodiny/dny a hodnota je specifická pro tým."
+  },
+  {
+    "id": 65,
+    "question": "Jaká číselná řada se typicky používá při Planning Pokeru?",
+    "options": {
+      "A": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+      "B": "Modifikovaná Fibonacciho posloupnost",
+      "C": "Mocniny dvojky (1, 2, 4, 8, 16, 32)",
+      "D": "Římské číslice (I, II, III, IV, V)"
+    },
+    "correct": "B",
+    "explanation": "Planning Poker používá modifikovanou Fibonacciho posloupnost (1/2, 1, 2, 3, 5, 8, 13, 20, nekonečno)."
+  },
+  {
+    "id": 66,
+    "question": "Co je úkolem Scrum Mastera?",
+    "options": {
+      "A": "Definovat požadavky zákazníka a priority",
+      "B": "Programovat a testovat kód",
+      "C": "Prosazovat Scrum, pomáhat týmu, řídit události a odstraňovat překážky",
+      "D": "Schvalovat rozpočet projektu"
+    },
+    "correct": "C",
+    "explanation": "Scrum Master prosazuje používání Scrumu, pomáhá týmu i Product Ownerovi, řídí události a odstraňuje překážky."
+  },
+  {
+    "id": 67,
+    "question": "Jaký je doporučený optimální počet členů Scrum týmu?",
+    "options": {
+      "A": "2–3",
+      "B": "5–7",
+      "C": "10–15",
+      "D": "15–20"
+    },
+    "correct": "B",
+    "explanation": "Optimální velikost Scrum týmu je 5–7 členů."
+  },
+  {
+    "id": 68,
+    "question": "Co se děje na Sprint Retrospective?",
+    "options": {
+      "A": "Plánování práce pro další sprint",
+      "B": "Prezentace výstupů stakeholderům",
+      "C": "Tým hodnotí svou práci a hledá způsoby zlepšení",
+      "D": "Denní kontrola postupu práce"
+    },
+    "correct": "C",
+    "explanation": "Sprint Retrospective je událost kde tým hodnotí svou práci, identifikuje poučení a hledá způsoby zlepšení."
+  },
+  {
+    "id": 69,
+    "question": "Jaký je formát User Story?",
+    "options": {
+      "A": "IF [podmínka] THEN [akce] ELSE [alternativa]",
+      "B": "Jako [role] potřebuji [funkci], abych [přínos]",
+      "C": "GIVEN [kontext] WHEN [akce] THEN [výsledek]",
+      "D": "Úkol: [popis], Termín: [datum], Priorita: [číslo]"
+    },
+    "correct": "B",
+    "explanation": "User Story má formát: Jako [cílová role] potřebuji [popis funkce], abych [přidaná hodnota pro uživatele]."
+  },
+  {
+    "id": 70,
+    "question": "Jaké tři základní stavy má Scrum Board?",
+    "options": {
+      "A": "Nový, Aktivní, Uzavřený",
+      "B": "To Do, Doing, Done",
+      "C": "Plánováno, Testováno, Nasazeno",
+      "D": "Backlog, Sprint, Release"
+    },
+    "correct": "B",
+    "explanation": "Scrum Board zobrazuje User Stories ve stavech: To Do (co je třeba udělat), Doing (na čem se pracuje) a Done (co je hotovo)."
+  }
+]
+}
