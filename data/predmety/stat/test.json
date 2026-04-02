@@ -1,1230 +1,1205 @@
 {
   "title": "Statistika",
   "questions": [
-    {
-      "id": 1,
-      "question": "Jaký typ závislosti zkoumáme mezi dvěma alternativními znaky (každý má dvě obměny)?",
-      "options": {
-        "A": "Kontingenci",
-        "B": "Korelaci",
-        "C": "Asociační závislost",
-        "D": "Ordinální závislost"
-      },
-      "correct": "C",
-      "explanation": "Závislost mezi dvěma alternativními znaky (každý nabývá dvou obměn) se nazývá asociační závislost. Kontingence se týká znaků, kde alespoň jeden je množný (více než dvě obměny)."
-    },
-    {
-      "id": 2,
-      "question": "Máme asociační tabulku s n = 55 pozorováními. Jedna z teoretických četností vychází 3,8. Jaký test použijeme?",
-      "options": {
-        "A": "χ² test nezávislosti, protože n > 40",
-        "B": "Fisherův faktoriálový test, protože teoretická četnost je menší než 5",
-        "C": "Mediánový test",
-        "D": "McNemerův test"
-      },
-      "correct": "B",
-      "explanation": "I když n > 40, při hodnotách 20 < n < 40 (nebo při n > 40 s malými teoretickými četnostmi) je nutné ověřit teoretické četnosti. Pokud je alespoň jedna teoretická četnost menší než 5, použijeme Fisherův faktoriálový test."
-    },
-    {
-      "id": 3,
-      "question": "Jaký je vzorec pro testové kritérium χ² v asociační tabulce 2 × 2?",
-      "options": {
-        "A": "χ² = (ad − bc) / n",
-        "B": "χ² = n(ad − bc)² / [(a+b)(a+c)(b+d)(c+d)]",
-        "C": "χ² = ΣΣ (n_ij − n_oj)² / n_ij",
-        "D": "χ² = (b − c)² / (b + c)"
-      },
-      "correct": "B",
-      "explanation": "Vzorec (1.1): χ² = n(ad − bc)² / [(a+b)(a+c)(b+d)(c+d)]. Vzorec v odpovědi D je McNemerův test, vzorec C je obecný χ² test pro kontingenční tabulky."
-    },
-    {
-      "id": 4,
-      "question": "Koeficient asociace V = −0,46. Co to znamená?",
-      "options": {
-        "A": "Mezi znaky není žádná závislost",
-        "B": "Závislost je středně silná a přímá",
-        "C": "Závislost je středně silná a nepřímá",
-        "D": "Výsledek je chybný, V nemůže být záporné"
-      },
-      "correct": "C",
-      "explanation": "Koeficient asociace V nabývá hodnot z intervalu (−1 ; 1). Záporná hodnota značí nepřímou závislost, hodnota kolem 0,46 v absolutní hodnotě odpovídá středně silné závislosti."
-    },
-    {
-      "id": 5,
-      "question": "Jaká je podmínka použitelnosti χ² testu v kontingenční tabulce k × m?",
-      "options": {
-        "A": "Všechny teoretické četnosti musí být větší než 10",
-        "B": "Podíl teoretických četností menších než 5 nesmí překročit 20 % a žádná nesmí být menší než 1",
-        "C": "Rozsah souboru musí být větší než 100",
-        "D": "Počet sloupců musí být roven počtu řádků"
-      },
-      "correct": "B",
-      "explanation": "Podmínka použití χ² testu: podíl teoretických četností menších než 5 nesmí překročit 20 % a žádná teoretická četnost nesmí být menší než 1. Při porušení podmínky se slučují slabé skupiny."
-    },
-    {
-      "id": 6,
-      "question": "K čemu slouží Pearsonův normalizovaný koeficient kontingence Cₙ?",
-      "options": {
-        "A": "K testování hypotézy o nezávislosti",
-        "B": "K měření síly závislosti v kontingenční tabulce na škále 0 až 1",
-        "C": "K výpočtu teoretických četností",
-        "D": "K určení počtu stupňů volnosti"
-      },
-      "correct": "B",
-      "explanation": "Pearsonův koeficient C sám o sobě nedosahuje hodnoty 1, proto se normalizuje hodnotou C_max. Normalizovaný koeficient Cₙ = C / C_max pak nabývá hodnot z intervalu ⟨0 ; 1⟩ a slouží k hodnocení síly závislosti."
-    },
-    {
-      "id": 7,
-      "question": "McNemerův test se používá pro:",
-      "options": {
-        "A": "Dva nezávislé výběry s různým rozsahem",
-        "B": "Závislá pozorování – měření před a po zákroku na stejném souboru",
-        "C": "Kontingenční tabulky větší než 2 × 2",
-        "D": "Ordinální znaky s více než třemi obměnami"
-      },
-      "correct": "B",
-      "explanation": "McNemerův test je určen pro párová (závislá) pozorování, kdy se u stejného souboru sleduje přítomnost znaku před a po zákroku. Podmínkou je b + c > 10."
-    },
-    {
-      "id": 8,
-      "question": "Relativní riziko RR = 2,5 znamená, že:",
-      "options": {
-        "A": "Pravděpodobnost ohrožení u exponovaných je o 2,5 % vyšší",
-        "B": "Pravděpodobnost ohrožení u exponovaných je 2,5krát vyšší než u neexponovaných",
-        "C": "Šance na ohrožení je 2,5krát vyšší (odds ratio)",
-        "D": "Ohrožení nezávisí na expozici"
-      },
-      "correct": "B",
-      "explanation": "Relativní riziko RR odpovídá na otázku 'kolikrát se zvýší pravděpodobnost ohrožení'. RR = 1 znamená nezávislost, RR > 1 znamená vyšší pravděpodobnost ohrožení u exponovaných. Pozor: RR a OR (odds ratio) jsou různé míry."
-    },
-    {
-      "id": 9,
-      "question": "Ve znaménkovém schématu odchylek vychází pro jedno políčko χ² = 7,4. Kolik znamének přiřadíme?",
-      "options": {
-        "A": "0",
-        "B": "Jedno (+ nebo −)",
-        "C": "Dvě (++ nebo −−)",
-        "D": "Tři (+++ nebo −−−)"
-      },
-      "correct": "C",
-      "explanation": "Pravidlo: 6,62 < χ² < 10,83 → dvě znaménka (++ nebo −−). Znaménko závisí na tom, zda je skutečná četnost větší (+) nebo menší (−) než teoretická."
-    },
-    {
-      "id": 10,
-      "question": "Cramérův koeficient kontingence V se počítá jako:",
-      "options": {
-        "A": "V = √(χ² / (χ² + n))",
-        "B": "V = (ad − bc) / √[(a+b)(c+d)(a+c)(b+d)]",
-        "C": "V = √(χ² / (n(q−1))), kde q = min(počet řádků, počet sloupců)",
-        "D": "V = C / C_max"
-      },
-      "correct": "C",
-      "explanation": "Cramérův koeficient: V = √(χ² / (n(q−1))), kde q = min(r, s). Odpověď A je Pearsonův koeficient C, odpověď B je koeficient asociace pro tabulku 2 × 2, odpověď D je normalizovaný Pearsonův koeficient."
-    },
-    {
-      "id": 11,
-      "question": "Jak se nazývá průměr okamžikové časové řady při stejně dlouhých intervalech?",
-      "options": {
-        "A": "Vážený aritmetický průměr",
-        "B": "Chronologický průměr",
-        "C": "Geometrický průměr",
-        "D": "Klouzavý průměr"
-      },
-      "correct": "B",
-      "explanation": "Průměr okamžikové časové řady se nazývá chronologický průměr. Při stejně dlouhých intervalech se počítá jako průměr hodnot, přičemž krajní hodnoty mají poloviční váhu."
-    },
-    {
-      "id": 12,
-      "question": "Co vyjadřují první diference časové řady?",
-      "options": {
-        "A": "Relativní přírůstek ukazatele oproti předchozímu období",
-        "B": "Absolutní přírůstek nebo úbytek ukazatele oproti bezprostředně předchozímu období",
-        "C": "Absolutní zrychlení nebo zpomalení vývoje",
-        "D": "Průměrný přírůstek za celou sledovanou dobu"
-      },
-      "correct": "B",
-      "explanation": "První diference (absolutní přírůstky) jsou definovány jako dy_t = y_t – y_{t-1} a vyjadřují absolutní přírůstek nebo úbytek ukazatele v daném období oproti předchozímu."
-    },
-    {
-      "id": 13,
-      "question": "Co charakterizují druhé absolutní diference?",
-      "options": {
-        "A": "Průměrnou rychlost změn hodnot v časové řadě",
-        "B": "Relativní přírůstky sledované veličiny",
-        "C": "Absolutní zrychlení nebo zpomalení vývoje časové řady",
-        "D": "Odchylky od trendové funkce"
-      },
-      "correct": "C",
-      "explanation": "Druhé absolutní diference udávají, o kolik byl následující přírůstek větší nebo menší než předcházející – tedy charakterizují absolutní zrychlení nebo zpomalení vývoje."
-    },
-    {
-      "id": 14,
-      "question": "Za jakých podmínek má smysl počítat průměrný koeficient růstu?",
-      "options": {
-        "A": "Vždy, bez ohledu na charakter řady",
-        "B": "Pouze pokud je počet členů řady větší než 10",
-        "C": "Pouze pokud časová řada vykazuje v podstatě monotónní vývoj",
-        "D": "Pouze u intervalových časových řad"
-      },
-      "correct": "C",
-      "explanation": "Průměrný koeficient růstu závisí pouze na krajních hodnotách řady, proto má smysl ho počítat jen tehdy, když řada vykazuje monotónní vývoj (stále roste nebo stále klesá)."
-    },
-    {
-      "id": 15,
-      "question": "Jaké tři složky standardně obsahuje model časové řady?",
-      "options": {
-        "A": "Trend, reziduální složka, korelační složka",
-        "B": "Trend, periodická kolísání, náhodná kolísání",
-        "C": "Sezónní složka, cyklická složka, lineární složka",
-        "D": "Absolutní přírůstky, koeficienty růstu, průměry"
-      },
-      "correct": "B",
-      "explanation": "Standardní model časové řady obsahuje trendovou složku (T), periodickou složku (P) a náhodnou (reziduální) složku (ε). V aditivním modelu: y_t = T_t + P_t + ε_t."
-    },
-    {
-      "id": 16,
-      "question": "Kdy je vhodné použít multiplikativní model časové řady místo aditivního?",
-      "options": {
-        "A": "Když jsou absolutní přírůstky přibližně konstantní",
-        "B": "Když má řada více než 20 pozorování",
-        "C": "Když velikost periodických kolísání je úměrná úrovni trendu",
-        "D": "Když řada nemá žádný trend"
-      },
-      "correct": "C",
-      "explanation": "Multiplikativní model (y_t = T_t · P_t · ε_t) je vhodný, pokud velikost periodických kolísání roste nebo klesá spolu s úrovní trendu. Při přibližně stálé amplitudě kolísání volíme aditivní model."
-    },
-    {
-      "id": 17,
-      "question": "Která trendová funkce je vhodná, pokud jsou relativní přírůstky sledované veličiny přibližně konstantní?",
-      "options": {
-        "A": "Lineární trend",
-        "B": "Logaritmická funkce",
-        "C": "Exponenciální funkce",
-        "D": "Kvadratická funkce"
-      },
-      "correct": "C",
-      "explanation": "Charakteristickou vlastností exponenciální funkce je, že relativní přírůstky zůstávají konstantní. Pokud tedy relativní přírůstky sledované veličiny jsou přibližně stálé, volíme exponenciální trend."
-    },
-    {
-      "id": 18,
-      "question": "Jak se interpretuje index determinace I² v kontextu časových řad?",
-      "options": {
-        "A": "Udává počet parametrů trendové funkce",
-        "B": "Vyjadřuje podíl celkové variability časové řady vysvětlený zvoleným trendovým modelem",
-        "C": "Měří průměrnou absolutní odchylku reziduí",
-        "D": "Určuje počet stupňů volnosti při testování trendu"
-      },
-      "correct": "B",
-      "explanation": "Index determinace I² ∈ [0, 1] vyjadřuje, jakou část celkového kolísání hodnot časové řady dokáže vysvětlit zvolený trendový model. Čím blíže 1, tím lépe model popisuje zkoumaný jev."
-    },
-    {
-      "id": 19,
-      "question": "Jaká hodnota vyrovnávací konstanty α se volí v modelu exponenciálního vyrovnávání při předpokladu rychlých a nepravidelných změn trendu?",
-      "options": {
-        "A": "α blízká 0",
-        "B": "α = 0,5 vždy",
-        "C": "α blízká 1",
-        "D": "α závisí pouze na délce řady"
-      },
-      "correct": "C",
-      "explanation": "Při rychlých a nepravidelných změnách trendu chceme přikládat větší váhu nejnovějším pozorováním, proto volíme α blízkou 1. Naopak při pomalých změnách volíme α blízkou 0."
-    },
-    {
-      "id": 20,
-      "question": "Co je zdánlivá (spuriózní) korelace časových řad?",
-      "options": {
-        "A": "Korelace vypočtená z méně než 5 pozorování",
-        "B": "Vysoká hodnota korelačního koeficientu způsobená podobným trendem obou řad, nikoli skutečnou příčinnou závislostí",
-        "C": "Korelace mezi sezónními složkami dvou řad",
-        "D": "Záporný korelační koeficient u rostoucích řad"
-      },
-      "correct": "B",
-      "explanation": "Zdánlivá korelace vzniká, když dvě časové řady rostou podobně (mají podobný trend), což způsobuje vysoký korelační koeficient, aniž by mezi nimi existovala skutečná příčinná závislost. Proto je nutné obě řady nejprve očistit od trendu a korelovat jejich rezidua."
-    },
-    {
-      "id": 21,
-      "question": "Jaká je hlavní nevýhoda metody klouzavých průměrů?",
-      "options": {
-        "A": "Je výpočetně příliš náročná",
-        "B": "Nelze ji použít pro intervalové časové řady",
-        "C": "Nevhodnost pro prognózování budoucího vývoje",
-        "D": "Vyžaduje znalost kauzálního mechanismu vývoje ukazatele"
-      },
-      "correct": "C",
-      "explanation": "Metoda klouzavých průměrů má více nevýhod, ale klíčovou je nevhodnost pro odhadování budoucího vývoje. Dále je citlivá na extrémní hodnoty a část dat na okrajích zůstane nevyrovnána."
-    },
-    {
-      "id": 22,
-      "question": "Co jsou sezónní faktory?",
-      "options": {
-        "A": "Vyrovnané hodnoty časové řady pro každé čtvrtletí",
-        "B": "Průměrné sezónní indexy upravené (standardizované) tak, aby jejich součet byl roven počtu sezón",
-        "C": "Reziduální odchylky po odstranění sezónní složky",
-        "D": "Koeficienty v rovnici lineárního trendu"
-      },
-      "correct": "B",
-      "explanation": "Sezónní faktory jsou normované (standardizované) průměrné sezónní indexy. Protože součet průměrných sezónních indexů nemusí být přesně roven počtu sezón, vynásobí se korekčním koeficientem. Sezónní očišťování se pak provede dělením původních hodnot příslušnými sezónními faktory."
-    },
-    {
-      "id": 23,
-      "question": "Co je to náhodný jev v teorii pravděpodobnosti?",
-      "options": {
-        "A": "Jev, který nastane vždy při daných podmínkách",
-        "B": "Jev, který v závislosti na náhodě může, ale nemusí nastat",
-        "C": "Jev, který nemůže nastat nikdy",
-        "D": "Jev, který je předem determinovaný"
-      },
-      "correct": "B",
-      "explanation": "Náhodný jev je takový jev, který v závislosti na náhodě může, ale nemusí při uskutečňování daného komplexu podmínek nastat."
-    },
-    {
-      "id": 24,
-      "question": "Jak se značí jev jistý?",
-      "options": {
-        "A": "V",
-        "B": "A",
-        "C": "U",
-        "D": "∅"
-      },
-      "correct": "C",
-      "explanation": "Jev jistý se obvykle značí jako U (universum) a je to jev, který za daného komplexu podmínek nastává vždy."
-    },
-    {
-      "id": 25,
-      "question": "Co platí pro neslučitelné (disjunktní) jevy A a B?",
-      "options": {
-        "A": "A ∪ B = U",
-        "B": "A ∩ B = V (jev nemožný)",
-        "C": "A ∩ B = U",
-        "D": "P(A) + P(B) = 1"
-      },
-      "correct": "B",
-      "explanation": "Neslučitelné jevy se nemohou současně vyskytnout, proto jejich průnik je jev nemožný: A ∩ B = V."
-    },
-    {
-      "id": 26,
-      "question": "Jaký je vzorec pro klasickou pravděpodobnost jevu A?",
-      "options": {
-        "A": "P(A) = n/m",
-        "B": "P(A) = m + n",
-        "C": "P(A) = m/n",
-        "D": "P(A) = m - n"
-      },
-      "correct": "C",
-      "explanation": "Podle klasické definice Laplace: P(A) = m/n, kde m je počet příznivých případů a n je počet všech možných případů."
-    },
-    {
-      "id": 27,
-      "question": "Jak se vypočítá pravděpodobnost sjednocení dvou libovolných jevů A a B?",
-      "options": {
-        "A": "P(A) + P(B)",
-        "B": "P(A) · P(B)",
-        "C": "P(A) + P(B) - P(A ∩ B)",
-        "D": "P(A) - P(B)"
-      },
-      "correct": "C",
-      "explanation": "Věta o sčítání: P(A ∪ B) = P(A) + P(B) - P(A ∩ B). U neslučitelných jevů se odečítaný člen rovná nule."
-    },
-    {
-      "id": 28,
-      "question": "Co je podmíněná pravděpodobnost P(A/B)?",
-      "options": {
-        "A": "Pravděpodobnost jevu A bez ohledu na B",
-        "B": "Pravděpodobnost jevu A za předpokladu, že nastal jev B",
-        "C": "Pravděpodobnost současného nastoupení A a B",
-        "D": "Pravděpodobnost, že A nebo B nastane"
-      },
-      "correct": "B",
-      "explanation": "Podmíněná pravděpodobnost P(A/B) je pravděpodobnost jevu A vypočtená za dodatečného předpokladu, že se realizoval jev B."
-    },
-    {
-      "id": 29,
-      "question": "Kdy jsou jevy A a B nezávislé?",
-      "options": {
-        "A": "Když A ∩ B = V",
-        "B": "Když P(A/B) = P(A)",
-        "C": "Když P(A) + P(B) = 1",
-        "D": "Když A ∪ B = U"
-      },
-      "correct": "B",
-      "explanation": "Jev A je nezávislý na jevu B, jestliže výskyt jevu B neovlivní pravděpodobnost výskytu jevu A, tedy P(A/B) = P(A)."
-    },
-    {
-      "id": 30,
-      "question": "Jaký je vzorec pro pravděpodobnost průniku dvou nezávislých jevů?",
-      "options": {
-        "A": "P(A) + P(B)",
-        "B": "P(A) · P(B)",
-        "C": "P(A) - P(B)",
-        "D": "P(A) / P(B)"
-      },
-      "correct": "B",
-      "explanation": "Pro nezávislé jevy platí: P(A ∩ B) = P(A) · P(B)."
-    },
-    {
-      "id": 31,
-      "question": "Co je to diskrétní náhodná veličina?",
-      "options": {
-        "A": "Veličina nabývající libovolných hodnot z intervalu",
-        "B": "Veličina nabývající pouze konečně nebo spočetně mnoho oddělených hodnot",
-        "C": "Veličina s normálním rozdělením",
-        "D": "Veličina se spojitou distribuční funkcí"
-      },
-      "correct": "B",
-      "explanation": "Diskrétní náhodná veličina nabývá pouze konečného nebo spočetného množství od sebe navzájem oddělených hodnot."
-    },
-    {
-      "id": 32,
-      "question": "Co je to distribuční funkce F(x)?",
-      "options": {
-        "A": "F(x) = P(X = x)",
-        "B": "F(x) = P(X > x)",
-        "C": "F(x) = P(X < x)",
-        "D": "F(x) = P(X ≥ x)"
-      },
-      "correct": "C",
-      "explanation": "Distribuční funkce F(x) přiřazuje každému reálnému číslu pravděpodobnost, že náhodná veličina nabude hodnoty menší než toto číslo: F(x) = P(X < x)."
-    },
-    {
-      "id": 33,
-      "question": "Jaký je vztah mezi hustotou pravděpodobnosti f(x) a distribuční funkcí F(x)?",
-      "options": {
-        "A": "f(x) = ∫F(x)dx",
-        "B": "f(x) = F'(x) (derivace)",
-        "C": "f(x) = 1/F(x)",
-        "D": "f(x) = F(x)²"
-      },
-      "correct": "B",
-      "explanation": "Hustota pravděpodobnosti je definována jako derivace distribuční funkce: f(x) = F'(x)."
-    },
-    {
-      "id": 34,
-      "question": "Jak se vypočítá střední hodnota diskrétní náhodné veličiny?",
-      "options": {
-        "A": "E(X) = Σxᵢ² · pᵢ",
-        "B": "E(X) = Σxᵢ · pᵢ",
-        "C": "E(X) = Σpᵢ / xᵢ",
-        "D": "E(X) = Πxᵢ · pᵢ"
-      },
-      "correct": "B",
-      "explanation": "Střední hodnota diskrétní veličiny: E(X) = Σxᵢ · pᵢ, kde xᵢ jsou hodnoty a pᵢ odpovídající pravděpodobnosti."
-    },
-    {
-      "id": 35,
-      "question": "Jaký je výpočetní tvar rozptylu?",
-      "options": {
-        "A": "D(X) = E(X) - [E(X)]²",
-        "B": "D(X) = E(X²) - [E(X)]²",
-        "C": "D(X) = [E(X)]² - E(X²)",
-        "D": "D(X) = E(X²) + [E(X)]²"
-      },
-      "correct": "B",
-      "explanation": "Výpočetní tvar rozptylu: D(X) = E(X²) - [E(X)]², kde E(X²) je střední hodnota druhé mocniny veličiny."
-    },
-    {
-      "id": 36,
-      "question": "Jaké parametry má binomické rozdělení?",
-      "options": {
-        "A": "μ a σ",
-        "B": "λ",
-        "C": "n a p",
-        "D": "a a b"
-      },
-      "correct": "C",
-      "explanation": "Binomické rozdělení má parametry n (počet pokusů) a p (pravděpodobnost úspěchu v jednom pokusu)."
-    },
-    {
-      "id": 37,
-      "question": "Jaká je střední hodnota a rozptyl binomického rozdělení?",
-      "options": {
-        "A": "E(X) = p, D(X) = p(1-p)",
-        "B": "E(X) = np, D(X) = np(1-p)",
-        "C": "E(X) = n, D(X) = n²p",
-        "D": "E(X) = p/n, D(X) = p²"
-      },
-      "correct": "B",
-      "explanation": "U binomického rozdělení: E(X) = np a D(X) = np(1-p)."
-    },
-    {
-      "id": 38,
-      "question": "Kdy lze binomické rozdělení aproximovat Poissonovým rozdělením?",
-      "options": {
-        "A": "Když n < 30 a p > 0,5",
-        "B": "Když n ≥ 30 a p ≤ 0,1, přičemž λ = np zůstává konstantní",
-        "C": "Když n = p",
-        "D": "Nikdy, jsou to neslučitelná rozdělení"
-      },
-      "correct": "B",
-      "explanation": "Binomické rozdělení lze aproximovat Poissonovým, když n ≥ 30 a p ≤ 0,1, přičemž součin np = λ zůstává konstantní."
-    },
-    {
-      "id": 39,
-      "question": "Jaké parametry má normální rozdělení N(μ, σ²)?",
-      "options": {
-        "A": "Střední hodnota μ a rozptyl σ²",
-        "B": "Počet pokusů n a pravděpodobnost p",
-        "C": "Parametr λ",
-        "D": "Meze intervalu a a b"
-      },
-      "correct": "A",
-      "explanation": "Normální rozdělení N(μ, σ²) je určeno střední hodnotou μ a rozptylem σ²."
-    },
-    {
-      "id": 40,
-      "question": "Co platí podle 3σ pravidla pro normální rozdělení?",
-      "options": {
-        "A": "99,7% hodnot leží v intervalu (μ - σ, μ + σ)",
-        "B": "95,5% hodnot leží v intervalu (μ - 2σ, μ + 2σ)",
-        "C": "99,7% hodnot leží v intervalu (μ - 3σ, μ + 3σ)",
-        "D": "68,3% hodnot leží v intervalu (μ - 3σ, μ + 3σ)"
-      },
-      "correct": "C",
-      "explanation": "3σ pravidlo: P(μ - 3σ < X < μ + 3σ) ≈ 0,997, tedy prakticky všechny hodnoty leží v intervalu (μ - 3σ, μ + 3σ)."
-    },
-    {
-      "id": 41,
-      "question": "Jak se standardizuje normální veličina X ~ N(μ, σ²)?",
-      "options": {
-        "A": "Z = (X + μ) / σ",
-        "B": "Z = (X - μ) / σ",
-        "C": "Z = X / (μ · σ)",
-        "D": "Z = (μ - X) / σ²"
-      },
-      "correct": "B",
-      "explanation": "Standardizace: Z = (X - μ) / σ, kde Z ~ N(0, 1) má normované normální rozdělení."
-    },
-    {
-      "id": 42,
-      "question": "Jaká je střední hodnota exponenciálního rozdělení s parametrem λ?",
-      "options": {
-        "A": "E(X) = λ",
-        "B": "E(X) = 1/λ",
-        "C": "E(X) = λ²",
-        "D": "E(X) = e^λ"
-      },
-      "correct": "B",
-      "explanation": "U exponenciálního rozdělení je střední hodnota E(X) = 1/λ a rozptyl D(X) = 1/λ²."
-    },
-    {
-      "id": 43,
-      "question": "Co je statistický soubor?",
-      "options": {
-        "A": "Soubor všech statistických metod používaných ve výzkumu",
-        "B": "Konečná neprázdná množina prvků majících určité společné vlastnosti",
-        "C": "Databáze všech provedených statistických šetření",
-        "D": "Množina všech možných hodnot statistického znaku"
-      },
-      "correct": "B",
-      "explanation": "Statistický soubor je konečná neprázdná množina prvků (předmětů, případů, jednotek), které mají z daného hlediska určité společné vlastnosti."
-    },
-    {
-      "id": 44,
-      "question": "Jak se nazývá prvek statistického souboru?",
-      "options": {
-        "A": "Statistická veličina",
-        "B": "Statistická jednotka",
-        "C": "Statistický parametr",
-        "D": "Statistický atribut"
-      },
-      "correct": "B",
-      "explanation": "Prvky statistického souboru se nazývají statistické jednotky."
-    },
-    {
-      "id": 45,
-      "question": "Jaký rozsah má střední statistický soubor?",
-      "options": {
-        "A": "Méně než 10 jednotek",
-        "B": "10–30 jednotek",
-        "C": "30–100 jednotek",
-        "D": "Více než 1000 jednotek"
-      },
-      "correct": "C",
-      "explanation": "Střední soubory mají rozsah 30–100 jednotek. Malé soubory mají < 30, velké > 100 jednotek."
-    },
-    {
-      "id": 46,
-      "question": "Jaký je rozdíl mezi jednorozměrným a vícerozměrným statistickým souborem?",
-      "options": {
-        "A": "Počet statistických jednotek v souboru",
-        "B": "Počet sledovaných statistických znaků na jednotce",
-        "C": "Velikost základního souboru",
-        "D": "Způsob získávání dat"
-      },
-      "correct": "B",
-      "explanation": "U jednorozměrných souborů zjišťujeme na každé jednotce pouze jeden statistický znak, u vícerozměrných více znaků a zkoumáme jejich vzájemný vztah."
-    },
-    {
-      "id": 47,
-      "question": "Který z následujících znaků je kvantitativní spojitý?",
-      "options": {
-        "A": "Počet zrn v klasu",
-        "B": "Barva květu",
-        "C": "Hektarový výnos",
-        "D": "Pohlaví"
-      },
-      "correct": "C",
-      "explanation": "Hektarový výnos je kvantitativní spojitý znak – může nabývat libovolných reálných hodnot z určitého intervalu. Počet zrn je diskrétní, barva a pohlaví jsou kvalitativní znaky."
-    },
-    {
-      "id": 48,
-      "question": "Co je základní soubor?",
-      "options": {
-        "A": "Výběrový soubor použitý pro konkrétní šetření",
-        "B": "Soubor všech statistických jednotek, na něž se vztahuje statistické zkoumání",
-        "C": "Soubor základních statistických metod",
-        "D": "Minimální počet jednotek potřebných pro statistickou analýzu"
-      },
-      "correct": "B",
-      "explanation": "Základní soubor je soubor všech statistických jednotek, na něž se vztahuje příslušné statistické zkoumání. Může být konečný nebo nekonečný."
-    },
-    {
-      "id": 49,
-      "question": "Jaký je hlavní rozdíl mezi úplným a neúplným statistickým zjišťováním?",
-      "options": {
-        "A": "Úplné je rychlejší a levnější",
-        "B": "Úplné prošetřuje všechny jednotky, neúplné pouze jejich část",
-        "C": "Neúplné poskytuje přesnější výsledky",
-        "D": "Úplné se používá jen pro malé soubory"
-      },
-      "correct": "B",
-      "explanation": "Úplné (vyčerpávající) zjišťování prošetřuje všechny jednotky souboru, neúplné (nevyčerpávající) pouze část – jde o výběrové šetření."
-    },
-    {
-      "id": 50,
-      "question": "Co je opora výběru?",
-      "options": {
-        "A": "Statistická metoda pro ověření správnosti výběru",
-        "B": "Seznam všech značek (zástupců) jednotek použitých pro výběr",
-        "C": "Minimální počet jednotek v náhodném výběru",
-        "D": "Dokumentace provedeného šetření"
-      },
-      "correct": "B",
-      "explanation": "Opora výběru je soubor všech značek (zástupců) jednotek – např. listky se jmény, seznamy, mapy. Musí být úplná a aktuální."
-    },
-    {
-      "id": 51,
-      "question": "Jaký je rozdíl mezi náhodným výběrem s opakováním a bez opakování?",
-      "options": {
-        "A": "S opakováním je výběr reprezentativnější",
-        "B": "S opakováním se jednotka po prozkoumání vrátí zpět, bez opakování ne",
-        "C": "Bez opakování se používá jen pro malé soubory",
-        "D": "S opakováním má každá jednotka jinou pravděpodobnost výběru"
-      },
-      "correct": "B",
-      "explanation": "U výběru s opakováním (s vracením) se jednotka po prozkoumání vrátí zpět do souboru, u výběru bez opakování se nevrací a rozsah souboru se zmenšuje."
-    },
-    {
-      "id": 52,
-      "question": "Která technika náhodného vybírání vyžaduje, aby jednotky byly seřazeny do posloupnosti a vybíral se každý k-tý prvek?",
-      "options": {
-        "A": "Losování",
-        "B": "Použití tabulek náhodných čísel",
-        "C": "Systematický výběr",
-        "D": "Výběr pomocí nezávislého znaku"
-      },
-      "correct": "C",
-      "explanation": "Systematický výběr vyžaduje seřazení jednotek do posloupnosti a výběr každého k-tého prvku počínaje od náhodně zvoleného startu."
-    },
-    {
-      "id": 53,
-      "question": "Proč se anketa často považuje za nereprezentativní?",
-      "options": {
-        "A": "Dotazníky jsou příliš dlouhé",
-        "B": "Odpovídá jen malá část respondentů a existuje vztah mezi ochotou odpovídat a dotazovanou skutečností",
-        "C": "Je příliš drahá",
-        "D": "Nelze ji použít pro velké soubory"
-      },
-      "correct": "B",
-      "explanation": "Anketa je často nereprezentativní, protože odpoví zpravidla jen menší část (cca 1/3) a mezi ochotou odpovídat a dotazovanou skutečností obvykle existuje vztah, což zkresluje výsledky."
-    },
-    {
-      "id": 54,
-      "question": "Kdy je vhodná metoda základního masivu?",
-      "options": {
-        "A": "Když jsou všechny jednotky stejně velké",
-        "B": "Když soubor tvoří několik velkých jednotek a velký počet malých, přičemž zkoumaný jev se vyskytuje převážně na velkých jednotkách",
-        "C": "Když potřebujeme zobecnit výsledky na celý soubor",
-        "D": "Když provádíme destruktivní zkoumání"
-      },
-      "correct": "B",
-      "explanation": "Metoda základního masivu se použije, když soubor tvoří několik velkých (objemných) jednotek a velký počet malých – prošetří se jen velké jednotky, které zachycují převážnou část zkoumaného jevu."
-    },
-    {
-      "id": 55,
-      "question": "Co je klíčovým požadavkem na výběrové šetření?",
-      "options": {
-        "A": "Co největší rozsah výběru",
-        "B": "Reprezentativnost výběru",
-        "C": "Nejmenší možné náklady",
-        "D": "Nejrychlejší provedení"
-      },
-      "correct": "B",
-      "explanation": "Klíčovým požadavkem na výběrové šetření je reprezentativnost výběru – výběr musí obsahovat podstatné a charakteristické rysy základního souboru, aby bylo možné provést zobecnění výsledků."
-    },
-    {
-      "id": 56,
-      "question": "Který z následujících znaků je kvalitativní?",
-      "options": {
-        "A": "Teplota výfukových plynů",
-        "B": "Výška rostliny",
-        "C": "Druh půdy",
-        "D": "Dojivost"
-      },
-      "correct": "C",
-      "explanation": "Druh půdy je kvalitativní znak – jeho obměny se musí popsat slovně nebo definicí. Ostatní možnosti jsou kvantitativní spojité znaky."
-    },
-    {
-      "id": 57,
-      "question": "Jaké jsou podmínky pro považování systematického výběru za ekvivalent náhodného výběru?",
-      "options": {
-        "A": "Seřazení musí být podle velikosti jednotek a výběr musí být bez opakování",
-        "B": "Seřazení musí být zcela objektivní a nesmí souviset se zkoumanou skutečností",
-        "C": "Musí se použít tabulky náhodných čísel a losování",
-        "D": "Jednotky musí být rozděleny do vrstev"
-      },
-      "correct": "B",
-      "explanation": "Systematický výběr lze považovat za ekvivalent náhodného pouze tehdy, je-li seřazení zcela objektivní a naprosto nezávislé na zkoumané skutečnosti (např. abecední pořadí, geografické umístění)."
-    },
-    {
-      "id": 58,
-      "question": "Co je to bodový odhad?",
-      "options": {
-        "A": "Interval, který s danou pravděpodobností obsahuje neznámý parametr",
-        "B": "Jedno číslo vypočtené z výběrových dat, které považujeme za odhad parametru",
-        "C": "Pravděpodobnost, že odhad je správný",
-        "D": "Rozsah celého základního souboru"
-      },
-      "correct": "B",
-      "explanation": "Bodový odhad je jedna konkrétní hodnota (číslo) vypočtená z výběrového souboru, kterou použijeme jako odhad neznámého parametru základního souboru."
-    },
-    {
-      "id": 59,
-      "question": "Jak se označuje průměr základního souboru (populační průměr)?",
-      "options": {
-        "A": "x̄",
-        "B": "s",
-        "C": "μ",
-        "D": "σ"
-      },
-      "correct": "C",
-      "explanation": "Průměr základního souboru (populační průměr) se označuje řeckým písmenem μ. Symbol x̄ označuje výběrový průměr."
-    },
-    {
-      "id": 60,
-      "question": "Která vlastnost odhadové statistiky znamená, že E(T) = θ?",
-      "options": {
-        "A": "Konzistence",
-        "B": "Výdatnost",
-        "C": "Nestrannost",
-        "D": "Postačující"
-      },
-      "correct": "C",
-      "explanation": "Nestrannost (nevychýlenost) znamená, že střední hodnota statistiky T se rovná odhadovanému parametru θ, tedy E(T) = θ. Odchylky se v průměru eliminují."
-    },
-    {
-      "id": 61,
-      "question": "Co je to interval spolehlivosti?",
-      "options": {
-        "A": "Rozsah výběrového souboru",
-        "B": "Interval, který s předem danou pravděpodobností (1-α) obsahuje neznámou hodnotu parametru",
-        "C": "Hladina významnosti testu",
-        "D": "Směrodatná odchylka výběru"
-      },
-      "correct": "B",
-      "explanation": "Interval spolehlivosti je interval, který s pravděpodobností 1-α (koeficient spolehlivosti) obsahuje neznámou hodnotu populaceční charakteristiky."
-    },
-    {
-      "id": 62,
-      "question": "Jaký je vztah mezi hladinou významnosti α a koeficientem spolehlivosti?",
-      "options": {
-        "A": "Koeficient spolehlivosti = α",
-        "B": "Koeficient spolehlivosti = 1 - α",
-        "C": "Koeficient spolehlivosti = 1 + α",
-        "D": "Koeficient spolehlivosti = 2α"
-      },
-      "correct": "B",
-      "explanation": "Koeficient spolehlivosti se značí 1-α. Například při α = 0,05 je koeficient spolehlivosti 0,95, což odpovídá 95% intervalu spolehlivosti."
-    },
-    {
-      "id": 63,
-      "question": "Která statistika je nestranným odhadem průměru μ základního souboru?",
-      "options": {
-        "A": "Rozptyl s²",
-        "B": "Výběrový průměr x̄",
-        "C": "Směrodatná odchylka s",
-        "D": "Medián x̃"
-      },
-      "correct": "B",
-      "explanation": "Výběrový průměr x̄ je nestranným odhadem průměru μ, protože E(x̄) = μ. Je také konzistentní, výdatný a postačující pro normální rozdělení."
-    },
-    {
-      "id": 64,
-      "question": "Jaký je vzorec pro přípustnou chybu odhadu Δ při známém rozptylu σ² a výběru s opakováním?",
-      "options": {
-        "A": "Δ = tₐ · s/√n",
-        "B": "Δ = uₐ · σ/√n",
-        "C": "Δ = σ²/n",
-        "D": "Δ = s²/(n-1)"
-      },
-      "correct": "B",
-      "explanation": "Při známém rozptylu σ² a výběru s opakováním se používá normované normální rozdělení: Δ = uₐ · σ/√n, kde uₐ je kritická hodnota."
-    },
-    {
-      "id": 65,
-      "question": "Kdy použijeme t-distribution (Studentovo rozdělení) místo normálního?",
-      "options": {
-        "A": "Když je rozptyl základního souboru známý",
-        "B": "Když je rozptyl základního souboru neznámý a musíme použít výběrový rozptyl s²",
-        "C": "Když máme více než 120 pozorování",
-        "D": "Když odhadujeme medián"
-      },
-      "correct": "B",
-      "explanation": "Studentovo rozdělení (t-distribution) použijeme, když je rozptyl základního souboru σ² neznámý a musíme ho odhadnout výběrovým rozptylem s². Platí pro malé výběry, při velkých n se blíží normálnímu."
-    },
-    {
-      "id": 66,
-      "question": "Co znamená konzistence odhadové statistiky?",
-      "options": {
-        "A": "E(T) = θ",
-        "B": "S rostoucím rozsahem výběru se zvyšuje pravděpodobnost, že odhad se liší od skutečné hodnoty nepatrně",
-        "C": "Statistika má nejmenší rozptyl ze všech nestranných odhadů",
-        "D": "Obsahuje všechny informace o populaceční charakteristice"
-      },
-      "correct": "B",
-      "explanation": "Konzistence znamená, že s rostoucím rozsahem výběru (n → ∞) konverguje odhad k pravé hodnotě parametru. Formálně: lim(n→∞) P(|θ - T| < ε) = 1."
-    },
-    {
-      "id": 67,
-      "question": "Jaký je rozdíl mezi jednostranným a dvoustranným intervalem spolehlivosti?",
-      "options": {
-        "A": "Jednostranný je přesnější než dvoustranný",
-        "B": "Jednostranný je omezen pouze z jedné strany (shora nebo zdola), dvoustranný z obou stran",
-        "C": "Jednostranný se používá jen pro malé výběry",
-        "D": "Dvoustranný má vždy 95% spolehlivost, jednostranný 99%"
-      },
-      "correct": "B",
-      "explanation": "Jednostranný interval je omezen pouze shora (pravostranný) nebo pouze zdola (levostranný). Dvoustranný interval určuje dolní i horní mez odhadu."
-    },
-    {
-      "id": 68,
-      "question": "Jaký je vzorec pro stanovení rozsahu výběru n při známém σ² a výběru s opakováním?",
-      "options": {
-        "A": "n = (uₐ² · σ²) / Δ²",
-        "B": "n = (tₐ² · s²) / Δ²",
-        "C": "n = σ² / (uₐ · Δ)",
-        "D": "n = Δ² / (uₐ² · σ²)"
-      },
-      "correct": "A",
-      "explanation": "Při známém rozptylu a výběru s opakováním: n = (uₐ² · σ²) / Δ², kde Δ je požadovaná přípustná chyba odhadu."
-    },
-    {
-      "id": 69,
-      "question": "Jaký je bodový odhad parametru p alternativního rozdělení?",
-      "options": {
-        "A": "Výběrový průměr x̄",
-        "B": "Výběrový podíl m/n (výběrová relativní četnost)",
-        "C": "Výběrový medián x̃",
-        "D": "Výběrový rozptyl s²"
-      },
-      "correct": "B",
-      "explanation": "Parametr p alternativního rozdělení (podíl jednotek s danou vlastností) se bodově odhaduje výběrovým podílem m/n, kde m je počet jednotek s vlastností a n je rozsah výběru."
-    },
-    {
-      "id": 70,
-      "question": "Jak se označuje výběrová směrodatná odchylka?",
-      "options": {
-        "A": "σ",
-        "B": "s",
-        "C": "σ²",
-        "D": "μ"
-      },
-      "correct": "B",
-      "explanation": "Výběrová směrodatná odchylka se označuje s. Symbol σ označuje populaceční směrodatnou odchylku, σ² populaceční rozptyl."
-    },
-    {
-      "id": 71,
-      "question": "Proč se u intervalového odhadu rozptylu σ² nepoužívá normální rozdělení?",
-      "options": {
-        "A": "Protože rozptyl nemůže být záporný",
-        "B": "Protože se používá χ² (chi-kvadrát) rozdělení",
-        "C": "Protože interval pro rozptyl není symetrický",
-        "D": "Všechny uvedené důvody jsou správné"
-      },
-      "correct": "D",
-      "explanation": "Pro odhad rozptylu se používá χ² rozdělení, protože součet čtverců odchylek má tuto distribuci. Interval pro rozptyl není symetrický vzhledem k s² a rozptyl je vždy nezáporný."
-    },
-    {
-      "id": 72,
-      "question": "Co je to dvoufázový náhodný výběr?",
-      "options": {
-        "A": "Výběr, kde se kombinují dva různé typy rozdělení",
-        "B": "Postup, kdy nejprve provedeme předvýběr pro odhad rozptylu, pak doplníme na požadovaný rozsah",
-        "C": "Výběr rozdělený na dvě poloviny",
-        "D": "Odhad, který používá dvě statistiky současně"
-      },
-      "correct": "B",
-      "explanation": "Dvoufázový výběr se použije, když neznáme rozptyl základního souboru. V 1. fázi provedeme předvýběr (menší výběr), z něj odhadneme s² a určíme potřebný rozsah n. Ve 2. fázi doplníme výběr na požadovaný rozsah."
-    },
-    {
-      "id": 73,
-      "question": "Jaký je vzorec pro relativní četnost?",
-      "options": {
-        "A": "f_i = n_i · n",
-        "B": "f_i = n_i / n",
-        "C": "f_i = n / n_i",
-        "D": "f_i = n_i + n"
-      },
-      "correct": "B",
-      "explanation": "Relativní četnost se vypočítá jako podíl absolutní četnosti n_i a celkového rozsahu souboru n."
-    },
-    {
-      "id": 74,
-      "question": "Co udává Sturgesovo pravidlo?",
-      "options": {
-        "A": "Výpočet aritmetického průměru",
-        "B": "Určení počtu intervalů pro tříděná data",
-        "C": "Výpočet mediánu",
-        "D": "Určení variačního rozpětí"
-      },
-      "correct": "B",
-      "explanation": "Sturgesovo pravidlo k ≈ 1 + 3,3 log n slouží k přibližnému určení optimálního počtu intervalů při intervalovém rozdělení četností."
-    },
-    {
-      "id": 75,
-      "question": "Jak se vypočítá vážený aritmetický průměr pro tříděná data?",
-      "options": {
-        "A": "x̄ = (∑x_i) / n",
-        "B": "x̄ = (∑x_i · n_i) / (∑n_i)",
-        "C": "x̄ = (∑n_i) / (∑x_i)",
-        "D": "x̄ = (∑x_i²) / n"
-      },
-      "correct": "B",
-      "explanation": "Vážený aritmetický průměr se vypočítá jako podíl součtu součinů hodnot a jejich četností a celkového počtu jednotek."
-    },
-    {
-      "id": 76,
-      "question": "Jaká je hlavní výhoda mediánu oproti aritmetickému průměru?",
-      "options": {
-        "A": "Jednodušší výpočet",
-        "B": "Necitlivost k extrémním hodnotám",
-        "C": "Využití všech hodnot souboru",
-        "D": "Menší výpočetní chyby"
-      },
-      "correct": "B",
-      "explanation": "Medián je necitlivý k extrémním hodnotám (outliers), zatímco aritmetický průměr na ně reaguje okamžitě."
-    },
-    {
-      "id": 77,
-      "question": "Jak se vypočítá variační koeficient?",
-      "options": {
-        "A": "V = s² / x̄ · 100",
-        "B": "V = s / x̄ · 100",
-        "C": "V = x̄ / s · 100",
-        "D": "V = R / x̄ · 100"
-      },
-      "correct": "B",
-      "explanation": "Variační koeficient V = (s / x̄) · 100 [%] vyjadřuje relativní variabilitu jako podíl směrodatné odchylky a průměru."
-    },
-    {
-      "id": 78,
-      "question": "Co je to kvartilové rozpětí (IQR)?",
-      "options": {
-        "A": "Rozdíl mezi maximální a minimální hodnotou",
-        "B": "Rozdíl mezi horním a dolním kvartilem",
-        "C": "Součet všech kvartilů",
-        "D": "Podíl mediánu a průměru"
-      },
-      "correct": "B",
-      "explanation": "IQR (Interquartile Range) = x̃_0,75 - x̃_0,25, tedy rozdíl mezi 3. a 1. kvartilem."
-    },
-    {
-      "id": 79,
-      "question": "Který vzorec platí pro výpočet výběrového rozptylu?",
-      "options": {
-        "A": "s² = ∑(x_i - x̄) / (n-1)",
-        "B": "s² = ∑(x_i - x̄)² / n",
-        "C": "s² = ∑(x_i - x̄)² / (n-1)",
-        "D": "s² = ∑(x_i - x̄)² · (n-1)"
-      },
-      "correct": "C",
-      "explanation": "Výběrový rozptyl se dělí (n-1) pro získání nestranného odhadu, nikoli n."
-    },
-    {
-      "id": 80,
-      "question": "Co reprezentuje pětičíselný souhrn (five-number summary)?",
-      "options": {
-        "A": "Průměr, medián, modus, rozptyl a směrodatnou odchylku",
-        "B": "Minimum, Q1, medián, Q3, maximum",
-        "C": "Střední hodnotu všech kvartilů",
-        "D": "Součet četností všech intervalů"
-      },
-      "correct": "B",
-      "explanation": "Pětičíselný souhrn tvoří: minimum, dolní kvartil (Q1), medián, horní kvartil (Q3) a maximum."
-    },
-    {
-      "id": 81,
-      "question": "Co je to nulová hypotéza (H₀)?",
-      "options": {
-        "A": "Hypotéza, která se přijímá po zamítnutí alternativní",
-        "B": "Testovaná hypotéza, obvykle tvrzení o rovnosti parametru s konkrétní hodnotou",
-        "C": "Hypotéza o tom, že dva výběry pocházejí z různých rozdělení",
-        "D": "Hypotéza, která se vždy přijímá"
-      },
-      "correct": "B",
-      "explanation": "Nulová hypotéza H₀ je testovaná hypotéza, typicky formulovaná jako θ = θ₀ (parametr se rovná konkrétní hodnotě)."
-    },
-    {
-      "id": 82,
-      "question": "Jaká je pravděpodobnost chyby 1. druhu?",
-      "options": {
-        "A": "β – pravděpodobnost, že nezamítneme H₀, když neplatí",
-        "B": "1 – α – síla testu",
-        "C": "α – pravděpodobnost zamítnutí H₀, když platí",
-        "D": "1 – β – pravděpodobnost správného zamítnutí H₀"
-      },
-      "correct": "C",
-      "explanation": "Chyba 1. druhu nastává, když zamítneme nulovou hypotézu, přestože platí. Její pravděpodobnost je α (hladina významnosti)."
-    },
-    {
-      "id": 83,
-      "question": "Který test použijeme pro ověření, zda rozptyl normálního rozdělení se rovná konkrétní hodnotě?",
-      "options": {
-        "A": "t-test",
-        "B": "F-test",
-        "C": "χ²-test",
-        "D": "Wilcoxonův test"
-      },
-      "correct": "C",
-      "explanation": "Pro test hypotézy H₀: σ² = σ₀² používáme χ²-test s testovým kritériem χ² = (n-1)s²/σ₀²."
-    },
-    {
-      "id": 84,
-      "question": "Jaký je hlavní rozdíl mezi parametrickými a neparametrickými testy?",
-      "options": {
-        "A": "Parametrické testy jsou vždy přesnější",
-        "B": "Neparametrické testy vyžadují normalitu rozdělení",
-        "C": "Parametrické testy předpokládají specifické rozdělení, neparametrické nikoliv",
-        "D": "Neparametrické testy se používají pouze pro velké výběry"
-      },
-      "correct": "C",
-      "explanation": "Parametrické testy předpokládají určité rozdělení (např. normální), zatímco neparametrické testy jsou nezávislé na tvaru rozdělení."
-    },
-    {
-      "id": 85,
-      "question": "Co je to kritický obor?",
-      "options": {
-        "A": "Obor hodnot, kde se H₀ přijímá",
-        "B": "Obor hodnot testové statistiky, pro který zamítáme H₀",
-        "C": "Rozsah výběru, který je kritický pro test",
-        "D": "Interval spolehlivosti pro odhad parametru"
-      },
-      "correct": "B",
-      "explanation": "Kritický obor K obsahuje hodnoty testové statistiky, jejichž výskyt je za platnosti H₀ málo pravděpodobný → zamítnutí H₀."
-    },
-    {
-      "id": 86,
-      "question": "Který test použijeme pro porovnání průměrů dvou nezávislých výběrů, pokud předpokládáme stejné rozptyly?",
-      "options": {
-        "A": "Welchův test",
-        "B": "Párový t-test",
-        "C": "Dvouvýběrový t-test",
-        "D": "Wilcoxonův test"
-      },
-      "correct": "C",
-      "explanation": "Při stejných rozptylech používáme dvouvýběrový t-test. Welchův test se použije při nestejných rozptylech."
-    },
-    {
-      "id": 87,
-      "question": "Co je to síla testu?",
-      "options": {
-        "A": "Pravděpodobnost chyby 1. druhu",
-        "B": "Pravděpodobnost chyby 2. druhu",
-        "C": "Pravděpodobnost správného zamítnutí H₀, tedy 1 – β",
-        "D": "Hladina významnosti α"
-      },
-      "correct": "C",
-      "explanation": "Síla testu je 1 – β, tedy pravděpodobnost, že test správně odhalí neplatnost nulové hypotézy."
-    },
-    {
-      "id": 88,
-      "question": "Který test je neparametrickou analogií párového t-testu?",
-      "options": {
-        "A": "Dvouvýběrový Wilcoxonův test",
-        "B": "Wilcoxonův test (párový)",
-        "C": "Kruskalův-Wallisův test",
-        "D": "χ²-test"
-      },
-      "correct": "B",
-      "explanation": "Wilcoxonův test (párový) je neparametrická obdoba párového t-testu, pracuje s pořadovými čísly absolutních hodnot diferencí."
-    },
-    {
-      "id": 89,
-      "question": "Jaký je vzorec pro testové kritérium v jednovýběrovém t-testu?",
-      "options": {
-        "A": "t = (x̄ – μ₀) / (s/√n)",
-        "B": "t = (x̄ – μ₀) · √n / s",
-        "C": "t = (x̄ – μ₀) / s²",
-        "D": "t = (x̄ – μ₀) · n / s"
-      },
-      "correct": "B",
-      "explanation": "t = (x̄ – μ₀)/s · √n, kde x̄ je výběrový průměr, μ₀ hypotetická hodnota, s výběrová směrodatná odchylka a n rozsah výběru."
-    },
-    {
-      "id": 90,
-      "question": "Co testuje Kruskalův-Wallisův test?",
-      "options": {
-        "A": "Rovnost rozptylů více výběrů",
-        "B": "Rovnost průměrů dvou výběrů",
-        "C": "Zda m nezávislých výběrů pochází z téhož rozdělení",
-        "D": "Normalitu rozdělení"
-      },
-      "correct": "C",
-      "explanation": "Kruskalův-Wallisův test je neparametrická obdoba ANOVA – testuje, zda m nezávislých výběrů pochází z téhož rozdělení."
-    },
-    {
-      "id": 91,
-      "question": "Kdy použijeme F-test?",
-      "options": {
-        "A": "Pro testování průměru jednoho výběru",
-        "B": "Pro porovnání rozptylů dvou normálních rozdělení",
-        "C": "Pro testování shody s exponenciálním rozdělením",
-        "D": "Pro párová měření"
-      },
-      "correct": "B",
-      "explanation": "F-test slouží pro porovnání dvou rozptylů: F = s₁²/s₂² (při s₁² ≥ s₂²)."
-    },
-    {
-      "id": 92,
-      "question": "Co je to oboustranná alternativa?",
-      "options": {
-        "A": "H₁: θ > θ₀",
-        "B": "H₁: θ < θ₀",
-        "C": "H₁: θ ≠ θ₀",
-        "D": "H₁: θ = θ₀"
-      },
-      "correct": "C",
-      "explanation": "Oboustranná alternativa H₁: θ ≠ θ₀ testuje, zda se parametr liší od hypotetické hodnoty libovolným směrem."
-    },
-    {
-      "id": 93,
-      "question": "Jaký je rozdíl mezi funkční a statistickou závislostí?",
-      "options": {
-        "A": "Funkční závislost je náhodná, statistická je deterministická",
-        "B": "Funkční závislost: jedné hodnotě x odpovídá jediná hodnota y; statistická: jedné hodnotě x odpovídá více hodnot y",
-        "C": "Funkční závislost se používá jen v matematice, statistická jen v ekonomii",
-        "D": "Funkční závislost je lineární, statistická je nelineární"
-      },
-      "correct": "B",
-      "explanation": "Funkční závislost je deterministická (jedna hodnota → jedna hodnota), zatímco statistická závislost je stochastická (jedna hodnota → více hodnot s určitou pravděpodobností)."
-    },
-    {
-      "id": 94,
-      "question": "Co určuje regresní úloha?",
-      "options": {
-        "A": "Stupeň síly závislosti mezi veličinami",
-        "B": "Formu závislosti a její matematické vyjádření regresní funkcí",
-        "C": "Testování hypotéz o nezávislosti veličin",
-        "D": "Výpočet pravděpodobnosti výskytu hodnot"
-      },
-      "correct": "B",
-      "explanation": "Regresní úloha zjišťuje formu závislosti a vyjadřuje ji matematickou funkcí. Korelační úloha určuje stupeň síly závislosti."
-    },
-    {
-      "id": 95,
-      "question": "Jak se nazývá metoda pro odhad parametrů regresní přímky?",
-      "options": {
-        "A": "Metoda maximální věrohodnosti",
-        "B": "Metoda nejmenších čtverců",
-        "C": "Metoda Monte Carlo",
-        "D": "Metoda eliminace proměnných"
-      },
-      "correct": "B",
-      "explanation": "Metoda nejmenších čtverců minimalizuje součet čtverců odchylek pozorovaných hodnot od odhadované regresní funkce."
-    },
-    {
-      "id": 96,
-      "question": "Jaký je vztah mezi regresními koeficienty bᵧₓ a bₓᵧ a korelačním koeficientem r?",
-      "options": {
-        "A": "r = bᵧₓ + bₓᵧ",
-        "B": "r = bᵧₓ · bₓᵧ",
-        "C": "|r| = √(bᵧₓ · bₓᵧ)",
-        "D": "r = (bᵧₓ + bₓᵧ)/2"
-      },
-      "correct": "C",
-      "explanation": "Absolutní hodnota korelačního koeficientu je geometrickým průměrem obou sdružených regresních koeficientů: |r| = √(bᵧₓ · bₓᵧ)."
-    },
-    {
-      "id": 97,
-      "question": "Co vyjadřuje koeficient determinace r²?",
-      "options": {
-        "A": "Podíl nevyjasněné variability závislé proměnné",
-        "B": "Procento variability závislé proměnné vysvětlitelné regresním modelem",
-        "C": "Směrnici regresní přímky",
-        "D": "Průměrnou chybu odhadu"
-      },
-      "correct": "B",
-      "explanation": "Koeficient determinace r² udává, z kolika procent jsou změny závislé proměnné vysvětlitelné zvolenou regresní funkcí."
-    },
-    {
-      "id": 98,
-      "question": "Jaké jsou meze korelačního koeficientu r?",
-      "options": {
-        "A": "0 ≤ r ≤ 1",
-        "B": "-1 ≤ r ≤ 1",
-        "C": "-∞ < r < +∞",
-        "D": "0 ≤ r ≤ 100"
-      },
-      "correct": "B",
-      "explanation": "Korelační koeficient nabývá hodnot v intervalu <-1; 1>, kde -1 znamená dokonalou nepřímou, 1 dokonalou přímou a 0 žádnou lineární závislost."
-    },
-    {
-      "id": 99,
-      "question": "Jak se interpretuje hodnota |r| = 0,85 podle orientační stupnice?",
-      "options": {
-        "A": "Slabá závislost",
-        "B": "Mírná (střední) závislost",
-        "C": "Silná závislost",
-        "D": "Žádná závislost"
-      },
-      "correct": "C",
-      "explanation": "Podle orientační stupnice: 0 < |r| ≤ 0,3 slabá, 0,3 < |r| ≤ 0,8 mírná, 0,8 < |r| ≤ 1 silná závislost."
-    },
-    {
-      "id": 100,
-      "question": "Jaký je hlavní rozdíl mezi korelačním koeficientem r a indexem korelace Iᵧₓ?",
-      "options": {
-        "A": "r se používá pro lineární, Iᵧₓ pro nelineární regresi",
-        "B": "r je vždy větší než Iᵧₓ",
-        "C": "r je asymetrický, Iᵧₓ je symetrický",
-        "D": "r má rozsah 0-1, Iᵧₓ má rozsah -1 až 1"
-      },
-      "correct": "A",
-      "explanation": "Korelační koeficient r měří těsnost lineární závislosti, index korelace Iᵧₓ se používá pro nelineární regresi. Korelační koeficient je symetrický (rₓᵧ = rᵧₓ), index korelace není."
-    },
-    {
-      "id": 101,
-      "question": "Jak se transformuje exponenciální regrese f(x) = α·βˣ na lineární tvar?",
-      "options": {
-        "A": "Substitucí z = ln x",
-        "B": "Logaritmickou transformací: ln f(x) = ln α + x ln β",
-        "C": "Substitucí z = 1/x",
-        "D": "Umocněním na druhou"
-      },
-      "correct": "B",
-      "explanation": "Exponenciální regrese se linearizuje logaritmickou transformací: ln f(x) = ln α + x ln β, což je rovnice přímky u = A + Bx."
-    },
-    {
-      "id": 102,
-      "question": "Jaký je stupeň volnosti při testu významnosti korelačního koeficientu?",
-      "options": {
-        "A": "n-1",
-        "B": "n-2",
-        "C": "n",
-        "D": "2n"
-      },
-      "correct": "B",
-      "explanation": "Testovací kritérium t = (r/√(1-r²))·√(n-2) má Studentovo rozdělení s f = n-2 stupni volnosti."
-    }
-  ]
+  {
+    "id": 1,
+    "question": "Hypergeometrické rozdělení se používá v případech:",
+    "options": {
+      "A": "kdy pravděpodobnost nastoupení jevu není závislá na výsledcích předcházejících pokusů",
+      "B": "kdy je pravděpodobnost nastoupení jevu závislá na výsledcích předcházejících pokusů",
+      "C": "kdy je pravděpodobnost nastoupení jevu pro všechny pokusy stejná",
+      "D": "kdy o nastoupení jevu rozhodují jiné vlivy"
+    },
+    "correct": "B",
+    "explanation": "Hypergeometrické rozdělení modeluje výběr bez vracení, kde pravděpodobnost úspěchu závisí na předchozích výsledcích (mění se složení populace)."
+  },
+  {
+    "id": 2,
+    "question": "O přibližování posloupnosti náhodných veličin, která má charakter konvergence v distribuci, se hovoří v souvislosti:",
+    "options": {
+      "A": "se zákonem velkých čísel",
+      "B": "s Čebyševovými nerovnostmi",
+      "C": "s centrální limitní větou",
+      "D": "s pravděpodobnostní funkcí"
+    },
+    "correct": "C",
+    "explanation": "Centrální limitní věta popisuje konvergenci v distribuci — součet/průměr velkého počtu náhodných veličin konverguje k normálnímu rozdělení."
+  },
+  {
+    "id": 3,
+    "question": "Rozptyl vyjadřuje variabilitu:",
+    "options": {
+      "A": "aritmetického průměru v souboru",
+      "B": "absolutních odchylek jednotlivých hodnot znaku od střední hodnoty",
+      "C": "relativních odchylek jednotlivých hodnot znaku od střední hodnoty",
+      "D": "jednotlivých hodnot znaku mezi sebou a zároveň ve smyslu odchylek od aritmetického průměru"
+    },
+    "correct": "D",
+    "explanation": "Rozptyl měří průměr čtverců odchylek od střední hodnoty — tedy vyjadřuje variabilitu hodnot jak vzájemně, tak vůči průměru."
+  },
+  {
+    "id": 4,
+    "question": "Síla testu představuje:",
+    "options": {
+      "A": "podíl chyby 1. a 2. druhu",
+      "B": "schopnost testu zamítnout nesprávnou nulovou hypotézu",
+      "C": "číselné vyjádření alternativní hypotézy",
+      "D": "vyjádření velikosti testového kritéria"
+    },
+    "correct": "B",
+    "explanation": "Síla testu (1 − β) je pravděpodobnost, že test správně zamítne nulovou hypotézu, pokud ve skutečnosti neplatí."
+  },
+  {
+    "id": 5,
+    "question": "Spearmanův koeficient se používá:",
+    "options": {
+      "A": "jako míra shody teoretických hodnot a reziduí",
+      "B": "jako míra shody empirických hodnot a reziduí",
+      "C": "při měření těsnosti závislosti monotónních vztahů",
+      "D": "při měření těsnosti závislosti sezónního kolísání"
+    },
+    "correct": "C",
+    "explanation": "Spearmanův koeficient je neparametrická míra korelace založená na pořadích, vhodná pro monotónní (ne nutně lineární) vztahy."
+  },
+  {
+    "id": 6,
+    "question": "Pokud jsou hodnoty souboru seskupeny blízko střední hodnoty, bude pak směrodatná odchylka:",
+    "options": {
+      "A": "velká",
+      "B": "malá",
+      "C": "nedá se spočítat",
+      "D": "nelze takto uvažovat o její velikosti"
+    },
+    "correct": "B",
+    "explanation": "Směrodatná odchylka měří rozptýlení hodnot kolem střední hodnoty. Čím blíže jsou hodnoty u průměru, tím je menší."
+  },
+  {
+    "id": 7,
+    "question": "Test o hodnotě průměru základního souboru:",
+    "options": {
+      "A": "určuje, zda je průměr výběrového souboru statisticky závislý na průměru základního souboru",
+      "B": "používá se k testování rozdílu mezi výběrovým průměrem a předpokládanou hodnotou průměru základního souboru",
+      "C": "je určen k testování rozdílů mezi průměry v případě nezávislých výběrů",
+      "D": "je určen k testování rozdílů mezi průměry v případě závislých výběrů"
+    },
+    "correct": "B",
+    "explanation": "Jednovýběrový test o průměru porovnává výběrový průměr s hypotetickou hodnotou průměru základního souboru."
+  },
+  {
+    "id": 8,
+    "question": "Sdružená regrese popisuje závislost:",
+    "options": {
+      "A": "vícenásobnou",
+      "B": "jednostrannou",
+      "C": "oboustrannou",
+      "D": "více než dvou kvantitativních znaků"
+    },
+    "correct": "C",
+    "explanation": "Sdružená regrese popisuje oboustrannou závislost — obě proměnné se vzájemně ovlivňují, popisujeme dvě regresní přímky."
+  },
+  {
+    "id": 9,
+    "question": "Hypergeometrické rozdělení se používá v případech:",
+    "options": {
+      "A": "výběru s vracením",
+      "B": "výběru bez vracení",
+      "C": "výběru s předem danými pravděpodobnostmi",
+      "D": "výběru se stejnými pravděpodobnostmi"
+    },
+    "correct": "B",
+    "explanation": "Hypergeometrické rozdělení modeluje situace, kdy vybíráme bez vracení — vybraný prvek se nevrací zpět do populace."
+  },
+  {
+    "id": 10,
+    "question": "Moivrova–Laplaceova věta se zabývá:",
+    "options": {
+      "A": "konvergencí negativně binomického rozdělení k normálnímu",
+      "B": "konvergencí exponenciálního rozdělení k normálnímu",
+      "C": "konvergencí binomického rozdělení k normálnímu",
+      "D": "konvergencí hypergeometrického rozdělení k normálnímu"
+    },
+    "correct": "C",
+    "explanation": "Moivrova–Laplaceova věta je speciální případ CLV: s rostoucím n konverguje binomické rozdělení k normálnímu."
+  },
+  {
+    "id": 11,
+    "question": "Oblastní výběr:",
+    "options": {
+      "A": "adresně oslovuje pouze určitou vybranou část statistických jednotek",
+      "B": "používá se tam, kde se základní soubor skládá z několika velkých a většího počtu malých jednotek",
+      "C": "při zahrnování jednotek spolurozhodují různá logická hlediska a názory",
+      "D": "rozdělí soubor do několika samostatných skupin, ve kterých se pak provádí prostý náhodný výběr"
+    },
+    "correct": "D",
+    "explanation": "Oblastní (stratifikovaný) výběr rozdělí populaci do homogenních skupin (strat) a v každé provede prostý náhodný výběr."
+  },
+  {
+    "id": 12,
+    "question": "Pevná závislost znamená pojem, kdy:",
+    "options": {
+      "A": "výskytu jednoho jevu nemusí nutně odpovídat výskyt druhého jevu",
+      "B": "výskytu jednoho jevu nutně odpovídá výskyt druhého jevu",
+      "C": "jeden jev podmiňuje jev jiný jen s určitou pravděpodobností a v dané intenzitě",
+      "D": "jeden jev podmiňuje jev jiný jen s určitou pravděpodobností a v různé intenzitě"
+    },
+    "correct": "B",
+    "explanation": "Pevná (funkční) závislost znamená, že každé hodnotě jedné proměnné nutně a jednoznačně odpovídá hodnota druhé proměnné."
+  },
+  {
+    "id": 13,
+    "question": "Lze zvětšením rozsahu výběru ovlivnit šíři intervalu spolehlivosti pro odhad střední hodnoty ZS?",
+    "options": {
+      "A": "Ano, interval spolehlivosti bude užší.",
+      "B": "Ano, interval spolehlivosti bude širší.",
+      "C": "Na šířku intervalu to nemá vliv.",
+      "D": "Bude nutné zvolit jiný typ rozdělení."
+    },
+    "correct": "A",
+    "explanation": "S rostoucím rozsahem výběru n klesá směrodatná chyba odhadu, a tím se interval spolehlivosti zužuje."
+  },
+  {
+    "id": 14,
+    "question": "Tvrzení, že neexistuje rozdíl mezi dvěma nebo více charakteristikami, se nazývá:",
+    "options": {
+      "A": "náhodná hypotéza",
+      "B": "závislá hypotéza",
+      "C": "nulová hypotéza",
+      "D": "alternativní hypotéza"
+    },
+    "correct": "C",
+    "explanation": "Nulová hypotéza (H₀) tvrdí, že mezi sledovanými charakteristikami neexistuje statisticky významný rozdíl."
+  },
+  {
+    "id": 15,
+    "question": "Rozdělení testů na dvouvýběrové a jednovýběrové je určeno:",
+    "options": {
+      "A": "formulací vědecké hypotézy",
+      "B": "rozsahem souborů",
+      "C": "testovým kritériem",
+      "D": "počtem souborů"
+    },
+    "correct": "D",
+    "explanation": "Jednovýběrový test pracuje s jedním souborem, dvouvýběrový porovnává dva soubory — rozlišení závisí na počtu souborů."
+  },
+  {
+    "id": 16,
+    "question": "Regrese představuje:",
+    "options": {
+      "A": "určení extrémů funkce",
+      "B": "určení síly závislosti",
+      "C": "analýzu odlehlých pozorování",
+      "D": "stanovení průběhu závislosti"
+    },
+    "correct": "D",
+    "explanation": "Regresní analýza stanovuje průběh (tvar) závislosti mezi proměnnými pomocí matematické funkce."
+  },
+  {
+    "id": 17,
+    "question": "Hustota pravděpodobnosti se používá u veličin:",
+    "options": {
+      "A": "nespojitých",
+      "B": "spojitých",
+      "C": "diskrétních",
+      "D": "normativních"
+    },
+    "correct": "B",
+    "explanation": "Hustota pravděpodobnosti f(x) popisuje rozdělení spojitých náhodných veličin. Diskrétní veličiny používají pravděpodobnostní funkci."
+  },
+  {
+    "id": 18,
+    "question": "Při výběru bez vracení:",
+    "options": {
+      "A": "jednotky jsou vybírány podle důležitosti",
+      "B": "všechny jednotky mají stejnou pravděpodobnost vybrání",
+      "C": "jednotky jsou záměrně vybrány",
+      "D": "jednotky mají postupně se zvyšující pravděpodobnost vybrání"
+    },
+    "correct": "B",
+    "explanation": "Při náhodném výběru bez vracení mají všechny zbývající jednotky v každém kroku stejnou pravděpodobnost být vybrány."
+  },
+  {
+    "id": 19,
+    "question": "Hodnota, kterou při testování hypotéz získáme výpočtem z naměřených hodnot, se nazývá:",
+    "options": {
+      "A": "hladina významnosti",
+      "B": "kritická hodnota",
+      "C": "testové kritérium",
+      "D": "síla testu"
+    },
+    "correct": "C",
+    "explanation": "Testové kritérium (testová statistika) je hodnota vypočtená z naměřených dat, která se porovnává s kritickou hodnotou."
+  },
+  {
+    "id": 20,
+    "question": "Chceme-li při testování eliminovat velikost chyby I. druhu na nejmenší možnou míru, jakou hodnotu hladiny významnosti je třeba volit?",
+    "options": {
+      "A": "nejlépe 0,95",
+      "B": "nejlépe 0,99",
+      "C": "co největší",
+      "D": "velmi malou"
+    },
+    "correct": "D",
+    "explanation": "Hladina významnosti α = P(chyba I. druhu). Čím menší α zvolíme (např. 0,01 místo 0,05), tím nižší riziko zamítnutí správné H₀."
+  },
+  {
+    "id": 21,
+    "question": "Koeficient regrese lze obecně interpretovat jako:",
+    "options": {
+      "A": "průměrnou změnu závisle proměnné při libovolné změně nezávisle proměnné",
+      "B": "průměrnou změnu nezávisle proměnné při libovolné změně závisle proměnné",
+      "C": "průměrnou změnu závisle proměnné při jednotkové změně nezávisle proměnné",
+      "D": "průměrnou změnu nezávisle proměnné při jednotkové změně závisle proměnné"
+    },
+    "correct": "C",
+    "explanation": "Regresní koeficient b udává, o kolik se v průměru změní Y, když se X zvýší o jednu jednotku."
+  },
+  {
+    "id": 22,
+    "question": "Jaký podíl variability závisle proměnné je vysvětlitelný zvolenou regresní funkcí, jestliže výběrový korelační koeficient je roven −0,9?",
+    "options": {
+      "A": "90 %",
+      "B": "81 %",
+      "C": "18 %",
+      "D": "10 %"
+    },
+    "correct": "B",
+    "explanation": "Koeficient determinace R² = r² = (−0,9)² = 0,81, tedy 81 % variability Y je vysvětleno modelem."
+  },
+  {
+    "id": 23,
+    "question": "Vzorec pro výpočet přípustné chyby odhadu nelze použít:",
+    "options": {
+      "A": "ke stanovení rozsahu výběru při dané spolehlivosti",
+      "B": "ke stanovení intervalu spolehlivosti při daném rozsahu výběru",
+      "C": "ke stanovení pravděpodobnosti chyby prvého druhu",
+      "D": "ke stanovení přesnosti odhadu při dané šířce intervalu"
+    },
+    "correct": "C",
+    "explanation": "Vzorec přípustné chyby se týká odhadování parametrů, nikoli testování hypotéz. Pravděpodobnost chyby I. druhu je záležitostí testů."
+  },
+  {
+    "id": 24,
+    "question": "Testové kritérium je:",
+    "options": {
+      "A": "kritická hodnota vybraného testu",
+      "B": "shrnuje informaci obsaženou ve výběrovém souboru",
+      "C": "míra souhlasu výsledků pokusu s testovanou hypotézou",
+      "D": "vyjádření pravděpodobnosti chyby testu"
+    },
+    "correct": "B",
+    "explanation": "Testové kritérium je statistika vypočtená z výběrových dat — shrnuje informaci obsaženou ve výběrovém souboru relevantní pro testovanou hypotézu."
+  },
+  {
+    "id": 25,
+    "question": "K odhadu konkrétní hodnoty yᵢ se použije:",
+    "options": {
+      "A": "regresní koeficient",
+      "B": "korelační koeficient",
+      "C": "absolutní člen",
+      "D": "regresní přímka"
+    },
+    "correct": "D",
+    "explanation": "Pro odhad konkrétní hodnoty yᵢ dosadíme xᵢ do rovnice regresní přímky: ŷᵢ = a + b·xᵢ."
+  },
+  {
+    "id": 26,
+    "question": "Spearmanův koeficient představuje:",
+    "options": {
+      "A": "neparametrickou charakteristiku variability",
+      "B": "neparametrickou charakteristiku šikmosti",
+      "C": "neparametrickou charakteristiku korelace",
+      "D": "neparametrickou charakteristiku regrese"
+    },
+    "correct": "C",
+    "explanation": "Spearmanův koeficient je neparametrická míra korelace založená na pořadích pozorování."
+  },
+  {
+    "id": 27,
+    "question": "Mezi techniky náhodného výběru nepatří:",
+    "options": {
+      "A": "tabulky náhodných čísel",
+      "B": "losování",
+      "C": "anketa",
+      "D": "generátor náhodných čísel"
+    },
+    "correct": "C",
+    "explanation": "Anketa není náhodný výběr — respondenti se sami rozhodují o účasti, takže výběr není náhodný (self-selection bias)."
+  },
+  {
+    "id": 28,
+    "question": "Exponenciální rozdělení se používá pro charakterizování:",
+    "options": {
+      "A": "doby čekání na první neúspěch",
+      "B": "počtu výskytů určitého jevu",
+      "C": "doby čekání na první úspěch",
+      "D": "doby mezi dvěma po sobě následujícími výskyty jevu"
+    },
+    "correct": "D",
+    "explanation": "Exponenciální rozdělení modeluje dobu mezi po sobě jdoucími výskyty jevu. Používá se v teorii front a spolehlivosti."
+  },
+  {
+    "id": 29,
+    "question": "Hodnotu znaku s nejvyšší četností nazýváme:",
+    "options": {
+      "A": "medián",
+      "B": "průměr",
+      "C": "modus",
+      "D": "dolní kvartil"
+    },
+    "correct": "C",
+    "explanation": "Modus je hodnota, která se v souboru vyskytuje nejčastěji (má nejvyšší četnost)."
+  },
+  {
+    "id": 30,
+    "question": "Hypotézu „Předpokládaná průměrná spotřeba benzínu se statisticky neliší od zjištěné skutečnosti“ lze ověřit pomocí:",
+    "options": {
+      "A": "párového t-testu",
+      "B": "dvouvýběrového t-testu",
+      "C": "testu dobré shody",
+      "D": "jednovýběrového t-testu"
+    },
+    "correct": "D",
+    "explanation": "Porovnáváme jeden výběrový průměr s předpokládanou hodnotou — jde o jednovýběrový t-test."
+  },
+  {
+    "id": 31,
+    "question": "Korelační pole se zabývá:",
+    "options": {
+      "A": "odlišnostmi v rozdělení proměnných",
+      "B": "grafickým znázorněním normality rozdělení",
+      "C": "grafickým znázorněním vztahu mezi proměnnými s důrazem na intenzitu vztahu",
+      "D": "grafickým znázorněním reziduí s důrazem na jejich variabilitu"
+    },
+    "correct": "C",
+    "explanation": "Korelační pole (bodový diagram) zobrazuje vztah dvou proměnných — z něj lze vyčíst směr, tvar a sílu závislosti."
+  },
+  {
+    "id": 32,
+    "question": "Binomické rozdělení se používá v případech:",
+    "options": {
+      "A": "výběru s nestejnými pravděpodobnostmi",
+      "B": "výběru bez vracení",
+      "C": "výběru s vracením",
+      "D": "výběru s předem stanovenými pravděpodobnostmi"
+    },
+    "correct": "C",
+    "explanation": "Binomické rozdělení předpokládá nezávislé pokusy se stejnou pravděpodobností úspěchu — odpovídá výběru s vracením."
+  },
+  {
+    "id": 33,
+    "question": "Při hodnocení cenové úrovně ovoce v supermarketech byly zjišťovány ceny jablek (Kč/kg). Za statistický znak lze označit:",
+    "options": {
+      "A": "vybraná jablka",
+      "B": "vybrané supermarkety",
+      "C": "cena jablek",
+      "D": "sledovaný týden"
+    },
+    "correct": "C",
+    "explanation": "Statistický znak je zkoumaná vlastnost statistické jednotky — zde je to cena jablek v Kč/kg."
+  },
+  {
+    "id": 34,
+    "question": "V případě jednovýběrových testů:",
+    "options": {
+      "A": "posuzujeme možnou shodu odhadnuté statistiky s charakteristikou ZS",
+      "B": "posuzujeme možnou shodu dvou stejných charakteristik ZS",
+      "C": "posuzujeme možnou shodu více jak dvou stejných charakteristik ZS",
+      "D": "posuzujeme možnou shodu s teoretickou četností"
+    },
+    "correct": "A",
+    "explanation": "Jednovýběrový test porovnává výběrovou statistiku (např. průměr) s předpokládanou hodnotou parametru základního souboru."
+  },
+  {
+    "id": 35,
+    "question": "Statistická závislost znamená pojem, kdy:",
+    "options": {
+      "A": "výskytu jednoho jevu nutně odpovídá výskyt druhého jevu",
+      "B": "jeden jev podmiňuje jev jiný jen s danou pravděpodobností a v dané intenzitě",
+      "C": "jeden jev podmiňuje jev jiný jen s určitou pravděpodobností a v různé intenzitě",
+      "D": "jeden jev podmiňuje jev jiný jen s určitou pravděpodobností a v dané intenzitě"
+    },
+    "correct": "D",
+    "explanation": "Statistická závislost je stochastická — jeden jev podmiňuje druhý jen s určitou pravděpodobností a v dané intenzitě (na rozdíl od pevné závislosti)."
+  },
+  {
+    "id": 36,
+    "question": "Model náhodné veličiny, který je charakteristický konstantní hustotou pravděpodobnosti, se nazývá:",
+    "options": {
+      "A": "normální rozdělení",
+      "B": "exponenciální rozdělení",
+      "C": "rovnoměrné rozdělení",
+      "D": "Poissonovo rozdělení"
+    },
+    "correct": "C",
+    "explanation": "Rovnoměrné (uniformní) rozdělení má konstantní hustotu pravděpodobnosti na daném intervalu — všechny hodnoty jsou stejně pravděpodobné."
+  },
+  {
+    "id": 37,
+    "question": "O přibližování empirických hodnot k hodnotám teoretickým, které má charakter pravděpodobnostní konvergence, se hovoří v souvislosti:",
+    "options": {
+      "A": "s centrální limitní větou",
+      "B": "s Čebyševovými nerovnostmi",
+      "C": "se zákonem velkých čísel",
+      "D": "s pravděpodobnostní funkcí"
+    },
+    "correct": "C",
+    "explanation": "Zákon velkých čísel říká, že s rostoucím počtem pozorování konvergují empirické hodnoty (výběrové statistiky) pravděpodobnostně k teoretickým hodnotám."
+  },
+  {
+    "id": 38,
+    "question": "Jestliže je rozdělení dat silně zešikmené, potom je vhodné použít:",
+    "options": {
+      "A": "medián",
+      "B": "modus",
+      "C": "aritmetický průměr",
+      "D": "harmonický průměr"
+    },
+    "correct": "A",
+    "explanation": "Medián je robustní vůči odlehlým hodnotám a zešikmení — na rozdíl od průměru není ovlivněn extrémními hodnotami."
+  },
+  {
+    "id": 39,
+    "question": "Pokud se šířka intervalu spolehlivosti zvyšuje, pak se spolehlivost odhadu:",
+    "options": {
+      "A": "snižuje",
+      "B": "zvyšuje",
+      "C": "nemění se",
+      "D": "šířka na spolehlivost nemá vliv"
+    },
+    "correct": "B",
+    "explanation": "Širší interval pokryje skutečnou hodnotu parametru s vyšší pravděpodobností — spolehlivost odhadu roste, ale přesnost klesá."
+  },
+  {
+    "id": 40,
+    "question": "Testové kritérium je:",
+    "options": {
+      "A": "kritická hodnota vybraného testu",
+      "B": "informace získaná ze základního souboru",
+      "C": "míra nesouhlasu výsledků pokusu s testovanou hypotézou",
+      "D": "vyjádření pravděpodobnosti chyby testu"
+    },
+    "correct": "C",
+    "explanation": "Testové kritérium měří, nakolik se výběrová data odlišují od toho, co bychom očekávali při platnosti H₀ — je to míra nesouhlasu s hypotézou."
+  },
+  {
+    "id": 41,
+    "question": "Když jsou veličiny X a Y lineárně nezávislé, potom korelační koeficient:",
+    "options": {
+      "A": "nabývá hodnot v intervalu (0; 1)",
+      "B": "nabývá hodnot v intervalu (−1; 1), ale nesmí být roven nule",
+      "C": "je roven 0",
+      "D": "je roven 1"
+    },
+    "correct": "C",
+    "explanation": "Pearsonův korelační koeficient měří lineární závislost. Pokud jsou veličiny lineárně nezávislé, r = 0."
+  },
+  {
+    "id": 42,
+    "question": "Model náhodné veličiny označovaný jako „rozdělení doby čekání“, používaný v teorii front, se nazývá:",
+    "options": {
+      "A": "normální rozdělení",
+      "B": "exponenciální rozdělení",
+      "C": "rovnoměrné rozdělení",
+      "D": "Poissonovo rozdělení"
+    },
+    "correct": "B",
+    "explanation": "Exponenciální rozdělení se označuje jako „rozdělení doby čekání“ a je klíčové v teorii front a spolehlivosti."
+  },
+  {
+    "id": 43,
+    "question": "Mezi míry polohy patří:",
+    "options": {
+      "A": "průměrná absolutní odchylka",
+      "B": "směrodatná odchylka",
+      "C": "průměrná relativní odchylka",
+      "D": "průměr"
+    },
+    "correct": "D",
+    "explanation": "Průměr je míra polohy (úrovně). Směrodatná odchylka, průměrná absolutní i relativní odchylka jsou míry variability."
+  },
+  {
+    "id": 44,
+    "question": "Pojem „pravděpodobnostní funkce“ se používá v souvislosti:",
+    "options": {
+      "A": "se zákonem rozdělení pravděpodobnosti nezávislých náhodných jevů",
+      "B": "se zákonem rozdělení pravděpodobnosti neslučitelných náhodných jevů",
+      "C": "se zákonem rozdělení diskrétních náhodných veličin",
+      "D": "se zákonem rozdělení spojitých náhodných veličin"
+    },
+    "correct": "C",
+    "explanation": "Pravděpodobnostní funkce P(X = xᵢ) = pᵢ popisuje rozdělení diskrétních náhodných veličin. Spojité veličiny používají hustotu pravděpodobnosti."
+  },
+  {
+    "id": 45,
+    "question": "Pokud se spolehlivost odhadu zvyšuje, pak se přesnost odhadu:",
+    "options": {
+      "A": "snižuje",
+      "B": "zvyšuje",
+      "C": "nemění se",
+      "D": "spolehlivost odhadu nemá vliv na přesnost odhadu"
+    },
+    "correct": "A",
+    "explanation": "Při konstantním rozsahu výběru platí: vyšší spolehlivost → širší interval → nižší přesnost. Spolehlivost a přesnost jsou v protikladu."
+  },
+  {
+    "id": 46,
+    "question": "Chyba, které se při odhadu s danou pravděpodobností dopustíme, se nazývá:",
+    "options": {
+      "A": "spolehlivost odhadu",
+      "B": "přesnost odhadu",
+      "C": "směrodatná chyba odhadu",
+      "D": "absolutní chyba odhadu"
+    },
+    "correct": "B",
+    "explanation": "Přesnost odhadu (přípustná chyba) je maximální chyba, které se s danou pravděpodobností dopustíme — polovina šířky intervalu spolehlivosti."
+  },
+  {
+    "id": 47,
+    "question": "S klesající silou testu se pravděpodobnost chyby prvního druhu:",
+    "options": {
+      "A": "snižuje",
+      "B": "zvyšuje",
+      "C": "nemění se",
+      "D": "charakteristiky se vzájemně neovlivňují"
+    },
+    "correct": "A",
+    "explanation": "Existuje trade-off: snížení α (chyba I. druhu) vede ke zvýšení β (chyba II. druhu) a tedy ke snížení síly testu (1−β). Naopak: klesající síla → nižší α."
+  },
+  {
+    "id": 48,
+    "question": "Pro otestování vlivu teploty na výkon 15 dělníků měřených při 19 °C a 23 °C by bylo možné použít:",
+    "options": {
+      "A": "dvouvýběrový t-test",
+      "B": "F-test",
+      "C": "Welchův test",
+      "D": "párový t-test"
+    },
+    "correct": "D",
+    "explanation": "Stejní dělníci jsou měřeni za dvou podmínek — jde o závislé (párové) soubory, proto se použije párový t-test."
+  },
+  {
+    "id": 49,
+    "question": "Sdružené regresní přímky:",
+    "options": {
+      "A": "jsou rovnoběžné",
+      "B": "jsou různoběžné v opačném směru",
+      "C": "jsou různoběžné ve stejném směru",
+      "D": "jsou různoběžné a nikde se neprotínají"
+    },
+    "correct": "C",
+    "explanation": "Sdružené regresní přímky (regrese Y na X a X na Y) jsou různoběžné ve stejném směru a protínají se v bodě [x̄, ȳ]."
+  },
+  {
+    "id": 50,
+    "question": "Který z uvedených korelačních koeficientů ukazuje na nejnižší sílu závislosti?",
+    "options": {
+      "A": "r = −0,99",
+      "B": "r = −0,7",
+      "C": "r = 0,65",
+      "D": "r = 0,53"
+    },
+    "correct": "D",
+    "explanation": "O síle závislosti rozhoduje absolutní hodnota |r|. Hodnota |0,53| = 0,53 je nejblíže nule, tedy nejslabší závislost."
+  },
+  {
+    "id": 51,
+    "question": "Diskrétní náhodná veličina nabývá:",
+    "options": {
+      "A": "libovolných hodnot z konečného nebo nekonečného intervalu",
+      "B": "izolovaných, od sebe navzájem oddělených hodnot",
+      "C": "hodnot v rozmezí ⟨0; 1⟩",
+      "D": "iracionálních hodnot"
+    },
+    "correct": "B",
+    "explanation": "Diskrétní NV nabývá izolovaných (spočetně mnoha) hodnot oddělených od sebe, např. 0, 1, 2, 3…"
+  },
+  {
+    "id": 52,
+    "question": "Co představuje průnik jevů A ∩ B?",
+    "options": {
+      "A": "jev, který nastane, pokud nastane alespoň jeden z jevů A, B",
+      "B": "jev, který nastane, pokud nastanou oba jevy A i B současně",
+      "C": "jev opačný k jevu A",
+      "D": "jev, který nastane, pokud nenastane ani jeden z jevů"
+    },
+    "correct": "B",
+    "explanation": "Průnik jevů A ∩ B je jev, který nastane právě tehdy, když nastanou oba jevy současně."
+  },
+  {
+    "id": 53,
+    "question": "Jak se označují jevy, které nemohou nastat současně?",
+    "options": {
+      "A": "opačné jevy",
+      "B": "nezávislé jevy",
+      "C": "neslučitelné (disjunktní) jevy",
+      "D": "podmíněné jevy"
+    },
+    "correct": "C",
+    "explanation": "Neslučitelné (disjunktní) jevy jsou takové, které nemohou nastat současně: A ∩ B = ∅."
+  },
+  {
+    "id": 54,
+    "question": "Opačné (komplementární) jevy musí splňovat:",
+    "options": {
+      "A": "pouze to, že jsou neslučitelné",
+      "B": "jsou neslučitelné a dohromady tvoří jistý jev",
+      "C": "jejich pravděpodobnosti se rovnají",
+      "D": "jsou na sobě nezávislé"
+    },
+    "correct": "B",
+    "explanation": "Opačné jevy musí být neslučitelné (A ∩ Ā = ∅) a vyčerpávající (A ∪ Ā = Ω). Pak P(Ā) = 1 − P(A)."
+  },
+  {
+    "id": 55,
+    "question": "Pokud je výsledek náhodného pokusu charakterizován kvantitativně (číslem), jedná se o:",
+    "options": {
+      "A": "náhodný jev",
+      "B": "náhodnou veličinu",
+      "C": "statistický znak",
+      "D": "pravděpodobnostní funkci"
+    },
+    "correct": "B",
+    "explanation": "Náhodná veličina přiřazuje výsledku pokusu číselnou hodnotu. Pokud je výsledek vyjádřen slovně, jde o náhodný jev."
+  },
+  {
+    "id": 56,
+    "question": "Pokud je výsledek náhodného pokusu charakterizován slovně, jedná se o:",
+    "options": {
+      "A": "náhodnou veličinu",
+      "B": "náhodný jev",
+      "C": "kvalitativní proměnnou",
+      "D": "statistický soubor"
+    },
+    "correct": "B",
+    "explanation": "Kvalitativní (slovní) výsledek pokusu se označuje jako náhodný jev. Kvantitativní výsledek je náhodná veličina."
+  },
+  {
+    "id": 57,
+    "question": "Zákon velkých čísel popisuje konvergenci:",
+    "options": {
+      "A": "binomického rozdělení k normálnímu",
+      "B": "výběrových charakteristik k teoretickým hodnotám při rostoucím n",
+      "C": "součtu NV k exponenciálnímu rozdělení",
+      "D": "rozptylu k nule"
+    },
+    "correct": "B",
+    "explanation": "Zákon velkých čísel říká, že s rostoucím počtem pokusů se výběrové statistiky (např. průměr) přibližují svým teoretickým hodnotám."
+  },
+  {
+    "id": 58,
+    "question": "Centrální limitní věta říká, že součet velkého počtu nezávislých NV má přibližně:",
+    "options": {
+      "A": "binomické rozdělení",
+      "B": "normální rozdělení",
+      "C": "Poissonovo rozdělení",
+      "D": "rovnoměrné rozdělení"
+    },
+    "correct": "B",
+    "explanation": "CLV: součet/průměr velkého počtu nezávislých NV konverguje k normálnímu rozdělení bez ohledu na původní rozdělení."
+  },
+  {
+    "id": 59,
+    "question": "Čebyševovy nerovnosti umožňují odhadnout pravděpodobnost odchylky NV od střední hodnoty:",
+    "options": {
+      "A": "pouze u normálně rozdělených veličin",
+      "B": "pouze u diskrétních veličin",
+      "C": "i bez znalosti konkrétního rozdělení veličiny",
+      "D": "pouze při velkém rozsahu výběru"
+    },
+    "correct": "C",
+    "explanation": "Čebyševovy nerovnosti dávají odhad pravděpodobnosti i bez znalosti konkrétního rozdělení — stačí znát střední hodnotu a rozptyl."
+  },
+  {
+    "id": 60,
+    "question": "Vážený aritmetický průměr se používá, když:",
+    "options": {
+      "A": "data mají normální rozdělení",
+      "B": "jednotlivé hodnoty mají různou důležitost (váhu)",
+      "C": "soubor obsahuje odlehlé hodnoty",
+      "D": "pracujeme s kvalitativními znaky"
+    },
+    "correct": "B",
+    "explanation": "Vážený průměr přiřazuje hodnotám různé váhy — typicky při práci s intervalovým rozdělením četností."
+  },
+  {
+    "id": 61,
+    "question": "Která míra polohy je použitelná i pro kvalitativní znaky?",
+    "options": {
+      "A": "aritmetický průměr",
+      "B": "medián",
+      "C": "modus",
+      "D": "geometrický průměr"
+    },
+    "correct": "C",
+    "explanation": "Modus (nejčastější kategorie) je jediná míra polohy použitelná pro kvalitativní znaky — průměr ani medián nedávají smysl."
+  },
+  {
+    "id": 62,
+    "question": "Variační koeficient je:",
+    "options": {
+      "A": "absolutní míra variability",
+      "B": "poměr rozptylu a průměru",
+      "C": "poměr směrodatné odchylky a průměru",
+      "D": "podíl mediánu a směrodatné odchylky"
+    },
+    "correct": "C",
+    "explanation": "Variační koeficient = σ/x̄ (resp. v %) je relativní míra variability umožňující porovnání souborů s různými jednotkami."
+  },
+  {
+    "id": 63,
+    "question": "Neúplné statistické zjišťování znamená, že:",
+    "options": {
+      "A": "zkoumáme všechny jednotky základního souboru",
+      "B": "zkoumáme pouze část jednotek a výsledky zobecňujeme na populaci",
+      "C": "data obsahují chybějící hodnoty",
+      "D": "měříme pouze jeden statistický znak"
+    },
+    "correct": "B",
+    "explanation": "Neúplné zjišťování = výběrové šetření — zkoumáme jen podmnožinu populace a výsledky zobecňujeme."
+  },
+  {
+    "id": 64,
+    "question": "Prostý náhodný výběr znamená, že:",
+    "options": {
+      "A": "výběr je proveden záměrně podle odborného úsudku",
+      "B": "každá jednotka má stejnou pravděpodobnost vybrání a výběr je nezávislý",
+      "C": "soubor je rozdělen do strat a z každé se vybírá",
+      "D": "vybíráme pouze největší jednotky"
+    },
+    "correct": "B",
+    "explanation": "Při prostém náhodném výběru má každá jednotka stejnou pravděpodobnost být vybrána a výběr jednotek je vzájemně nezávislý."
+  },
+  {
+    "id": 65,
+    "question": "Kvótní záměrný výběr se vyznačuje tím, že:",
+    "options": {
+      "A": "každá jednotka má známou pravděpodobnost vybrání",
+      "B": "strukturu výběru určují předem stanovené kvóty (pohlaví, věk apod.)",
+      "C": "výběr probíhá losováním",
+      "D": "jedná se o speciální typ náhodného výběru"
+    },
+    "correct": "B",
+    "explanation": "Kvótní výběr je nenahodilý — výzkumník sestavuje vzorek tak, aby odpovídal známým charakteristikám populace (kvóty)."
+  },
+  {
+    "id": 66,
+    "question": "Co znamená, že bodový odhad je nestranný (nevychýlený)?",
+    "options": {
+      "A": "s rostoucím n konverguje ke skutečné hodnotě",
+      "B": "jeho střední hodnota se rovná skutečné hodnotě parametru",
+      "C": "má nejmenší rozptyl ze všech odhadů",
+      "D": "využívá veškerou informaci z výběru"
+    },
+    "correct": "B",
+    "explanation": "Nestrannost: E(θ̂) = θ, tj. odhad v průměru nezavádí systematickou chybu — nenadhodnocuje ani nepodhodnocuje."
+  },
+  {
+    "id": 67,
+    "question": "Co znamená, že bodový odhad je konzistentní?",
+    "options": {
+      "A": "jeho střední hodnota je rovna odhadovanému parametru",
+      "B": "má nejmenší rozptyl",
+      "C": "s rostoucím rozsahem výběru konverguje ke skutečné hodnotě parametru",
+      "D": "využívá veškerou dostupnou informaci"
+    },
+    "correct": "C",
+    "explanation": "Konzistence: s rostoucím n se odhad stává přesnějším a konverguje (v pravděpodobnosti) k pravé hodnotě parametru."
+  },
+  {
+    "id": 68,
+    "question": "Co znamená, že bodový odhad je postačující (dostatečný)?",
+    "options": {
+      "A": "nezavádí systematickou chybu",
+      "B": "má minimální rozptyl",
+      "C": "využívá veškerou informaci o parametru obsaženou ve výběru",
+      "D": "konverguje ke skutečné hodnotě"
+    },
+    "correct": "C",
+    "explanation": "Postačitelnost: odhad „vyčerpá“ veškerou informaci o parametru, kterou výběr obsahuje — žádná jiná statistika nepřidá novou informaci."
+  },
+  {
+    "id": 69,
+    "question": "Interval spolehlivosti pro odhad rozptylu je:",
+    "options": {
+      "A": "symetrický kolem s²",
+      "B": "nesymetrický, protože je založen na χ² rozdělení",
+      "C": "vždy stejně široký bez ohledu na n",
+      "D": "symetrický kolem σ²"
+    },
+    "correct": "B",
+    "explanation": "χ² rozdělení je nesymetrické, proto je i interval spolehlivosti pro rozptyl nesymetrický kolem výběrového rozptylu s²."
+  },
+  {
+    "id": 70,
+    "question": "Spolehlivost odhadu (1 − α) vyjadřuje:",
+    "options": {
+      "A": "šířku intervalu spolehlivosti",
+      "B": "pravděpodobnost, že interval spolehlivosti pokrývá skutečnou hodnotu parametru",
+      "C": "přesnost bodového odhadu",
+      "D": "rozsah výběrového souboru"
+    },
+    "correct": "B",
+    "explanation": "Spolehlivost = pravděpodobnost, že konstruovaný interval spolehlivosti obsahuje skutečnou hodnotu parametru. Obvykle 0,95 nebo 0,99."
+  },
+  {
+    "id": 71,
+    "question": "Alternativní hypotéza H₁ se formuluje jako:",
+    "options": {
+      "A": "tvrzení o neexistenci rozdílu",
+      "B": "tvrzení opačné k H₀, přijímáme ji při zamítnutí H₀",
+      "C": "tvrzení o tvaru rozdělení",
+      "D": "tvrzení o velikosti výběru"
+    },
+    "correct": "B",
+    "explanation": "Alternativní hypotéza H₁ je negací H₀. Formuluje se podle vědecké hypotézy a přijímá se, pokud zamítneme H₀."
+  },
+  {
+    "id": 72,
+    "question": "Kritická hodnota v testování hypotéz je:",
+    "options": {
+      "A": "hodnota vypočtená z výběrových dat",
+      "B": "hraniční hodnota oddělující obor přijetí od kritického oboru",
+      "C": "pravděpodobnost chyby II. druhu",
+      "D": "hladina významnosti"
+    },
+    "correct": "B",
+    "explanation": "Kritická hodnota se odečte z tabulek na zvolené hladině významnosti a odděluje obor přijetí H₀ od kritického oboru (zamítnutí)."
+  },
+  {
+    "id": 73,
+    "question": "Obor přijetí je:",
+    "options": {
+      "A": "množina hodnot, pro které zamítáme H₀",
+      "B": "množina hodnot testového kritéria, pro které nezamítáme H₀",
+      "C": "interval spolehlivosti pro parametr",
+      "D": "rozsah platnosti alternativní hypotézy"
+    },
+    "correct": "B",
+    "explanation": "Obor přijetí = množina hodnot testového kritéria, při kterých data nejsou v dostatečném rozporu s H₀, a proto ji nezamítáme."
+  },
+  {
+    "id": 74,
+    "question": "Když přijmeme nulovou hypotézu, která je správná, dopouštíme se:",
+    "options": {
+      "A": "chyby I. druhu",
+      "B": "chyby II. druhu",
+      "C": "žádné chyby",
+      "D": "chyby odhadu"
+    },
+    "correct": "C",
+    "explanation": "Pokud přijmeme H₀ a ona skutečně platí, rozhodli jsme správně — nedopouštíme se žádné chyby testování."
+  },
+  {
+    "id": 75,
+    "question": "Parametrický test předpokládá:",
+    "options": {
+      "A": "data mohou mít libovolné rozdělení",
+      "B": "data pocházejí z rozdělení známého typu (např. normálního)",
+      "C": "pracujeme pouze s ordinálními daty",
+      "D": "test nevyžaduje žádné předpoklady"
+    },
+    "correct": "B",
+    "explanation": "Parametrický test předpokládá konkrétní typ rozdělení (zpravidla normální) a testuje jeho parametry (průměr, rozptyl)."
+  },
+  {
+    "id": 76,
+    "question": "Neparametrický test se vyznačuje tím, že:",
+    "options": {
+      "A": "vyžaduje normální rozdělení dat",
+      "B": "testuje pouze průměry",
+      "C": "nevyžaduje předpoklad o konkrétním tvaru rozdělení",
+      "D": "lze použít pouze pro velké výběry"
+    },
+    "correct": "C",
+    "explanation": "Neparametrické testy nevyžadují předpoklad o konkrétním rozdělení — jsou vhodné pro ordinální data nebo nenormální rozdělení."
+  },
+  {
+    "id": 77,
+    "question": "Závislé (párové) soubory poznáme tak, že:",
+    "options": {
+      "A": "mají stejný rozsah, ale jiné jednotky",
+      "B": "každé pozorování v jednom souboru má svůj protějšek v druhém",
+      "C": "pocházejí ze stejné populace",
+      "D": "mají stejný rozptyl"
+    },
+    "correct": "B",
+    "explanation": "Závislé soubory — každá jednotka je měřena dvakrát (např. před a po léčbě). Pozorování jsou spárována."
+  },
+  {
+    "id": 78,
+    "question": "Jaký je hlavní cíl regresní analýzy?",
+    "options": {
+      "A": "měření síly závislosti mezi proměnnými",
+      "B": "stanovení průběhu (tvaru) závislosti pomocí matematické funkce",
+      "C": "testování normality dat",
+      "D": "odhad parametrů základního souboru"
+    },
+    "correct": "B",
+    "explanation": "Regresní analýza hledá matematickou funkci, která nejlépe popisuje průběh závislosti Y na X."
+  },
+  {
+    "id": 79,
+    "question": "Jednoduchá závislost znamená závislost:",
+    "options": {
+      "A": "mezi jednou závislou a více nezávislými proměnnými",
+      "B": "mezi dvěma proměnnými (jednou závislou a jednou nezávislou)",
+      "C": "pouze lineární",
+      "D": "pouze přímou"
+    },
+    "correct": "B",
+    "explanation": "Jednoduchá závislost = vztah jedné Y na jedné X. Vícenásobná = Y závisí na dvou a více nezávislých proměnných."
+  },
+  {
+    "id": 80,
+    "question": "O oboustranné závislosti hovoříme, když:",
+    "options": {
+      "A": "Y závisí na X, ale X nezávisí na Y",
+      "B": "obě proměnné se vzájemně ovlivňují, nelze jednoznačně určit příčinu a následek",
+      "C": "závislost je lineární v obou směrech",
+      "D": "korelační koeficient je roven ±1"
+    },
+    "correct": "B",
+    "explanation": "Oboustranná závislost = obě proměnné se vzájemně ovlivňují. Popisuje se dvěma sdruženými regresními přímkami."
+  },
+  {
+    "id": 81,
+    "question": "Metoda nejmenších čtverců minimalizuje:",
+    "options": {
+      "A": "součet absolutních odchylek",
+      "B": "součet čtverců odchylek pozorovaných hodnot od predikovaných",
+      "C": "rozptyl nezávisle proměnné",
+      "D": "korelační koeficient"
+    },
+    "correct": "B",
+    "explanation": "OLS (metoda nejmenších čtverců) hledá parametry regresní funkce tak, aby Σ(yᵢ − ŷᵢ)² bylo minimální."
+  },
+  {
+    "id": 82,
+    "question": "Koeficient determinace R² vyjadřuje:",
+    "options": {
+      "A": "směr závislosti mezi proměnnými",
+      "B": "podíl variability Y vysvětlený regresním modelem",
+      "C": "průměrnou změnu Y při jednotkové změně X",
+      "D": "statistickou významnost regresního koeficientu"
+    },
+    "correct": "B",
+    "explanation": "R² udává, jaký podíl celkové variability závisle proměnné je vysvětlitelný zvolenou regresní funkcí (0–100 %)."
+  },
+  {
+    "id": 83,
+    "question": "Pokud je mezi znaky prokázána nepřímá funkční lineární závislost, korelační koeficient nabývá hodnoty:",
+    "options": {
+      "A": "r = 1",
+      "B": "r = −1",
+      "C": "r = 0",
+      "D": "r se blíží −1, ale není roven −1"
+    },
+    "correct": "B",
+    "explanation": "Nepřímá funkční lineární závislost = dokonalá záporná lineární závislost, tedy r = −1."
+  },
+  {
+    "id": 84,
+    "question": "Pořadová korelace znamená:",
+    "options": {
+      "A": "korelaci mezi prvním a posledním pozorováním",
+      "B": "míru závislosti založenou na pořadích hodnot místo na hodnotách samotných",
+      "C": "korelaci mezi ordinálními a kardinálními daty",
+      "D": "korelaci seřazenou od nejsilnější po nejslabší"
+    },
+    "correct": "B",
+    "explanation": "Pořadová korelace pracuje s pořadími pozorování — je robustní vůči odlehlým hodnotám a vhodná pro ordinální data."
+  },
+  {
+    "id": 85,
+    "question": "Intervalový odhad korelačního koeficientu u malých výběrů se konstruuje pomocí:",
+    "options": {
+      "A": "t-rozdělení přímo aplikovaného na r",
+      "B": "Fisherovy Z-transformace",
+      "C": "χ² rozdělení",
+      "D": "F-rozdělení"
+    },
+    "correct": "B",
+    "explanation": "Fisherova Z-transformace převede r na veličinu s přibližně normálním rozdělením, na kterou se sestrojí interval a zpětně transformuje."
+  },
+  {
+    "id": 86,
+    "question": "Větu o sčítání pravděpodobností použijeme, když nás zajímá:",
+    "options": {
+      "A": "pravděpodobnost, že nastanou oba jevy současně",
+      "B": "pravděpodobnost, že nastane alespoň jeden z jevů",
+      "C": "podmíněná pravděpodobnost",
+      "D": "pravděpodobnost opačného jevu"
+    },
+    "correct": "B",
+    "explanation": "Věta o sčítání: P(A ∪ B) = P(A) + P(B) − P(A ∩ B). Zjišťujeme pravděpodobnost, že nastane alespoň jeden jev."
+  },
+  {
+    "id": 87,
+    "question": "Větu o úplné pravděpodobnosti použijeme, když:",
+    "options": {
+      "A": "chceme zjistit podmíněnou pravděpodobnost",
+      "B": "chceme celkovou pravděpodobnost jevu přes rozklad na navzájem neslučitelné příčiny",
+      "C": "počítáme rozptyl",
+      "D": "potřebujeme Bayesovu větu"
+    },
+    "correct": "B",
+    "explanation": "Věta o úplné pravděpodobnosti: P(A) = Σ P(Bᵢ)·P(A|Bᵢ), kde Bᵢ tvoří úplný rozklad prostoru na neslučitelné příčiny."
+  },
+  {
+    "id": 88,
+    "question": "Statistická pravděpodobnost jevu se stanoví jako:",
+    "options": {
+      "A": "poměr příznivých výsledků ku všem možným",
+      "B": "relativní četnost jevu při rostoucím počtu pokusů",
+      "C": "subjektivní odhad odborníka",
+      "D": "integrál hustoty pravděpodobnosti"
+    },
+    "correct": "B",
+    "explanation": "Statistická (empirická) pravděpodobnost: při velkém počtu pokusů se relativní četnost jevu stabilizuje kolem jeho pravděpodobnosti."
+  },
+  {
+    "id": 89,
+    "question": "Klasická pravděpodobnost se vypočte jako:",
+    "options": {
+      "A": "relativní četnost při velkém počtu pokusů",
+      "B": "poměr počtu příznivých výsledků m ku celkovému počtu stejně možných výsledků n",
+      "C": "integrál hustoty na daném intervalu",
+      "D": "1 minus pravděpodobnost opačného jevu"
+    },
+    "correct": "B",
+    "explanation": "Klasická (apriorní) pravděpodobnost: P(A) = m/n, kde m je počet příznivých a n celkový počet stejně možných výsledků."
+  },
+  {
+    "id": 90,
+    "question": "Poissonovo rozdělení modeluje:",
+    "options": {
+      "A": "dobu čekání na první výskyt jevu",
+      "B": "počet úspěchů v n nezávislých pokusech",
+      "C": "počet výskytů vzácného jevu za určitý časový úsek",
+      "D": "spojitou náhodnou veličinu s konstantní hustotou"
+    },
+    "correct": "C",
+    "explanation": "Poissonovo rozdělení Po(λ) modeluje počet výskytů vzácného jevu v daném čase nebo prostoru, kde λ je průměrný počet výskytů."
+  },
+  {
+    "id": 91,
+    "question": "Míry šikmosti jsou založeny na:",
+    "options": {
+      "A": "srovnání průměru a rozptylu",
+      "B": "srovnání stupně nahuštěnosti hodnot prostřední velikosti s nahuštěností ostatních hodnot",
+      "C": "poměru mediánu a modu",
+      "D": "výpočtu kvartilového rozpětí"
+    },
+    "correct": "B",
+    "explanation": "Míry šikmosti porovnávají, jak jsou hodnoty nahuštěny kolem středu vs. v chvostech rozdělení."
+  },
+  {
+    "id": 92,
+    "question": "Základní soubor (populace) je:",
+    "options": {
+      "A": "libovolná podmnožina dat",
+      "B": "množina všech statistických jednotek, o nichž chceme získat informace",
+      "C": "soubor výběrových průměrů",
+      "D": "soubor pozorování bez odlehlých hodnot"
+    },
+    "correct": "B",
+    "explanation": "Základní soubor = množina všech jednotek s přesně definovaným rozsahem (věcným, prostorovým, časovým)."
+  },
+  {
+    "id": 93,
+    "question": "Metoda základního masívu spočívá v tom, že:",
+    "options": {
+      "A": "základní soubor se rozdělí do strat",
+      "B": "adresně se oslovuje pouze určitá vybraná část nejdůležitějších jednotek",
+      "C": "výběr probíhá losováním",
+      "D": "respondenti se sami přihlásí"
+    },
+    "correct": "B",
+    "explanation": "Metoda základního masívu oslovuje jen nejvýznamnější jednotky (např. firmy pokrývající většinu trhu)."
+  },
+  {
+    "id": 94,
+    "question": "Jaký test se použije pro ověření hypotézy H₀: μ = μ₀ (test o hodnotě průměru jednoho souboru)?",
+    "options": {
+      "A": "dvouvýběrový t-test",
+      "B": "Behrens-Fisherův test",
+      "C": "F-test",
+      "D": "jednovýběrový t-test"
+    },
+    "correct": "D",
+    "explanation": "Pro testování, zda se průměr jednoho souboru rovná předpokládané hodnotě, se používá jednovýběrový t-test."
+  },
+  {
+    "id": 95,
+    "question": "Zákon rozdělení pravděpodobnosti je:",
+    "options": {
+      "A": "pravidlo přiřazující každé hodnotě NV její pravděpodobnost",
+      "B": "vzorec pro výpočet rozptylu",
+      "C": "postup pro testování hypotéz",
+      "D": "metoda odhadu parametrů"
+    },
+    "correct": "A",
+    "explanation": "Zákon rozdělení je pravidlo, které každé hodnotě (intervalu) přiřazuje pravděpodobnost, že NV nabude této hodnoty."
+  },
+  {
+    "id": 96,
+    "question": "Chyba I. druhu v testování hypotéz znamená:",
+    "options": {
+      "A": "nezamítnutí nesprávné H₀",
+      "B": "zamítnutí správné H₀",
+      "C": "přijetí správné H₁",
+      "D": "nesprávný výpočet testového kritéria"
+    },
+    "correct": "B",
+    "explanation": "Chyba I. druhu = zamítneme H₀, přestože ve skutečnosti platí. Její pravděpodobnost je α (hladina významnosti)."
+  },
+  {
+    "id": 97,
+    "question": "Chyba II. druhu v testování hypotéz znamená:",
+    "options": {
+      "A": "zamítnutí správné H₀",
+      "B": "nezamítnutí nesprávné H₀",
+      "C": "přijetí správné H₀",
+      "D": "použití nesprávného testu"
+    },
+    "correct": "B",
+    "explanation": "Chyba II. druhu = nezamítneme H₀, přestože ve skutečnosti neplatí. Její pravděpodobnost je β, síla testu = 1 − β."
+  },
+  {
+    "id": 98,
+    "question": "F-test se používá k testování:",
+    "options": {
+      "A": "shody průměrů dvou souborů",
+      "B": "shody rozptylů dvou souborů",
+      "C": "normality rozdělení",
+      "D": "nezávislosti dvou znaků"
+    },
+    "correct": "B",
+    "explanation": "F-test porovnává rozptyly dvou souborů — testuje H₀: σ₁² = σ₂². Používá se i jako předtest před dvouvýběrovým t-testem."
+  },
+  {
+    "id": 99,
+    "question": "Normální rozdělení se vyznačuje:",
+    "options": {
+      "A": "konstantní hustotou pravděpodobnosti",
+      "B": "hustotou ve tvaru zvonové křivky symetrické kolem μ",
+      "C": "pouze kladnými hodnotami",
+      "D": "diskrétními hodnotami"
+    },
+    "correct": "B",
+    "explanation": "Normální (Gaussovo) rozdělení N(μ, σ²) má hustotu ve tvaru zvonové křivky, symetrické kolem střední hodnoty μ."
+  },
+  {
+    "id": 100,
+    "question": "Snížení síly testu vede k:",
+    "options": {
+      "A": "zvýšení rizika chyby I. druhu",
+      "B": "zvýšení rizika chyby II. druhu",
+      "C": "zúžení intervalu spolehlivosti",
+      "D": "zvýšení rozsahu výběru"
+    },
+    "correct": "B",
+    "explanation": "Síla testu = 1 − β. Snížení síly znamená zvýšení β, tedy vyšší riziko nezamítnutí nesprávné H₀ (chyba II. druhu)."
+  }
+]
 }
-
