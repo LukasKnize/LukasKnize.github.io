@@ -10,9 +10,9 @@
   {
     "id": "stat",
     "name": "Statistika",
-    "description": "Zaklady statistiky pro předměty statistika.",
-    "hasSummary": false,
-    "hasTest": false,
+    "description": "Zaklady statistiky.",
+    "hasSummary": true,
+    "hasTest": true,
     "hasFlashcards": false
   },
   {
