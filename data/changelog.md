@@ -1,4 +1,5 @@
 ## 2026-04-02 - Změny v materiálech
+- Nová data pro předmět statistika, více zaměřená na skutečně probranou/testovanou látku
 - Přídán předmět MPŘ vytvořený na základě prezentací z přednášek
 - Statistika je dočasně nedostupná (vyžaduje větší změny v materiálech)
 - Odebrán zbytečný testovací předmět
