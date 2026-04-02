@@ -11,8 +11,8 @@
     "id": "stat",
     "name": "Statistika",
     "description": "Zaklady statistiky pro předměty statistika.",
-    "hasSummary": true,
-    "hasTest": true,
+    "hasSummary": false,
+    "hasTest": false,
     "hasFlashcards": false
   },
   {
@@ -25,11 +25,11 @@
     "extraTabs": [{"label": "SAS Studio", "file": "SAS_Syntax.md"}]
   },
   {
-    "id": "ukazka",
-    "name": "Ukázkový předmět",
-    "description": "Šablona pro přidávání vlastních předmětů. Obsahuje ukázkový souhrn, test i kartičky.",
+    "id": "mpr",
+    "name": "Metody projektového řízení",
+    "description": "Výpisky a testy k MPŘ.",
     "hasSummary": true,
     "hasTest": true,
-    "hasFlashcards": true
-  }
+    "hasFlashcards": true,
+  },
 ]
