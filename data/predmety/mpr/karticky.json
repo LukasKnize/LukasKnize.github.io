@@ -1,0 +1,355 @@
+{
+  "title": "Kartičky – Metody projektového řízení",
+  "cards": [
+  {
+    "id": 1,
+    "front": "Co je projektové řízení?",
+    "back": "Plánování, organizování a řízení úkolů a jejich zdrojů v rámci uceleného projektu za respektování časových, zdrojových a nákladových omezení – obvykle s cílem maximálního ekonomického efektu."
+  },
+  {
+    "id": 2,
+    "front": "Co je projekt?",
+    "back": "Řízený proces aplikace úkolů a zdrojů s definovaným cílem v určeném časovém rámci. Charakterizuje ho: jasný začátek a konec, definovaný cíl, omezené zdroje/náklady/čas, požadovaná kvalita, systémovost, jedinečnost a nejistota s rizikem."
+  },
+  {
+    "id": 3,
+    "front": "Co je trojimperativ projektového řízení?",
+    "back": "CO – KDY – ZA KOLIK. Tři základní omezení projektu: rozsah (co se má udělat), čas (kdy to má být hotové) a náklady (za kolik to má být)."
+  },
+  {
+    "id": 4,
+    "front": "Jaké jsou tři úrovně projektu?",
+    "back": "1) Směrný plán (Baseline) – původní schválený plán. 2) Aktuální plán (Current) – aktualizovaný plán. 3) Skutečnost (Actual) – reálný průběh projektu."
+  },
+  {
+    "id": 5,
+    "front": "Jaké typy zdrojů existují v projektu?",
+    "back": "Obnovitelné (pracovní) – lidé, stroje, mohou být opakovaně použity. Neobnovitelné (materiálové) – písek, PHM, spotřebovávají se. Smíšené – rychle opotřebitelné součástky. Pozor: finance NEJSOU zdrojem z pohledu PŘ!"
+  },
+  {
+    "id": 6,
+    "front": "Jaké jsou základní komponenty projektu?",
+    "back": "1) Zdroj (Resource) – faktor zabezpečující činnost. 2) Úkol/Činnost (Task) – základní stavební kámen projektu. 3) Náklad (Cost) – na zdroj (sazby) nebo pevný na úkol."
+  },
+  {
+    "id": 7,
+    "front": "Kdy je vhodné použít projektové řízení a kdy ne?",
+    "back": "ANO: Jedinečné projekty s jasným začátkem a koncem (stavebnictví, marketing), typové projekty (sériová výroba). NE: Kontinuální procesy, procesy vyžadující velký podíl operativního řízení (služby, zásobování)."
+  },
+  {
+    "id": 8,
+    "front": "Kdo je Henry L. Gantt a jaký je jeho přínos?",
+    "back": "Zakladatel projektového řízení (1861–1919). V roce 1901 založil první společnost pro řízení projektů. Autorem Ganttova diagramu – lineárního časového zobrazení projektu."
+  },
+  {
+    "id": 9,
+    "front": "Jaké jsou hlavní milníky v historii projektového řízení?",
+    "back": "1901 – Gantt (diagram). 50. léta – CPM (DuPont, 1957), PERT (Polaris, 1958), MPM (Roy, 1958). 60. léta – GERT. 80. léta – uzlové grafy. 90. léta – Critical Chain (Goldratt, 1996)."
+  },
+  {
+    "id": 10,
+    "front": "Jaké typy úkolů existují v projektu?",
+    "back": "1) Obyčejný úkol. 2) Milník (Milestone) – důležitá činnost, často fiktivní s nulovou délkou. 3) Souhrnný úkol (Summary Task) – obsahuje podčinnosti. 4) Periodicky opakovaný (Recurring). 5) Subprojekt. 6) Externí úkol."
+  },
+  {
+    "id": 11,
+    "front": "Jaké typy omezení činností existují?",
+    "back": "Neukotvené: ASAP (co nejdříve), ALAP (co nejpozději). Částečně ukotvené zleva: SNET, FNET. Částečně ukotvené zprava: SNLT, FNLT. Pevně ukotvené: MSO (musí být zahájeno), MFO (musí být ukončeno)."
+  },
+  {
+    "id": 12,
+    "front": "Co je celková a volná časová rezerva?",
+    "back": "Celková (Total Slack) – o kolik lze zpozdit činnost bez narušení termínu projektu. Volná (Free Slack) – o kolik lze zpozdit činnost bez narušení začátku následující činnosti. Platí: ST ≥ SF. Činnost kde ST = 0 je kritická."
+  },
+  {
+    "id": 13,
+    "front": "Jaké jsou 4 typy vazeb mezi činnostmi?",
+    "back": "FS (Finish to Start) – nejběžnější. SS (Start to Start). FF (Finish to Finish). SF (Start to Finish). Ke každé vazbě lze přidat absolutní/relativní prodlevu nebo překryv."
+  },
+  {
+    "id": 14,
+    "front": "Jaké jsou 3 typy výpočtu doby trvání činnosti?",
+    "back": "Pevné jednotky – konstantní intenzita čerpání, změna práce mění dobu (manuální práce). Pevná doba trvání – konstantní doba, změna práce mění jednotky (jízda autem). Pevná práce – konstantní práce, změna jednotek mění dobu. Vzorec: Doba = max(Práce / Jednotky)."
+  },
+  {
+    "id": 15,
+    "front": "Co je řízení úsilím (Effort-Driven)?",
+    "back": "Celková práce potřebná k vykonání činnosti zůstává konstantní. Přidáním/ubráním zdroje se práce proporcionálně rozpočte mezi zbývající zdroje. Při pevné práci je řízení úsilím vždy zapnuto."
+  },
+  {
+    "id": 16,
+    "front": "Co je graf v teorii grafů?",
+    "back": "G = (U, E) – množina vrcholů U a množina hran E. Hrana je neuspořádaná (obecný graf) nebo uspořádaná (orientovaný graf) dvojice prvků z U. Stupeň vrcholu deg(Uᵢ) = počet incidujících hran."
+  },
+  {
+    "id": 17,
+    "front": "Co je graf typu STROM?",
+    "back": "Souvislý graf neobsahující kružnici. Mezi každými dvěma vrcholy právě jeden řetěz. n vrcholů → n-1 hran. V každém souvislém grafu lze najít kostru (podgraf typu strom)."
+  },
+  {
+    "id": 18,
+    "front": "Co je graf typu SÍŤ?",
+    "back": "Konečný, souvislý, orientovaný, acyklický graf s jedním počátkem a jedním koncem. Základní struktura pro síťové modely projektů."
+  },
+  {
+    "id": 19,
+    "front": "Jaký je rozdíl mezi AOA a AON grafy?",
+    "back": "AOA (Activity on Arc): činnosti na hranách, vazby v uzlech. Výhody: teorie, CPM, snadné rezervy. Nevýhody: horší přehlednost, jen FS vazby. AON (Activity on Node): činnosti v uzlech, vazby na hranách. Výhody: přehlednost, různé vazby. V praxi se dnes prosazují AON."
+  },
+  {
+    "id": 20,
+    "front": "K čemu slouží Ganttův diagram?",
+    "back": "Hlavní formalizační nástroj projektového řízení. Lineární zobrazení projektu na časové ose. Výhody: dobrý přehled o termínech, souhrnných činnostech. Nevýhody: horší zobrazení návazností mezi činnostmi."
+  },
+  {
+    "id": 21,
+    "front": "Co je metoda přeškrtávání hran?",
+    "back": "Slouží k číslování uzlů v síti. Počáteční uzel = 0. řád. Postupně se vyloučí výstupní hrany → uzly bez vstupních hran = další řád. V rámci stejného řádu je číslování libovolné."
+  },
+  {
+    "id": 22,
+    "front": "Co je kritická cesta?",
+    "back": "Nejdelší posloupnost činností v projektu. Její délka určuje nejkratší možnou dobu trvání projektu. Skládá se z kritických činností (celková rezerva = 0). Zpoždění jakékoli kritické činnosti zpozdí celý projekt."
+  },
+  {
+    "id": 23,
+    "front": "Co je metoda CPM (Critical Path Method)?",
+    "back": "Metoda pro graf AOA s deterministickou strukturou a deterministickými dobami trvání (1957, DuPont). Výpočet vpřed (nejdříve možné termíny) a vzad (nejpozději přípustné termíny). Kritická cesta = uzly s nulovou interferenční rezervou."
+  },
+  {
+    "id": 24,
+    "front": "Co je metoda PERT?",
+    "back": "Program Evaluation and Review Technique (1958, program Polaris). Stochastická modifikace CPM – doby trvání jsou náhodné veličiny s Beta rozdělením. Definovány třemi odhady: a (optimistický), m (nejpravděpodobnější), b (pesimistický)."
+  },
+  {
+    "id": 25,
+    "front": "Jaké jsou vzorce pro PERT?",
+    "back": "Střední hodnota: t = (a + 4m + b) / 6. Rozptyl: σ² = ((b − a) / 6)². Pravděpodobnostní analýza: normalizace z = (Ts − T₀) / σ, pak P(Tn ≤ Ts) = F(z) z tabulek normálního rozdělení."
+  },
+  {
+    "id": 26,
+    "front": "Co říká pravidlo σ v PERT?",
+    "back": "Dle normálního rozdělení: ±1σ od střední hodnoty = 68 % pravděpodobnost. ±2σ = 95 %. ±3σ = 99 %. Umožňuje stanovit intervaly spolehlivosti pro dobu trvání projektu."
+  },
+  {
+    "id": 27,
+    "front": "Co je metoda GERT?",
+    "back": "Zobecněná síťová metoda (60. léta), kde realizace činností a uzlů je dána pravděpodobností. Typy uzlů: konjunktivní (všechny hrany, = CPM), disjunktivní (právě jedna), inkluzívní (alespoň jedna). V praxi se užívá zřídka."
+  },
+  {
+    "id": 28,
+    "front": "Co je MPM (Metra Potential Method)?",
+    "back": "Základní metoda pro deterministické grafy AON (Bernard Roy, 1958). Vazby dány dvojicí potenciálů (kladný = min. vzdálenost, záporný = max. vzdálenost počátků). Specifický výpočet se zpětnými korekcemi. Problém nemusí být řešitelný!"
+  },
+  {
+    "id": 29,
+    "front": "Jaké výhody má AON zobrazení?",
+    "back": "Přirozenější pohled na modelování reality. Možnost modelování různých vazeb (FS, SS, FF, SF). Jednodušší modelace stochastických struktur. Snazší doplnění fiktivních činností. Možnost souhrnných činností."
+  },
+  {
+    "id": 30,
+    "front": "Jak lze formulovat kritickou cestu jako úlohu matematického programování?",
+    "back": "Bivalentní proměnné: hrana leží/neleží na cestě. Maximalizace součtu ohodnocení hran na cestě (doba trvání). Řešení: Branch and Bound, ve speciálních případech simplex. Celočíselné úlohy jsou obecně NP obtížné."
+  },
+  {
+    "id": 31,
+    "front": "Co je simulace a jaké má výhody/nevýhody?",
+    "back": "Numerická metoda experimentování s matematickým modelem na počítači. Výhody: Neexperimentujeme přímo se systémem, pomáhá při obtížném analytickém řešení. Nevýhody: Model není obecně platný, nezjistíme závislost vstupů a výstupů."
+  },
+  {
+    "id": 32,
+    "front": "Jaké jsou prvky simulačního modelu?",
+    "back": "Deterministické: přiřazení hodnot, elementární operace. Stochastické: generátor (pseudo)náhodných čísel. Příznak a filtr: větvení děje. Dynamické: pevný/proměnný/kombinovaný časový krok."
+  },
+  {
+    "id": 33,
+    "front": "Co je mohutnost zdroje a zdrojová přípustnost?",
+    "back": "Mohutnost Aₖ = maximální počet jednotek k-tého zdroje. Projekt je zdrojově přípustný, pokud rₖ(t) ≤ Aₖ pro všechna t (souhrnná intenzita čerpání nepřekročí mohutnost). Nesplnění = zdrojový konflikt."
+  },
+  {
+    "id": 34,
+    "front": "Jakých 7 způsobů ručního řešení zdrojových konfliktů existuje?",
+    "back": "1) Navýšení mohutnosti zdrojů. 2) Přesčasová práce. 3) Změna intenzity čerpání. 4) Změna rozvrhu práce. 5) Přerušení práce. 6) Posun počátku práce. 7) Substituce (nahrazení zdroje). Žádný nemá vliv na PRÁCI. Zrušení úkolu NENÍ řešení!"
+  },
+  {
+    "id": 35,
+    "front": "Jaká heuristická pravidla se používají při algoritmickém řešení zdrojových konfliktů?",
+    "back": "Kritické úkoly jsou důležitější než nekritické. Úkoly s vazbou FS důležitější než SS. Delší úkoly významnější než kratší. Úkoly blíže k počátku spíše ohrozí termíny. Základní metoda: minimalizace zpožďování počátku nepřípustných úkolů."
+  },
+  {
+    "id": 36,
+    "front": "Jaké jsou základní ukazatele EVA (Earned Value Analysis)?",
+    "back": "BCWS (PV) = plánované náklady = BAC × plán. % dokončení. BCWP (EV) = vytvořená hodnota = BAC × skutečné % dokončení. ACWP (AC) = skutečné náklady. BAC = celkový rozpočet při dokončení."
+  },
+  {
+    "id": 37,
+    "front": "Jak se počítají odchylky a indexy v EVA?",
+    "back": "CV (odchylka nákladů) = BCWP − ACWP. SV (odchylka plánování) = BCWP − BCWS. CPI (index nákladů) = BCWP / ACWP (>1 = úspora). SPI (index plánu) = BCWP / BCWS (>1 = předstih)."
+  },
+  {
+    "id": 38,
+    "front": "Co je Cost CPM a jaké optimalizační modely existují?",
+    "back": "Náklady na činnost jsou nepřímo úměrné její době trvání. Model A: délku kritické cesty nelze překročit – prodloužení nekritických činností. Model B: povoleno prodloužení projektu na T > TCP. Model s rezervami: proměnné jsou termíny i doby trvání. Řeší se lineárním programováním."
+  },
+  {
+    "id": 39,
+    "front": "Jakých 5 kroků má teorie omezení?",
+    "back": "1) Identifikace kritického (nejužšího) místa. 2) Maximální využití kritického místa. 3) Podřízení všech nekritických míst. 4) Odstranění omezení (rozšíření kritického místa). 5) Neustálé opakování postupu."
+  },
+  {
+    "id": 40,
+    "front": "Co je Drum-Buffer-Rope (DBR)?",
+    "back": "Instance teorie omezení pro harmonizaci výrobního řetězce. Drum: plán výroby podle kritického místa (udává rytmus). Buffer: časové a materiálové zásobníky před kritickým místem. Rope: plán pro nekritické zdroje (nesmí být přetěžovány)."
+  },
+  {
+    "id": 41,
+    "front": "Co je metoda kritického řetězu (Critical Chain)?",
+    "back": "Autor: E. M. Goldratt (90. léta). Zobecnění kritické cesty – zahrnuje i dostupnost zdrojů. Kroky: očištění dob trvání (na 50 %), ALAP, vyrovnání zdrojů, identifikace CC, vložení bufferů (Project, Feeding, Resource), sledování průniku."
+  },
+  {
+    "id": 42,
+    "front": "Co jsou Parkinsonův zákon, Studentský syndrom a Multitasking?",
+    "back": "Parkinson: Práce trvá tak dlouho, kolik času na ni přidělíme. Studentský syndrom: Rezerva je spotřebována dříve, než je třeba – nikdo nezačne s předstihem. Multitasking: Přebíhání mezi činnostmi v multiprojektovém prostředí zpomaluje vše."
+  },
+  {
+    "id": 43,
+    "front": "Jaké buffery používá metoda Critical Chain?",
+    "back": "Project Buffer – časový nárazník na konci kritického řetězu (chrání termín projektu). Feeding Buffer – časový nárazník podpůrných cest (chrání kritický řetěz). Resource Buffer – zdrojový nárazník (čas na přípravu/přesun zdroje). Velikost = polovina sumy očištění."
+  },
+  {
+    "id": 44,
+    "front": "Jakých 5 procesních skupin má řízení projektu?",
+    "back": "1) Zahajovací – na počátku projektu. 2) Plánovací – definice cílů a alternativ. 3) Prováděcí – koordinace zdrojů. 4) Sledovací – monitoring a nápravné akce. 5) Uzavírací – formalizace přijetí výsledků."
+  },
+  {
+    "id": 45,
+    "front": "Co obsahuje zahájení projektu?",
+    "back": "Iniciace, specifikace cílů a rozsahu. Organizační struktura (sponzoři, řídící rada, vedoucí, týmy). Věcná struktura (etapy, činnosti, odhady, zdroje). Harmonogram (směrný plán), rozpočet, cash flow. Procedury (kvalita, komunikace, změny, krize). Analýza rizik."
+  },
+  {
+    "id": 46,
+    "front": "Co je logický rámec (Logical Framework)?",
+    "back": "Mezinárodně uznávaný nástroj pro inicializaci projektu. 4 sloupce: 1) Popis (strom cílů: cíl → účel → výstupy → klíčové činnosti). 2) Objektivně ověřitelné ukazatele. 3) Způsob ověření. 4) Předpoklady a rizika. Provádí se v týmu."
+  },
+  {
+    "id": 47,
+    "front": "Jaká je základní dokumentace projektu?",
+    "back": "Před zahájením: Studie příležitosti, proveditelnosti, investiční studie. Při zahájení: Identifikační listina (ILP), revidovaná studie proveditelnosti, plán řízení projektu, směrný plán. Po skončení: Závěrečná zpráva."
+  },
+  {
+    "id": 48,
+    "front": "Co je riziko projektu (dle PMBOK)?",
+    "back": "Neurčitý jev nebo podmínka, jehož výskyt má pozitivní nebo negativní efekt na cíle projektu. Řízení rizik = sled aktivit s preventivními/korektivními zásahy proti ohrožujícím událostem."
+  },
+  {
+    "id": 49,
+    "front": "Jakých 6 fází má řízení rizik?",
+    "back": "1) Plánování řízení rizik. 2) Identifikace rizik (brainstorming, Delphi, SWOT). 3) Kvalitativní analýza → Registr rizik. 4) Kvantitativní analýza (pravděpodobnost × dopad). 5) Plánování obrany. 6) Monitorování a kontrola (průběžně do konce)."
+  },
+  {
+    "id": 50,
+    "front": "Jaké jsou obranné strategie proti rizikům?",
+    "back": "1) Odmítnutí – změna projektu. 2) Omezení výskytu – monitoring + záložní plán. 3) Akceptace – vytvoření rezerv. 4) Převod – pojištění, přenesení na jiný subjekt. 5) Simulace a výzkum – další zkoumání."
+  },
+  {
+    "id": 51,
+    "front": "Jak se počítá očekávaná hodnota rizika a jaké nástroje existují?",
+    "back": "Očekávaná hodnota = Pravděpodobnost × Dopad (ve finančních jednotkách). Nástroje: Rozhodovací stromy, Mapa rizik (graf s osami pravděpodobnost × dopad, 0–10), Matice rizik (1–3 body, součin = celková hodnota)."
+  },
+  {
+    "id": 52,
+    "front": "Jak se vyvíjí hodnota v ohrožení a riziko v životním cyklu projektu?",
+    "back": "Hodnota v ohrožení ROSTE (více bylo investováno). Riziko KLESÁ (s postupem realizace ubývá nejistoty). Proto je důležité řídit rizika od samého počátku."
+  },
+  {
+    "id": 53,
+    "front": "Jaké jsou 4 nejpoužívanější standardy projektového řízení?",
+    "back": "1) ICB4 (IPMA) – kompetence, Oko kompetencí. 2) PMBOK (PMI) – nejstarší, nejobecnější, 10 znalostních oblastí. 3) PRINCE2 – procesně orientovaný, 7-7-7. 4) ISO 21 500 – mezinárodní norma, blízká PMBOK."
+  },
+  {
+    "id": 54,
+    "front": "Co je ICB4 (IPMA) a Oko kompetencí?",
+    "back": "Individual Competence Baseline, verze 4 (2015). Definuje 29 kompetencí ve 3 oblastech: Kontextové (5) – souvislosti projektu. Behaviorální (10) – osobnostní a sociální. Technické (13) – konkrétní PM kompetence. Certifikace: Level D, C, B, A."
+  },
+  {
+    "id": 55,
+    "front": "Co je PMBOK (PMI)?",
+    "back": "Project Management Body of Knowledge. Nejstarší a nejobecnější standard (konec 60. let, USA). 5 skupin procesů (zahajovací → uzavírací). 10 znalostních oblastí (integrace, rozsah, čas, náklady, kvalita, HR, komunikace, rizika, subdodávky, stakeholders). Certifikace: PMP, CAPM aj."
+  },
+  {
+    "id": 56,
+    "front": "Co je PRINCE2?",
+    "back": "Projects In Controlled Environments (1989, UK). Nejrozšířenější PM metodika v Evropě. Procesně orientovaná. Struktura: 7 principů, 7 procesů, 7 témat. Řízeno obchodním případem (Business Case). Orientace na produkt. Certifikace: Foundation, Practitioner, Agile Practitioner."
+  },
+  {
+    "id": 57,
+    "front": "Co je ISO 21 500?",
+    "back": "Mezinárodní norma (od 2012). V ČR jako ČSN ISO 21 500. Pojmově a procesně se shoduje s PMBOK verze 5, doplněno o kompetence (blíže k ICB). Použitelná pro jakýkoli typ organizace a projektu."
+  },
+  {
+    "id": 58,
+    "front": "Jaký je rozdíl mezi tradičním a agilním přístupem?",
+    "back": "Tradiční: Fixní scope, flexibilní náklady a čas. Agilní: Fixní náklady a čas, flexibilní scope. Mezi nimi existuje hybridní přístup. Agile vznikl jako reakce na krizi SW vývoje v 90. letech (CHAOS Report: 1/2 projektů překročilo rozpočet, 1/3 zrušena)."
+  },
+  {
+    "id": 59,
+    "front": "Jaké jsou 4 hodnoty Agilního manifestu (2001)?",
+    "back": "1) Jednotlivci a interakce nad procesy a nástroji. 2) Fungující software nad obsáhlou dokumentací. 3) Spolupráce se zákazníkem nad vyjednáváním smluv. 4) Reakce na změny nad dodržováním plánu. Hodnoty na pravé straně jsou stále důležité, ale levá strana má přednost."
+  },
+  {
+    "id": 60,
+    "front": "Jaké jsou hlavní agilní metodiky?",
+    "back": "Scrum – nejpoužívanější (87 %). Kanban – vizuální řízení toku práce. ScrumBan – kombinace. SAFe (Scaled Agile Framework) – pro velké organizace. LeSS (Large Scale Scrum). Další: XP, FDD, Lean Development, TDD, Crystal."
+  },
+  {
+    "id": 61,
+    "front": "Co je Scrum?",
+    "back": "Agilní metoda/framework implementující agilní principy. Flexibilní a vysoce adaptabilní. Vhodný pro dynamicky se měnící prostředí, inovace, startupy. Založen na empirismu a lean přístupu. Práce probíhá v iteracích (Sprintech)."
+  },
+  {
+    "id": 62,
+    "front": "Jaké jsou role ve Scrumu?",
+    "back": "Scrum Master – prosazuje Scrum, pomáhá týmu, řídí události, odstraňuje překážky. Product Owner – zodpovědný za produkt a zákaznickou hodnotu, spravuje Product Backlog, určuje priority. Developer(s) – tvoří použitelné inkrementy, spravují Sprint Backlog."
+  },
+  {
+    "id": 63,
+    "front": "Jaké jsou události (eventy) ve Scrumu?",
+    "back": "Sprint – časově ohraničená iterace (1–4 týdny). Planning – plánování práce pro sprint. Daily Scrum – denní krátký standup. Review (Demo) – prezentace výstupů stakeholderům. Retrospective – hodnocení a zlepšování. Refinement – příprava práce do budoucna."
+  },
+  {
+    "id": 64,
+    "front": "Jaké jsou artefakty ve Scrumu?",
+    "back": "Product Backlog – prioritizovaný seznam všech User Stories, průběžně aktualizovaný. Sprint Backlog – User Stories vybrané pro aktuální sprint (na Scrum Boardu). Increment – přidaná hodnota dodaná po každém sprintu (musí splňovat Definition of Done)."
+  },
+  {
+    "id": 65,
+    "front": "Co je User Story a jaký má formát?",
+    "back": "Popis požadavku z pohledu uživatele. Formát: Jako [role] potřebuji [funkci], abych [přínos/hodnota]. Příklad: Jako kapitán hvězdné lodi potřebuji kapitánské křeslo, abych mohl pohodlně velit po delší dobu."
+  },
+  {
+    "id": 66,
+    "front": "Co je Scrum Board?",
+    "back": "Vizualizace User Stories v aktuálním sprintu. Zobrazuje přiřazení a stavy. Klíčový nástroj pro Daily Scrum. Základní sloupce: To Do (co udělat), Doing (na čem se pracuje), Done (co je hotovo)."
+  },
+  {
+    "id": 67,
+    "front": "Co jsou Story Points a Planning Poker?",
+    "back": "Story Points = abstraktní jednotky pracovního úsilí (ne hodiny/dny), specifické pro tým. Planning Poker: karty s modifikovanou Fibonacciho posloupností (1/2, 1, 2, 3, 5, 8, 13, 20, ∞). Postup: skryté hlasování → diskuze → konsenzus."
+  },
+  {
+    "id": 68,
+    "front": "Jaké agilní estimační techniky existují?",
+    "back": "1) Planning Poker – karty, Fibonacci, týmový konsenzus. 2) T-Shirt estimates – velikosti XS, S, M, L, XL. 3) Relative sizing – relativní porovnávání úkolů. Všechny se vyhýbají falešné přesnosti a absolutním číslům, jsou založené na empirické zkušenosti."
+  },
+  {
+    "id": 69,
+    "front": "Jaké jsou klíčové vlastnosti agile?",
+    "back": "Iterativní přístup. Inkrementální dodávky. Aktivní přístup týmu. Účast zákazníka. Multifunkční (cross-functional) týmy. Rychlá zpětná vazba. Samoorganizace týmu."
+  },
+  {
+    "id": 70,
+    "front": "Jaký je optimální tým ve Scrumu?",
+    "back": "5–7 členů. Křížově-funkční struktura (komplementární znalosti a dovednosti). Samoorganizace – tým sám rozhoduje, jak bude práci vykonávat. Členové jsou odpovědní za své výstupy."
+  }
+]
+}
