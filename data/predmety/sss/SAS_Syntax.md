@@ -50,7 +50,7 @@ data work.LIDE;
     else if vzdelani="S"   then EduCat="2_S";
     else if vzdelani="VOS" then EduCat="3_VOS";
     else if vzdelani="VS"  then EduCat="4_VS";
-    else EduCat = "really silly";            /* Zachycení neočekávaných hodnot */
+    else EduCat = "neznámé";            /* Zachycení neočekávaných hodnot */
 proc print;
 run;
 ```
@@ -159,7 +159,7 @@ run;
 data work.LIDE;
     set work.LIDE;
     length PrijemCat $20;
-    if prijem < 150000      then PrijemCat="1_Broke X3";
+    if prijem < 150000      then PrijemCat="1_Nizky";
     else if prijem < 250000 then PrijemCat="2_Stredni";
     else                         PrijemCat="3_Vysoky";
 proc print;
