@@ -1,3 +1,7 @@
+## 2026-04-03 - Malé změny v aplikaci
+- Možnost více testů a setů kartiček pro jeden předmět (asi bude spíš vyjímečně ale ta možnost tam je)
+- Odpovědi u testu se zamíchají 
+
 ## 2026-04-02 - Změny v materiálech
 - Nová data pro předmět statistika, více zaměřená na skutečně probranou/testovanou látku
 - Přídán předmět MPŘ vytvořený na základě prezentací z přednášek
