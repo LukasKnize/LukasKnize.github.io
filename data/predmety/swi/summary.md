@@ -91,7 +91,12 @@ Kombinuje iterativní vývoj a inkrementální dodávky; systém se buduje v cyk
 - ❌ Složitější plánování, riziko architektonické eroze
 
 #### Agilní metodiky (dnes nejpoužívanější)
-Adaptivní přístup dle **Agile Manifesta**: fungující software > dokumentace, spolupráce > smlouvy, reagování na změny > plán.
+Adaptivní přístup dle **Agile Manifesta**:
+- **Jednotlivci a interakce** před procesy a nástroji
+- **Fungující software** před vyčerpávající dokumentací
+- **Spolupráce se zákazníkem** před vyjednáváním smluv
+- **Reakce na změny** před dodržováním plánu
+I když mají věci vpravo hodnotu, věci vlevo jsou cennější.
 
 **Scrum:** Sprints (2–4 týdny), role: Product Owner, Scrum Master, tým; ceremonie: planning, daily standup, review, retrospective.
 
@@ -115,7 +120,7 @@ Rychlé vytvoření zjednodušeného modelu pro ověření konceptu.
 | **Systémový analytik** | CO a JAK technicky | Specifikace, modelování (ERD, UML, DFD), koordinace s vývojáři |
 | **Softwarový inženýr** | Technická realizace | Návrh řešení, složité algoritmy, code review, best practices |
 | **Business analytik** | Business procesy | Business case, ROI, stakeholder management |
-| **Software architekt** | Celková architektura | Výběr technologií, standardy, technické leadership |
+| **Software architekt** | Celková architektura | Výběr technologií, standardy, technický leadership |
 | **Security specialist** | Kybernetická bezpečnost | Security audit, pen-testing, incident response |
 | **DBA** | Databáze | Návrh DB, optimalizace, backup/recovery |
 | **UX/UI Designer** | Uživatelská zkušenost | User research, wireframy, prototypy, usability |
