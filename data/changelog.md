@@ -1,3 +1,6 @@
+## 2026-04-18 - drobná změna ve funkcionalitě
+- Nově možnost zopakovat si špatně zodpovězené otázky
+- Možnost zobrazit si správné odpovědi po zkončení testu
 ## 2026-04-03 - Malé změny v aplikaci
 - Možnost více testů a setů kartiček pro jeden předmět (asi bude spíš vyjímečně ale ta možnost tam je)
 - Odpovědi u testu se zamíchají 
