@@ -1,0 +1,1397 @@
+{
+  "title": "Test – Metody projektového řízení",
+  "questions":[
+  {
+    "id": 1,
+    "question": "V metodě Critical Chain slouží k ochránění doby dokončení projektu tzv.:",
+    "options": {
+      "A": "drum buffer",
+      "B": "feeding buffer",
+      "C": "resource buffer",
+      "D": "project buffer"
+    },
+    "correct": "D",
+    "explanation": "Project buffer chrání dobu dokončení celého projektu před zpožděním na kritickém řetězu. Feeding buffer chrání kritický řetěz před skluzy na podpůrných cestách."
+  },
+  {
+    "id": 2,
+    "question": "V metodě Critical Chain slouží feeding buffer k:",
+    "options": {
+      "A": "ochránění před zpožděním projektu",
+      "B": "ochraně kritického řetězu před skluzy způsobenými vytížením disponibilních zdrojů",
+      "C": "ochraně kritické cesty před přetížením zdrojů",
+      "D": "ochránění kritického řetězu před skluzy na podpůrných cestách"
+    },
+    "correct": "D",
+    "explanation": "Feeding buffer se umisťuje na podpůrné cesty, které vstupují do kritického řetězu, aby ho chránil před jejich zpožděním."
+  },
+  {
+    "id": 3,
+    "question": "Jak se jmenuje světový standard projektového řízení, pracující s pojmy „Oblasti kompetencí“?",
+    "options": {
+      "A": "PMBOK",
+      "B": "PRINCE2",
+      "C": "ICB",
+      "D": "ISO 10006"
+    },
+    "correct": "C",
+    "explanation": "ICB (IPMA Competence Baseline) pracuje s oblastmi kompetencí (technické, behaviorální a kontextové)."
+  },
+  {
+    "id": 4,
+    "question": "Činnost A je typu „Pevná práce“ a je zabezpečena třemi zdroji R1, R2 a R3. Pracnost jednotky zdroje R1 je 120 h a intenzita čerpání 1, R2: 440 h a intenzita 4, R3: 320 h a intenzita 2. Kalendář má 8hodinovou pracovní dobu. Celková doba trvání činnosti A bude:",
+    "options": {
+      "A": "15 dní",
+      "B": "13,75 dne",
+      "C": "8 dní",
+      "D": "20 dní"
+    },
+    "correct": "D",
+    "explanation": "U „Pevné práce“ je doba trvání dána zdrojem s nejdelší dobou: R1: 120/1 = 120 h, R2: 440/4 = 110 h, R3: 320/2 = 160 h. Maximum je 160 h / 8 = 20 dní."
+  },
+  {
+    "id": 5,
+    "question": "V metodě Critical Chain slouží k ochraně doby trvání kritického řetězu tzv.:",
+    "options": {
+      "A": "resource buffer",
+      "B": "feeding buffer",
+      "C": "project buffer",
+      "D": "drum buffer"
+    },
+    "correct": "C",
+    "explanation": "Project buffer chrání celkovou dobu trvání kritického řetězu (a tím i projektu) před zpožděním."
+  },
+  {
+    "id": 6,
+    "question": "Pod pojmem „životní cyklus projektu“ rozumíme časovou periodu mezi:",
+    "options": {
+      "A": "zahájením a ukončením práce na projektové osnově",
+      "B": "formulací projektového úkolu a jeho ukončením a vyhodnocením",
+      "C": "počátkem zadávání projektu a konečným vyřešením zdrojových konfliktů",
+      "D": "začátkem a koncem směrného plánu"
+    },
+    "correct": "B",
+    "explanation": "Životní cyklus projektu zahrnuje všechny fáze od formulace záměru přes realizaci až po ukončení a vyhodnocení."
+  },
+  {
+    "id": 7,
+    "question": "Podmíněná pravděpodobnost realizace činnosti v AOA modelu GERT je dána:",
+    "options": {
+      "A": "součinem podmíněné pravděpodobnosti realizace výchozího uzlu a podmíněné pravděpodobnosti realizace této činnosti",
+      "B": "součtem podmíněné pravděpodobnosti realizace výchozího uzlu a podmíněné pravděpodobnosti realizace této činnosti",
+      "C": "součtem výsledné pravděpodobnosti realizace výchozího uzlu a podmíněné pravděpodobnosti realizace této činnosti",
+      "D": "ze zadání"
+    },
+    "correct": "D",
+    "explanation": "Podmíněná pravděpodobnost realizace činnosti je v GERT zadána přímo jako vstupní parametr, nikoli dopočítávána."
+  },
+  {
+    "id": 8,
+    "question": "Zdrojové konflikty nelze řešit:",
+    "options": {
+      "A": "přeplánováním práce",
+      "B": "přeplánováním úkolů",
+      "C": "ponížením mohutnosti zdroje",
+      "D": "přesčasovou prací"
+    },
+    "correct": "C",
+    "explanation": "Snížení mohutnosti (kapacity) zdroje by konflikt ještě prohloubilo. Ostatní možnosti jsou legitimní způsoby řešení."
+  },
+  {
+    "id": 9,
+    "question": "U modelu typu GERT je uzel číslo 2 inkluzívně stochastický. Znamená to, že uzel se realizuje tehdy, když skončí:",
+    "options": {
+      "A": "právě jedna činnost, která do něho ústí",
+      "B": "většina činností, které do něho ústí",
+      "C": "všechny činnosti, které do něho ústí",
+      "D": "alespoň jedna činnost, která do něho ústí"
+    },
+    "correct": "D",
+    "explanation": "Inkluzivně stochastický uzel se aktivuje, když skončí alespoň jedna ze vstupních činností (logický OR)."
+  },
+  {
+    "id": 10,
+    "question": "Úkol typu „milník“ je obvykle definován tak, že:",
+    "options": {
+      "A": "má nulovou dobu trvání",
+      "B": "je typu „pevná práce“",
+      "C": "má nenulovou dobu trvání",
+      "D": "obsahuje dílčí podúkoly"
+    },
+    "correct": "A",
+    "explanation": "Milník představuje významný bod v projektu a má nulovou dobu trvání – slouží jako referenční bod."
+  },
+  {
+    "id": 11,
+    "question": "Řízení rizik je charakterizováno jako:",
+    "options": {
+      "A": "sled aktivit, ve kterých jsou prostřednictvím preventivních nebo korektivních zásahů odvraceny události a odstraňovány vlivy, které by mohly ohrozit říditelnost plánovaných procesů",
+      "B": "sled aktivit, ve kterých jsou prostřednictvím zásahů odvraceny události a odstraňovány vlivy, které by mohly ohrozit říditelnost plánovaných procesů",
+      "C": "sled aktivit, ve kterých jsou prostřednictvím korektních zásahů odvraceny události, které by mohly ohrozit říditelnost plánovaných procesů",
+      "D": "sled aktivit, ve kterých jsou odvraceny události, které by mohly ohrozit říditelnost plánovaných procesů"
+    },
+    "correct": "A",
+    "explanation": "Nejpřesnější definice zahrnuje preventivní i korektivní zásahy a zdůrazňuje odstraňování vlivů ohrožujících říditelnost."
+  },
+  {
+    "id": 12,
+    "question": "Identifikace rizik spočívá v:",
+    "options": {
+      "A": "systematické analýze, identifikaci a kategorizaci rizik",
+      "B": "identifikaci, kategorizaci a dokumentaci rizik",
+      "C": "analýze, identifikaci a dokumentaci rizik",
+      "D": "systematické analýze, identifikaci, kategorizaci a dokumentaci rizik"
+    },
+    "correct": "D",
+    "explanation": "Úplná identifikace rizik zahrnuje systematickou analýzu, identifikaci, kategorizaci a dokumentaci všech rizik."
+  },
+  {
+    "id": 13,
+    "question": "Podmínkou nutnou a postačující pro kritičnost činnosti je, že:",
+    "options": {
+      "A": "má nulovou dobu trvání",
+      "B": "má nulovou celkovou rezervu",
+      "C": "má nulovou interferenční rezervu",
+      "D": "má nulovou volnou časovou rezervu"
+    },
+    "correct": "B",
+    "explanation": "Činnost je kritická právě tehdy, když má nulovou celkovou časovou rezervu – jakékoli její zpoždění způsobí zpoždění celého projektu."
+  },
+  {
+    "id": 14,
+    "question": "Jak se jmenují buffery u metody Critical Chain? (abecedně, bez slova buffer)",
+    "options": {
+      "A": "Feeding, Project, Resource",
+      "B": "Project, Resource, Feeding",
+      "C": "Resource, Project, Feeding",
+      "D": "Drum, Feeding, Resource"
+    },
+    "correct": "A",
+    "explanation": "Tři základní buffery v Critical Chain: feeding buffer, project buffer a resource buffer. Seřazeno abecedně: Feeding, Project, Resource."
+  },
+  {
+    "id": 15,
+    "question": "Postupy projektového řízení jsou vhodné zejména:",
+    "options": {
+      "A": "v situacích, kde je velký podíl operativního řízení",
+      "B": "v situacích, kde je velký podíl taktického řízení",
+      "C": "tam, kde je předem přesně stanoven časový plán",
+      "D": "tam, kde je přesně stanoven začátek a konec projektového díla"
+    },
+    "correct": "D",
+    "explanation": "Projektové řízení je vhodné pro časově ohraničené aktivity s jasným začátkem a koncem, typicky pro unikátní projektová díla."
+  },
+  {
+    "id": 16,
+    "question": "Který ze standardů definuje, že projekt je řízen „obchodním případem“ a projekt je orientován na produkt?",
+    "options": {
+      "A": "PRINCE2",
+      "B": "PMBOK",
+      "C": "ICB (IPMA)",
+      "D": "ISO 10006"
+    },
+    "correct": "A",
+    "explanation": "PRINCE2 je založen na principu řízení obchodním případem (Business Case) a orientaci na produkt."
+  },
+  {
+    "id": 17,
+    "question": "Pokud nějaký úkol v projektu není „řízený úsilím“, znamená to, že v případě ubrání zdroje:",
+    "options": {
+      "A": "se jeho práce rozpočte mezi zdroje zbývající",
+      "B": "se celkové množství práce na úkol nezmění",
+      "C": "se celkové množství práce na úkol zvýší",
+      "D": "se celkové množství práce na úkol sníží"
+    },
+    "correct": "D",
+    "explanation": "Úkol neřízený úsilím má pevnou dobu trvání – při ubrání zdroje klesne množství odvedené práce (pracnost se sníží)."
+  },
+  {
+    "id": 18,
+    "question": "Pomůcka SMART(i) slouží:",
+    "options": {
+      "A": "ke stanovení klíčových činností projektu",
+      "B": "k odvození rizikovosti a proveditelnosti projektu",
+      "C": "k manažerské analýze výnosů a nákladů projektu",
+      "D": "k odvození cíle projektu"
+    },
+    "correct": "D",
+    "explanation": "SMART(i) je metoda pro správné stanovení cíle – Specific, Measurable, Achievable, Relevant, Time-bound (a Inspirational)."
+  },
+  {
+    "id": 19,
+    "question": "Při řešení zdrojových konfliktů v projektu by měla být dodržena zásada, že zůstane beze změn:",
+    "options": {
+      "A": "pracnost projektu",
+      "B": "kvalita projektu",
+      "C": "celkové náklady na projekt",
+      "D": "celková doba trvání projektu"
+    },
+    "correct": "A",
+    "explanation": "Při řešení zdrojových konfliktů by se neměnila celková pracnost projektu, mění se rozložení zdrojů, což může ovlivnit dobu nebo náklady."
+  },
+  {
+    "id": 20,
+    "question": "Co vyjadřuje očekávané změny, které jsou dobře měřitelné a snadno kontrolovatelné?",
+    "options": {
+      "A": "Riziko projektu",
+      "B": "Metrika projektu",
+      "C": "Cíl projektu",
+      "D": "Milník projektu"
+    },
+    "correct": "C",
+    "explanation": "Cíl projektu vyjadřuje očekávané koncové změny, které musí být měřitelné a kontrolovatelné (např. dle SMART)."
+  },
+  {
+    "id": 21,
+    "question": "Nejvhodnější definice rizika je:",
+    "options": {
+      "A": "jev nebo podmínka, které nijak neovlivní cíle projektu",
+      "B": "neurčitý jev nebo podmínka, jehož výskyt má negativní vliv na cíle projektu",
+      "C": "neurčitý jev nebo podmínka, jehož výskyt má pozitivní nebo negativní efekt na cíle projektu",
+      "D": "neurčitý jev, jehož výskyt má vliv na cíle projektu"
+    },
+    "correct": "C",
+    "explanation": "Riziko zahrnuje pozitivní (příležitost) i negativní (hrozbu) dopad na cíle projektu. Je to neurčitý jev s oběma možnými efekty."
+  },
+  {
+    "id": 22,
+    "question": "Nejdelší cesta v grafu se nazývá:",
+    "options": {
+      "A": "optimální",
+      "B": "kritická",
+      "C": "maximální",
+      "D": "hlavní"
+    },
+    "correct": "B",
+    "explanation": "Kritická cesta je časově nejdelší posloupnost činností v síťovém grafu a určuje nejkratší možnou dobu trvání projektu."
+  },
+  {
+    "id": 23,
+    "question": "K čemu se v projektové dokumentaci užívá WBS (Work Breakdown Structure)?",
+    "options": {
+      "A": "k hierarchickému rozlišení činností a souhrnných činností v projektu",
+      "B": "k vymezení činností projektu v čase",
+      "C": "k zobrazení zdrojů u jednotlivých činností",
+      "D": "k zobrazení činností v Ganttově diagramu"
+    },
+    "correct": "A",
+    "explanation": "WBS (hierarchická struktura prací) slouží k dekompozici projektu na menší, lépe říditelné části."
+  },
+  {
+    "id": 24,
+    "question": "Mezi teoretické základy metody Critical Chain mimo jiné patří:",
+    "options": {
+      "A": "multitasking",
+      "B": "metoda DBR",
+      "C": "teorie omezení",
+      "D": "Studentův syndrom"
+    },
+    "correct": "C",
+    "explanation": "Critical Chain vychází z Teorie omezení (Theory of Constraints – TOC) od E. Goldratta."
+  },
+  {
+    "id": 25,
+    "question": "Mezi parametry vytvořené hodnoty (Earned Value) v projektu patří například:",
+    "options": {
+      "A": "SCI",
+      "B": "UV",
+      "C": "SVP",
+      "D": "AVP"
+    },
+    "correct": "C",
+    "explanation": "SVP (Schedule Variance Percentage) je parametr EVM. Ostatní zkratky nejsou standardními EVM parametry."
+  },
+  {
+    "id": 26,
+    "question": "Které z následujících patří mezi parametry vytvořené hodnoty (Earned Value)?",
+    "options": {
+      "A": "SC a CV",
+      "B": "CV a SV",
+      "C": "UV a AC",
+      "D": "AV a UV"
+    },
+    "correct": "B",
+    "explanation": "CV (Cost Variance) a SV (Schedule Variance) jsou standardní parametry EVM. AC (Actual Cost) je také parametr, ale SC, UV a AV nejsou standardními EVM zkratkami."
+  },
+  {
+    "id": 27,
+    "question": "Překročením celkové časové rezervy činnosti v metodě CPM dojde rozhodně:",
+    "options": {
+      "A": "k prodloužení činnosti bez narušení termínu nejpozději možného počátku činnosti souběžné",
+      "B": "k prodloužení činnosti a změně kritické cesty",
+      "C": "k prodloužení činnosti beze změny kritické cesty",
+      "D": "k prodloužení činnosti, která se stává kritickou, ale dále neohrožuje činnosti následující"
+    },
+    "correct": "B",
+    "explanation": "Překročení celkové rezervy znamená zpoždění projektu a činnost se stává kritickou – mění se kritická cesta."
+  },
+  {
+    "id": 28,
+    "question": "Při minimalizaci nákladů na projekt zobrazený grafem AOA lze použít např. model:",
+    "options": {
+      "A": "pevné doby trvání bez rezerv",
+      "B": "omezeného trvání",
+      "C": "kritické cesty s nákladovým hlediskem",
+      "D": "kritické cesty s nákladovou kalkulací"
+    },
+    "correct": "A",
+    "explanation": "Při existenci rezerv (které umožňují prodloužení činností) se minimalizace nákladů provádí na modelu s pevnou dobou trvání bez rezerv."
+  },
+  {
+    "id": 29,
+    "question": "Pod pojmem volná časová rezerva činnosti v metodě CPM rozumíme dobu, o kterou lze:",
+    "options": {
+      "A": "prodloužit činnost, aniž by se ohrozil termín počátku činnosti navazující",
+      "B": "prodloužit činnost, která se stává kritickou a ohrožuje celý projekt",
+      "C": "prodloužit činnost, aniž by se narušil termín nejpozději možného počátku činnosti souběžné",
+      "D": "prodloužit činnost, která se stává kritickou, ale dále neohrožuje činnosti následující"
+    },
+    "correct": "A",
+    "explanation": "Volná rezerva umožňuje posun nebo prodloužení činnosti bez ovlivnění nejdříve možného počátku navazujících činností."
+  },
+  {
+    "id": 30,
+    "question": "Pod pojmem celková časová rezerva zahájení činnosti u metody MPM rozumíme dobu, o kterou lze:",
+    "options": {
+      "A": "prodloužit činnost, aniž by se narušil termín nejdříve možného počátku činnosti následující",
+      "B": "prodloužit činnost, aniž by došlo ke zpoždění termínu ukončení projektu",
+      "C": "prodloužit činnost, aniž by se narušila hodnota potenciálu následující vazby",
+      "D": "zpozdit nejdříve možný počátek činnosti, aniž by došlo ke zpoždění termínu ukončení projektu"
+    },
+    "correct": "D",
+    "explanation": "Celková rezerva v MPM (LS – ES) udává, o kolik lze posunout začátek činnosti bez zpoždění konce projektu."
+  },
+  {
+    "id": 31,
+    "question": "Dva po sobě následující úkoly jsou provázány SS+25%. První úkol trvá 8 dnů, druhý trvá 5 dnů. Uveďte hodnotu potenciálu „a“ (bez časových jednotek):",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "correct": "B",
+    "explanation": "SS+25 % znamená, že druhý úkol začne po 25 % doby prvního. 25 % z 8 dnů = 2 dny. Potenciál a = 2."
+  },
+  {
+    "id": 32,
+    "question": "Počet incidujících hran uzlu (vrcholu) určuje:",
+    "options": {
+      "A": "posloupnost vrcholů, kde mezi předcházejícím a následujícím uzlem existuje hrana",
+      "B": "orientovaný sled, ve kterém se každý vrchol vyskytuje právě jednou a počáteční uzel je shodný s konečným",
+      "C": "řetěz, kde první a poslední vrchol jsou shodné",
+      "D": "stupeň uzlu (vrcholu)"
+    },
+    "correct": "D",
+    "explanation": "Stupeň uzlu je definován počtem incidujících (dotýkajících se) hran daného vrcholu."
+  },
+  {
+    "id": 33,
+    "question": "Je dán lineární optimalizační model projektu na bázi CPM. Zvláštní rezervu činnosti je možné vyjádřit jako:",
+    "options": {
+      "A": "dolní mez intervalu stability ceny / horní mez + nejpozdější realizace výchozího uzlu",
+      "B": "ani jedním z uvedených způsobů",
+      "C": "horní mez intervalu stability ceny / dolní mez + nejpozdější realizace výchozího uzlu",
+      "D": "horní mez intervalu stability ceny / dolní mez + nejdřívější realizace výchozího uzlu"
+    },
+    "correct": "B",
+    "explanation": "Zvláštní rezerva v lineárním optimalizačním modelu CPM se nevyjadřuje žádným z uvedených vzorců."
+  },
+  {
+    "id": 34,
+    "question": "Činnost trvá 10 dní a ke stavovému datu by měla být rozpracována z 60 %. Je však hotová pouze z poloviny. Rozpočtované náklady na ni byly 500 tis. Kč. Dodatečné náklady po zahájení realizace se vyšplhaly na 150 tis. Kč. Parametr BCWS (PV) bude:",
+    "options": {
+      "A": "300 tis. Kč",
+      "B": "150 tis. Kč",
+      "C": "250 tis. Kč",
+      "D": "400 tis. Kč"
+    },
+    "correct": "A",
+    "explanation": "BCWS = plánovaný rozpočet × plánovaný % dokončení = 500 000 × 0,60 = 300 000 Kč."
+  },
+  {
+    "id": 35,
+    "question": "Je dán uzlově definovaný graf na bázi MPM. Mezi činnostmi A a B jsou definovány a_AB = 6 a b_BA = -6. Doba trvání A je 12. Tyto hodnoty:",
+    "options": {
+      "A": "určují, že činnost B musí začít nejdříve 6 jednotek po skončení činnosti A",
+      "B": "určují, že činnost B musí začít nejpozději v polovině A",
+      "C": "určují, že činnost B musí začít přesně v polovině A",
+      "D": "určují, že činnost B musí začít nejpozději 6 jednotek po skončení činnosti A"
+    },
+    "correct": "C",
+    "explanation": "a = 6 znamená min. odstup počátků 6 (B min. v čase 6), b = -6 znamená max. odstup počátků -6 (B max. v čase 6). B musí začít přesně v čase 6 = v polovině A (12/2)."
+  },
+  {
+    "id": 36,
+    "question": "V metodě Critical Chain předpokládáme konečnou délku kritického řetězu (po všech očištěních) 80 dní. Jaká bude maximální velikost projektového bufferu ve dnech?",
+    "options": {
+      "A": "20",
+      "B": "30",
+      "C": "40",
+      "D": "50"
+    },
+    "correct": "C",
+    "explanation": "Projektový buffer se v CC typicky stanovuje jako 50 % délky kritického řetězu: 80 × 0,5 = 40 dní."
+  },
+  {
+    "id": 37,
+    "question": "Do jakých typů síťových grafů se řadí metoda MPM?",
+    "options": {
+      "A": "AOA",
+      "B": "AON",
+      "C": "GERT",
+      "D": "PERT"
+    },
+    "correct": "B",
+    "explanation": "MPM (Metra Potential Method) používá uzlově definovaný graf (AON – Activity on Node), kde činnosti jsou uzly a vazby hranami."
+  },
+  {
+    "id": 38,
+    "question": "Je-li v modelu GERT uzel AOA grafu označen jako disjunktivně-stochastický, znamená to, že:",
+    "options": {
+      "A": "vstupní činnosti se realizují s určitou pravděpodobností, výstupní se realizují všechny",
+      "B": "právě jedna činnost, která do něj vstupuje, se musí realizovat, výstupní se realizují pouze s určitou pravděpodobností",
+      "C": "právě jedna činnost, která do něj vstupuje, se musí realizovat, právě jedna z vystupujících se musí realizovat",
+      "D": "všechny činnosti, které do něj vstupují, se musí realizovat, výstupní se realizují pouze s určitou pravděpodobností"
+    },
+    "correct": "B",
+    "explanation": "Disjunktivně-stochastický uzel: vstup exkluzivní (právě jedna vstupní), výstup stochastický (s pravděpodobnostmi)."
+  },
+  {
+    "id": 39,
+    "question": "Mezi základní typy zdrojů v projektu patří:",
+    "options": {
+      "A": "finanční a neobnovitelné zdroje",
+      "B": "finanční a pracovní zdroje",
+      "C": "neobnovitelné a obnovitelné zdroje",
+      "D": "pracovní, materiálové a kritické zdroje"
+    },
+    "correct": "C",
+    "explanation": "Základní dělení zdrojů je na obnovitelné (např. pracovníci – po skončení činnosti jsou k dispozici dál) a neobnovitelné (např. materiál – spotřebují se)."
+  },
+  {
+    "id": 40,
+    "question": "Jedním z principů Teorie omezení je vyhledání:",
+    "options": {
+      "A": "multitaskingu",
+      "B": "nejsilnějších komponent systému",
+      "C": "Studentova syndromu",
+      "D": "nejslabších komponent systému"
+    },
+    "correct": "D",
+    "explanation": "Teorie omezení (TOC) se zaměřuje na identifikaci a řízení nejslabších článků (omezení) systému."
+  },
+  {
+    "id": 41,
+    "question": "Je dán model minimalizace nákladů na projekt při existenci rezerv. Pro dobu trvání každého úkolu je limitující:",
+    "options": {
+      "A": "doba trvání projektu vypočtená metodou CPM",
+      "B": "nejpozdější možná realizace výchozího uzlu",
+      "C": "stanovená dolní mez doby trvání",
+      "D": "stanovená horní mez doby trvání"
+    },
+    "correct": "D",
+    "explanation": "Při minimalizaci nákladů s existencí rezerv je horní mez doby trvání úkolu limitujícím faktorem pro jeho maximální možné prodloužení."
+  },
+  {
+    "id": 42,
+    "question": "U kvantitativní analýzy rizik v plánu řízení rizik se užívá:",
+    "options": {
+      "A": "mapa rizik a rozhodovací stromy",
+      "B": "odhad závažnosti rizik a předvídatelnosti rizik",
+      "C": "odhad kontrolovatelnosti a odvratitelnosti rizika",
+      "D": "rozhodovací stromy a výpočet očekávané hodnoty rizika"
+    },
+    "correct": "D",
+    "explanation": "Kvantitativní analýza používá numerické metody – rozhodovací stromy a výpočet očekávané peněžní hodnoty rizika (EMV). Mapa/matice rizik se používá u kvalitativní analýzy."
+  },
+  {
+    "id": 43,
+    "question": "Který z následujících aparátů rozhodně patří mezi formální aparát projektového řízení?",
+    "options": {
+      "A": "WBS diagram a lineární graf",
+      "B": "WBS diagram, síťový graf AOA a síťový graf AON",
+      "C": "pouze síťový graf AOA",
+      "D": "pouze lineární graf"
+    },
+    "correct": "B",
+    "explanation": "WBS a síťové grafy (AOA i AON) jsou klíčové formalizační nástroje projektového řízení. Lineární graf mezi ně v tomto kontextu nepatří."
+  },
+  {
+    "id": 44,
+    "question": "Metoda GERT patří mezi:",
+    "options": {
+      "A": "stochastické metody aplikovatelné v grafech – vychází z metody PERT",
+      "B": "stochastické metody aplikovatelné ve stochastických grafech – realizace činnosti závisí na pravděpodobnosti větvení",
+      "C": "deterministické metody aplikovatelné ve stochastických grafech – umožňuje intervalové zadání termínu zahájení činnosti",
+      "D": "stochastické metody aplikované v grafech – umožňuje měření potenciálu v síti"
+    },
+    "correct": "B",
+    "explanation": "GERT je stochastická metoda, která pracuje se stochastickými grafy – větvení a realizace činností závisí na pravděpodobnostech."
+  },
+  {
+    "id": 45,
+    "question": "Zdroj v projektu je považován za kritický, jestliže jeho intenzita využívání je:",
+    "options": {
+      "A": "větší než 1",
+      "B": "rovna 1",
+      "C": "rovna 0",
+      "D": "větší než 0"
+    },
+    "correct": "B",
+    "explanation": "Kritický zdroj je plně vytížen – intenzita jeho využívání je rovna 1 (100 % dostupné kapacity)."
+  },
+  {
+    "id": 46,
+    "question": "Na začátku realizace projektu je vytvořen směrný plán projektu, pro který je charakteristické, že:",
+    "options": {
+      "A": "se v průběhu práce na projektu občas mění",
+      "B": "slouží jako srovnávací základna pro časovou analýzu projektu",
+      "C": "je odvozen od aktuálního průběhu projektu",
+      "D": "slouží jako srovnávací základna pro nákladovou analýzu v průběhu projektu"
+    },
+    "correct": "D",
+    "explanation": "Směrný plán (baseline) je schválená verze plánu, která slouží jako srovnávací základna pro měření výkonu – především pro nákladovou a časovou analýzu (EVM)."
+  },
+  {
+    "id": 47,
+    "question": "Jednou z výhod zobrazení projektu v grafu typu AON oproti typu AOA a využití metody MPM je:",
+    "options": {
+      "A": "snazší výpočet tohoto typu grafu",
+      "B": "možnost snáze zobrazit hierarchickou strukturu projektu",
+      "C": "lepší přehlednost o vazbách mezi úkoly",
+      "D": "možnost pracovat s potenciály vazeb"
+    },
+    "correct": "D",
+    "explanation": "MPM (AON) umožňuje definovat potenciály vazeb (minimální/maximální odstupy), což u klasického AOA (CPM) není standardně možné."
+  },
+  {
+    "id": 48,
+    "question": "Jak se jmenuje rezerva vyjádřená v metodě MPM rozdílem LS (nejpozdější začátek) – ES (nejdřívější začátek)?",
+    "options": {
+      "A": "volná",
+      "B": "celková",
+      "C": "nezávislá",
+      "D": "interferenční"
+    },
+    "correct": "B",
+    "explanation": "Rozdíl LS – ES představuje celkovou časovou rezervu činnosti, tedy dobu, o kterou lze posunout začátek bez ohrožení konce projektu."
+  },
+  {
+    "id": 49,
+    "question": "Činnost A je typu „Pevné jednotky“ a je zajištěna zdroji Z1, Z2, Z3. Pracnost Z1: 400 h, intenzita 100; Z2: 480 h, intenzita 40; Z3: 160 h, intenzita 20. 8hodinová pracovní doba. Celková délka trvání činnosti A bude:",
+    "options": {
+      "A": "2 dny",
+      "B": "1,5 dne",
+      "C": "3 dny",
+      "D": "méně než 1 den"
+    },
+    "correct": "B",
+    "explanation": "U „Pevných jednotek“ platí: Doba = Pracnost / Intenzita. Z1: 400/100 = 4 h, Z2: 480/40 = 12 h, Z3: 160/20 = 8 h. Maximum je 12 h / 8 = 1,5 dne."
+  },
+  {
+    "id": 50,
+    "question": "Plán řízení rizik zahrnuje především postup pro:",
+    "options": {
+      "A": "identifikaci, analýzu, obranu a monitorování rizik",
+      "B": "plánování, identifikaci, analýzu, obranu a eliminaci rizik",
+      "C": "identifikaci, analýzu, zhodnocení a odstranění rizik",
+      "D": "identifikaci, analýzu, obranu a odstranění rizik"
+    },
+    "correct": "A",
+    "explanation": "Plán řízení rizik stanovuje postupy pro identifikaci, analýzu, plánování obrany (reakcí) a monitorování rizik. Nezahrnuje nutně eliminaci."
+  },
+  {
+    "id": 51,
+    "question": "Mezi parametry zdroje v projektu patří:",
+    "options": {
+      "A": "mohutnost a disponibilita zdroje",
+      "B": "standardní sazba a náklady na využití zdroje",
+      "C": "pracovitost a kvalifikace zdroje",
+      "D": "nahraditelnost a rizikovost zdroje"
+    },
+    "correct": "B",
+    "explanation": "Mezi parametry zdroje patří standardní sazba a náklady na využití. Mohutnost a disponibilita také patří, ale otázka směřuje na jinou dvojici – obě jsou správné, ale typicky testováno: nákladové parametry zdroje."
+  },
+  {
+    "id": 52,
+    "question": "Který z následujících důvodů může být příčinou zdrojového konfliktu v projektu?",
+    "options": {
+      "A": "nízká kvalifikace zdroje",
+      "B": "vícenásobná alokace zdroje ve stejném čase",
+      "C": "vysoká disponibilita zdroje",
+      "D": "minimální kapacita zdroje"
+    },
+    "correct": "B",
+    "explanation": "Nejčastější příčinou zdrojového konfliktu je přetížení zdroje – tedy vícenásobná alokace ve stejném čase (over-allocation)."
+  },
+  {
+    "id": 53,
+    "question": "Jak se jmenuje základní certifikační úroveň metodiky PRINCE2?",
+    "options": {
+      "A": "Foundation",
+      "B": "Practitioner",
+      "C": "Agile",
+      "D": "Professional"
+    },
+    "correct": "A",
+    "explanation": "PRINCE2 má dvě hlavní certifikační úrovně: Foundation (základní) a Practitioner (pokročilá)."
+  },
+  {
+    "id": 54,
+    "question": "Projekt je vždy charakterizován:",
+    "options": {
+      "A": "jasně definovaným začátkem a koncem",
+      "B": "omezeným rozpočtem",
+      "C": "určitým rizikem a nejistotou",
+      "D": "minimálně dvěma hlavními cíli"
+    },
+    "correct": "A",
+    "explanation": "Základním definičním znakem projektu je jeho dočasnost – má jasně definovaný začátek a konec."
+  },
+  {
+    "id": 55,
+    "question": "Pro podmíněné pravděpodobnosti realizace činností AOA modelu GERT, vycházejících současně s využitím stochastického výstupu, platí, že:",
+    "options": {
+      "A": "žádná z pravděpodobností nesmí být rovna 0",
+      "B": "všechny musí být z intervalu <0, 1> a jejich součet musí být roven 1",
+      "C": "alespoň jedna z nich musí být rovna 1",
+      "D": "všechny musí být z intervalu <0, 1>, jejich součet může být větší než 1"
+    },
+    "correct": "B",
+    "explanation": "U stochastického výstupu musí součet podmíněných pravděpodobností všech výstupních větví z uzlu být přesně 1 (jevy tvoří úplný systém)."
+  },
+  {
+    "id": 56,
+    "question": "Výstupem kvalitativní analýzy rizik je:",
+    "options": {
+      "A": "seznam rizik",
+      "B": "popis rizik",
+      "C": "registr rizik",
+      "D": "analýza rizik"
+    },
+    "correct": "C",
+    "explanation": "Výstupem kvalitativní analýzy je aktualizovaný registr rizik obsahující prioritizaci rizik podle jejich závažnosti."
+  },
+  {
+    "id": 57,
+    "question": "Činnost A je typu „Pevná práce“ a je zabezpečena zdroji Z1, Z2, Z3. Pracnost Z1: 200 h, intenzita 10; Z2: 240 h, intenzita 20; Z3: 80 h, intenzita 2. 8hodinová pracovní doba. Celková doba trvání činnosti A bude:",
+    "options": {
+      "A": "12 dní",
+      "B": "8 dní",
+      "C": "2 dny",
+      "D": "5 dní"
+    },
+    "correct": "D",
+    "explanation": "Výpočet: Z1: 200/10 = 20 h, Z2: 240/20 = 12 h, Z3: 80/2 = 40 h. Maximum = 40 h / 8 = 5 dní."
+  },
+  {
+    "id": 58,
+    "question": "Kvantitativní analýza rizik charakterizuje riziko:",
+    "options": {
+      "A": "diskrétním vyjádřením pravděpodobnosti vzniku",
+      "B": "číselným vyjádřením rozšiřujícím Registr rizik projektu",
+      "C": "číselným vyjádřením pravděpodobnosti vzniku a velikosti dopadů rizika (rozšiřuje Registr rizik projektu)",
+      "D": "diskrétním vyjádřením velikosti dopadů rizika"
+    },
+    "correct": "C",
+    "explanation": "Kvantitativní analýza vyjadřuje riziko číselně – pravděpodobnost i dopad v konkrétních hodnotách a rozšiřuje tak registr rizik."
+  },
+  {
+    "id": 59,
+    "question": "Celkovou dobu trvání úkolu je možné definovat jako:",
+    "options": {
+      "A": "počet časových jednotek, po kterou činnost probíhá v závislosti na pracovním kalendáři",
+      "B": "počet časových jednotek v případě čerpání zdroje typu pevné jednotky",
+      "C": "počet časových jednotek v případě čerpání zdroje typu peněžní prostředky",
+      "D": "počet časových jednotek, po kterou činnost probíhá nezávisle na pracovním kalendáři"
+    },
+    "correct": "A",
+    "explanation": "Doba trvání úkolu je definována počtem pracovních časových jednotek podle přiřazeného kalendáře."
+  },
+  {
+    "id": 60,
+    "question": "Pod pojmem kritická cesta v projektu zobrazeném grafem AOA rozumíme:",
+    "options": {
+      "A": "nejrizikovější cestu v grafu",
+      "B": "nejkratší vzdálenost mezi počátečním a koncovým uzlem",
+      "C": "časově nejdelší posloupnost činností v grafu",
+      "D": "časově nejkratší posloupnost činností v grafu"
+    },
+    "correct": "C",
+    "explanation": "Kritická cesta je časově nejdelší cesta v síťovém grafu, která určuje minimální celkovou dobu trvání projektu."
+  },
+  {
+    "id": 61,
+    "question": "Pod pojmem celková časová rezerva činnosti u metody CPM rozumíme dobu, o kterou lze:",
+    "options": {
+      "A": "zpozdit nejpozdější možný počátek činnosti, aniž by došlo ke zpoždění následující činnosti",
+      "B": "prodloužit činnost, aniž by se narušila hodnota potenciálu následující vazby",
+      "C": "zpozdit nejpozdější možný počátek činnosti, aniž by došlo ke zpoždění termínu ukončení projektu",
+      "D": "prodloužit činnost, aniž by se narušil termín nejpozdějšího možného počátku následující činnosti"
+    },
+    "correct": "C",
+    "explanation": "Celková rezerva vyjadřuje maximální možné zpoždění činnosti bez ohrožení termínu dokončení celého projektu."
+  },
+  {
+    "id": 62,
+    "question": "Do jakých typů síťových grafů se řadí metoda CPM?",
+    "options": {
+      "A": "AOA",
+      "B": "AON",
+      "C": "GERT",
+      "D": "PERT"
+    },
+    "correct": "A",
+    "explanation": "Metoda CPM (Critical Path Method) tradičně používá hranově definovaný graf AOA (Activity on Arrow), kde činnosti jsou hrany."
+  },
+  {
+    "id": 63,
+    "question": "Parametr zpoždění udává:",
+    "options": {
+      "A": "prodlevu vazby mezi činnostmi",
+      "B": "zpoždění vzniklé přerozdělením práce na projektu",
+      "C": "rozdíl mezi skutečným a plánovaným počátkem úkolu projektu",
+      "D": "posun počátku činnosti vzniklý zdrojovou nepřípustností"
+    },
+    "correct": "D",
+    "explanation": "Parametr zpoždění (delay) v kontextu rozvrhování udává posun počátku činnosti způsobený nedostupností zdrojů (zdrojová nepřípustnost)."
+  },
+  {
+    "id": 64,
+    "question": "Který z následujících aparátů rozhodně nepatří mezi formalizační aparát projektového řízení?",
+    "options": {
+      "A": "lineární diagram",
+      "B": "Ganttův diagram",
+      "C": "síťový graf AOA",
+      "D": "histogram WBS"
+    },
+    "correct": "D",
+    "explanation": "Histogram WBS neexistuje jako standardní formalizační aparát. WBS je hierarchická struktura, ale ne ve formě histogramu."
+  },
+  {
+    "id": 65,
+    "question": "Výstupem časové analýzy projektu je stanovení kritické cesty, jejíž délka u projektů s deterministickým trváním činností určuje:",
+    "options": {
+      "A": "očekávanou dobu trvání projektu",
+      "B": "rizikovost a proveditelnost projektu jako celku",
+      "C": "nejdelší dobu trvání projektu",
+      "D": "nejkratší dobu trvání projektu"
+    },
+    "correct": "D",
+    "explanation": "Kritická cesta určuje nejkratší možnou dobu, za kterou lze projekt dokončit při daných závislostech a dobách trvání."
+  },
+  {
+    "id": 66,
+    "question": "U pravděpodobnostních výpočtů metody PERT obvykle předpokládáme, že termín ukončení projektu má rozdělení:",
+    "options": {
+      "A": "BETA",
+      "B": "GAMA",
+      "C": "rovnoměrné",
+      "D": "normální"
+    },
+    "correct": "D",
+    "explanation": "Podle centrální limitní věty má při více činnostech na kritické cestě celková doba trvání projektu přibližně normální rozdělení, přestože jednotlivé činnosti mají BETA rozdělení."
+  },
+  {
+    "id": 67,
+    "question": "Do kolika kompetenčních kategorií se sdružují kompetence u standardu ICB4?",
+    "options": {
+      "A": "dvou",
+      "B": "šesti",
+      "C": "čtyř",
+      "D": "tří"
+    },
+    "correct": "D",
+    "explanation": "ICB4 sdružuje kompetence do tří oblastí: technické (Practice), behaviorální (People) a kontextové (Perspective)."
+  },
+  {
+    "id": 68,
+    "question": "Do jakých kompetenčních kategorií sdružuje kompetence standard ICB4?",
+    "options": {
+      "A": "technických, behaviorálních a kontextových",
+      "B": "procesních, znalostních a dovednostních",
+      "C": "řídících, technických a obchodních",
+      "D": "strategických, taktických a operativních"
+    },
+    "correct": "A",
+    "explanation": "ICB4 definuje tři oblasti kompetencí: technické (Practice), behaviorální (People) a kontextové (Perspective)."
+  },
+  {
+    "id": 69,
+    "question": "Úkol, který sledujeme, trvá 10 dní a má plánovaný rozpočet 20 tis. Kč. Na konci 5. dne je však hotov pouze ze 40 %. Parametr EVM BCWS (resp. PV) je:",
+    "options": {
+      "A": "10 000 Kč",
+      "B": "neuvedená hodnota",
+      "C": "4 000 Kč",
+      "D": "8 000 Kč"
+    },
+    "correct": "A",
+    "explanation": "BCWS (PV) = plánovaný rozpočet × (uplynulý čas / celkový čas) = 20 000 × (5/10) = 10 000 Kč. Plánovaný stav po 5 dnech z 10 je 50 % času, tj. 10 000 Kč."
+  },
+  {
+    "id": 70,
+    "question": "Pod pojmem nezávislá časová rezerva činnosti v metodě CPM rozumíme dobu, o kterou lze posunout počátek činnosti oproti termínu:",
+    "options": {
+      "A": "nejdříve možné realizace výchozího uzlu bez ovlivnění počátku činnosti následující",
+      "B": "nejpozději možné realizace výchozího uzlu bez ovlivnění počátku činnosti následující",
+      "C": "nejpozději možné realizace výchozího uzlu bez ovlivnění konce projektu",
+      "D": "nejdříve možné realizace výchozího uzlu bez ovlivnění konce projektu"
+    },
+    "correct": "B",
+    "explanation": "Nezávislá rezerva předpokládá, že předchozí činnosti skončí nejpozději a následující začnou nejdříve – rezerva je pak posun možný za těchto nejhorších podmínek."
+  },
+  {
+    "id": 71,
+    "question": "Simulace stochastického projektu se dá popsat jako:",
+    "options": {
+      "A": "stochastická, dynamická",
+      "B": "stochastická, statická",
+      "C": "stochastická, deterministická",
+      "D": "statická, deterministická"
+    },
+    "correct": "A",
+    "explanation": "Simulace projektu je stochastická (pracuje s náhodnými veličinami) a dynamická (modeluje vývoj v čase)."
+  },
+  {
+    "id": 72,
+    "question": "Činnost trvá 10 dní a ke stavovému datu by měla být rozpracována z 60 %. Je však hotová pouze z poloviny. Rozpočtované náklady na ni byly 500 tis. Kč. Dodatečné náklady po zahájení realizace se vyšplhaly na 150 tis. Kč. Parametr vytvořené hodnoty ACWP (AC) bude:",
+    "options": {
+      "A": "400 tis. Kč",
+      "B": "350 tis. Kč",
+      "C": "300 tis. Kč",
+      "D": "150 tis. Kč"
+    },
+    "correct": "A",
+    "explanation": "ACWP (AC) = rozpočtované náklady + dodatečné náklady = 500 000 + 150 000 = 650 000 Kč? Ne, ACWP jsou skutečné náklady. Zde: původní rozpočet 500 tis. + dodatečné? Oprava: ACWP = 500 + 150 = 650? Ale výsledek 400 naznačuje 250 + 150. Revize: ACWP (Actual Cost of Work Performed) = rozpočtované náklady × skutečné % + dodatečné náklady? Pravděpodobně: 500 000 × 0,50 + 150 000 = 250 000 + 150 000 = 400 000 Kč."
+  },
+  {
+    "id": 73,
+    "question": "Je dán model minimalizace nákladů na projekt při existenci rezerv. Pro dobu trvání každého úkolu je limitující:",
+    "options": {
+      "A": "nejpozději možná realizace výchozího uzlu",
+      "B": "stanovená dolní mez doby trvání",
+      "C": "stanovená horní mez doby trvání",
+      "D": "doba trvání projektu vypočtená metodou CPM"
+    },
+    "correct": "C",
+    "explanation": "Při minimalizaci nákladů za existence rezerv lze prodlužovat dobu trvání až do horní meze, která je tak limitujícím faktorem."
+  },
+  {
+    "id": 74,
+    "question": "Studentův syndrom v kontextu plnění úkolů projektu na bázi metody Critical Chain znamená:",
+    "options": {
+      "A": "přibližně totéž, co syndrom prokrastinace",
+      "B": "plánování úkolů tak, aby docházelo k co nejmenším prostojům",
+      "C": "čerpání časových rezerv až po dokončení úkolu a s tím související vždy včasné odevzdání úkolu",
+      "D": "separaci časových rezerv v rámci všech úkolů a nevyužití volného času"
+    },
+    "correct": "A",
+    "explanation": "Studentův syndrom představuje tendenci odkládat práci na poslední chvíli – je ekvivalentní prokrastinaci."
+  },
+  {
+    "id": 75,
+    "question": "Je dán lineární optimalizační model projektu na bázi CPM. Celkovou rezervu činnosti je možné vyjádřit jako:",
+    "options": {
+      "A": "horní mez intervalu stability ceny sníženou o aktuální cenu",
+      "B": "dolní mez intervalu stability ceny",
+      "C": "dolní mez intervalu stability ceny zvýšenou o aktuální cenu",
+      "D": "horní mez intervalu stability ceny"
+    },
+    "correct": "A",
+    "explanation": "V lineárním optimalizačním modelu CPM lze celkovou rezervu vyjádřit jako rozdíl mezi horní mezí intervalu stability ceny a aktuální cenou."
+  },
+  {
+    "id": 76,
+    "question": "Který standard projektového řízení pracuje s pojmy „Skupina procesů“, „Znalostní oblasti“?",
+    "options": {
+      "A": "ICB",
+      "B": "PMBOK",
+      "C": "PRINCE2",
+      "D": "ISO 10006"
+    },
+    "correct": "B",
+    "explanation": "PMBOK (Project Management Body of Knowledge) člení projektové řízení do 5 skupin procesů a 10 znalostních oblastí."
+  },
+  {
+    "id": 77,
+    "question": "U metody PERT platí, že součet vah jednotlivých odhadů trvání činnosti je roven:",
+    "options": {
+      "A": "3",
+      "B": "10",
+      "C": "1",
+      "D": "6"
+    },
+    "correct": "D",
+    "explanation": "Vážený průměr pro PERT: (a + 4m + b) / 6. Součet vah je 1 + 4 + 1 = 6."
+  },
+  {
+    "id": 78,
+    "question": "Existuje-li v projektu úkol s číslem osnovy (WBS) 4.3.1.1, znamená to, že:",
+    "options": {
+      "A": "projekt má minimálně 9 úkolů",
+      "B": "projekt má přesně 4 úrovně osnovy",
+      "C": "projekt má minimálně 3 úkoly",
+      "D": "projekt má minimálně 4 úrovně osnovy"
+    },
+    "correct": "D",
+    "explanation": "Číslo 4.3.1.1 má čtyři oddělené části, což indikuje minimálně 4 úrovně hierarchické struktury (WBS)."
+  },
+  {
+    "id": 79,
+    "question": "U metody PERT je rozptyl střední doby trvání projektu stanoven:",
+    "options": {
+      "A": "součtem rozptylů všech aktivit",
+      "B": "součtem rozptylů aktivit na kritické cestě",
+      "C": "maximálním rozptylem aktivit",
+      "D": "součtem rozptylů kritických aktivit"
+    },
+    "correct": "B",
+    "explanation": "Rozptyl celkové doby trvání projektu se počítá jako součet rozptylů pouze těch aktivit, které leží na kritické cestě."
+  },
+  {
+    "id": 80,
+    "question": "Který standard rozděluje projekt na 5 skupin procesů a 10 znalostních oblastí?",
+    "options": {
+      "A": "ICB (IPMA)",
+      "B": "PMBOK",
+      "C": "PRINCE2",
+      "D": "ISO 10006"
+    },
+    "correct": "B",
+    "explanation": "PMBOK Guide je standard, který organizuje projektové řízení do 5 procesních skupin a 10 znalostních oblastí."
+  },
+  {
+    "id": 81,
+    "question": "Jednou z výhod zobrazení projektu v grafu typu AOA a použití metody CPM oproti použití grafu typu AON a metody PERT je:",
+    "options": {
+      "A": "možnost modelovat různé typy vazeb",
+      "B": "snazší výpočet tohoto typu grafů, neboť nebere v úvahu potenciál",
+      "C": "lepší přehlednost o vazbách mezi úkoly",
+      "D": "možnost snadněji zobrazit hierarchickou strukturu projektu"
+    },
+    "correct": "B",
+    "explanation": "CPM na grafu AOA neřeší potenciály vazeb jako MPM, takže výpočet je jednodušší. Cenou je však omezená schopnost modelovat složitější vazby."
+  },
+  {
+    "id": 82,
+    "question": "U fuzzy metody GFCPM je kritická cesta stanovena:",
+    "options": {
+      "A": "vzájemným porovnáním fuzzy veličin vyjadřujících doby trvání jednotlivých cest",
+      "B": "vzájemným porovnáním fuzzy veličin vyjadřujících velikosti celkových rezerv jednotlivých cest",
+      "C": "fuzzyfikací cesty deterministické",
+      "D": "defuzzyfikací původní cesty"
+    },
+    "correct": "A",
+    "explanation": "GFCPM (Generalized Fuzzy CPM) určuje kritickou cestu porovnáním fuzzy dob trvání všech cest v grafu."
+  },
+  {
+    "id": 83,
+    "question": "Výsledná pravděpodobnost realizace činnosti v AOA modelu GERT je dána:",
+    "options": {
+      "A": "součtem podmíněných pravděpodobností realizace výchozího uzlu a této činnosti",
+      "B": "součtem výsledné pravděpodobnosti realizace výchozího uzlu a podmíněné pravděpodobnosti realizace této činnosti",
+      "C": "součinem výsledné pravděpodobnosti realizace výchozího uzlu a podmíněné pravděpodobnosti realizace této činnosti",
+      "D": "součinem podmíněné pravděpodobnosti realizace výchozího uzlu a podmíněné pravděpodobnosti realizace této činnosti"
+    },
+    "correct": "C",
+    "explanation": "Výsledná pravděpodobnost = výsledná pravděpodobnost výchozího uzlu × podmíněná pravděpodobnost realizace činnosti."
+  },
+  {
+    "id": 84,
+    "question": "Pro metodu MPM jsou charakteristické následující vlastnosti:",
+    "options": {
+      "A": "graf typu AOA, následující činnost není realizována se 100% pravděpodobností",
+      "B": "graf typu AON, intervalové zadávání vztahů mezi činnostmi",
+      "C": "graf typu AOA, intervalové zadávání vztahů mezi činnostmi",
+      "D": "graf typu AON, pro výpočet je používána střední doba trvání činnosti"
+    },
+    "correct": "B",
+    "explanation": "MPM (Metra Potential Method) používá graf typu AON a umožňuje definovat vztahy mezi činnostmi pomocí potenciálů (intervalové zadání minimálních a maximálních odstupů)."
+  },
+  {
+    "id": 85,
+    "question": "Metoda Critical Chain jako jediná zohledňuje:",
+    "options": {
+      "A": "lidskou stránku (Studentův syndrom a Parkinsonův zákon) a stránku algoritmickou",
+      "B": "reálné typy vazeb mezi jednotlivými činnostmi",
+      "C": "intervalové zadávání doby počátku činnosti",
+      "D": "pravděpodobnost realizace následující činnosti"
+    },
+    "correct": "A",
+    "explanation": "Critical Chain je unikátní tím, že kromě technického rozvrhování zohledňuje i lidské chování (prokrastinaci, Parkinsonův zákon)."
+  },
+  {
+    "id": 86,
+    "question": "Je-li v modelu GERT uzel AOA grafu označen jako inkluzivně-stochastický, znamená to, že:",
+    "options": {
+      "A": "právě jedna činnost, která do něj vstupuje, se musí realizovat, výstupní se však realizují pouze s určitou pravděpodobností",
+      "B": "vstupní činnosti se realizují s určitou pravděpodobností, výstupní se realizují všechny",
+      "C": "alespoň jedna činnost, která do něj vstupuje, se musí realizovat, výstupní se však realizují pouze s určitou pravděpodobností",
+      "D": "všechny činnosti, které do něj vstupují, se musí realizovat, výstupní se však realizují pouze s určitou pravděpodobností"
+    },
+    "correct": "C",
+    "explanation": "Inkluzivně-stochastický uzel: vstup je inkluzivní (stačí alespoň jedna), výstup je stochastický (s určitou pravděpodobností)."
+  },
+  {
+    "id": 87,
+    "question": "Pod pojmem celková časová rezerva činnosti v metodě CPM rozumíme dobu, o kterou lze:",
+    "options": {
+      "A": "prodloužit činnost, aniž by se narušil termín nejpozději možného počátku činnosti souběžné",
+      "B": "prodloužit činnost, aniž by se stala sama kritickou a ohrozila termín dokončení projektu",
+      "C": "prodloužit činnost, která se stává kritickou, ale dále neohrožuje činnosti následující",
+      "D": "prodloužit činnost, která se stává kritickou a ohrožuje činnosti následující"
+    },
+    "correct": "B",
+    "explanation": "Celková rezerva je maximální doba, o kterou lze činnost prodloužit (nebo posunout), aniž by došlo k ohrožení termínu dokončení projektu."
+  },
+  {
+    "id": 88,
+    "question": "Pojem „projekt“ je v projektovém řízení chápán jako sled aktivit a úkolů, který je:",
+    "options": {
+      "A": "pevně vymezen ve svém cíli a záměru",
+      "B": "vymezen v čase a má stanoven cíl a vymezené zdroje",
+      "C": "vymezen v čase a má sestavený a schválený rozpočet",
+      "D": "vymezen v čase a má dále vymezené a schválené čerpání zdrojů"
+    },
+    "correct": "B",
+    "explanation": "Nejúplnější definice projektu: je časově ohraničený, má stanovený cíl a vymezené zdroje (včetně rozpočtu)."
+  },
+  {
+    "id": 89,
+    "question": "Mezi instance Teorie omezení mimo jiné patří:",
+    "options": {
+      "A": "metoda MPM",
+      "B": "metoda DBR",
+      "C": "Studentův syndrom",
+      "D": "multitasking"
+    },
+    "correct": "B",
+    "explanation": "DBR (Drum-Buffer-Rope) je metoda řízení výroby vycházející z Teorie omezení. Je to jedna z instancí TOC."
+  },
+  {
+    "id": 90,
+    "question": "Parametr „skluz“ udává:",
+    "options": {
+      "A": "posun počátku činnosti vzniklý její původní zdrojovou nepřípustností",
+      "B": "prodlevu vazby mezi činnostmi",
+      "C": "rozdíl mezi skutečným a plánovaným počátkem úkolu projektu",
+      "D": "zpoždění vzniklé přerozdělením práce na projektu"
+    },
+    "correct": "C",
+    "explanation": "Skluz (slippage) udává rozdíl mezi skutečným a plánovaným zahájením nebo dokončením úkolu."
+  },
+  {
+    "id": 91,
+    "question": "Činnost A je typu „Pevná práce“ a je zabezpečena třemi zdroji Z1, Z2 a Z3. Pracnost Z1: 4000 h, intenzita 100; Z2: 4800 h, intenzita 40; Z3: 1600 h, intenzita 20. 8hodinová pracovní doba. Celková doba trvání činnosti A bude:",
+    "options": {
+      "A": "30 dní",
+      "B": "20 dní",
+      "C": "8 dní",
+      "D": "15 dní"
+    },
+    "correct": "D",
+    "explanation": "Výpočet: Z1: 4000/100 = 40 h, Z2: 4800/40 = 120 h, Z3: 1600/20 = 80 h. Maximum = 120 h / 8 = 15 dní."
+  },
+  {
+    "id": 92,
+    "question": "PERT předpokládá, že doba trvání jednotlivých činností je:",
+    "options": {
+      "A": "náhodnou veličinou s normálním rozdělením pravděpodobnosti",
+      "B": "náhodnou veličinou s rozdělením pravděpodobnosti GAMA",
+      "C": "náhodnou veličinou s rozdělením pravděpodobnosti BETA",
+      "D": "pevně daná"
+    },
+    "correct": "C",
+    "explanation": "Metoda PERT předpokládá, že doba trvání každé činnosti má BETA rozdělení pravděpodobnosti, odhadované pomocí tří bodů (a, m, b)."
+  },
+  {
+    "id": 93,
+    "question": "Studentův syndrom v kontextu plnění úkolů znamená:",
+    "options": {
+      "A": "plánování úkolů tak, aby docházelo k co nejmenším prostojům",
+      "B": "čerpání časových rezerv před zahájením práce na úkolu a s tím související práce na poslední chvíli",
+      "C": "čerpání časových rezerv až po dokončení úkolu a s tím související vždy včasné odevzdání úkolu",
+      "D": "kumulaci časových rezerv v rámci všech úkolů a využití volného času po dokončení projektu"
+    },
+    "correct": "B",
+    "explanation": "Studentův syndrom = odkládání začátku práce na poslední chvíli, čímž se vyčerpá časová rezerva ještě před zahájením samotné práce."
+  },
+  {
+    "id": 94,
+    "question": "Graf typu síť je možné popsat jako:",
+    "options": {
+      "A": "graf, kde všechny hrany mají směr, neboli přiřazení počátečního a konečného uzlu",
+      "B": "souvislý graf, který neobsahuje cyklus, je neorientovaný a ohodnocený",
+      "C": "hranově ohodnocený, s jedním počátkem, bez kružnic",
+      "D": "konečný, souvislý, orientovaný a acyklický graf s jedním počátkem a jedním koncem"
+    },
+    "correct": "D",
+    "explanation": "Síťový graf projektu je definován jako konečný, souvislý, orientovaný, acyklický graf s jedním počátečním a jedním koncovým uzlem."
+  },
+  {
+    "id": 95,
+    "question": "U metody PERT předpokládáme, že doba trvání jednotlivých činností je:",
+    "options": {
+      "A": "zadaná funkcí",
+      "B": "zadaná na intervalu hodnot",
+      "C": "zadaná třemi parametry",
+      "D": "zadaná dvěma parametry"
+    },
+    "correct": "C",
+    "explanation": "PERT používá tři odhady pro každou činnost: optimistický (a), nejpravděpodobnější (m) a pesimistický (b)."
+  },
+  {
+    "id": 96,
+    "question": "Projekt lze nejvýstižněji definovat jako:",
+    "options": {
+      "A": "jakékoli úsilí s cílem vytvořit unikátní produkt nebo službu",
+      "B": "souhrn činností, které je třeba provést k dosažení stanoveného cíle",
+      "C": "souhrn činností potřebných k dosažení předem definovaného cíle",
+      "D": "řízený proces aplikace úkolů a zdrojů v určeném časovém rámci"
+    },
+    "correct": "A",
+    "explanation": "Nejvýstižnější definice projektu podle PMBOK: dočasné úsilí vynaložené na vytvoření unikátního produktu, služby nebo výsledku."
+  },
+  {
+    "id": 97,
+    "question": "Který ze standardů je považován za světovou jedničku a vznikl v USA?",
+    "options": {
+      "A": "ICB4 (IPMA)",
+      "B": "ISO 10006",
+      "C": "PMBOK",
+      "D": "PRINCE2"
+    },
+    "correct": "C",
+    "explanation": "PMBOK Guide, vydávaný PMI (Project Management Institute) v USA, je celosvětově nejuznávanějším standardem projektového řízení."
+  },
+  {
+    "id": 98,
+    "question": "Podle teorie Kritického řetězu ohrožují projekt úkoly, které jsou obvykle:",
+    "options": {
+      "A": "dlouhé ale nevýznamné",
+      "B": "krátké, nevýznamné, ale s mnoha vazbami na ostatní",
+      "C": "krátké, nevýznamné, bez vazeb na ostatní",
+      "D": "velmi rozsáhlé"
+    },
+    "correct": "B",
+    "explanation": "Krátké úkoly s mnoha vazbami se mohou snadno stát omezením, protože jejich zpoždění se přenáší do mnoha navazujících činností."
+  },
+  {
+    "id": 99,
+    "question": "Jedním z důvodů zdrojového konfliktu v projektu může být:",
+    "options": {
+      "A": "paralelní využití jednoho zdroje pro více činností",
+      "B": "dlouhá doba nasazení zdroje",
+      "C": "nízká disponibilita zdroje",
+      "D": "minimální dostupnost zdroje"
+    },
+    "correct": "A",
+    "explanation": "Typický zdrojový konflikt vzniká, když je jeden zdroj současně alokován na více paralelních činností (přetížení zdroje)."
+  },
+  {
+    "id": 100,
+    "question": "Výhodou zobrazení projektu v síťovém grafu oproti zobrazení v Ganttově diagramu je:",
+    "options": {
+      "A": "přehlednost o umístění úkolů na časové ose",
+      "B": "přehlednost o vazbách mezi úkoly",
+      "C": "přehlednost o hierarchické struktuře projektu",
+      "D": "přehlednost o zdrojovém zabezpečení úkolů"
+    },
+    "correct": "B",
+    "explanation": "Síťový graf jasně zobrazuje logické vazby a závislosti mezi úkoly, zatímco Ganttův diagram lépe zobrazuje časovou osu."
+  },
+  {
+    "id": 101,
+    "question": "Plánování obrany proti rizikům. Obranné strategie lze rozlišit na:",
+    "options": {
+      "A": "odmítnutí, postoupení rizika, akceptace a převod rizika",
+      "B": "odmítnutí, postoupení rizika, omezení výskytu a převod rizika",
+      "C": "omezení výskytu, akceptace a převod rizika",
+      "D": "odmítnutí, postoupení rizika, omezení výskytu, akceptace a převod rizika"
+    },
+    "correct": "D",
+    "explanation": "Úplný výčet strategií obrany proti rizikům zahrnuje: odmítnutí (vyhnutí se), postoupení (přenesení), omezení výskytu (mitigace), akceptace a převod."
+  },
+  {
+    "id": 102,
+    "question": "Pro nezávislou časovou rezervu činnosti v metodě CPM neplatí, že:",
+    "options": {
+      "A": "nabývá libovolné reálné hodnoty",
+      "B": "je menší nebo rovna zvláštní rezervě",
+      "C": "je vždy kladná",
+      "D": "je menší nebo rovna celkové rezervě"
+    },
+    "correct": "C",
+    "explanation": "Nezávislá rezerva může nabývat i záporných hodnot (v praxi se pak pokládá za nulovou). Není tedy vždy kladná."
+  },
+  {
+    "id": 103,
+    "question": "Dva po sobě následující úkoly jsou provázány FS+3d. První úkol trvá 8 dnů a začíná v čase 0, druhý trvá 5 dnů a musí začít nejpozději v bodě 15. Uveďte hodnotu potenciálu „b“ (bez časových jednotek):",
+    "options": {
+      "A": "-7",
+      "B": "-15",
+      "C": "-4",
+      "D": "-11"
+    },
+    "correct": "B",
+    "explanation": "FS+3d: druhý začne min. 3 dny po konci prvního. První končí v 8. Druhý by měl začít min. v 11. Potenciál b (maximální odstup konců): Konec prvního = 8, konec druhého max. v 15 + 5 = 20. b = konec prvního – max. konec druhého? Oprava: bBA = F(B) – F(A) max? Zadání: FS+3d (SS), nejpozději začátek v 15. Potenciál b = počátek A – počátek B (max) = 0 – 15 = -15."
+  },
+  {
+    "id": 104,
+    "question": "Předpokládejme dvě navazující činnosti provázané FS v projektu řízeném dle Critical Chain. Plánovaná doba trvání první z nich je 10 dnů, druhé 7. Při realizaci projektu první činnost díky zvýšenému úsilí zkrátí o 1 den. Který den skončí druhá, uvažujeme-li platnost Parkinsonova zákona?",
+    "options": {
+      "A": "15",
+      "B": "16",
+      "C": "17",
+      "D": "18"
+    },
+    "correct": "C",
+    "explanation": "Parkinsonův zákon říká, že práce vyplní všechen dostupný čas. První činnost skončí za 9 dní (v den 9), ale druhá nezačne dříve – stále začne v den 10 a trvá 7 dní, tedy skončí v den 10 + 7 = 17."
+  },
+  {
+    "id": 105,
+    "question": "Pro metodu MPM je typický:",
+    "options": {
+      "A": "graf typu AON, pro výpočet je používána střední doba trvání činnosti",
+      "B": "graf typu AOA, intervalové zadávání vztahů mezi činnostmi",
+      "C": "graf typu AOC, intervalové zadávání vztahů mezi činnostmi",
+      "D": "graf typu AON, intervalové zadávání vztahů mezi činnostmi"
+    },
+    "correct": "D",
+    "explanation": "MPM používá uzlově definovaný graf (AON) a umožňuje definovat vztahy pomocí potenciálů – minimálních a maximálních odstupů (intervalové zadání)."
+  },
+  {
+    "id": 106,
+    "question": "Ve standardu ICB4 (IPMA) je kompetence definována jako:",
+    "options": {
+      "A": "soubor znalostí a osobních přístupů, kterých je pro úspěch v určité pozici potřeba",
+      "B": "soubor znalostí a souvisejících zkušeností, kterých je pro úspěch v určité pozici potřeba",
+      "C": "soubor dovedností a souvisejících zkušeností, kterých je pro úspěch v určité pozici potřeba",
+      "D": "soubor znalostí, osobních přístupů, dovedností a souvisejících zkušeností, kterých je pro úspěch v určité pozici potřeba"
+    },
+    "correct": "D",
+    "explanation": "ICB4 definuje kompetenci jako úplný soubor znalostí, dovedností, osobních přístupů a zkušeností potřebných pro výkon dané role."
+  },
+  {
+    "id": 107,
+    "question": "Při simulaci stochastického projektu se za kritickou považuje ta cesta, která byla:",
+    "options": {
+      "A": "u všech pokusů nejdelší",
+      "B": "u všech pokusů nejkratší",
+      "C": "u nejvíce pokusů nejkratší",
+      "D": "u nejvíce pokusů nejdelší"
+    },
+    "correct": "D",
+    "explanation": "Při simulaci (např. Monte Carlo) se za kritickou označuje cesta, která byla v největším počtu simulačních běhů nejdelší."
+  },
+  {
+    "id": 108,
+    "question": "Činnost trvá 10 dní a ke stavovému datu by měla být rozpracována ze 60 %. Je však hotová pouze z poloviny. Rozpočtované náklady na ni byly 500 tis. Kč. Dodatečné náklady po zahájení realizace se vyšplhaly na 150 tis. Kč. Parametr BCWP (EV) bude:",
+    "options": {
+      "A": "300 tis. Kč",
+      "B": "250 tis. Kč",
+      "C": "400 tis. Kč",
+      "D": "150 tis. Kč"
+    },
+    "correct": "B",
+    "explanation": "BCWP (EV) = rozpočtované náklady × skutečné % dokončení = 500 000 × 0,50 = 250 000 Kč. Skutečné náklady (ACWP) do výpočtu EV nevstupují."
+  },
+  {
+    "id": 109,
+    "question": "U kvalitativní analýzy rizik v plánu řízení rizik se užívá:",
+    "options": {
+      "A": "rozhodovací stromy a výpočet očekávané hodnoty rizika",
+      "B": "odhad závažnosti rizik a předvídatelnosti rizik",
+      "C": "mapa rizik nebo matice rizik",
+      "D": "rozhodovací stromy a matice rizik"
+    },
+    "correct": "C",
+    "explanation": "Pro kvalitativní analýzu rizik se typicky používá mapa rizik nebo matice pravděpodobnosti a dopadu. Rozhodovací stromy a očekávaná hodnota patří ke kvantitativní analýze."
+  },
+  {
+    "id": 110,
+    "question": "Za projekt lze nejpřesněji považovat:",
+    "options": {
+      "A": "jakékoli úsilí s cílem vytvořit unikátní produkt nebo službu",
+      "B": "souhrn činností, které je třeba provést k dosažení stanoveného cíle",
+      "C": "souhrn činností potřebných k dosažení předem definovaného cíle",
+      "D": "řízený proces aplikace úkolů a zdrojů v určeném časovém rámci"
+    },
+    "correct": "B",
+    "explanation": "Tato definice zdůrazňuje, že projekt je souhrnem činností směřujících ke stanovenému cíli – pokrývá podstatu projektového řízení jako řízení prací."
+  },
+  {
+    "id": 111,
+    "question": "PERT předpokládá, že doba trvání jednotlivých činností je:",
+    "options": {
+      "A": "náhodnou veličinou s normálním rozdělením pravděpodobnosti",
+      "B": "náhodnou veličinou s rozdělením BETA",
+      "C": "náhodnou veličinou s rozdělením GAMA",
+      "D": "pevně daná"
+    },
+    "correct": "B",
+    "explanation": "V PERT se pro jednotlivé činnosti používá BETA rozdělení, charakterizované třemi odhady (optimistický, nejpravděpodobnější, pesimistický)."
+  },
+  {
+    "id": 112,
+    "question": "Který z následujících standardů je považován za procesně orientovanou metodiku?",
+    "options": {
+      "A": "PMBOK",
+      "B": "PRINCE2",
+      "C": "ICB (IPMA)",
+      "D": "ISO 10006"
+    },
+    "correct": "B",
+    "explanation": "PRINCE2 je procesně orientovaná metodika projektového řízení. Oproti tomu PMBOK je spíše souborem znalostí, ICB kompetenčním standardem."
+  },
+  {
+    "id": 113,
+    "question": "Pojem „WBS“ v projektovém řízení označuje:",
+    "options": {
+      "A": "Work Breakdown Schedule – časový harmonogram prací",
+      "B": "Work Budget Summary – souhrnný rozpočet prací",
+      "C": "Work Breakdown Structure – hierarchická struktura prací",
+      "D": "Work Balance Sheet – bilance prací"
+    },
+    "correct": "C",
+    "explanation": "WBS (Work Breakdown Structure) je hierarchický rozklad projektu na menší, lépe řiditelné komponenty."
+  },
+  {
+    "id": 114,
+    "question": "Pokud je činnost v metodě CPM kritická, znamená to, že:",
+    "options": {
+      "A": "má nejdelší dobu trvání ze všech činností projektu",
+      "B": "její celková časová rezerva je nulová",
+      "C": "má největší náklady na realizaci",
+      "D": "leží vždy na začátku projektu"
+    },
+    "correct": "B",
+    "explanation": "Kritická činnost má nulovou celkovou rezervu – jakékoli její zpoždění přímo způsobí zpoždění celého projektu."
+  },
+  {
+    "id": 115,
+    "question": "V metodě Critical Chain se časové rezervy:",
+    "options": {
+      "A": "přidávají ke každé jednotlivé činnosti",
+      "B": "odstraňují z jednotlivých činností a sdružují do bufferů",
+      "C": "ignorují, protože činnosti jsou plánovány bez rezerv",
+      "D": "zdvojnásobují pro kritické činnosti"
+    },
+    "correct": "B",
+    "explanation": "V Critical Chain se rezervy z jednotlivých úkolů odstraňují (zkracují se na polovinu) a sdružují se do společných bufferů (projektový, feeding, resource)."
+  },
+  {
+    "id": 116,
+    "question": "Který z následujících ukazatelů metody EVM (Earned Value Management) představuje rozdíl mezi plánovanými a skutečnými náklady?",
+    "options": {
+      "A": "Schedule Variance (SV)",
+      "B": "Cost Performance Index (CPI)",
+      "C": "Cost Variance (CV)",
+      "D": "Schedule Performance Index (SPI)"
+    },
+    "correct": "C",
+    "explanation": "Cost Variance (CV) = EV – AC, vyjadřuje rozdíl mezi hodnotou odvedené práce a skutečnými náklady. CV > 0 znamená úsporu, CV < 0 překročení rozpočtu."
+  }
+  ]
+    }
