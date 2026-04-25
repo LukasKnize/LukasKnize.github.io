@@ -31,6 +31,6 @@
     "hasSummary": true,
     "hasTest": true,
     "hasFlashcards": true,
-    "extraTabs": [{"label": "Zkouška", "file": "zkouska.json"}]
+    "extraTabs": [{"label": "Zkouška", "file": "zkouska.json", "type": "test"}]
   }
 ]
