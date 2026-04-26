@@ -34,9 +34,9 @@ Inode č. 1234
 **Adresář** je speciální soubor obsahující tabulku: `název_souboru → číslo_inode`. Jméno souboru tedy *není* součástí inode – to umožňuje **hard linky** (více jmen ukazujících na tentýž inode).
 
 ```
-/home/neko/dokument.txt → inode 1234
-/home/neko/alias.txt    → inode 1234  (hard link – tentýž soubor)
-/home/neko/odkaz.txt    → inode 5678  (symlink – jiný inode, obsah = cesta)
+/home/lukas/dokument.txt → inode 1234
+/home/lukas/alias.txt    → inode 1234  (hard link – tentýž soubor)
+/home/lukas/odkaz.txt    → inode 5678  (symlink – jiný inode, obsah = cesta)
 ```
 
 #### Journaling
@@ -94,11 +94,11 @@ Klíčové soubory:
 
 ```bash
 # Správa uživatelů
-useradd -m -s /bin/bash neko   # vytvoří uživatele s home adresářem
-passwd neko                     # nastaví heslo
-usermod -aG sudo neko           # přidá do skupiny sudo
-userdel -r neko                 # smaže uživatele i home
-id neko                         # zobrazí UID, GID, skupiny
+useradd -m -s /bin/bash lukas   # vytvoří uživatele s home adresářem
+passwd lukas                     # nastaví heslo
+usermod -aG sudo lukas           # přidá do skupiny sudo
+userdel -r lukas                 # smaže uživatele i home
+id lukas                         # zobrazí UID, GID, skupiny
 ```
 
 Zvláštní uživatel **root** (UID 0) má neomezená práva. Administrace se typicky provádí přes `sudo` – dočasné spuštění příkazu s právy roota, konfigurace v `/etc/sudoers`.
@@ -118,7 +118,7 @@ Zvláštní uživatel **root** (UID 0) má neomezená práva. Administrace se ty
 Každý soubor má tři skupiny práv: **uživatel (u)**, **skupina (g)**, **ostatní (o)**. Každá skupina má bity: **r** (čtení), **w** (zápis), **x** (spuštění).
 
 ```
- -rwxr-xr--  1 neko devs 4096 Apr 1 script.sh
+ -rwxr-xr--  1 lukas devs 4096 Apr 1 script.sh
   ││││││││└── ostatní: r-- (jen čtení)
   │││└┴┴┴──── skupina: r-x (čtení + spuštění)
   └┴┴┴─────── uživatel: rwx (vše)
@@ -137,7 +137,7 @@ Speciální bity:
 chmod 755 soubor       # rwxr-xr-x
 chmod u+x soubor       # přidá x pro vlastníka
 chmod o-r soubor       # odebere r pro ostatní
-chown neko:devs soubor # změní vlastníka a skupinu
+chown lukas:devs soubor # změní vlastníka a skupinu
 ```
 
 ### ACL (Access Control List)
