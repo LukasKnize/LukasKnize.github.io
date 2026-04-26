@@ -111,7 +111,7 @@ Jeden fyzický procesor se jeví jako dva logická jádra. Sdílí výpočetní 
 ```
 C:\Windows\System32\   ← systémové soubory
 C:\Program Files\      ← instalované programy
-C:\Users\neko\         ← domovská složka uživatele
+C:\Users\lukas\         ← domovská složka uživatele
 D:\                    ← druhý disk jako nové písmeno
 ```
 
@@ -120,7 +120,7 @@ D:\                    ← druhý disk jako nové písmeno
 /                      ← kořen (root) celého stromu
 ├── /bin, /usr/bin     ← spustitelné soubory
 ├── /etc/              ← konfigurace
-├── /home/neko/        ← domovská složka uživatele
+├── /home/lukas/        ← domovská složka uživatele
 ├── /dev/              ← zařízení jako soubory
 ├── /proc/, /sys/      ← virtuální fs (info o jádru)
 └── /mnt/, /media/     ← připojené disky (mount)
