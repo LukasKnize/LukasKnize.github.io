@@ -1,3 +1,7 @@
+## 2026-04-26 - Změna v materiálech
+- Přidány materiály pro okruh Informatika
+- Přidány materiály pro Ekonomiku a Management (prvních 15)
+
 ## 2026-04-18 - drobná změna ve funkcionalitě
 - Nově možnost zopakovat si špatně zodpovězené otázky
 - Možnost zobrazit si správné odpovědi po zkončení testu
