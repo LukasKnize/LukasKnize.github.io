@@ -164,7 +164,7 @@ Přechod z user mode do kernel mode nastane výhradně přes syscall nebo přeru
 Unix model: každý soubor má **vlastníka (user)**, **skupinu (group)** a práva **ostatní (others)**. Každá kategorie má bity `r` (read), `w` (write), `x` (execute).
 
 ```
- -rwxr-xr--  1 neko users 4096 Apr 1 12:00 script.sh
+ -rwxr-xr--  1 lukas users 4096 Apr 1 12:00 script.sh
   └┬┘└┬┘└┬┘
   user group others
 ```
