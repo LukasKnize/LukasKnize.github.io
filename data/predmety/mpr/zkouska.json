@@ -494,17 +494,17 @@
     "explanation": "Při minimalizaci nákladů s existencí rezerv je horní mez doby trvání úkolu limitujícím faktorem pro jeho maximální možné prodloužení."
   },
   {
-    "id": 42,
-    "question": "U kvantitativní analýzy rizik v plánu řízení rizik se užívá:",
-    "options": {
-      "A": "mapa rizik a rozhodovací stromy",
-      "B": "odhad závažnosti rizik a předvídatelnosti rizik",
-      "C": "odhad kontrolovatelnosti a odvratitelnosti rizika",
-      "D": "rozhodovací stromy a výpočet očekávané hodnoty rizika"
-    },
-    "correct": "D",
-    "explanation": "Kvantitativní analýza používá numerické metody – rozhodovací stromy a výpočet očekávané peněžní hodnoty rizika (EMV). Mapa/matice rizik se používá u kvalitativní analýzy."
+  "id": 42,
+  "question": "U kvantitativní analýzy rizik v plánu řízení rizik se užívá:",
+  "options": {
+    "A": "rozhodovací stromy a mapa rizik",
+    "B": "odhad závažnosti rizik a předvídatelnosti rizik",
+    "C": "odhad kontrolovatelnosti a odvratitelnosti rizika",
+    "D": "pouze odhad závažnosti a kontrolovatelnosti rizik"
   },
+  "correct": "A",
+  "explanation": "Ke kvantitativní analýze patří rozhodovací stromy a výpočet očekávané hodnoty rizika, v některých pojetích i mapa rizik pro vizualizaci výsledků. Zbylé možnosti spadají do kvalitativní analýzy."
+},
   {
     "id": 43,
     "question": "Který z následujících aparátů rozhodně patří mezi formální aparát projektového řízení?",
@@ -614,17 +614,17 @@
     "explanation": "Mezi parametry zdroje patří standardní sazba a náklady na využití. Mohutnost a disponibilita také patří, ale otázka směřuje na jinou dvojici – obě jsou správné, ale typicky testováno: nákladové parametry zdroje."
   },
   {
-    "id": 52,
-    "question": "Který z následujících důvodů může být příčinou zdrojového konfliktu v projektu?",
-    "options": {
-      "A": "nízká kvalifikace zdroje",
-      "B": "vícenásobná alokace zdroje ve stejném čase",
-      "C": "vysoká disponibilita zdroje",
-      "D": "minimální kapacita zdroje"
-    },
-    "correct": "B",
-    "explanation": "Nejčastější příčinou zdrojového konfliktu je přetížení zdroje – tedy vícenásobná alokace ve stejném čase (over-allocation)."
+  "id": 52,
+  "question": "Který z následujících důvodů může být příčinou zdrojového konfliktu v projektu?",
+  "options": {
+    "A": "nízká kvalifikace zdroje a vícenásobná alokace zdroje ve stejném čase",
+    "B": "vysoká disponibilita zdroje a minimální kapacita zdroje",
+    "C": "nízká kvalifikace zdroje a vysoká disponibilita zdroje",
+    "D": "vícenásobná alokace zdroje a minimální kapacita zdroje"
   },
+  "correct": "A",
+  "explanation": "Zdrojový konflikt vzniká, když zdroj nemůže vykonávat více činností současně (vícenásobná alokace) nebo když jeho kvalifikace neodpovídá požadavkům úkolu. Obě situace vyvolávají potřebu řešení."
+},
   {
     "id": 53,
     "question": "Jak se jmenuje základní certifikační úroveň metodiky PRINCE2?",
@@ -650,17 +650,17 @@
     "explanation": "Základním definičním znakem projektu je jeho dočasnost – má jasně definovaný začátek a konec."
   },
   {
-    "id": 55,
-    "question": "Pro podmíněné pravděpodobnosti realizace činností AOA modelu GERT, vycházejících současně s využitím stochastického výstupu, platí, že:",
-    "options": {
-      "A": "žádná z pravděpodobností nesmí být rovna 0",
-      "B": "všechny musí být z intervalu <0, 1> a jejich součet musí být roven 1",
-      "C": "alespoň jedna z nich musí být rovna 1",
-      "D": "všechny musí být z intervalu <0, 1>, jejich součet může být větší než 1"
-    },
-    "correct": "B",
-    "explanation": "U stochastického výstupu musí součet podmíněných pravděpodobností všech výstupních větví z uzlu být přesně 1 (jevy tvoří úplný systém)."
+  "id": 55,
+  "question": "Pro podmíněné pravděpodobnosti realizace činností AOA modelu GERT, vycházejících současně s využitím stochastického výstupu, platí, že:",
+  "options": {
+    "A": "žádná z pravděpodobností nesmí být rovna 0",
+    "B": "všechny musí být z intervalu <0, 1> a jejich součet musí být roven 1",
+    "C": "alespoň jedna z nich musí být rovna 1",
+    "D": "všechny musí být z intervalu <0, 1>, jejich součet může být větší než 1"
   },
+  "correct": "B",
+  "explanation": "Stochastický výstup z uzlu v GERT znamená, že nastane právě jedna z vystupujících činností, a proto součet jejich podmíněných pravděpodobností musí být 1 (úplný systém jevů)."
+},
   {
     "id": 56,
     "question": "Výstupem kvalitativní analýzy rizik je:",
@@ -863,7 +863,7 @@
       "D": "150 tis. Kč"
     },
     "correct": "A",
-    "explanation": "ACWP (AC) = rozpočtované náklady + dodatečné náklady = 500 000 + 150 000 = 650 000 Kč? Ne, ACWP jsou skutečné náklady. Zde: původní rozpočet 500 tis. + dodatečné? Oprava: ACWP = 500 + 150 = 650? Ale výsledek 400 naznačuje 250 + 150. Revize: ACWP (Actual Cost of Work Performed) = rozpočtované náklady × skutečné % + dodatečné náklady? Pravděpodobně: 500 000 × 0,50 + 150 000 = 250 000 + 150 000 = 400 000 Kč."
+    "explanation": "ACWP (Actual Cost of Work Performed) = rozpočtované náklady × skutečné % + dodatečné náklady: 500 000 × 0,50 + 150 000 = 250 000 + 150 000 = 400 000 Kč."
   },
   {
     "id": 73,
@@ -1142,17 +1142,17 @@
     "explanation": "PERT používá tři odhady pro každou činnost: optimistický (a), nejpravděpodobnější (m) a pesimistický (b)."
   },
   {
-    "id": 96,
-    "question": "Projekt lze nejvýstižněji definovat jako:",
-    "options": {
-      "A": "jakékoli úsilí s cílem vytvořit unikátní produkt nebo službu",
-      "B": "souhrn činností, které je třeba provést k dosažení stanoveného cíle",
-      "C": "souhrn činností potřebných k dosažení předem definovaného cíle",
-      "D": "řízený proces aplikace úkolů a zdrojů v určeném časovém rámci"
-    },
-    "correct": "A",
-    "explanation": "Nejvýstižnější definice projektu podle PMBOK: dočasné úsilí vynaložené na vytvoření unikátního produktu, služby nebo výsledku."
+  "id": 96,
+  "question": "Projekt lze nejvýstižněji definovat jako:",
+  "options": {
+    "A": "jakékoli úsilí s cílem vytvořit unikátní produkt nebo službu",
+    "B": "souhrn činností, které je třeba provést k dosažení stanoveného cíle",
+    "C": "souhrn činností potřebných k dosažení předem definovaného cíle",
+    "D": "řízený proces aplikace úkolů a zdrojů v určeném časovém rámci"
   },
+  "correct": "B",
+  "explanation": "Podle českých skript projektového řízení je projekt definován jako posloupnost činností nutných k dosažení stanoveného cíle. Definice z PMBOK s unikátním produktem je rovněž častá, ale v tomto kontextu je preferována varianta B."
+},
   {
     "id": 97,
     "question": "Který ze standardů je považován za světovou jedničku a vznikl v USA?",
@@ -1214,17 +1214,17 @@
     "explanation": "Úplný výčet strategií obrany proti rizikům zahrnuje: odmítnutí (vyhnutí se), postoupení (přenesení), omezení výskytu (mitigace), akceptace a převod."
   },
   {
-    "id": 102,
-    "question": "Pro nezávislou časovou rezervu činnosti v metodě CPM neplatí, že:",
-    "options": {
-      "A": "nabývá libovolné reálné hodnoty",
-      "B": "je menší nebo rovna zvláštní rezervě",
-      "C": "je vždy kladná",
-      "D": "je menší nebo rovna celkové rezervě"
-    },
-    "correct": "C",
-    "explanation": "Nezávislá rezerva může nabývat i záporných hodnot (v praxi se pak pokládá za nulovou). Není tedy vždy kladná."
+  "id": 102,
+  "question": "Pro nezávislou časovou rezervu činnosti v metodě CPM NEplatí, že:",
+  "options": {
+    "A": "nabývá libovolné reálné hodnoty",
+    "B": "je menší nebo rovna zvláštní rezervě",
+    "C": "je vždy kladná",
+    "D": "je menší nebo rovna celkové rezervě"
   },
+  "correct": "A",
+  "explanation": "Nezávislá časová rezerva nemůže nabývat libovolné reálné hodnoty – je omezena vztahy k ostatním činnostem a je vždy ≤ celkové rezervě a ≤ zvláštní rezervě. Naopak může být i záporná (pak se klade rovna nule), takže není vždy kladná."
+},
   {
     "id": 103,
     "question": "Dva po sobě následující úkoly jsou provázány FS+3d. První úkol trvá 8 dnů a začíná v čase 0, druhý trvá 5 dnů a musí začít nejpozději v bodě 15. Uveďte hodnotu potenciálu „b“ (bez časových jednotek):",
@@ -1235,7 +1235,7 @@
       "D": "-11"
     },
     "correct": "B",
-    "explanation": "FS+3d: druhý začne min. 3 dny po konci prvního. První končí v 8. Druhý by měl začít min. v 11. Potenciál b (maximální odstup konců): Konec prvního = 8, konec druhého max. v 15 + 5 = 20. b = konec prvního – max. konec druhého? Oprava: bBA = F(B) – F(A) max? Zadání: FS+3d (SS), nejpozději začátek v 15. Potenciál b = počátek A – počátek B (max) = 0 – 15 = -15."
+    "explanation": "Potenciál b (maximální odstup začátků) = záporně vyjádřená maximální vzdálenost. Druhý úkol musí začít nejpozději v bodě 15, předchůdce začíná v 0, tedy maximální odstup = 15. V MPM se b zapisuje záporně: b = −15"
   },
   {
     "id": 104,
@@ -1298,31 +1298,19 @@
     "explanation": "BCWP (EV) = rozpočtované náklady × skutečné % dokončení = 500 000 × 0,50 = 250 000 Kč. Skutečné náklady (ACWP) do výpočtu EV nevstupují."
   },
   {
-    "id": 109,
-    "question": "U kvalitativní analýzy rizik v plánu řízení rizik se užívá:",
-    "options": {
-      "A": "rozhodovací stromy a výpočet očekávané hodnoty rizika",
-      "B": "odhad závažnosti rizik a předvídatelnosti rizik",
-      "C": "mapa rizik nebo matice rizik",
-      "D": "rozhodovací stromy a matice rizik"
-    },
-    "correct": "C",
-    "explanation": "Pro kvalitativní analýzu rizik se typicky používá mapa rizik nebo matice pravděpodobnosti a dopadu. Rozhodovací stromy a očekávaná hodnota patří ke kvantitativní analýze."
+  "id": 109,
+  "question": "U kvalitativní analýzy rizik v plánu řízení rizik se užívá:",
+  "options": {
+    "A": "odhad závažnosti rizik a předvídatelnosti rizik a odhad kontrolovatelnosti a odvratitelnosti rizika",
+    "B": "mapa rizik nebo matice rizik a rozhodovací stromy",
+    "C": "rozhodovací stromy a výpočet očekávané hodnoty rizika",
+    "D": "pouze mapa rizik a odhad kontrolovatelnosti rizika"
   },
+  "correct": "A",
+  "explanation": "V rámci kvalitativní analýzy se posuzuje závažnost, předvídatelnost, kontrolovatelnost a odvratitelnost rizik. Mapa rizik je rovněž nástroj kvalitativní analýzy, ale v této otázce je správnou dvojicí odhad závažnosti/kontrolovatelnosti (dle předlohy)."
+},
   {
     "id": 110,
-    "question": "Za projekt lze nejpřesněji považovat:",
-    "options": {
-      "A": "jakékoli úsilí s cílem vytvořit unikátní produkt nebo službu",
-      "B": "souhrn činností, které je třeba provést k dosažení stanoveného cíle",
-      "C": "souhrn činností potřebných k dosažení předem definovaného cíle",
-      "D": "řízený proces aplikace úkolů a zdrojů v určeném časovém rámci"
-    },
-    "correct": "B",
-    "explanation": "Tato definice zdůrazňuje, že projekt je souhrnem činností směřujících ke stanovenému cíli – pokrývá podstatu projektového řízení jako řízení prací."
-  },
-  {
-    "id": 111,
     "question": "PERT předpokládá, že doba trvání jednotlivých činností je:",
     "options": {
       "A": "náhodnou veličinou s normálním rozdělením pravděpodobnosti",
@@ -1334,7 +1322,7 @@
     "explanation": "V PERT se pro jednotlivé činnosti používá BETA rozdělení, charakterizované třemi odhady (optimistický, nejpravděpodobnější, pesimistický)."
   },
   {
-    "id": 112,
+    "id": 111,
     "question": "Který z následujících standardů je považován za procesně orientovanou metodiku?",
     "options": {
       "A": "PMBOK",
@@ -1346,7 +1334,7 @@
     "explanation": "PRINCE2 je procesně orientovaná metodika projektového řízení. Oproti tomu PMBOK je spíše souborem znalostí, ICB kompetenčním standardem."
   },
   {
-    "id": 113,
+    "id": 112,
     "question": "Pojem „WBS“ v projektovém řízení označuje:",
     "options": {
       "A": "Work Breakdown Schedule – časový harmonogram prací",
@@ -1358,7 +1346,7 @@
     "explanation": "WBS (Work Breakdown Structure) je hierarchický rozklad projektu na menší, lépe řiditelné komponenty."
   },
   {
-    "id": 114,
+    "id": 113,
     "question": "Pokud je činnost v metodě CPM kritická, znamená to, že:",
     "options": {
       "A": "má nejdelší dobu trvání ze všech činností projektu",
@@ -1370,7 +1358,7 @@
     "explanation": "Kritická činnost má nulovou celkovou rezervu – jakékoli její zpoždění přímo způsobí zpoždění celého projektu."
   },
   {
-    "id": 115,
+    "id": 114,
     "question": "V metodě Critical Chain se časové rezervy:",
     "options": {
       "A": "přidávají ke každé jednotlivé činnosti",
@@ -1382,7 +1370,7 @@
     "explanation": "V Critical Chain se rezervy z jednotlivých úkolů odstraňují (zkracují se na polovinu) a sdružují se do společných bufferů (projektový, feeding, resource)."
   },
   {
-    "id": 116,
+    "id": 115,
     "question": "Který z následujících ukazatelů metody EVM (Earned Value Management) představuje rozdíl mezi plánovanými a skutečnými náklady?",
     "options": {
       "A": "Schedule Variance (SV)",
