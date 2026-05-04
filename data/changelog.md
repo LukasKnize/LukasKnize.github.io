@@ -1,3 +1,7 @@
+## 2026-05-04 - Změna v materiálech
+- Přidán zbytek materiálů pro Ekonomiku a Management
+- Přidány Kvantitativní metody
+  
 ## 2026-04-26 - Změna v materiálech
 - Přidány materiály pro okruh Informatika
 - Přidány materiály pro Ekonomiku a Management (prvních 15)
