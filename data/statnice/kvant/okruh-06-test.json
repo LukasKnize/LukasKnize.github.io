@@ -1,0 +1,77 @@
+{
+  "title": "Matematické modelování: definice, struktura, typy modelů",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je matematický model?",
+      "options": {
+        "A": "Přesná kopie reálného systému v digitální podobě",
+        "B": "Formální (matematický) popis vybraných vlastností reálného systému sestavený za konkrétním účelem",
+        "C": "Soubor dat naměřených na reálném systému",
+        "D": "Algoritmus pro numerické řešení diferenciálních rovnic"
+      },
+      "correct": "B",
+      "explanation": "Model je vždy zjednodušením reality — zachycuje jen aspekty relevantní pro daný účel. 'All models are wrong, but some are useful.' (George Box)"
+    },
+    {
+      "id": 2,
+      "question": "Jaký je rozdíl mezi normativním (preskriptivním) a deskriptivním modelem?",
+      "options": {
+        "A": "Deskriptivní model popisuje budoucí stav, normativní popisuje minulý",
+        "B": "Normativní model hledá optimální rozhodnutí; deskriptivní model popisuje chování systému",
+        "C": "Normativní model používá slovní popis; deskriptivní model matematické rovnice",
+        "D": "Deskriptivní model je přesnější než normativní"
+      },
+      "correct": "B",
+      "explanation": "Normativní (preskriptivní, optimalizační) model říká, jak by se systém měl chovat — hledá optimum (LP, portfolio optimalizace). Deskriptivní model popisuje, jak se systém chová — bez hodnotového soudu (regresní model, simulace)."
+    },
+    {
+      "id": 3,
+      "question": "Co je parametrizace modelu?",
+      "options": {
+        "A": "Překlad konceptuálního popisu do matematických rovnic",
+        "B": "Odhad numerických hodnot parametrů modelu z dat nebo expertních odhadů",
+        "C": "Volba rozlišovací úrovně (granularity) modelu",
+        "D": "Testování modelu na nezávislých datech"
+      },
+      "correct": "B",
+      "explanation": "Parametrizace přiřazuje konkrétní hodnoty parametrům (konstantám) modelu — pomocí statistické estimace z dat, kalibrace (iterativní přizpůsobení) nebo expertních odhadů."
+    },
+    {
+      "id": 4,
+      "question": "Jaký je rozdíl mezi statickým a dynamickým modelem?",
+      "options": {
+        "A": "Statický model má více proměnných než dynamický",
+        "B": "Dynamický model zachycuje změny v čase; statický model popisuje rovnovážný stav nezávislý na čase",
+        "C": "Statický model je vždy deterministický, dynamický vždy stochastický",
+        "D": "Dynamický model lze řešit analyticky, statický pouze numericky"
+      },
+      "correct": "B",
+      "explanation": "Statický model: čas nehraje roli, popisuje rovnováhu (LP, rovnováha trhu). Dynamický model: stav se mění v čase, obsahuje diferenciální nebo diferenční rovnice (systémová dynamika, ARIMA, populační modely)."
+    },
+    {
+      "id": 5,
+      "question": "Co je princip parsimonie (Occamova břitva) v modelování?",
+      "options": {
+        "A": "Model by měl být co nejpodrobnější, aby byl co nejpřesnější",
+        "B": "Ze dvou modelů se stejnou vysvětlovací silou preferujeme jednodušší",
+        "C": "Model by měl obsahovat všechny dostupné proměnné pro maximální přesnost",
+        "D": "Validaci modelu je třeba provést před jeho tvorbou"
+      },
+      "correct": "B",
+      "explanation": "Occamova břitva říká: nepřidávej složitost bez nutnosti. Složitý model může lépe fitovat trénovací data, ale hůře generalizuje (overfitting). Preferujeme nejjednodušší model s dostatečnou vysvětlovací silou."
+    },
+    {
+      "id": 6,
+      "question": "Simulační model patří do které kategorie dle způsobu řešení?",
+      "options": {
+        "A": "Analytický model — řeší se uzavřenou formulí",
+        "B": "Numerický model — řeší se iterativními výpočty",
+        "C": "Model, který se 'spustí' a výsledky se pozorují experimentálně",
+        "D": "Grafický model — výsledky se čtou z diagramu"
+      },
+      "correct": "C",
+      "explanation": "Simulační model se spouští (běží v čase nebo opakuje) a pozoruje se jeho chování. Na rozdíl od analytického (uzavřená formule) nebo numerického (iterativní výpočet) modelu jsou výsledky experimentální — nelze je snadno generalizovat."
+    }
+  ]
+}

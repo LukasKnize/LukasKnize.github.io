@@ -1,0 +1,101 @@
+{
+  "title": "Lineární optimalizační modely",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je hlavní cíl lineárního programování (LP)?",
+      "options": {
+        "A": "Najít libovolné přípustné řešení co nejrychleji",
+        "B": "Optimalizovat lineární účelovou funkci při respektování lineárních omezení",
+        "C": "Minimalizovat počet proměnných v modelu",
+        "D": "Řešit soustavy nelineárních rovnic"
+      },
+      "correct": "B",
+      "explanation": "LP hledá maximum nebo minimum lineární účelové funkce za podmínky, že rozhodovací proměnné splňují soustavu lineárních omezení a podmínky nezápornosti."
+    },
+    {
+      "id": 2,
+      "question": "Který z níže uvedených NENÍ základním předpokladem lineárního programování?",
+      "options": {
+        "A": "Linearita (proporcionalita)",
+        "B": "Aditivita",
+        "C": "Stochastičnost (náhodnost parametrů)",
+        "D": "Dělitelnost"
+      },
+      "correct": "C",
+      "explanation": "LP předpokládá determinismus — všechny parametry jsou přesně známy. Stochastičnost je naopak porušením předpokladu LP; pro modely s náhodností existuje stochastické programování."
+    },
+    {
+      "id": 3,
+      "question": "Kde leží optimální řešení LP modelu (při existenci konečného optima)?",
+      "options": {
+        "A": "Ve středu přípustné oblasti",
+        "B": "Na libovolném místě hranice přípustné oblasti",
+        "C": "V některém z vrcholů (rohových bodů) přípustné oblasti",
+        "D": "Vždy v počátku souřadnicové soustavy"
+      },
+      "correct": "C",
+      "explanation": "Základní věta LP říká, že optimum (pokud existuje) leží vždy alespoň v jednom vrcholu (rohovém bodu) konvexní přípustné oblasti. Na tom staví i simplexová metoda."
+    },
+    {
+      "id": 4,
+      "question": "Co nastane, pokud je přípustná oblast LP modelu prázdná?",
+      "options": {
+        "A": "Optimum je v nekonečnu",
+        "B": "Model nemá řešení — omezení jsou navzájem rozporná",
+        "C": "Simplexová metoda cyklí",
+        "D": "Existuje degenerované řešení"
+      },
+      "correct": "B",
+      "explanation": "Prázdná přípustná oblast (infeasible problem) znamená, že neexistuje žádné přiřazení proměnných, které by splňovalo všechna omezení současně — omezení si protiřečí."
+    },
+    {
+      "id": 5,
+      "question": "Co jsou stínové ceny (shadow prices / duální proměnné) v LP?",
+      "options": {
+        "A": "Ceny vstupních surovin v optimálním řešení",
+        "B": "O kolik se zlepší optimální hodnota účelové funkce při zvýšení disponibility daného zdroje o jednu jednotku",
+        "C": "Hodnoty skluzových proměnných v optimu",
+        "D": "Náklady na přidání nového omezení do modelu"
+      },
+      "correct": "B",
+      "explanation": "Stínová cena zdroje $i$ udává marginální hodnotu tohoto zdroje — o kolik se zlepší optimum, pokud dostaneme o jednu jednotku více. Jsou to hodnoty duálních proměnných odpovídajících daným omezením."
+    },
+    {
+      "id": 6,
+      "question": "Jak simplexová metoda prochází přípustnou oblastí?",
+      "options": {
+        "A": "Vyhodnocuje náhodně zvolené body uvnitř oblasti",
+        "B": "Prochází systematicky všechny vrcholy a vybírá nejlepší",
+        "C": "Přesouvá se z vrcholu do sousedního vrcholu, který vždy zlepší hodnotu účelové funkce",
+        "D": "Dělí přípustnou oblast na poloviny a hledá optimum binárně"
+      },
+      "correct": "C",
+      "explanation": "Simplexová metoda začíná v počátečním základním přípustném řešení a iterativně se přesouvá do sousedních vrcholů s lepší hodnotou účelové funkce, dokud nelze dále zlepšovat."
+    },
+    {
+      "id": 7,
+      "question": "Co je problémem celočíselného programování (ILP) oproti klasickému LP?",
+      "options": {
+        "A": "Účelová funkce musí být nelineární",
+        "B": "Proměnné musí nabývat pouze celočíselných hodnot, což komplikuje řešení",
+        "C": "Omezení musí být vyjádřena jako rovnice, nikoliv nerovnice",
+        "D": "Model musí mít právě tolik proměnných jako omezení"
+      },
+      "correct": "B",
+      "explanation": "ILP vyžaduje, aby rozhodovací proměnné (nebo jejich část) nabývaly celočíselných hodnot. Zaokrouhlení LP řešení na celá čísla není správné (může být nepřípustné nebo suboptimální); ILP se řeší metodou Branch and Bound."
+    },
+    {
+      "id": 8,
+      "question": "Firma vyrábí dva produkty s příspěvky na zisk 4 Kč/ks a 5 Kč/ks. Grafická metoda LP identifikuje optimální bod ve vrcholu $(3, 4)$. Jaký je maximální zisk?",
+      "options": {
+        "A": "20 Kč",
+        "B": "28 Kč",
+        "C": "32 Kč",
+        "D": "35 Kč"
+      },
+      "correct": "C",
+      "explanation": "Zisk = $4 \\times 3 + 5 \\times 4 = 12 + 20 = 32$ Kč. Účelová funkce se vyhodnotí dosazením souřadnic optimálního vrcholu."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Vícekriteriální rozhodování a vícekriteriální analýza variant",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je Paretova množina (množina nedominovaných variant)?",
+      "options": {
+        "A": "Množina všech alternativ seřazených dle váženého součtu",
+        "B": "Množina alternativ, které nejsou dominovány žádnou jinou alternativou",
+        "C": "Množina alternativ splňujících všechna kritéria nad zadanou prahovou hodnotou",
+        "D": "Množina nejhorších alternativ vyloučených z dalšího hodnocení"
+      },
+      "correct": "B",
+      "explanation": "Alternativa je Paretovsky nedominovaná, pokud neexistuje jiná alternativa, která by byla alespoň tak dobrá ve všech kritériích a přísně lepší alespoň v jednom. Pouze alternativy z Paretovy množiny mají smysl dále hodnotit."
+    },
+    {
+      "id": 2,
+      "question": "Alternativa $A_i$ dominuje alternativu $A_k$ tehdy, když...",
+      "options": {
+        "A": "$A_i$ je lepší než $A_k$ ve všech kritériích bez výjimky",
+        "B": "$A_i$ je alespoň tak dobrá jako $A_k$ ve všech kritériích a přísně lepší alespoň v jednom",
+        "C": "$A_i$ má vyšší vážený součet než $A_k$",
+        "D": "$A_i$ je lepší než $A_k$ ve více než polovině kritérií"
+      },
+      "correct": "B",
+      "explanation": "Dominance nevyžaduje přísnou lepšovost ve všech kritériích — stačí, aby $A_i$ nebyla v žádném horší a v alespoň jednom kritériu byla přísně lepší. Taková $A_k$ je dominována a lze ji vyřadit."
+    },
+    {
+      "id": 3,
+      "question": "Jaký je výsledný produkt Saatyho metody AHP při stanovení vah kritérií?",
+      "options": {
+        "A": "Pořadí kritérií od nejdůležitějšího k nejméně důležitému",
+        "B": "Normalizovaný vlastní vektor matice párového porovnání jako vektor vah",
+        "C": "Průměrné hodnoty Saatyho stupnice přes všechna porovnání",
+        "D": "Binární vektor označující, která kritéria jsou důležitá"
+      },
+      "correct": "B",
+      "explanation": "Saatyho metoda vytvoří matici párového porovnání, jejíž největší vlastní číslo dá vlastní vektor — ten po normalizaci dává váhy kritérií. Poměr konzistence (CR < 0,1) ověřuje soulad soudů."
+    },
+    {
+      "id": 4,
+      "question": "Metoda TOPSIS vybírá alternativu, která...",
+      "options": {
+        "A": "Má největší vážený součet normalizovaných hodnot",
+        "B": "Je nejblíže ideálnímu řešení a zároveň nejdál od bazálního (anti-ideálního) řešení",
+        "C": "Překračuje konkordanční práh ve srovnání se všemi ostatními alternativami",
+        "D": "Minimalizuje maximální lítost přes všechna kritéria"
+      },
+      "correct": "B",
+      "explanation": "TOPSIS počítá Euklidovské vzdálenosti každé alternativy od ideálu $A^+$ (nejlepší hodnoty ve všech kritériích) a bazálu $A^-$ (nejhorší hodnoty). Nejlepší je alternativa s nejvyšší relativní blízkostí $C_i = d^-/(d^++d^-)$."
+    },
+    {
+      "id": 5,
+      "question": "Čím se ELECTRE liší od metody váženého součtu (WSA)?",
+      "options": {
+        "A": "ELECTRE nevyžaduje číselné ohodnocení alternativ, WSA ano",
+        "B": "ELECTRE nepředpokládá kompenzovatelnost — špatná hodnota v jednom kritériu nemůže být zcela vynahrazena dobrými v ostatních",
+        "C": "ELECTRE vždy dá jedinečnou nejlepší alternativu, WSA může dát více optimálních",
+        "D": "ELECTRE pracuje s pořadími alternativ, WSA pracuje s absolutními hodnotami"
+      },
+      "correct": "B",
+      "explanation": "WSA je plně kompenzovatelná — libovolně špatná hodnota může být vykompenzována dostatečně dobrými hodnotami v jiných kritériích. ELECTRE používá diskordanční prahy, které zabrání přijetí alternativy s extrémně špatnou hodnotou v jednom kritériu."
+    },
+    {
+      "id": 6,
+      "question": "Jak se normalizují hodnoty kritéria v metodě WSA pro maximalizační kritérium?",
+      "options": {
+        "A": "$\\hat{y}_{ij} = y_{ij} / \\sum_i y_{ij}$",
+        "B": "$\\hat{y}_{ij} = (y_{ij} - y_j^{\\min}) / (y_j^{\\max} - y_j^{\\min})$",
+        "C": "$\\hat{y}_{ij} = y_{ij} / y_j^{\\max}$",
+        "D": "$\\hat{y}_{ij} = (y_{ij} - \\bar{y}_j) / s_j$"
+      },
+      "correct": "B",
+      "explanation": "Min-max normalizace převede hodnoty do intervalu [0, 1], kde 0 odpovídá nejhorší a 1 nejlepší hodnotě v daném kritériu. Pro minimalizační kritérium se vzorec invertuje: $(y_j^{\\max} - y_{ij}) / (y_j^{\\max} - y_j^{\\min})$."
+    },
+    {
+      "id": 7,
+      "question": "Proč je vhodné provést citlivostní analýzu po výběru nejlepší alternativy?",
+      "options": {
+        "A": "Aby bylo možné porovnat výsledky různých metod MCDM",
+        "B": "Aby se ověřilo, jak robustní je výsledek vůči změnám vah kritérií nebo hodnot alternativ",
+        "C": "Aby se ověřila Paretovská optimálnost vybrané alternativy",
+        "D": "Protože legislativa vyžaduje citlivostní analýzu před každým rozhodnutím"
+      },
+      "correct": "B",
+      "explanation": "Citlivostní analýza testuje, zda se optimální alternativa změní při malých změnách parametrů (vah, hodnot). Robustní výsledek (nezávislý na malých změnách) dává větší jistotu rozhodující osobě."
+    }
+  ]
+}

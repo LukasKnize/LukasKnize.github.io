@@ -1,0 +1,89 @@
+{
+  "title": "Stochastické modely: Markovské řetězce, teorie hromadné obsluhy, Bernoulliho schéma",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je Bernoulliho schéma?",
+      "options": {
+        "A": "Model pro sérii závislých pokusů s rostoucí pravděpodobností úspěchu",
+        "B": "Model pro konečný počet opakování nezávislých pokusů se stálou pravděpodobností úspěchu $p$",
+        "C": "Model popisující dobu čekání na obsluhu v hromadném systému",
+        "D": "Model přechodů mezi diskrétními stavy s pamětí"
+      },
+      "correct": "B",
+      "explanation": "Bernoulliho schéma: $n$ nezávislých pokusů, každý s pravděpodobností úspěchu $p$ (konstantní). Počet úspěchů má binomické rozdělení $B(n, p)$ s $\\mathbb{E}[X] = np$ a $D(X) = np(1-p)$."
+    },
+    {
+      "id": 2,
+      "question": "Za jakých podmínek je vhodné použít Poissonovo rozdělení místo binomického?",
+      "options": {
+        "A": "Při malém $n$ a velkém $p$",
+        "B": "Při velkém $n$ a malém $p$ (vzácné události), kde $\\lambda = np$ je přiměřeně malé",
+        "C": "Vždy, když je počet pokusů neznámý",
+        "D": "Při závislých pokusech s proměnnou pravděpodobností"
+      },
+      "correct": "B",
+      "explanation": "Poissonovo přiblížení $\\text{Pois}(\\lambda = np)$ je přesné pro velká $n$ a malá $p$. Typicky se říká $n \\geq 100$ a $p \\leq 0{,}05$. Střední hodnota i rozptyl jsou rovny $\\lambda$."
+    },
+    {
+      "id": 3,
+      "question": "Co říká Markovská podmínka (vlastnost bez paměti)?",
+      "options": {
+        "A": "Pravděpodobnost přechodu závisí na celé historii předchozích stavů",
+        "B": "Budoucí stav závisí pouze na aktuálním stavu, ne na tom, jak systém do stavu dospěl",
+        "C": "Pravděpodobnost přechodu se mění v čase (nehomogenní řetězec)",
+        "D": "Systém se musí vrátit do počátečního stavu po konečném počtu kroků"
+      },
+      "correct": "B",
+      "explanation": "$P(X_{n+1} = j | X_n = i, X_{n-1}, \\ldots) = P(X_{n+1} = j | X_n = i) = p_{ij}$. Budoucnost závisí jen na přítomnosti. To výrazně zjednodušuje analýzu — stačí znát přechodovou matici $P$."
+    },
+    {
+      "id": 4,
+      "question": "Co je stacionární rozdělení $\\pi$ ergodického Markovského řetězce?",
+      "options": {
+        "A": "Počáteční rozdělení pravděpodobností stavů",
+        "B": "Dlouhodobé rozdělení, kde $\\pi_j$ udává podíl času stráveného ve stavu $j$; splňuje $\\pi = \\pi P$",
+        "C": "Rozdělení pravděpodobností přechodů v prvním kroku",
+        "D": "Optimální strategie pro minimalizaci počtu přechodů"
+      },
+      "correct": "B",
+      "explanation": "Stacionární (limitní) rozdělení $\\pi$ je řešením $\\pi = \\pi P$, $\\sum_j \\pi_j = 1$. Pro ergodický řetězec (ireducibilní, aperiodický) existuje jednoznačně a nezávisí na počátečním stavu."
+    },
+    {
+      "id": 5,
+      "question": "Co vyjadřuje vytížení serveru $\\rho$ v modelu M/M/1?",
+      "options": {
+        "A": "Průměrný počet zákazníků čekajících ve frontě",
+        "B": "Pravděpodobnost, že zákazník bude muset čekat",
+        "C": "Poměr intenzity příchodů $\\lambda$ k intenzitě obsluhy $\\mu$; podíl času, kdy server pracuje",
+        "D": "Průměrná délka fronty v zásobníku"
+      },
+      "correct": "C",
+      "explanation": "$\\rho = \\lambda/\\mu$ — podíl doby, kdy je server zaneprázdněn. Podmínka stability: $\\rho < 1$ (server musí být průměrně rychlejší než příchody). Při $\\rho \\geq 1$ fronta roste neomezeně."
+    },
+    {
+      "id": 6,
+      "question": "Co říká Littleův zákon ($L = \\lambda W$)?",
+      "options": {
+        "A": "Průměrný počet zákazníků ve frontě se rovná intenzitě příchodů krát průměrná čekací doba",
+        "B": "Průměrný počet zákazníků v systému se rovná intenzitě příchodů krát průměrná doba v systému",
+        "C": "Průměrná doba obsluhy je rovna prevrácenou hodnotou intenzity obsluhy",
+        "D": "Průměrná doba v systému závisí pouze na vytížení serveru"
+      },
+      "correct": "B",
+      "explanation": "Littleův zákon $L = \\lambda W$ platí pro libovolný stabilní frontový systém. $L$ = průměrný počet v systému, $\\lambda$ = intenzita příchodů, $W$ = průměrná doba v systému. Analogicky $L_q = \\lambda W_q$ pro samotnou frontu."
+    },
+    {
+      "id": 7,
+      "question": "V modelu M/M/1 je intenzita příchodů $\\lambda = 8$ zákazníků/hod a průměrná obsluha trvá 6 minut. Jaká je průměrná doba čekání ve frontě $W_q$?",
+      "options": {
+        "A": "6 minut",
+        "B": "18 minut",
+        "C": "24 minut",
+        "D": "30 minut"
+      },
+      "correct": "C",
+      "explanation": "$\\mu = 60/6 = 10$ zák./hod. $\\rho = 8/10 = 0{,}8$. $W_q = \\rho/(\\mu - \\lambda) = 0{,}8/(10-8) = 0{,}4$ hod $= 24$ minut."
+    }
+  ]
+}

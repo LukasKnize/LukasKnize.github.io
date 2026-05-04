@@ -1,0 +1,101 @@
+{
+  "title": "Teorie rozhodování, rozhodovací modely, teorie her",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Čím se liší rozhodování za nejistoty od rozhodování za rizika?",
+      "options": {
+        "A": "Při nejistotě jsou alternativy neznámé, při riziku jsou alternativy známé",
+        "B": "Při nejistotě nejsou známy pravděpodobnosti stavů světa, při riziku jsou známy",
+        "C": "Při nejistotě rozhoduje více hráčů, při riziku pouze jeden",
+        "D": "Při nejistotě má úloha vždy více optimálních řešení"
+      },
+      "correct": "B",
+      "explanation": "Rozhodování za rizika: pravděpodobnosti stavů světa jsou známy → použijeme EMV. Rozhodování za nejistoty: pravděpodobnosti neznáme → musíme použít jiná kritéria (maximax, maximin, Hurwicz, Laplace, Savage)."
+    },
+    {
+      "id": 2,
+      "question": "Které kritérium rozhodování za nejistoty je pesimistické (zaměřuje se na nejhorší možný výsledek)?",
+      "options": {
+        "A": "Maximax",
+        "B": "Laplaceovo kritérium",
+        "C": "Waldovo kritérium (maximin)",
+        "D": "Hurwiczovo kritérium s $\\alpha = 0{,}9$"
+      },
+      "correct": "C",
+      "explanation": "Waldovo (maximinové) kritérium vybere alternativu s nejlepším nejhorším výsledkem: $\\max_i \\min_j v_{ij}$. Je to pesimistické kritérium — chrání před nejhorším scénářem."
+    },
+    {
+      "id": 3,
+      "question": "Co je očekávaná peněžní hodnota (EMV) alternativy?",
+      "options": {
+        "A": "Maximální možný výsledek alternativy",
+        "B": "Vážený průměr výsledků přes všechny stavy světa, kde váhy jsou pravděpodobnosti stavů",
+        "C": "Medián výsledků přes všechny stavy světa",
+        "D": "Výsledek alternativy v nejpravděpodobnějším stavu světa"
+      },
+      "correct": "B",
+      "explanation": "$EMV(A_i) = \\sum_j p_j \\cdot v_{ij}$. EMV je průměrný výsledek při opakování rozhodnutí mnohokrát. Maximalizace EMV je racionální při opakovaných rozhodnutích a neutrálním postoji k riziku."
+    },
+    {
+      "id": 4,
+      "question": "Co je sedlový bod (saddle point) v maticové hře dvou hráčů?",
+      "options": {
+        "A": "Prvek výplatní matice, který je minimem svého řádku a zároveň maximem svého sloupce",
+        "B": "Prvek výplatní matice, který je maximem svého řádku a zároveň minimem svého sloupce",
+        "C": "Průměrná hodnota všech prvků výplatní matice",
+        "D": "Prvek, kde oba hráči dosáhnou svého maximálního zisku"
+      },
+      "correct": "A",
+      "explanation": "Sedlový bod $v_{i^*j^*}$ je minimum svého řádku (hráč I nemůže polepšit změnou strategie) a maximum svého sloupce (hráč II nemůže polepšit). Je to Nashova rovnováha v čistých strategiích."
+    },
+    {
+      "id": 5,
+      "question": "Co vyjadřuje Nashova rovnováha?",
+      "options": {
+        "A": "Stav, kdy všichni hráči dosáhnou svého maximálního možného zisku",
+        "B": "Profil strategií, kde žádný hráč si nemůže jednostranně polepšit změnou své strategie",
+        "C": "Stav, kdy jeden hráč dominuje všem ostatním",
+        "D": "Optimální kooperativní řešení pro všechny hráče"
+      },
+      "correct": "B",
+      "explanation": "Nashova rovnováha je profil strategií $(\\sigma_1^*, \\ldots, \\sigma_n^*)$, kde pro každého hráče $i$ platí: změna strategie $\\sigma_i^*$ na jinou strategii za podmínky, že ostatní hráči nění své strategie, hráče $i$ nezlepší."
+    },
+    {
+      "id": 6,
+      "question": "Vězňovo dilema je příkladem hry, kde...",
+      "options": {
+        "A": "Dominantní strategií obou hráčů je kooperace, ale rovnováha vede ke zradě",
+        "B": "Dominantní strategií je zrada a Nashova rovnováha je suboptimální pro oba hráče",
+        "C": "Hráči mají přesně opačné preference a hra má nulový součet",
+        "D": "Hra nemá Nashovu rovnováhu v čistých strategiích"
+      },
+      "correct": "B",
+      "explanation": "V Vězňově dilematu má každý hráč dominantní strategii 'přiznat (zradit)'. Nashova rovnováha (zrada, zrada) vede k výsledku (-5, -5), přestože vzájemná kooperace (mlčet, mlčet) by dala lepší výsledek (-1, -1) pro oba."
+    },
+    {
+      "id": 7,
+      "question": "Savageovo kritérium (minimax lítosti) pracuje s transformovanou maticí lítosti. Co je hodnota lítosti $r_{ij}$?",
+      "options": {
+        "A": "$r_{ij} = v_{ij} - \\min_i v_{ij}$ (odchylka od nejhoršího výsledku ve sloupci)",
+        "B": "$r_{ij} = \\max_i v_{ij} - v_{ij}$ (co jsem mohl získat navíc, kdybych věděl, který stav nastane)",
+        "C": "$r_{ij} = v_{ij} / \\max_i v_{ij}$ (relativní výsledek ve sloupci)",
+        "D": "$r_{ij} = \\bar{v}_j - v_{ij}$ (odchylka od průměru ve sloupci)"
+      },
+      "correct": "B",
+      "explanation": "Lítost $r_{ij}$ = o kolik jsem přišel oproti tomu, kdybych volil optimálně pro daný stav světa $j$. Savageovo kritérium pak minimalizuje maximální lítost: $\\arg\\min_i \\max_j r_{ij}$."
+    },
+    {
+      "id": 8,
+      "question": "Co říká EVPI (Expected Value of Perfect Information)?",
+      "options": {
+        "A": "Jaká je maximální EMV při optimální strategii",
+        "B": "O kolik by se zlepšila EMV, kdybychom před rozhodnutím věděli, který stav světa nastane",
+        "C": "Kolik stojí sběr historických dat pro odhad pravděpodobností",
+        "D": "Jaká je hodnota nejlepší alternativy za podmínek nejistoty"
+      },
+      "correct": "B",
+      "explanation": "$EVPI = EMV_{\\text{s dokonalou informací}} - EMV_{\\text{bez informace}}$. Udává maximální částku, kterou bychom byli ochotni zaplatit za dokonalou předpověď stavu světa před rozhodnutím."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Systémový přístup, měkké a tvrdé systémové myšlení, systémová analýza",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je klíčovým rozdílem mezi systémovým přístupem a redukcionismem?",
+      "options": {
+        "A": "Systémový přístup používá matematické modely, redukcionismus ne",
+        "B": "Systémový přístup zdůrazňuje celek a vazby mezi částmi; redukcionismus studuje části izolovaně",
+        "C": "Redukcionismus je novější metoda vhodná pro složitější systémy",
+        "D": "Systémový přístup se aplikuje pouze na sociální systémy"
+      },
+      "correct": "B",
+      "explanation": "Redukcionismus studuje nejmenší části v izolaci, ale u složitých systémů tím ztrácí emergentní vlastnosti celku. Systémový přístup zdůrazňuje, že celek má jiné vlastnosti než suma částí, a soustředí se na vazby a zpětné vazby."
+    },
+    {
+      "id": 2,
+      "question": "Co jsou emergentní vlastnosti systému?",
+      "options": {
+        "A": "Vlastnosti, které mají všechny prvky systému společně",
+        "B": "Vlastnosti celku, které nevyplývají z vlastností jednotlivých prvků",
+        "C": "Vlastnosti, které se projevují pouze na nejnižší rozlišovací úrovni",
+        "D": "Vlastnosti systému popsatelné lineárními rovnicemi"
+      },
+      "correct": "B",
+      "explanation": "Emergentní vlastnosti vznikají interakcí prvků — synergický efekt. Například vědomí není vlastností jednotlivých neuronů, ale vzniká jejich interakcí. Tím se systémový přístup liší od redukcionismu."
+    },
+    {
+      "id": 3,
+      "question": "Pro které typy problémů je vhodné Checklandovo měkké systémové myšlení (SSM)?",
+      "options": {
+        "A": "Dobře strukturované technické problémy s jasně definovaným optimem",
+        "B": "Špatně strukturované problémy, kde různí stakeholders vnímají situaci odlišně a není shoda na cíli",
+        "C": "Problémy, které lze přesně popsat diferenciálními rovnicemi",
+        "D": "Problémy s deterministickým chováním a přesně měřitelnými výstupy"
+      },
+      "correct": "B",
+      "explanation": "SSM (Soft Systems Methodology) vyvinul Checkland pro situace, kde problém není objektivně daný — různí lidé ho vnímají různě dle svého 'Weltanschauung'. Cílem není optimum, ale strukturovaná diskuse vedoucí ke zlepšení."
+    },
+    {
+      "id": 4,
+      "question": "Co zkratka CATWOE v Checklandově SSM představuje?",
+      "options": {
+        "A": "Customers, Actors, Transformation, Weltanschauung, Owners, Environmental constraints",
+        "B": "Context, Analysis, Tasks, Work, Operations, Evaluation",
+        "C": "Components, Attributes, Transformations, Workflows, Outputs, Efficiency",
+        "D": "Causes, Actions, Tools, Waste, Objectives, Effects"
+      },
+      "correct": "A",
+      "explanation": "CATWOE je mnemotechnická pomůcka pro tvorbu Root Definition: Customers (příjemci výstupu), Actors (vykonavatelé), Transformation (vstup→výstup), Weltanschauung (světonázor dávající smysl), Owners (kdo může zastavit), Environmental constraints (omezení z okolí)."
+    },
+    {
+      "id": 5,
+      "question": "Jaký je rozdíl mezi uzavřeným a otevřeným systémem?",
+      "options": {
+        "A": "Uzavřený systém má pevně dané hranice, otevřený nemá žádné hranice",
+        "B": "Uzavřený systém nevyměňuje s okolím hmotu, energii ani informace; otevřený ano",
+        "C": "Uzavřený systém je deterministický, otevřený stochastický",
+        "D": "Uzavřený systém má zápornou zpětnou vazbu, otevřený kladnou"
+      },
+      "correct": "B",
+      "explanation": "Uzavřený systém (idealizace — v praxi neexistuje) je izolován od okolí. Otevřený systém interaguje s okolím — přijímá vstupy a produkuje výstupy. Podniky, ekosystémy, živé organismy jsou otevřené systémy."
+    },
+    {
+      "id": 6,
+      "question": "Proč je validace modelu odlišná od verifikace?",
+      "options": {
+        "A": "Validace se provádí před tvorbou modelu, verifikace po",
+        "B": "Verifikace ověřuje technickou správnost modelu; validace ověřuje, zda model odpovídá realitě",
+        "C": "Validace testuje model na historických datech; verifikace testuje na nových datech",
+        "D": "Verifikace se provádí statistickými metodami; validace expertním úsudkem"
+      },
+      "correct": "B",
+      "explanation": "Verifikace: 'Dělá model to, co jsme zamýšleli?' (debugování, kontrola rovnic). Validace: 'Odpovídá model realitě?' (porovnání s daty, back-testing). Model může být technicky správný (verifikovaný), ale špatně popsávat realitu (nevalidní)."
+    },
+    {
+      "id": 7,
+      "question": "Co je 'komplexní' (complex) systém v rámci Cynefinova rámce?",
+      "options": {
+        "A": "Systém s velkým počtem rovnic popisujících jeho chování",
+        "B": "Adaptivní systém s emergentním chováním, kde příčiny a důsledky lze rozpoznat pouze zpětně",
+        "C": "Systém, který lze plně analyzovat přidáním více odborníků",
+        "D": "Systém s deterministickým chováním a předvídatelnými výstupy"
+      },
+      "correct": "B",
+      "explanation": "Komplexní systém (ekonomika, ekosystém) je adaptivní — agenti se vzájemně ovlivňují a systém se sám organizuje. Na rozdíl od 'complicated' systémů (letadlo) nelze jejich chování předpovídat analýzou částí."
+    }
+  ]
+}

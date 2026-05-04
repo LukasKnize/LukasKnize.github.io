@@ -1,0 +1,89 @@
+{
+  "title": "Systémová dynamika",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký typ zpětnovazební smyčky způsobuje exponenciální růst nebo kolaps systému?",
+      "options": {
+        "A": "Vyrovnávací (balancing) smyčka",
+        "B": "Posilující (reinforcing) smyčka",
+        "C": "Zpožďovací smyčka",
+        "D": "Negativní zpětnovazební smyčka"
+      },
+      "correct": "B",
+      "explanation": "Posilující (R) smyčka zesiluje sama sebe — odchylka od počátečního stavu narůstá exponenciálně (kladná zpětná vazba). Příklad: populační růst, složené úročení. Vyrovnávající (B) smyčka naopak stabilizuje."
+    },
+    {
+      "id": 2,
+      "question": "Co je zásoby (stock) v diagramu zásoby a toků (SFD) systémové dynamiky?",
+      "options": {
+        "A": "Rychlost, s jakou se mění stav systému",
+        "B": "Akumulace — integrálem toků v čase; reprezentuje stav systému (paměť)",
+        "C": "Exogenní proměnná přicházející z okolí systému",
+        "D": "Pomocná proměnná zprostředkovávající kauzální vztahy"
+      },
+      "correct": "B",
+      "explanation": "Zásoby jsou akumulace — mění se postupně jako integrál rozdílu přítoků a odtoků: $\\text{Zásoba}(t) = \\text{Zásoba}(t_0) + \\int(\\text{přítok} - \\text{odtok})dt$. Jsou paměť systému a nelze je okamžitě změnit."
+    },
+    {
+      "id": 3,
+      "question": "Jaká je hlavní příčina oscilací (kmitání) v systémech popsaných systémovou dynamikou?",
+      "options": {
+        "A": "Příliš mnoho posilujících smyček v modelu",
+        "B": "Vyrovnávající smyčka se zpožděním — systém 'přestřelí' cíl a koriguje zpět",
+        "C": "Nedostatečný počet stavových proměnných",
+        "D": "Lineární vztah mezi toky a zásobami"
+      },
+      "correct": "B",
+      "explanation": "Zpoždění v vyrovnávající smyčce způsobí, že korekce přijde pozdě a 'přestřelí' cíl opačným směrem. Systém pak osciluje kolem rovnováhy. Příklad: zásobování v dodavatelském řetězci (Bullwhip Effect)."
+    },
+    {
+      "id": 4,
+      "question": "Systémový archetyp 'Přenesení zátěže' (Shifting the Burden) popisuje situaci, kde...",
+      "options": {
+        "A": "Posilující smyčka naráží na omezující kapacitu prostředí",
+        "B": "Krátkodobá 'rychlá záplata' na symptom odvádí pozornost od základního řešení, které atrofuje",
+        "C": "Dvě strany eskalují své akce v odpovědi na akce soupeře",
+        "D": "Sdílený zdroj je přetěžován individuálně racionálními hráči"
+      },
+      "correct": "B",
+      "explanation": "V 'Přenesení zátěže' existují dvě řešení: symptomatické (rychlé, ale dočasné) a fundamentální (pomalé, ale trvalé). Spoléhání na symptomatické řešení posiluje svou vlastní smyčku a oslabuje fundamentální — problém se nikdy nevyřeší."
+    },
+    {
+      "id": 5,
+      "question": "Jaký je logistický (S-křivkový) vzor chování a z jaké struktury vzniká?",
+      "options": {
+        "A": "Lineární růst; z jediné posilující smyčky bez omezení",
+        "B": "Exponenciální pokles; z vyrovnávající smyčky s konstantním odtokem",
+        "C": "Počáteční exponenciální růst zpomalující se k horní mezní hodnotě; z posilující + omezující vyrovnávající smyčky",
+        "D": "Oscilace kolem nulové hodnoty; ze dvou navzájem propojených vyrovnávajících smyček"
+      },
+      "correct": "C",
+      "explanation": "Logistická S-křivka vzniká kombinací posilující smyčky (počáteční růst) a omezující vyrovnávající smyčky (vliv saturace, kapacity prostředí $K$). Systém roste zpočátku exponenciálně, pak se zpomaluje a ustálí na $K$."
+    },
+    {
+      "id": 6,
+      "question": "Co je hlavní výhodou CLD (Causal Loop Diagram) oproti SFD (Stock and Flow Diagram)?",
+      "options": {
+        "A": "CLD lze spustit jako simulaci; SFD ne",
+        "B": "CLD rychle zachycuje kvalitativní strukturu zpětných vazeb bez nutnosti kvantifikace",
+        "C": "CLD je přesnější, protože neobsahuje aproksimace",
+        "D": "CLD pracuje s diskrétním časem, SFD se spojitým"
+      },
+      "correct": "B",
+      "explanation": "CLD je kvalitativní — rychle zobrazí kauzální strukturu a zpětnovazební smyčky bez nutnosti znát přesné hodnoty. SFD je kvantitativní — přidává zásoby, toky a rovnice pro simulaci, ale je náročnější na tvorbu."
+    },
+    {
+      "id": 7,
+      "question": "Co říká základní teze systémové dynamiky o příčinách chování systémů?",
+      "options": {
+        "A": "Chování systému je způsobeno nepředvídatelnými vnějšími šoky a událostmi",
+        "B": "Chování systému vyplývá z jeho vnitřní zpětnovazební struktury, ne z vnějších událostí",
+        "C": "Chování systému lze předpovědět pouze statistickými metodami",
+        "D": "Chování systému závisí výhradně na počátečních podmínkách"
+      },
+      "correct": "B",
+      "explanation": "Forresterova teze: krizové výkyvy, přeprodukce, cykly — to vše pramení ze struktury zpětných vazeb, ne z 'nepředvídatelných šoků'. Porozumění struktuře umožňuje navrhovat efektivní politiky změny."
+    }
+  ]
+}

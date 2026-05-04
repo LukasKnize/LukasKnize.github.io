@@ -1,0 +1,89 @@
+{
+  "title": "Dopravní úlohy bez tranzitu a okružní dopravní úlohy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je cílem klasické dopravní úlohy (bez tranzitu)?",
+      "options": {
+        "A": "Minimalizovat celkový počet přepravních tras",
+        "B": "Minimalizovat celkové náklady na přepravu homogenního zboží od dodavatelů k odběratelům",
+        "C": "Maximalizovat využití kapacity dopravních prostředků",
+        "D": "Najít nejkratší trasu mezi všemi místy"
+      },
+      "correct": "B",
+      "explanation": "Dopravní úloha hledá optimální přepravní plán $x_{ij}$ (množství od dodavatele $i$ k odběrateli $j$), který minimalizuje celkové náklady $\\sum c_{ij}x_{ij}$ při respektování kapacit dodavatelů a požadavků odběratelů."
+    },
+    {
+      "id": 2,
+      "question": "Co musíme udělat, pokud v dopravní úloze celková nabídka převyšuje celkovou poptávku?",
+      "options": {
+        "A": "Úlohu nelze řešit — musíme ji odmítnout",
+        "B": "Přidáme fiktivního odběratele s poptávkou rovnou přebytku nabídky a nulovými náklady",
+        "C": "Snížíme kapacity všech dodavatelů proporcionálně",
+        "D": "Přidáme fiktivního dodavatele s nabídkou rovnou přebytku poptávky"
+      },
+      "correct": "B",
+      "explanation": "Dopravní úloha musí být vyvážená ($\\sum a_i = \\sum b_j$). Pokud nabídka > poptávka, přidáme fiktivního odběratele s $b_{n+1} = \\sum a_i - \\sum b_j$ a nulovými přepravními náklady."
+    },
+    {
+      "id": 3,
+      "question": "Která z metod hledání počátečního řešení dopravní úlohy zohledňuje výši přepravních nákladů?",
+      "options": {
+        "A": "Metoda severozápadního rohu (NW Corner)",
+        "B": "Metoda náhodného výběru",
+        "C": "Vogelova aproximační metoda (VAM)",
+        "D": "Metoda úplného prohledávání"
+      },
+      "correct": "C",
+      "explanation": "VAM počítá pro každý řádek a sloupec 'penalizaci' (rozdíl druhého a prvního nejnižšího nákladu) a přiřazuje vždy tam, kde je penalizace za nezvolení nejlevnější volby nejvyšší. Dává typicky nejlepší počáteční řešení."
+    },
+    {
+      "id": 4,
+      "question": "K čemu slouží MODI metoda (U-V metoda) v dopravní úloze?",
+      "options": {
+        "A": "K nalezení počátečního přípustného řešení",
+        "B": "K ověření optimality a případnému zlepšení aktuálního přípustného řešení",
+        "C": "K transformaci nevyvážené úlohy na vyváženou",
+        "D": "K výpočtu minimálního počtu obsazených políček"
+      },
+      "correct": "B",
+      "explanation": "MODI metoda (Modified Distribution Method) přiřadí duální proměnné $u_i, v_j$, spočítá redukované náklady pro neobsazená políčka, a pokud jsou záporné, provede přesun po přechodové smyčce k dosažení nižších nákladů."
+    },
+    {
+      "id": 5,
+      "question": "Jaký je rozdíl mezi přiřazovací úlohou a obecnou dopravní úlohou?",
+      "options": {
+        "A": "Přiřazovací úloha minimalizuje čas, dopravní úloha minimalizuje náklady",
+        "B": "V přiřazovací úloze je $m = n$ a každý dodavatel i odběratel mají kapacitu/požadavek rovnou 1",
+        "C": "Přiřazovací úloha umožňuje tranzit, dopravní ne",
+        "D": "V přiřazovací úloze může být $x_{ij}$ neceločíselné"
+      },
+      "correct": "B",
+      "explanation": "Přiřazovací úloha je speciální případ dopravní úlohy: čtvercová matice ($m = n$), každý dodavatel (pracovník) přiřazen právě k jednomu odběrateli (úkolu). Efektivně ji řeší Maďarský algoritmus v čase $O(n^3)$."
+    },
+    {
+      "id": 6,
+      "question": "Proč je problém obchodního cestujícího (TSP) považován za NP-hard?",
+      "options": {
+        "A": "Protože pro $n$ měst existuje $(n-1)!/2$ různých okružních tras a přesné řešení roste faktoriálně",
+        "B": "Protože vzdálenosti mezi městy jsou vždy iracionální čísla",
+        "C": "Protože TSP vyžaduje znalost pravděpodobnostního rozdělení tras",
+        "D": "Protože simplexová metoda na TSP nefunguje"
+      },
+      "correct": "A",
+      "explanation": "Počet různých okružních tras roste jako $(n-1)!/2$. Pro $n = 20$ je to přes $6 \\times 10^{16}$ variant. Žádný známý algoritmus neřeší TSP v polynomiálním čase — proto se pro velké instance používají heuristiky."
+    },
+    {
+      "id": 7,
+      "question": "Jakou hlavní nevýhodu má heuristika 'nejbližší soused' (Nearest Neighbor) při řešení TSP?",
+      "options": {
+        "A": "Má exponenciální časovou složitost",
+        "B": "Výsledná trasa bývá typicky 20–25 % delší než optimum",
+        "C": "Neumí pracovat s asymetrickými vzdálenostmi",
+        "D": "Vždy vrátí cyklické řešení bez počátečního města"
+      },
+      "correct": "B",
+      "explanation": "Metoda nejbližšího souseda je rychlá (polynomiální), ale greedy — lokálně dobrá rozhodnutí vedou ke globálně horší trase. Typicky dává řešení o 20–25 % horší než optimum."
+    }
+  ]
+}

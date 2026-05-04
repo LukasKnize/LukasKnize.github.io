@@ -1,0 +1,77 @@
+{
+  "title": "Simulační modely a postupy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je základní princip simulace Monte Carlo?",
+      "options": {
+        "A": "Řešení modelu pomocí systému diferenciálních rovnic numerickou integrací",
+        "B": "Opakované náhodné vzorkování vstupních parametrů z jejich rozdělení a výpočet výstupu modelu",
+        "C": "Simulace pohybu fyzikálních částic v prostoru",
+        "D": "Diskrétní modelování fronty zákazníků a serverů"
+      },
+      "correct": "B",
+      "explanation": "MCS vzorkuje vstupy z jejich pravděpodobnostních rozdělení tisíce nebo milionykrát, pokaždé spočítá výstup, a z histogramu výsledků odhaduje střední hodnotu, rozptyl a percentily výstupu."
+    },
+    {
+      "id": 2,
+      "question": "Jak klesá chyba odhadu v simulaci Monte Carlo s rostoucím počtem iterací $N$?",
+      "options": {
+        "A": "Lineárně — zdvojnásobení $N$ přesnost zdvojnásobí",
+        "B": "Kvadraticky — čtyřnásobení $N$ přesnost zdvojnásobí",
+        "C": "Jako $1/\\sqrt{N}$ — čtyřnásobení $N$ přesnost zdvojnásobí",
+        "D": "Logaritmicky — přesnost roste neomezeně, ale velmi pomalu"
+      },
+      "correct": "C",
+      "explanation": "Standardní chyba MCS estimátoru klesá jako $\\sigma/\\sqrt{N}$. Zdvojnásobení přesnosti vyžaduje 4× více iterací. To je relativně pomalá konvergence — proto existují techniky redukce rozptylu (LHS, antitetické proměnné)."
+    },
+    {
+      "id": 3,
+      "question": "Co je charakteristickým rysem diskrétní simulace událostí (DES)?",
+      "options": {
+        "A": "Stav systému se mění spojitě v každém časovém kroku $\\Delta t$",
+        "B": "Stav systému se mění skokově pouze při výskytu událostí; simulační hodiny přeskakují od události k události",
+        "C": "Každý agent v systému se rozhoduje nezávisle dle vlastních pravidel",
+        "D": "Model se skládá výhradně z diferenciálních rovnic"
+      },
+      "correct": "B",
+      "explanation": "DES udržuje kalendář budoucích událostí seřazených dle času. Simulační hodiny přeskočí přímo k nejbližší události — efektivní, protože se neztrácí čas výpočtem v obdobích, kdy se nic neděje."
+    },
+    {
+      "id": 4,
+      "question": "Co je emergentní chování v multiagentní simulaci (MAS)?",
+      "options": {
+        "A": "Chování explicitně naprogramované jako globální pravidla systému",
+        "B": "Globální vzory a vlastnosti systému vznikající zdola (bottom-up) z lokálních interakcí agentů",
+        "C": "Chování systému předpovídané analytickým modelem",
+        "D": "Chování agentů, které se nemění v průběhu simulace"
+      },
+      "correct": "B",
+      "explanation": "Emergentní chování v MAS nikdo explicitně naprogramoval — vynořuje se z lokálních pravidel a interakcí. Příklad: hejno ptáků (Boids) vzniká ze tří jednoduchých pravidel každého ptáka, aniž by existovalo globální 'řídící centrum'."
+    },
+    {
+      "id": 5,
+      "question": "Pro jaký typ problémů je nejvhodnější použít simulaci Monte Carlo?",
+      "options": {
+        "A": "Deterministické optimalizační úlohy s lineárními omezení",
+        "B": "Systémy s velkou neurčitostí vstupů, kde chceme odhadnout rozdělení výstupů",
+        "C": "Modelování front zákazníků a kapacity obsluhy",
+        "D": "Systémy popsané deterministickými diferenciálními rovnicemi"
+      },
+      "correct": "B",
+      "explanation": "MCS je ideální pro analýzu rizik a neurčitosti — finanční riziko (VaR), projektové plánování (PERT), spolehlivost systémů. Kdykoli jsou vstupní parametry nejisté a chceme znát pravděpodobnostní rozdělení výstupu."
+    },
+    {
+      "id": 6,
+      "question": "Latin Hypercube Sampling (LHS) je technikou pro...",
+      "options": {
+        "A": "Generování náhodných čísel s rovnoměrným rozdělením v hyperkrychli",
+        "B": "Zajištění rovnoměrnějšího pokrytí vstupního prostoru s menším počtem vzorků než prostý Monte Carlo",
+        "C": "Paralelizaci Monte Carlo simulace na více procesorech",
+        "D": "Redukci dimenzionality vstupního prostoru před simulací"
+      },
+      "correct": "B",
+      "explanation": "LHS dělí obor každé vstupní proměnné do $N$ stejně pravděpodobných intervalů a vzorkuje z každého intervalu právě jednou. Zaručuje rovnoměrné pokrytí celého oboru, takže dává lepší odhady než prostý MCS při stejném $N$."
+    }
+  ]
+}
