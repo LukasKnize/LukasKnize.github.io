@@ -1,0 +1,77 @@
+{
+  "title": "Inflace a nezaměstnanost",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je inflace a jak se měří v ČR?",
+      "options": {
+        "A": "Jednorázový nárůst ceny jednoho zboží; měří se indexem výrobních cen (PPI)",
+        "B": "Trvalý růst celkové cenové hladiny v ekonomice; měří se indexem spotřebitelských cen (CPI) nebo deflátorem HDP",
+        "C": "Pokles reálného HDP po dobu dvou čtvrtletí",
+        "D": "Růst nominálních mezd překračující růst produktivity práce"
+      },
+      "correct": "B",
+      "explanation": "Inflace = trvalý (nikoliv jednorázový) růst celkové cenové hladiny. ČSÚ měří CPI jako vážený průměr změn cen spotřebního koše (reprezentativní výdaje domácností). Deflátor HDP je širší — pokrývá vše v HDP, ne jen spotřebitelský koš. Míra inflace: $\\pi = (CPI_t - CPI_{t-1})/CPI_{t-1} \\cdot 100\\,\\%$."
+    },
+    {
+      "id": 2,
+      "question": "Jaký je rozdíl mezi mírnou inflací, galopující inflací a hyperinflací?",
+      "options": {
+        "A": "Mírná: do 2 %; galopující: 2–10 %; hyperinflace: nad 10 %",
+        "B": "Mírná (plíživá): do ~10 % ročně — předvídatelná, relativně neškodná; galopující: desítky–stovky % — narušuje plánování; hyperinflace: stovky % měsíčně (Cagan: >50 %/měs.) — rozklad měny a ekonomiky",
+        "C": "Rozdíl je pouze terminologický — ekonomické dopady jsou stejné",
+        "D": "Hyperinflace je jev výhradně rozvojových zemí; vyspělé ekonomiky ji neprodělávají"
+      },
+      "correct": "B",
+      "explanation": "Mírná inflace (~2–5 %): cílová inflace centrálních bank; mazivo ekonomiky. Galopující (dvouciferná): erodes úspory, narušuje plánování, nutí k indexaci smluv. Hyperinflace: ztráta důvěry v měnu, útěk do reálných aktiv, barterová ekonomika. Příklady: Německo 1923, Zimbabwe 2008, Venezuela 2018+."
+    },
+    {
+      "id": 3,
+      "question": "Co je přirozená míra nezaměstnanosti (NAIRU)?",
+      "options": {
+        "A": "Nulová nezaměstnanost při plné zaměstnanosti všech práceschopných",
+        "B": "Míra nezaměstnanosti odpovídající součtu frikční a strukturální nezaměstnanosti; při níž je inflace stabilní (Non-Accelerating Inflation Rate of Unemployment)",
+        "C": "Míra nezaměstnanosti způsobená výhradně hospodářským cyklem",
+        "D": "Podíl nezaměstnaných, kteří jsou evidováni na úřadu práce"
+      },
+      "correct": "B",
+      "explanation": "NAIRU = frikční + strukturální nezaměstnanost. Při NAIRU: inflace stabilní — snaha snížit nezaměstnanost pod NAIRU stimuluje inflaci. Cyklická nezaměstnanost = aktuální míra − NAIRU (Okunův zákon: 1 % cyklické nezaměstnanosti ≈ 2 % negativní mezery výstupu). ČR: NAIRU cca 3–5 %."
+    },
+    {
+      "id": 4,
+      "question": "Jaký je rozdíl mezi frikční, strukturální a cyklickou nezaměstnaností?",
+      "options": {
+        "A": "Frikční: způsobena poklesem agregátní poptávky; strukturální: sezónní výkyvy; cyklická: hledání lepšího místa",
+        "B": "Frikční: dobrovolná a krátkodobá — hledání vhodného zaměstnání; strukturální: nesoulad dovedností a pracovních míst (technologické změny, útlum odvětví); cyklická: způsobena poklesem agregátní poptávky v recesi",
+        "C": "Všechny tři typy jsou součástí přirozené míry nezaměstnanosti",
+        "D": "Frikční i strukturální jsou nedobrovolné; cyklická je dobrovolná"
+      },
+      "correct": "B",
+      "explanation": "Frikční: přechodná, dobrovolná — čas potřebný k nalezení práce (signalizuje fungující trh práce). Strukturální: dlouhodobá — dělníci v zavřených ocelárnách nemají dovednosti pro IT sektor; řeší se rekvalifikacemi. Cyklická: nedobrovolná — recese snižuje poptávku po práci; řeší se expanzivní fiskální/monetární politikou."
+    },
+    {
+      "id": 5,
+      "question": "Co říká Phillipsova křivka a jak ji ovlivnila stagflace 70. let?",
+      "options": {
+        "A": "Pozitivní vztah mezi inflací a ekonomickým růstem; stagflace ji potvrdila",
+        "B": "Negativní vztah mezi inflací a nezaměstnaností v krátkém období; stagflace (vysoká inflace + vysoká nezaměstnanost) ukázala, že v dlouhém období je křivka vertikální (Friedman-Phelps)",
+        "C": "Phillipsova křivka platí jen pro rozvojové ekonomiky; v EU neplatí",
+        "D": "Vztah je stabilní v krátkém i dlouhém období; stagflace byla výjimečnou anomálií"
+      },
+      "correct": "B",
+      "explanation": "Krátkodobá PC: záporný vztah $\\pi$ vs. $u$ — tvůrci politiky mohou volit mezi vyšší inflací a nižší nezaměstnaností. Stagflace 70. let (ropné šoky): vysoká inflace a vysoká nezaměstnanost zároveň → PC se posunula vpravo. Friedman-Phelps: lidé přizpůsobují inflační očekávání → LRPC je vertikální při NAIRU."
+    },
+    {
+      "id": 6,
+      "question": "Co je aktivní a pasivní politika zaměstnanosti v ČR?",
+      "options": {
+        "A": "Aktivní: vyplácení podpory v nezaměstnanosti; pasivní: rekvalifikace a dotované pracovní místo",
+        "B": "Pasivní: podpora v nezaměstnanosti (příjmová podpora bez podmínky aktivního hledání práce); aktivní: rekvalifikace, dotované zaměstnání, veřejná práce, poradenství — cílem zvýšit zaměstnanost",
+        "C": "Aktivní: monetární politika ČNB; pasivní: fiskální politika vlády",
+        "D": "Obě politiky jsou identické — liší se pouze zdrojem financování (EU vs. státní rozpočet)"
+      },
+      "correct": "B",
+      "explanation": "Pasivní APZ: dávky v nezaměstnanosti (kompenzace ztráty příjmu, ČR: max. 5 měsíců). Aktivní APZ: rekvalifikace (zdarma přes ÚP), příspěvek na zřízení místa, veřejná práce, poradentví, podpora OSVČ. Aktivní APZ je efektivnější z hlediska návratu na trh práce, ale nákladnější na administraci."
+    }
+  ]
+}

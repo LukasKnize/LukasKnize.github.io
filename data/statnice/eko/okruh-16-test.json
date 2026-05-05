@@ -1,0 +1,77 @@
+{
+  "title": "Organizační a řídící struktura podniku: prvky, typy, řídící kapacita",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaké jsou základní prvky organizační struktury?",
+      "options": {
+        "A": "Zaměstnanci, stroje a budovy",
+        "B": "Organizační jednotky (oddělení, útvary), vazby (nadřízenosti/podřízenosti, spolupráce, funkční), pravomoci a odpovědnosti",
+        "C": "Výrobní linky, zásobovací řetězce a prodejní kanály",
+        "D": "Strategické cíle, taktické plány a operativní úkoly"
+      },
+      "correct": "B",
+      "explanation": "Organizační struktura vymezuje: formální rozdělení práce (kdo co dělá), koordinační mechanismy (kdo komu se zodpovídá), pravomoci (authority — právo rozhodovat) a odpovědnosti (accountability — povinnost nést následky). Grafickým vyjádřením je organigram."
+    },
+    {
+      "id": 2,
+      "question": "Co charakterizuje liniovou (přímočarou) organizační strukturu a pro jaké organizace je vhodná?",
+      "options": {
+        "A": "Každý zaměstnanec má více přímých nadřízených — specialistů dle funkce",
+        "B": "Jednoznačná vertikální linie velení — každý podřízený má jediného přímého nadřízeného; jednoduchá, přehledná, rychlé rozhodování; vhodná pro malé podniky nebo vojenské organizace",
+        "C": "Zaměstnanci jsou seskupeni do projektových týmů bez stálé nadřízenosti",
+        "D": "Centrální štáb koordinuje všechny funkční oddělení bez přímé nadřízenosti"
+      },
+      "correct": "B",
+      "explanation": "Liniová struktura: striktní hierarchie, jednoznačná zodpovědnost, rychlé rozhodování. Nevýhody: přetížení vedoucích, omezená specializace, rigidita při růstu. Vhodná: malé podniky, jednoduché procesy, armáda."
+    },
+    {
+      "id": 3,
+      "question": "Jaká je základní nevýhoda funkcionální organizační struktury?",
+      "options": {
+        "A": "Příliš malá specializace zaměstnanců",
+        "B": "Pracovník má více funkčních nadřízených → konflikty příkazů, nejasná zodpovědnost; narušení Fayolova principu jednoty velení",
+        "C": "Neumožňuje specializaci zaměstnanců dle odbornosti",
+        "D": "Vhodná pouze pro podniky s jedním výrobkem nebo službou"
+      },
+      "correct": "B",
+      "explanation": "Funkcionální struktura (Taylor): zaměstnanci dostávají příkazy od více specialistů (výrobní, technický, obchodní manažer). Výhoda: hluboká specializace. Nevýhoda: víc nadřízených → konflikty, nejasná odpovědnost. Porušuje Fayolův princip jednoty příkazu. Proto v praxi dominuje liniově-štábní struktura jako kompromis."
+    },
+    {
+      "id": 4,
+      "question": "Co je liniově-štábní struktura a jaká je role štábu?",
+      "options": {
+        "A": "Štáb má přímou řídicí pravomoc nad liniovými pracovníky v technických záležitostech",
+        "B": "Kombinace liniového velení (přímá pravomoc) a štábních útvarů (poradní, expertní funkce bez přímé pravomoci nad linií) — liniový vedoucí rozhoduje, štáb poskytuje odborné podklady",
+        "C": "Štáb nahrazuje vrcholové vedení v době jeho nepřítomnosti",
+        "D": "Liniová část řídí výrobu; štábní část řídí administrativu a HR"
+      },
+      "correct": "B",
+      "explanation": "Liniově-štábní struktura: nejrozšířenější v praxi. Linie = přímá odpovědnost a pravomoc (výrobní vedoucí). Štáb = specialisté (controlling, právní oddělení, HR, IT) s poradní funkcí — nemají přímou pravomoc nad liniovými pracovníky. Kombinuje jednotu velení (linie) a specializaci (štáb)."
+    },
+    {
+      "id": 5,
+      "question": "Co je norma řízení (span of control) a jaké faktory ji ovlivňují?",
+      "options": {
+        "A": "Maximální počet hierarchických úrovní v organizaci",
+        "B": "Počet přímých podřízených, které je manažer schopen efektivně řídit; faktory: složitost práce podřízených, jejich zkušenosti, prostorová roztříštěnost, četnost interakcí, stupeň standardizace",
+        "C": "Rozsah pravomocí manažera definovaný organizačním řádem",
+        "D": "Počet rozhodnutí, která musí manažer denně přijmout"
+      },
+      "correct": "B",
+      "explanation": "Norma řízení (span of management): optimální počet přímých podřízených. Úzká norma (3–5): hluboká hierarchie (tall), více manažerů, vyšší náklady, lepší kontrola. Široká norma (10–15): plochá organizace (flat), méně manažerů, nižší náklady, autonomnější podřízení. Moderní trend: rozšíření normy díky IT, standardizaci a vyšší kvalifikaci."
+    },
+    {
+      "id": 6,
+      "question": "Co je maticová organizační struktura a jaká je její hlavní výhoda a nevýhoda?",
+      "options": {
+        "A": "Struktura s jednou dimenzí (funkce); výhoda: jasná zodpovědnost; nevýhoda: nízká flexibilita",
+        "B": "Duální podřízenost: pracovník má funkčního manažera (odborná stránka) i projektového manažera (výsledek); výhoda: flexibilita a efektivní využití zdrojů; nevýhoda: konflikty dvojí autority",
+        "C": "Matice je vhodná pouze pro státní správu a velké byrokratické organizace",
+        "D": "Maticová struktura eliminuje potřebu funkčních oddělení"
+      },
+      "correct": "B",
+      "explanation": "Maticová struktura: zaměstnanec patří do funkčního oddělení (trvalý domov) a zároveň do projektového týmu (dočasný). Výhody: sdílení zdrojů, flexibilita, mezioborová spolupráce. Nevýhody: dva šéfové → konflikty, nejasná zodpovědnost, vyšší koordinační náklady. Vhodná: konzultační firmy, IT projekty, výzkum."
+    }
+  ]
+}

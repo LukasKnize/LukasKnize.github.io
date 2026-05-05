@@ -1,0 +1,89 @@
+{
+  "title": "Poptávka, nabídka, rovnováha na trhu, elasticita",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co vyjadřuje zákon klesající poptávky?",
+      "options": {
+        "A": "S rostoucím příjmem spotřebitele roste poptávané množství",
+        "B": "Při zvýšení ceny statku se poptávané množství (ceteris paribus) snižuje — záporný vztah mezi cenou a poptávaným množstvím",
+        "C": "Vyšší cena vždy vede k nižší nabídce na trhu",
+        "D": "Poptávka po substitutech roste, pokud cena daného statku klesá"
+      },
+      "correct": "B",
+      "explanation": "Zákon klesající poptávky: $Q^D = f(P)$ klesající funkce ceteris paribus. Důvody: substituční efekt (dražší statek nahradíme levnějším) a důchodový efekt (vyšší cena snižuje reálný příjem). Výjimka: Giffenovo zboží (nižší cena → méně poptáváno — záporný důchodový efekt převáží)."
+    },
+    {
+      "id": 2,
+      "question": "Cenová elasticita poptávky $E_D = -2$. Co to znamená?",
+      "options": {
+        "A": "Při poklesu ceny o 1 % vzroste poptávané množství o 2 % — poptávka je elastická",
+        "B": "Při růstu ceny o 1 % klesne poptávané množství o 0,5 %",
+        "C": "Poptávka je dokonale neelastická",
+        "D": "Příjem producenta roste s každým zdražením"
+      },
+      "correct": "A",
+      "explanation": "$E_D = (\\%\\Delta Q^D)/(\\%\\Delta P)$. $|E_D| = 2 > 1$ → poptávka elastická (citlivá na cenu). Při zdražení o 1 % klesne poptávané množství o 2 %. Příjmy výrobce při zdražení klesají (poptávka je elastická). $|E_D| < 1$ → neelastická, $|E_D| = 1$ → jednotkově elastická."
+    },
+    {
+      "id": 3,
+      "question": "Jaký je rozdíl mezi posunem poptávkové křivky a pohybem po poptávkové křivce?",
+      "options": {
+        "A": "Pohyb po křivce nastává při změně příjmu spotřebitele; posun při změně ceny",
+        "B": "Pohyb po křivce nastává při změně ceny statku (ceteris paribus); posun celé křivky nastává při změně determinantů poptávky (příjem, ceny substitutů, preference, počet kupujících)",
+        "C": "Oba pojmy jsou ekvivalentní — poptávka se vždy mění podél křivky",
+        "D": "Posun křivky nastává pouze při změně nabídky, ne poptávky"
+      },
+      "correct": "B",
+      "explanation": "Pohyb po křivce: pouze změna ceny statku (ostatní vlivy konstantní). Posun křivky: změna determinantů poptávky — příjmy spotřebitelů, ceny komplementů/substitutů, preference, očekávání, počet kupujících. Posun vpravo = růst poptávky, vlevo = pokles."
+    },
+    {
+      "id": 4,
+      "question": "Co je přebytek výrobce (producer surplus)?",
+      "options": {
+        "A": "Rozdíl mezi maximální cenou, kterou je spotřebitel ochoten zaplatit, a skutečnou tržní cenou",
+        "B": "Rozdíl mezi tržní cenou, za kterou výrobce prodává, a minimální cenou, za kterou by byl ochoten nabídnout",
+        "C": "Množství výrobků, které výrobce nestihne prodat při dané tržní ceně",
+        "D": "Zisk výrobce po odečtení daní a odpisů"
+      },
+      "correct": "B",
+      "explanation": "Přebytek výrobce = plocha nad nabídkovou křivkou a pod tržní cenou. Vyjadřuje benefit výrobce: prodává za vyšší cenu, než by minimálně přijal. Přebytek spotřebitele = plocha pod poptávkovou křivkou a nad tržní cenou. Celkový blahobyt = součet obou přebytků."
+    },
+    {
+      "id": 5,
+      "question": "Co nastane na trhu, pokud je tržní cena nastavena pod rovnovážnou úrovní (cenový strop)?",
+      "options": {
+        "A": "Trh se vyčistí — poptávané i nabízené množství se rovnají rovnovážnému",
+        "B": "Vznikne přebytek nabídky — výrobci nabídnou více, než spotřebitelé poptávají",
+        "C": "Vznikne nedostatek (shortage) — poptávané množství překračuje nabízené; vede k frontám, přídělům nebo černému trhu",
+        "D": "Cena se automaticky vrátí k rovnováze bez jakýchkoliv důsledků"
+      },
+      "correct": "C",
+      "explanation": "Cenový strop (price ceiling) pod rovnováhou: $Q^D > Q^S$ → nedostatek. Důsledky: fronty, přídělový systém, černý trh. Příklady: regulace nájemného, maximální ceny potravin. Cenový podlah (floor) nad rovnováhou: $Q^S > Q^D$ → přebytek (přebytky zemědělské produkce v EU)."
+    },
+    {
+      "id": 6,
+      "question": "Křížová elasticita poptávky po másle vzhledem k ceně margarínu je kladná. Co to naznačuje?",
+      "options": {
+        "A": "Máslo a margarín jsou komplementy — jsou spotřebovávány společně",
+        "B": "Máslo a margarín jsou substituty — zdražení margarínu vede k vyšší poptávce po másle",
+        "C": "Máslo je Giffenovo zboží — jeho poptávka roste s cenou",
+        "D": "Mezi cenou margarínu a poptávkou po másle není žádný vztah"
+      },
+      "correct": "B",
+      "explanation": "Křížová elasticita: $E_{XY} = (\\%\\Delta Q^D_X)/(\\%\\Delta P_Y)$. Kladná → substituty (zdražení Y zvýší poptávku po X). Záporná → komplementy (zdražení Y sníží poptávku po X). Nulová → nezávislé statky."
+    },
+    {
+      "id": 7,
+      "question": "Co vyjadřuje příjmová (důchodová) elasticita poptávky a jak odlišuje normální statek od méněcenného?",
+      "options": {
+        "A": "Normální statek má zápornou příjmovou elasticitu; méněcenný kladnou",
+        "B": "Normální statek má kladnou příjmovou elasticitu (s růstem příjmu roste poptávka); méněcenný zápornou (s růstem příjmu poptávka klesá)",
+        "C": "Příjmová elasticita měří citlivost ceny na příjmy spotřebitelů, nikoliv množství",
+        "D": "Luxusní statky mají příjmovou elasticitu v intervalu (0, 1)"
+      },
+      "correct": "B",
+      "explanation": "Příjmová elasticita $E_I = (\\%\\Delta Q^D)/(\\%\\Delta I)$. Normální statek: $E_I > 0$. Luxusní statek: $E_I > 1$ (poptávka roste rychleji než příjem). Nezbytné statky: $0 < E_I < 1$. Méněcenný (inferior) statek: $E_I < 0$ — s bohatstvím jej nahrazujeme lepšími alternativami (jídelní škola → restaurace)."
+    }
+  ]
+}

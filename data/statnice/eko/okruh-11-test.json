@@ -1,0 +1,77 @@
+{
+  "title": "Kalkulace nákladů a analýza bodu zvratu",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je kalkulace nákladů a k čemu slouží?",
+      "options": {
+        "A": "Výpočet celkových nákladů podniku za účetní období pro výkaz zisku a ztráty",
+        "B": "Stanovení nákladů na kalkulační jednici (výrobek, zakázku, službu) — základ pro tvorbu cen, hodnocení ziskovosti výrobků a rozhodování o sortimentu",
+        "C": "Porovnání skutečných nákladů s náklady konkurence v daném odvětví",
+        "D": "Metoda přiřazení fixních nákladů k jednotlivým odděleními podniku"
+      },
+      "correct": "B",
+      "explanation": "Kalkulace = propočet nákladů na kalkulační jednici (1 ks, 1 zakázka, 1 hodina). Kalkulační vzorec: přímý materiál + přímé mzdy + ostatní přímé náklady + výrobní režie + správní režie + odbytové náklady = vlastní náklady výkonu. Slouží k: oceňování výrobků, tvorbě cen, rozhodování make-or-buy."
+    },
+    {
+      "id": 2,
+      "question": "Jaký je rozdíl mezi úplnou kalkulací (absorption costing) a neúplnou kalkulací (variable costing)?",
+      "options": {
+        "A": "Úplná kalkulace zahrnuje jen přímé náklady; neúplná i nepřímé (režijní)",
+        "B": "Úplná kalkulace (absorpční): přiřazuje výrobku jak variabilní, tak fixní náklady; neúplná (příspěvková): přiřazuje pouze variabilní náklady, fixní se kryí z příspěvku na úhradu",
+        "C": "Neúplná kalkulace se používá pro zakázkovou výrobu; úplná pro sériovou",
+        "D": "Úplná kalkulace pracuje s tržními cenami; neúplná s výrobními náklady"
+      },
+      "correct": "B",
+      "explanation": "Absorpční kalkulace: vhodná pro oceňování zásob a stanovení cen v dlouhém období. Variabilní kalkulace (contribution costing): fixní náklady nejsou přiřazovány výrobkům → lepší pro krátkodobá rozhodnutí (make-or-buy, přijmout zakázku za cenu > AVC). Příspěvek na úhradu = Tržby − Variabilní náklady (kryje fixní náklady a tvoří zisk)."
+    },
+    {
+      "id": 3,
+      "question": "Co je bod zvratu (break-even point) a jak se vypočítá?",
+      "options": {
+        "A": "Objem výroby, při němž jsou průměrné náklady minimální",
+        "B": "Objem výroby (nebo tržeb), při němž jsou celkové výnosy rovny celkovým nákladům ($TR = TC$), tzn. zisk = 0; $Q_{BEP} = FC / (P - AVC)$",
+        "C": "Cena, při níž firma dosahuje normálního zisku při dané výrobní kapacitě",
+        "D": "Okamžik, kdy se kumulované CF investice vyrovná počáteční investici"
+      },
+      "correct": "B",
+      "explanation": "$Q_{BEP} = \\frac{FC}{P - AVC} = \\frac{FC}{\\text{příspěvek na úhradu/ks}}$. Příspěvek na úhradu (PnÚ) = cena − variabilní náklady na jednotku. $BEP_{Kč} = FC / (1 - AVC/P)$. Nad BEP: každá další jednotka generuje zisk rovný PnÚ. Využití: plánování zisku, hodnocení rizika (bezpečnostní margin)."
+    },
+    {
+      "id": 4,
+      "question": "Fixní náklady jsou 200 000 Kč, cena výrobku 500 Kč/ks, variabilní náklady 300 Kč/ks. Kolik kusů musí firma prodat, aby dosáhla zisku 100 000 Kč?",
+      "options": {
+        "A": "1 000 ks",
+        "B": "1 500 ks",
+        "C": "2 000 ks",
+        "D": "500 ks"
+      },
+      "correct": "B",
+      "explanation": "Příspěvek na úhradu = $500 - 300 = 200$ Kč/ks. Pro pokrytí FC + cílový zisk: $Q = (FC + \\text{zisk}) / PnÚ = (200\\,000 + 100\\,000) / 200 = 300\\,000 / 200 = 1\\,500$ ks."
+    },
+    {
+      "id": 5,
+      "question": "Co je rozvrhová základna v absorpční kalkulaci a proč je její volba důležitá?",
+      "options": {
+        "A": "Celková výše fixních nákladů, která se přiřazuje výrobkům",
+        "B": "Veličina (přímé mzdy, strojové hodiny, přímý materiál), podle níž se nepřímé (režijní) náklady přiřazují kalkulačním jednicím; chybná volba vede k nesprávnému ocenění výrobků a chybným cenovým rozhodnutím",
+        "C": "Minimální výrobní dávka, pod níž se výroba nevyplatí",
+        "D": "Maximální kapacita výroby při daném vybavení"
+      },
+      "correct": "B",
+      "explanation": "Přirážková kalkulace: $\\text{Přirážka režie} = \\text{Celková režie} / \\text{Rozvrhová základna}$. Tradiční základny: přímé mzdy, přímý materiál. Modernější: strojové hodiny, počet zakázek. Chybná základna = cross-subsidization (jednoduché výrobky subvencují složité). ABC (Activity Based Costing) přiřazuje náklady dle aktivit."
+    },
+    {
+      "id": 6,
+      "question": "Podnik uvažuje o přijetí mimořádné zakázky za cenu 350 Kč/ks. Variabilní náklady jsou 300 Kč/ks, fixní náklady 200 000 Kč (nezmění se). Má zakázku přijmout?",
+      "options": {
+        "A": "Ne — cena 350 Kč je pod průměrnými celkovými náklady, tedy zakázka je ztrátová",
+        "B": "Ano — cena 350 Kč převyšuje variabilní náklady 300 Kč, příspěvek na úhradu 50 Kč/ks přispívá ke krytí fixních nákladů (v krátkém období)",
+        "C": "Nelze rozhodnout bez znalosti požadovaného objemu zakázky",
+        "D": "Ne — přijetí zakázky pod standardní cenou porušuje cenovou politiku"
+      },
+      "correct": "B",
+      "explanation": "Krátkodobé rozhodnutí: pokud jsou fixní náklady neměnné, relevantní je příspěvek na úhradu = $350 - 300 = 50$ Kč/ks > 0 → zakázka přispívá ke krytí FC a zvyšuje zisk (nebo snižuje ztrátu). Podmínka: volná kapacita musí existovat. Toto je princip variabilní kalkulace v krátkodobých rozhodnutích."
+    }
+  ]
+}

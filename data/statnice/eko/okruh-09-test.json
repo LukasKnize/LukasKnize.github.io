@@ -1,0 +1,77 @@
+{
+  "title": "Kapitál podniku: druhy, WACC, likvidita",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jak se člení kapitál podniku z hlediska vlastnictví?",
+      "options": {
+        "A": "Na krátkodobý a dlouhodobý kapitál dle doby splatnosti",
+        "B": "Na vlastní kapitál (vklady vlastníků + hospodářský výsledek + rezervní fondy) a cizí kapitál (úvěry, dluhopisy, závazky)",
+        "C": "Na hmotný a nehmotný kapitál dle povahy aktiva",
+        "D": "Na produktivní kapitál (stroje) a finanční kapitál (peníze, cenné papíry)"
+      },
+      "correct": "B",
+      "explanation": "Vlastní kapitál (equity): základní kapitál, kapitálové fondy, fondy ze zisku, nerozdělený zisk. Cizí kapitál (debt): závazky k věřitelům — bankovní úvěry, emitované dluhopisy, obchodní závazky. Zlaté bilanční pravidlo: DM financovat DK, oběžný majetek KK. Struktura kapitálu = rozhodnutí o poměru vlastní/cizí."
+    },
+    {
+      "id": 2,
+      "question": "Co je WACC (vážené průměrné náklady kapitálu) a jak se vypočítá?",
+      "options": {
+        "A": "$WACC = E/V \\cdot r_e + D/V \\cdot r_d$ kde se nezohlňuje daňový štít",
+        "B": "$WACC = \\frac{E}{V} \\cdot r_e + \\frac{D}{V} \\cdot r_d \\cdot (1-t)$, kde $E/V$ = podíl vlastního kapitálu, $r_e$ = náklady na vlastní kapitál, $D/V$ = podíl dluhu, $r_d$ = úroková sazba, $t$ = sazba daně z příjmů",
+        "C": "$WACC = (r_e + r_d) / 2$ — jednoduchý průměr nákladů vlastního a cizího kapitálu",
+        "D": "$WACC = r_f + \\beta \\cdot (r_m - r_f)$ — model oceňování kapitálových aktiv"
+      },
+      "correct": "B",
+      "explanation": "$WACC = \\frac{E}{V}r_e + \\frac{D}{V}r_d(1-t)$. Daňový štít $(1-t)$: úroky jsou daňově odečitatelné → skutečné náklady dluhu jsou $r_d(1-t)$. WACC je minimální výnos, který musí investice generovat, aby vytvořila hodnotu. Slouží jako diskontní sazba v NPV analýze."
+    },
+    {
+      "id": 3,
+      "question": "Podnik má: vlastní kapitál 4 mil. Kč ($r_e = 12\\,\\%$), dluh 6 mil. Kč ($r_d = 8\\,\\%$), daň $t = 20\\,\\%$. Jaké je WACC?",
+      "options": {
+        "A": "9,6 %",
+        "B": "8,64 %",
+        "C": "10,0 %",
+        "D": "7,84 %"
+      },
+      "correct": "B",
+      "explanation": "$V = E + D = 10$ mil. Kč. $WACC = (4/10) \\cdot 12\\,\\% + (6/10) \\cdot 8\\,\\% \\cdot (1 - 0{,}2) = 0{,}4 \\cdot 12\\,\\% + 0{,}6 \\cdot 6{,}4\\,\\% = 4{,}8\\,\\% + 3{,}84\\,\\% = 8{,}64\\,\\%$."
+    },
+    {
+      "id": 4,
+      "question": "Jaké jsou tři základní ukazatele likvidity a co vyjadřují?",
+      "options": {
+        "A": "ROA, ROE, ROCE — měří výnosnost kapitálu",
+        "B": "Běžná likvidita (L3 = OA/KCK), pohotová likvidita (L2 = (OA−zásoby)/KCK), okamžitá likvidita (L1 = KFM/KCK) — měří schopnost podniku uhradit krátkodobé závazky",
+        "C": "Obrat aktiv, obrat zásob, obrat pohledávek — měří rychlost přeměny aktiv",
+        "D": "Celková zadluženost, úrokové krytí, debt-to-equity — měří finanční stabilitu"
+      },
+      "correct": "B",
+      "explanation": "L3 (current ratio): OA/KCK; doporučeno 1,5–2,5. L2 (quick ratio): (OA − zásoby)/KCK; doporučeno 1–1,5 (zásoby jsou nejméně likvidní). L1 (cash ratio): KFM/KCK; doporučeno 0,2–0,5. Nízká likvidita → platební neschopnost. Příliš vysoká → neefektivní využití oběžného majetku."
+    },
+    {
+      "id": 5,
+      "question": "Co je překapitalizování a podkapitalizování podniku?",
+      "options": {
+        "A": "Překapitalizování = příliš vysoký dluh; podkapitalizování = příliš nízký dluh",
+        "B": "Překapitalizování: vlastní kapitál > potřeby financování DM (konzervativní, neefektivní — drahý VK financuje i oběžný majetek); podkapitalizování: VK nestačí ani na financování DM (riziková kapitálová struktura, vysoká závislost na cizím kapitálu)",
+        "C": "Oba pojmy popisují stav podniku v bankrotu",
+        "D": "Překapitalizování je výhodné pro akcionáře; podkapitalizování pro věřitele"
+      },
+      "correct": "B",
+      "explanation": "Překapitalizování: VK > DM → VK financuje i část OA. VK je dražší než CK → neefektivní kapitálová struktura. Podkapitalizování: VK < DM → DM financován z CK (porušení zlatého bilančního pravidla). Signalizuje finanční nestabilitu, vyšší riziko pro věřitele. Optimální struktura kapitálu: WACC minimalizace (Modigliani-Miller s daněmi)."
+    },
+    {
+      "id": 6,
+      "question": "Proč je cizí kapitál (úvěr) obvykle levnější než vlastní kapitál?",
+      "options": {
+        "A": "Banky mají nižší provozní náklady než investoři",
+        "B": "Věřitelé mají prioritní nárok na aktiva při bankrotu (nižší riziko) a úroky jsou daňově odečitatelné (daňový štít); vlastníci nesou vyšší riziko → požadují vyšší výnos",
+        "C": "Úroky z úvěrů jsou stanoveny centrální bankou a jsou vždy nižší než výnosy akcií",
+        "D": "Vlastní kapitál zahrnuje také implicitní náklady, které cizí kapitál nemá"
+      },
+      "correct": "B",
+      "explanation": "Věřitelé mají: a) prioritní pohledávku při likvidaci → nižší riziko → nižší požadovaný výnos; b) daňový štít — úroky snižují daňový základ. Vlastníci (akcionáři) jsou rezidualní nárokující — dostávají, co zbyde po splacení všech závazků → nejvyšší riziko → nejvyšší požadovaný výnos ($r_e > r_d$). Proto WACC < $r_e$."
+    }
+  ]
+}

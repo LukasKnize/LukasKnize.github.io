@@ -1,0 +1,77 @@
+{
+  "title": "Tržní struktury: dokonalá konkurence, monopol, oligopol, ÚOHS",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Která z podmínek NENÍ charakteristická pro dokonalou konkurenci?",
+      "options": {
+        "A": "Velký počet prodávajících a kupujících, žádný nemá tržní sílu",
+        "B": "Homogenní (identický) produkt",
+        "C": "Volný vstup a výstup z odvětví",
+        "D": "Firmy mohou ovlivňovat tržní cenu svým výstupem"
+      },
+      "correct": "D",
+      "explanation": "V dokonalé konkurenci je firma price-taker — přijímá tržní cenu jako danou ($P = MR$). Podmínky DK: mnoho prodávajících a kupujících, homogenní produkt, volný vstup/výstup, dokonalá informovanost. Schopnost ovlivnit cenu = tržní síla (monopolní prvek) → dokonalá konkurence mizí."
+    },
+    {
+      "id": 2,
+      "question": "Proč monopol produkuje méně a za vyšší cenu než dokonalá konkurence?",
+      "options": {
+        "A": "Monopolista má vždy vyšší výrobní náklady než konkurenční firmy",
+        "B": "Monopolista čelí klesající poptávkové křivce (je price-maker): $MR < P$; maximalizuje zisk při $MR = MC$, kde $P > MC$ → produkuje méně a účtuje vyšší cenu (deadweight loss)",
+        "C": "Monopolista nemaximalizuje zisk, ale maximalizuje tržní podíl",
+        "D": "Monopol vzniká pouze v odvětvích s klesajícími výnosy z rozsahu"
+      },
+      "correct": "B",
+      "explanation": "Monopol: $MR = MC$ při $P > MC$ (monopolní klín). Výsledek: nižší $Q^*$ a vyšší $P^*$ než v DK. Deadweight loss (ztráta mrtvé váhy): společensky eficientní výroba ($P = MC$) se nedosáhne. Čistý monopol je proto ze společenského hlediska neeficientní, pokud neexistují úspory z rozsahu (přirozený monopol)."
+    },
+    {
+      "id": 3,
+      "question": "Čím se liší monopolistická konkurence od dokonalé konkurence?",
+      "options": {
+        "A": "V monopolistické konkurenci je jen jeden prodávající s absolutní tržní silou",
+        "B": "Mnoho firem jako v DK, ale produkt je diferencovaný (ne homogenní) → každá firma má omezenou tržní sílu; v dlouhém období ekonomický zisk → 0 díky volnému vstupu",
+        "C": "Monopolistická konkurence umožňuje tajné dohody o cenách mezi firmami",
+        "D": "Vstup do odvětví je v monopolistické konkurenci blokován patenty"
+      },
+      "correct": "B",
+      "explanation": "Monopolistická konkurence: mnoho firem, diferenciovaný produkt (každá firma má mírnou tržní sílu — sestupnou poptávkovou křivku), volný vstup. Krátkodobě: možný zisk. Dlouhodobě: vstup nových firem → normální zisk. Příklady: restaurace, kadeřnictví, oblečení. Neeficience: přebytečná kapacita, $P > MC$."
+    },
+    {
+      "id": 4,
+      "question": "Co je oligopol a proč v něm vznikají modely vzájemné závislosti firem?",
+      "options": {
+        "A": "Oligopol = jedno dominantní firma a mnoho malých; vzájemná závislost nevzniká",
+        "B": "Malý počet velkých firem; každá musí při svých rozhodnutích zohledňovat reakce konkurentů (strategic interdependence) — proto vznikají modely (Cournot, Bertrand, Stackelberg, lomená poptávková křivka)",
+        "C": "Oligopol = monopol rozdělený mezi dvě firmy (duopol) vždy se sladěnými cenami",
+        "D": "Oligopolní firmy nemohou dosáhnout koluzivní dohody kvůli antitrustu"
+      },
+      "correct": "B",
+      "explanation": "Oligopol: 3–10 dominantních firem. Strategická vzájemnost: rozhodnutí firmy A ovlivňuje zisk firmy B → firma A musí anticipovat reakci B. Modely: Cournot (soutěž v množství), Bertrand (soutěž v ceně → $P = MC$), Stackelberg (vůdce-následovník), koluzivní oligopol (kartel → jako monopol). Přirozená tendence ke kolusi."
+    },
+    {
+      "id": 5,
+      "question": "Co je Nashova rovnováha a jak se projevuje v oligopolním modelu?",
+      "options": {
+        "A": "Stav, kdy všechny firmy dosahují maximálního zisku při spolupráci",
+        "B": "Stav, kde žádná firma nemá motivaci jednostranně měnit svoji strategii, protože by si tím pohoršila (každý hraje nejlepší odpověď na strategie ostatních)",
+        "C": "Rovnováha, kde tržní cena rovná mezním nákladům jako v dokonalé konkurenci",
+        "D": "Situace, kdy jedna firma dominuje trhu a ostatní ji následují"
+      },
+      "correct": "B",
+      "explanation": "Nashova rovnováha: kombinace strategií, kde žádný hráč nemá motivaci se od ní odchýlit, pokud ostatní nemění svou strategii. Vězňovo dilema: obě firmy sníží cenu (dominantní strategie), i když obě by si polepšily nesoutěžením → Nashova rovnováha ≠ Pareto optimum. Základ teorie her."
+    },
+    {
+      "id": 6,
+      "question": "Jaká je hlavní náplň činnosti ÚOHS (Úřad pro ochranu hospodářské soutěže)?",
+      "options": {
+        "A": "Stanovování maximálních cen v monopolistických odvětvích a regulace tarifů",
+        "B": "Ochrana hospodářské soutěže: zákaz kartelových dohod, kontrola fúzí a akvizic, dohled nad dominantním postavením, dozor nad zadáváním veřejných zakázek",
+        "C": "Podpora malých a středních podniků dotacemi a daňovými úlevami",
+        "D": "Regulace přirozených monopolů v energetice a telekomunikacích"
+      },
+      "correct": "B",
+      "explanation": "ÚOHS ČR (analogie EU: DG Competition): zakazuje dohody narušující soutěž (kartelové dohody o cenách, rozdělení trhu), kontroluje spojování podniků (fúze nad prahovými hodnotami), postihuje zneužití dominantního postavení. Rovněž dozoruje veřejné zakázky a poskytování veřejné podpory."
+    }
+  ]
+}

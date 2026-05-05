@@ -1,0 +1,77 @@
+{
+  "title": "Výnosy, náklady, zisk, rentabilita a cash flow",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je rozdíl mezi výnosy a příjmy podniku?",
+      "options": {
+        "A": "Výnosy a příjmy jsou totožné — oba pojmy označují peníze přijaté od zákazníků",
+        "B": "Výnosy jsou výkony vyjádřené v peněžních jednotkách (akruální princip — vznikají při realizaci výkonu bez ohledu na platbu); příjmy jsou skutečné peněžní toky přijaté v daném období",
+        "C": "Příjmy zahrnují i dotace a transfery; výnosy pouze tržby z prodeje",
+        "D": "Výnosy jsou hrubé; příjmy jsou čisté (po odečtení DPH)"
+      },
+      "correct": "B",
+      "explanation": "Akruální princip (česky: podvojné účetnictví): výnos vzniká při prodeji (fakturaci), nikoliv při inkasu. Příjem = skutečný příliv peněz. Fakturovaná, ale nezaplacená pohledávka = výnos, ale ne příjem. Analogicky: náklad ≠ výdaj. Tento rozdíl je příčinou rozdílu mezi výsledkem hospodaření a cash flow."
+    },
+    {
+      "id": 2,
+      "question": "Jaká je struktura výkazu zisku a ztráty (VZZ) a co vyjadřuje EBIT?",
+      "options": {
+        "A": "VZZ = aktiva − pasiva; EBIT = výnosy minus všechny náklady",
+        "B": "VZZ zachycuje výnosy a náklady za období → hospodářský výsledek. EBIT (Earnings Before Interest and Taxes) = provozní výsledek hospodaření před úroky a daněmi",
+        "C": "VZZ = tržby minus odpisy; EBIT zahrnuje i mimořádné výnosy",
+        "D": "EBIT = čistý zisk plus dividendy vyplacené akcionářům"
+      },
+      "correct": "B",
+      "explanation": "Zjednodušená struktura VZZ: Tržby → Provozní VH (EBIT) → VH před zdaněním (EBT = EBIT − úroky) → Čistý zisk (EAT = EBT × (1−t)). EBIT nezávisí na způsobu financování a daňovém režimu → vhodný pro srovnání podniků. EBITDA = EBIT + odpisy (proxy provozního cash flow)."
+    },
+    {
+      "id": 3,
+      "question": "Podnik má tržby 10 mil. Kč, náklady 7 mil. Kč, úroky 0,5 mil. Kč, daň z příjmů 19 %. Jaký je čistý zisk (EAT)?",
+      "options": {
+        "A": "3 000 000 Kč",
+        "B": "2 430 000 Kč",
+        "C": "2 025 000 Kč",
+        "D": "1 800 000 Kč"
+      },
+      "correct": "C",
+      "explanation": "EBIT = $10 - 7 = 3$ mil. Kč. EBT = EBIT − úroky = $3 - 0{,}5 = 2{,}5$ mil. Kč. EAT = EBT × (1 − t) = $2{,}5 \\times 0{,}81 = 2{,}025$ mil. Kč."
+    },
+    {
+      "id": 4,
+      "question": "Co vyjadřuje ukazatel ROE (Return on Equity)?",
+      "options": {
+        "A": "$ROE = \\text{EBIT} / \\text{Celková aktiva}$ — výnosnost celkového vloženého kapitálu",
+        "B": "$ROE = \\text{EAT} / \\text{Vlastní kapitál}$ — výnosnost vlastního kapitálu; říká akcionářům, kolik čistého zisku připadá na 1 Kč jejich investice",
+        "C": "$ROE = \\text{Tržby} / \\text{Vlastní kapitál}$ — obratovost vlastního kapitálu",
+        "D": "$ROE = \\text{Hrubý zisk} / \\text{Tržby}$ — hrubá marže"
+      },
+      "correct": "B",
+      "explanation": "$ROE = EAT / VK$. Du Pont rozklad: $ROE = \\underbrace{EAT/Tržby}_{\\text{marže}} \\times \\underbrace{Tržby/Aktiva}_{\\text{obrat}} \\times \\underbrace{Aktiva/VK}_{\\text{finanční páka}}$. Finanční páka: vyšší zadluženost → vyšší ROE (pokud $ROA > r_d$). $ROA = EBIT/Aktiva$ (výnosnost bez vlivu financování)."
+    },
+    {
+      "id": 5,
+      "question": "Co je cash flow z provozní činnosti a proč může být kladný i při záporném zisku?",
+      "options": {
+        "A": "CF z provozní = čistý zisk + přijaté dividendy; záporný zisk vždy způsobuje záporné CF",
+        "B": "CF z provozní = EAT + odpisy ± změny pracovního kapitálu; kladné CF při ztrátě možné, pokud odpisy a inkaso pohledávek převýší ztrátu",
+        "C": "CF z provozní = tržby − hotovostní výdaje; odpisy do CF nevstupují",
+        "D": "CF z provozní se rovná čistému zisku — jsou to ekvivalentní ukazatele"
+      },
+      "correct": "B",
+      "explanation": "Nepřímá metoda výpočtu CF: $CF_{provozní} = EAT + \\text{odpisy} \\pm \\Delta \\text{pracovní kapitál} \\pm \\Delta \\text{ostatní}$. Odpisy jsou nepeněžní náklad (snižují zisk, ale neodčerpávají hotovost). Firma může vykazovat účetní ztrátu, ale kladné CF (nebo naopak: zisk bez likvidity). CF je proto doplňkový ukazatel k zisku."
+    },
+    {
+      "id": 6,
+      "question": "Jaké jsou hlavní faktory ovlivňující rentabilitu podniku?",
+      "options": {
+        "A": "Výhradně tržní podíl a počet zaměstnanců",
+        "B": "Výnosová strana (objem tržeb, cenová politika, sortiment), nákladová strana (efektivnost výroby, řízení nákladů) a kapitálová struktura (finanční páka, úroková zátěž)",
+        "C": "Pouze vnější faktory — ekonomický cyklus a regulace státu",
+        "D": "Výhradně volba odpisové metody a účetních politik"
+      },
+      "correct": "B",
+      "explanation": "Rentabilita závisí na: tržbách (cena × objem — vliv trhu a konkurenční pozice), nákladech (efektivnost výroby, logistika, overhead — vliv manažerského řízení), kapitálové struktuře (finanční páka — zadluženost zvyšuje ROE, ale i riziko). Du Pont rozklad propojuje všechny tři dimenze: rentabilitu marže, obratovost aktiv a páku."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Vedení lidí, motivace jako způsob vedení, motivační teorie",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je klíčový rozdíl mezi vedením lidí (leadership) a řízením (management) z pohledu motivace?",
+      "options": {
+        "A": "Vedení lidí používá finanční odměny; řízení používá formální příkazy",
+        "B": "Vedení aktivuje vnitřní motivaci lidí — pracují, protože chtějí (identifikace s cílem). Řízení v užším smyslu koordinuje a kontroluje — lidé plní úkoly, protože musí. Vedení je způsob dosahování cílů prostřednictvím dobrovolného zapojení",
+        "C": "Vedení se vztahuje k neformálním skupinám; řízení k formálním organizacím",
+        "D": "Vedení a řízení jsou synonyma — liší se pouze v akademickém pojetí"
+      },
+      "correct": "B",
+      "explanation": "Vedení lidí (leading): ovlivňování lidí směrem k cíli na základě dobrovolného následování — využívá charisma, důvěru, inspiraci. Management v užším smyslu: koordinace, plánování, kontrola pomocí formální autority. Motivace jako způsob vedení: aktivovat vnitřní pohnutky, ne pouze přikazovat."
+    },
+    {
+      "id": 2,
+      "question": "Jaký je rozdíl mezi motivem a stimulem?",
+      "options": {
+        "A": "Motiv a stimul jsou synonyma — oba označují vnější podněty k jednání",
+        "B": "Motiv: vnitřní pohnutka (potřeba, přání, hodnota) vycházející ze samotného jedince — trvalejší a silnější základ chování. Stimul: vnější podnět (odměna, trest, pochvala) působící zvenčí — účinek trvá jen po dobu jeho působení",
+        "C": "Stimul vychází z vnitřní motivace; motiv je vnější podmínkou",
+        "D": "Motivy jsou záporné podněty (tresty); stimuly jsou kladné (odměny)"
+      },
+      "correct": "B",
+      "explanation": "Motiv (intrinsic): potřeba uznání, smyslu, růstu — přetrvává bez vnějšího podnětu. Stimul (extrinsic): plat, prémiím, pochvala od šéfa — přestane-li stimul působit, motivace klesne. Efektivní vedení kombinuje obojí, ale spoléhá na rozvoj vnitřní motivace (sebedeterminační teorie Deci a Ryan)."
+    },
+    {
+      "id": 3,
+      "question": "Jaká je hierarchie potřeb dle Maslowa a co je podmínkou přechodu na vyšší úroveň?",
+      "options": {
+        "A": "Všech pět úrovní je stejně důležitých a mohou být aktivovány simultánně",
+        "B": "Od základu: fyziologické → bezpečí → sociální potřeby (sounáležitost) → uznání (esteem) → seberealizace; vyšší potřeba se stává motivátorem až po dostatečném naplnění nižší",
+        "C": "Seberealizace je základní potřebou; fyziologické jsou nejvyšší",
+        "D": "Hierarchie je dynamická — v krizi jsou nejvyšší prioritou sociální potřeby"
+      },
+      "correct": "B",
+      "explanation": "Maslow (1943): potřeby jsou hierarchické. Deficitní potřeby (1–4): jsou motivátory, pokud nenaplněny. Růstová potřeba (5 — seberealizace): naplněním se potřeba nehasí, ale zesiluje. Kritika: hierarchie není univerzální, kulturní rozdíly, lze být motivován vyšší potřebou i při nenaplnění nižší (hladovějící umělec)."
+    },
+    {
+      "id": 4,
+      "question": "Jaký je základ Herzbergovy dvoufaktorové teorie a co jsou hygienické faktory vs. motivátory?",
+      "options": {
+        "A": "Hygienické faktory způsobují pracovní spokojenost; motivátory předcházejí nespokojenosti",
+        "B": "Hygienické faktory (kontext práce: plat, podmínky, vztahy): jejich přítomnost nevyvolává spokojenost, ale jejich absence vyvolává nespokojenost. Motivátory (obsah práce: úspěch, uznání, odpovědnost, růst): jejich přítomnost způsobuje spokojenost a motivaci",
+        "C": "Oba faktory mají symetrický efekt — přítomnost zvyšuje spokojenost, absence snižuje",
+        "D": "Herzberg dokazuje, že plat je primárním motivátorem ve všech kulturách"
+      },
+      "correct": "B",
+      "explanation": "Herzberg (1959): spokojenost a nespokojenost nejsou protipóly jedné škály, ale dvě oddělené dimenze. Zvýšení platu (hygienik) nezpůsobí trvalou motivaci — jen odstraní nespokojenost. Manažerská implikace: nestačí odstranit nespokojenost (hygieny) — je nutné budovat motivátory (obohacování práce, autonomie, uznání)."
+    },
+    {
+      "id": 5,
+      "question": "Co říká Vroomova teorie očekávání (Expectancy Theory) o motivaci?",
+      "options": {
+        "A": "Motivace závisí pouze na výši odměny, nikoliv na pravděpodobnosti jejího dosažení",
+        "B": "Motivační síla = Expektance × Instrumentalita × Valence. Expektance: 'Zvýší mé úsilí výkon?' Instrumentalita: 'Povede výkon k odměně?' Valence: 'Je odměna pro mě hodnotná?' — všechny tři musí být kladné",
+        "C": "Motivace je determinována výhradně srovnáním s ostatními (spravedlnost)",
+        "D": "Vroomova teorie patří mezi teorie obsahu, protože popisuje, co lidi motivuje"
+      },
+      "correct": "B",
+      "explanation": "Vroom (1964): $F = E \\times I \\times V$. Pokud je jakákoliv složka nulová, motivace = 0. Implikace: manažer musí zajistit, že zaměstnanec věří: a) zvýšení úsilí zlepší výkon (E), b) vyšší výkon povede k odměně (I), c) odměna je atraktivní (V). Teorie procesu — vysvětluje HOW, ne WHAT motivuje."
+    },
+    {
+      "id": 6,
+      "question": "Co říká Adamsova teorie spravedlnosti (Equity Theory)?",
+      "options": {
+        "A": "Motivace závisí na absolutní výši odměny, nikoliv na srovnání s ostatními",
+        "B": "Lidé porovnávají poměr svých vstupů (úsilí, zkušenosti) a výstupů (plat, uznání) s referenčními osobami; vnímaná nespravedlnost (nerovnost poměrů) způsobuje demotivaci a snahy o obnovení rovnováhy",
+        "C": "Spravedlnost v odměňování je možné dosáhnout pouze transparentní mzdovou politikou",
+        "D": "Adams dokazuje, že lidé preferují nižší plat v rovnostářském prostředí před vyšším v nerovném"
+      },
+      "correct": "B",
+      "explanation": "Adams (1963): $O_{já}/I_{já}$ vs. $O_{ref}/I_{ref}$. Přeplacenost: snaha zvýšit vstupy (více pracovat) nebo snížit vnímání přeplatku. Nedoplatcenost (demotivace): snížit úsilí, požádat o navýšení, změnit referenční skupinu, nebo odejít. Manažerská implikace: transparentnost systému odměňování a pocit spravedlivého procesu (procedural justice)."
+    },
+    {
+      "id": 7,
+      "question": "Co jsou McClellandovy získané potřeby a které jsou nejdůležitější pro manažery?",
+      "options": {
+        "A": "Potřeba jídla, přístřeší a bezpečí — biologicky dané, ne získané",
+        "B": "Potřeba výkonu (nAch — achievment), afiliace (nAff — belonging) a moci (nPow — power); pro manažery je klíčová potřeba moci (institucionální — touha ovlivňovat pro dobro organizace) a vysoká nAch",
+        "C": "Všechny tři potřeby jsou stejně důležité pro manažery bez ohledu na pozici",
+        "D": "McClelland dokazuje, že potřeba afiliace je primárním prediktorem manažerského úspěchu"
+      },
+      "correct": "B",
+      "explanation": "McClelland (1961): potřeby jsou naučené kulturou a zkušeností (ne biologické). nAch: touha po excelenco, přímé zpětné vazbě, kalkulovatelném riziku. nPow: touha ovlivňovat — personální (pro sebe) vs. socialized (pro organizaci/ostatní). Nejlepší manažeři: vysoká nPow (socialized) + nAch, nižší nAff (vysoká aff → vyhýbání se těžkým rozhodnutím)."
+    }
+  ]
+}

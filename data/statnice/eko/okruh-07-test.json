@@ -1,0 +1,77 @@
+{
+  "title": "Peníze, fiskální a monetární politika, centrální banka",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaké jsou tři základní funkce peněz?",
+      "options": {
+        "A": "Uchovatel hodnoty, prostředek směny, zúčtovací jednotka (míra hodnoty)",
+        "B": "Likvidita, rentabilita, bezpečnost",
+        "C": "Oběživo, vklady na požádání, termínované vklady",
+        "D": "Fiskální nástroj, úvěrový prostředek, rezervní aktiva"
+      },
+      "correct": "A",
+      "explanation": "Tři funkce peněz: 1) Prostředek směny (medium of exchange) — eliminuje bartér; 2) Zúčtovací jednotka/míra hodnoty (unit of account) — společný jmenovatel cen; 3) Uchovatel hodnoty (store of value) — uchování kupní síly v čase (inflace tuto funkci narušuje). Vývojové stupně: komoditní peníze → zlatý standard → papírové peníze → elektronické peníze."
+    },
+    {
+      "id": 2,
+      "question": "Co jsou peněžní agregáty M1, M2, M3 a jak se liší?",
+      "options": {
+        "A": "M1 = veškeré úspory; M2 = investiční fondy; M3 = státní dluhopisy",
+        "B": "M1 = oběživo + vklady na požádání (nejlikvidnější); M2 = M1 + termínové vklady do 2 let; M3 = M2 + obchodovatelné nástroje (repo, podílové listy fondů peněžního trhu)",
+        "C": "M1, M2, M3 jsou tři různé měny v eurozóně",
+        "D": "M1 = měnová báze (peníze ČNB); M2 = komerční banky; M3 = celá ekonomika"
+      },
+      "correct": "B",
+      "explanation": "ECB/ČNB definice: M1 (úzké peníze) = nejlikvidnější, okamžitě použitelné. M2 = M1 + méně likvidní depozita. M3 (široké peníze) = M2 + obchodovatelné nástroje. Měnová báze (M0) = hotovost v oběhu + rezervy bank u CB. Multiplikátor peněz = M2/M0."
+    },
+    {
+      "id": 3,
+      "question": "Jaký je primární cíl ČNB a jaký nástroj k jeho dosažení nejčastěji používá?",
+      "options": {
+        "A": "Maximalizace zaměstnanosti; nástroj: vládní výdaje",
+        "B": "Cenová stabilita (inflační cíl 2 ± 1 %); primární nástroj: základní úrokové sazby (repo sazba 2T)",
+        "C": "Stabilita směnného kurzu koruny; nástroj: devizové intervence",
+        "D": "Financování státního rozpočtu; nástroj: nákup státních dluhopisů"
+      },
+      "correct": "B",
+      "explanation": "ČNB (zákon č. 6/1993 Sb.): primární cíl = cenová stabilita. Inflační cíl 2 % (od 2010). Hlavní nástroj: 2T repo sazba (úrok, za který CB půjčuje komerčním bankám krátkodobě → ovlivňuje tržní úrokové sazby → poptávku → inflaci). Další nástroje: povinné minimální rezervy, devizové intervence (jako v 2013–2017)."
+    },
+    {
+      "id": 4,
+      "question": "Jaký je rozdíl mezi expanzivní a restriktivní monetární politikou?",
+      "options": {
+        "A": "Expanzivní zvyšuje daně; restriktivní snižuje vládní výdaje",
+        "B": "Expanzivní snižuje úrokové sazby (levnější úvěry → vyšší C a I → růst agregátní poptávky → vyšší Q a P); restriktivní zvyšuje sazby → tlumí inflaci",
+        "C": "Expanzivní i restriktivní monetární politika jsou nástroje fiskální politiky",
+        "D": "Expanzivní politika zvyšuje daňové příjmy; restriktivní je neutrální"
+      },
+      "correct": "B",
+      "explanation": "Expanzivní MP: ↓ úrokové sazby → ↓ náklady půjček → ↑ C + I → ↑ AD → ↑ Q (a riziko ↑ $\\pi$). Vhodná v recesi. Restriktivní MP: ↑ sazby → ↑ náklady půjček → ↓ C + I → ↓ AD → ↓ $\\pi$ (ale i ↓ Q). Vhodná při přehřáté ekonomice. Transmisní mechanismus: úrokový, devizový, úvěrový a kanál aktiv."
+    },
+    {
+      "id": 5,
+      "question": "Jaký je rozdíl mezi fiskální a monetární politikou?",
+      "options": {
+        "A": "Fiskální politika je nástroj centrální banky; monetární politika je nástroj vlády",
+        "B": "Fiskální politika (tvůrce: vláda) ovlivňuje ekonomiku prostřednictvím vládních výdajů a daní; monetární politika (tvůrce: CB) prostřednictvím peněžní zásoby a úrokových sazeb",
+        "C": "Obě politiky mají totožné nástroje, liší se pouze cíli",
+        "D": "Fiskální politika působí na krátkém období; monetární na dlouhém"
+      },
+      "correct": "B",
+      "explanation": "Fiskální politika: vláda mění G (výdaje) a T (daně) → ovlivňuje AD přímo. Multiplikátor výdajů: $k = 1/(1-MPC)$. Monetární politika: CB mění úrokové sazby/peněžní zásobu → ovlivňuje AD nepřímo přes investice a spotřebu. V ČR: nezávislost ČNB je zákonně garantována — vláda nemůže CB nařídit sazby."
+    },
+    {
+      "id": 6,
+      "question": "Co je funkce věřitele poslední instance (lender of last resort)?",
+      "options": {
+        "A": "CB poskytuje dlouhodobé hypoteční úvěry domácnostem, které nemají přístup ke komerčním bankám",
+        "B": "CB poskytuje nouzovou likviditu solventním, ale dočasně nelikvidním bankám při hrozbě bankovní paniky, aby zabránila systémovému kolapsu",
+        "C": "CB refinancuje státní dluh, pokud vláda nemůže umístit dluhopisy na trhu",
+        "D": "CB garantuje vklady domácností do výše 100 000 EUR"
+      },
+      "correct": "B",
+      "explanation": "Věřitel poslední instance (Bagehot, 1873): CB půjčuje solventním bankám s dočasnými likviditními problémy — za penalizační úrok, proti kvalitnímu zástavnímu právu. Cíl: zamezit bankovní panice (bank run) a systémové krizi. V ČR: ČNB. Pojištění vkladů (100 000 EUR/vkladatel) je jiný mechanismus — zajišťuje PGSPF."
+    }
+  ]
+}

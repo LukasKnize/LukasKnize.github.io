@@ -1,0 +1,77 @@
+{
+  "title": "Mzdová soustava, přidaná hodnota podniku, osobní náklady",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaké jsou základní formy mzdy a kdy je která vhodná?",
+      "options": {
+        "A": "Časová a hrubá mzda; hrubá mzda je vždy vyšší",
+        "B": "Časová mzda (dle odpracované doby — vhodná tam, kde nelze měřit výkon); úkolová mzda (dle odvedeného množství — vhodná pro opakované, měřitelné výkony); podílová (dle tržeb — obchod); kombinované formy",
+        "C": "Minimální mzda a zaručená mzda; obě jsou stanoveny zákonem stejnou výší",
+        "D": "Pevná složka (základní mzda) a pohyblivá složka (prémie); pohyblivá vždy převyšuje pevnou"
+      },
+      "correct": "B",
+      "explanation": "Časová mzda: hodinová/měsíční sazba × čas; jednoduchá, předvídatelná, ale nemotivuje k vyšší produktivitě. Úkolová: výkon × sazba/ks; motivuje k výkonu, ale vyžaduje přesné normování a kvalitní výstup. Podílová (provize): % z tržeb; typická v obchodu. Kombinace: pevný základ + pohyblivá prémie (nejčastější v praxi)."
+    },
+    {
+      "id": 2,
+      "question": "Jaký je rozdíl mezi hrubou mzdou, superhrubou mzdou (historicky) a čistou mzdou?",
+      "options": {
+        "A": "Hrubá mzda = mzda před srážkami; čistá mzda = hrubá mzda plus příspěvky zaměstnavatele",
+        "B": "Hrubá mzda: sjednané odměna před srážkami. Čistá mzda: hrubá mzda − záloha na daň z příjmů − pojistné zaměstnance (SP + ZP). Osobní náklady zaměstnavatele = hrubá mzda + pojistné zaměstnavatele (SP 24,8 % + ZP 9 %)",
+        "C": "Čistá mzda je vždy 80 % hrubé mzdy bez ohledu na výši příjmu",
+        "D": "Hrubá mzda zahrnuje i naturální plnění; čistá mzda pouze peněžní složku"
+      },
+      "correct": "B",
+      "explanation": "Hrubá mzda: základ pro výpočty. Srážky: záloha na DPFO + SP zaměstnanec 6,5 % + ZP zaměstnanec 4,5 % = čistá mzda. Náklady zaměstnavatele: hrubá mzda + SP 24,8 % + ZP 9 % (celkem +33,8 % nad hrubou mzdu). Přidaná hodnota: výkony − výkonová spotřeba; z ní se hradí osobní náklady, odpisy a zisk."
+    },
+    {
+      "id": 3,
+      "question": "Co je přidaná hodnota podniku (economic value added, resp. účetní přidaná hodnota) a jak se počítá?",
+      "options": {
+        "A": "Přidaná hodnota = Tržby − Daně − Odpisy",
+        "B": "Účetní přidaná hodnota (z VZZ) = Výkony − Výkonová spotřeba (tj. spotřeba materiálu, energie a služeb); vyjadřuje, co podnik skutečně přidal k hodnotě nakoupených vstupů",
+        "C": "Přidaná hodnota = EBIT − WACC × Kapitál (ekonomická přidaná hodnota EVA)",
+        "D": "Přidaná hodnota = Tržby − Mzdové náklady"
+      },
+      "correct": "B",
+      "explanation": "Výkazy ČR: Přidaná hodnota = Výkony − Výkonová spotřeba = (tržby ± změna stavu zásob vlastní výroby + aktivace) − (spotřeba materiálu + energie + služby). Z přidané hodnoty se hradí: osobní náklady (mzdy + pojistné), odpisy DM a provozní zisk. Ukazatel odráží ekonomický příspěvek podniku k HDP."
+    },
+    {
+      "id": 4,
+      "question": "Ukazatel osobních nákladů k přidané hodnotě je 0,75. Jak to interpretujeme?",
+      "options": {
+        "A": "75 % přidané hodnoty tvoří náklady na materiál",
+        "B": "75 % přidané hodnoty je spotřebováno na osobní náklady (mzdy + pojistné); zbývá 25 % na odpisy a zisk — signalizuje vysokou mzdovou zátěž",
+        "C": "Podnik má 75% ziskovou marži",
+        "D": "Podnik vyplatil zaměstnancům 75 % čistého zisku"
+      },
+      "correct": "B",
+      "explanation": "$\\text{Osobní náklady / Přidaná hodnota}$: čím nižší, tím efektivnější využití lidského faktoru. Srovnání v čase a s odvětvím. Alternativa: produktivita práce z přidané hodnoty = Přidaná hodnota / Počet zaměstnanců. Vysoký poměr osobních nákladů → nutnost automatizace nebo revize personální politiky."
+    },
+    {
+      "id": 5,
+      "question": "Co určuje zákon o minimální mzdě a co je zaručená mzda?",
+      "options": {
+        "A": "Minimální mzda: nejnižší sazba pro nekvalifikovanou práci; zaručená mzda: minimální sazby dle skupin prací 1–8 (dle složitosti, odpovědnosti, namáhavosti)",
+        "B": "Minimální mzda se vztahuje pouze na dohody o provedení práce; zaručená na pracovní smlouvy",
+        "C": "Obě jsou shodné — liší se pouze názvem v různých zákonech",
+        "D": "Zaručená mzda je vyplácena státem zaměstnancům při platební neschopnosti zaměstnavatele"
+      },
+      "correct": "A",
+      "explanation": "Minimální mzda (NV č. 567/2006 Sb.): nejnižší přípustná výše odměny za práci bez ohledu na druh — 2024: 18 900 Kč/měsíc (18 000 Kč od 2023). Zaručená mzda: minimální sazby pro 8 skupin prací dle složitosti (skupina 8 = 2× minimální mzda). Platí pro zaměstnavatelé bez kolektivní smlouvy s tarifní soustavou."
+    },
+    {
+      "id": 6,
+      "question": "Co jsou pohyblivé složky mzdy a jaký je jejich motivační účel?",
+      "options": {
+        "A": "Pohyblivé složky jsou zákonně povinné a vyplácejí se automaticky",
+        "B": "Prémie, bonusy, odměny a příplatky vázané na výkon, splnění cílů nebo specifické podmínky práce — cílem propojit odměňování s výsledky a motivovat zaměstnance k vyššímu výkonu nebo žádoucímu chování",
+        "C": "Pohyblivé složky nahrazují pevnou složku při splnění výkonnostních cílů",
+        "D": "Pohyblivé složky jsou součástí zákonných příplatků (přesčas, svátek, noc)"
+      },
+      "correct": "B",
+      "explanation": "Pohyblivé složky: prémie (vázány na předem stanovená kritéria — obrat, kvalita, úspora), bonusy (jednorázové za mimořádný výkon), odměny (diskrétní — záleží na rozhodnutí manažera), příplatky za přesčas, noční práci, práci v sobotu/neděli/svátek (zákoník práce stanovuje minimální sazby). Správně nastavený systém = alignment zájmů zaměstnance a podniku."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Charakteristika managementu, řízení jako informační působení, proces a činnost (TŘOS)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jak definuje TŘOS (Hron, Macák) pojem řízení?",
+      "options": {
+        "A": "Řízení je autoritativní vydávání příkazů nadřízeného podřízenému",
+        "B": "Řízení je informační působení subjektu řízení na objekt řízení za účelem dosažení cíle — s přítomností zpětné vazby",
+        "C": "Řízení je totožné s plánováním — stanovením cílů a způsobů jejich dosažení",
+        "D": "Řízení je soubor formálních nástrojů (směrnice, předpisy) pro koordinaci organizace"
+      },
+      "correct": "B",
+      "explanation": "Klíčový axiom TŘOS: řízení = informační působení subjektu na objekt SE zpětnou vazbou. Bez zpětné vazby jde o pouhé ovládání. Zpětná vazba = přenos informací o skutečném stavu objektu zpět k subjektu → porovnání s programem (cílem) → korekce řídicí informace."
+    },
+    {
+      "id": 2,
+      "question": "Jaký je rozdíl mezi ovládáním, řízením a regulací dle TŘOS?",
+      "options": {
+        "A": "Jsou to synonyma — TŘOS je nerozlišuje",
+        "B": "Ovládání: jednosměrné bez zpětné vazby. Řízení: dvousměrné se zpětnou vazbou (subjekt přijímá informace o stavu objektu). Regulace: řízení s regulátorem — automatická korekce odchylek bez přímého zásahu subjektu",
+        "C": "Ovládání je nadřazeno řízení; regulace je nejnižší forma působení",
+        "D": "Regulace vyžaduje zpětnou vazbu; řízení a ovládání nikoliv"
+      },
+      "correct": "B",
+      "explanation": "Schéma 2 (ovládání): Subjekt → (příkaz) → Objekt. Schéma 3 (řízení): obousměrné — subjekt vysílá řídicí informace a přijímá zpětnou vazbu o stavu objektu. Schéma 4 (regulace): vložen regulátor — sám vyhodnocuje odchylku a koriguje objekt; termostat je klasickým příkladem."
+    },
+    {
+      "id": 3,
+      "question": "Co říká axiom TŘOS: 'Bez kontroly není řízení'?",
+      "options": {
+        "A": "Manažer musí osobně kontrolovat každého podřízeného každý den",
+        "B": "Pokud subjekt nezjišťuje, zda bylo dosaženo cíle (chybí zpětná vazba), nejde o řízení, ale o ovládání — kontrola je nezbytnou součástí řídicího procesu",
+        "C": "Kontrola je poslední, nejméně důležitá fáze procesu řízení",
+        "D": "Kontrolní mechanismy nahrazují potřebu plánování a organizování"
+      },
+      "correct": "B",
+      "explanation": "Tento axiom TŘOS zdůrazňuje, že zpětná vazba (kontrola) není nadstavbou, ale nezbytnou podmínkou samotného řízení. Bez zjišťování skutečného stavu nelze porovnat s plánem, nelze korigovat → je to jen jednosměrné ovládání. Kontrola generuje informace pro nový cyklus řízení."
+    },
+    {
+      "id": 4,
+      "question": "Jaké jsou tři fáze procesu řízení dle TŘOS a co každá zahrnuje?",
+      "options": {
+        "A": "Analýza, syntéza, hodnocení",
+        "B": "Plánování (stanovení cílů a způsobů dosažení), organizování (vytváření struktur, rozdělení rolí a pravomocí), operativní řízení/vedení lidí (přímé usměrňování realizace, motivace, koordinace)",
+        "C": "Vstup, transformace, výstup",
+        "D": "Strategická, taktická a operativní úroveň řízení"
+      },
+      "correct": "B",
+      "explanation": "TŘOS rozlišuje fáze (věcný obsah řídicí práce) a cyklus (logická posloupnost). Fáze 1 — Plánování: analýza, prognóza, tvorba plánů. Fáze 2 — Organizování: struktury, role, pravomoci, odpovědnosti. Fáze 3 — Operativní řízení: přímá koordinace v průběhu realizace, motivace, komunikace."
+    },
+    {
+      "id": 5,
+      "question": "Jaké jsou čtyři etapy cyklu řízení dle TŘOS?",
+      "options": {
+        "A": "Vstup → Zpracování → Výstup → Zpětná vazba",
+        "B": "Informace → Rozhodování → Realizace → Kontrola (cyklus se uzavírá a opakuje)",
+        "C": "Diagnóza → Prognóza → Plán → Implementace",
+        "D": "Iniciace → Plánování → Provádění → Uzavření (jako v projektovém řízení)"
+      },
+      "correct": "B",
+      "explanation": "Cyklus řízení vyjadřuje logickou posloupnost etap: 1. Informace (sběr a zpracování dat o stavu objektu a prostředí). 2. Rozhodování (výběr mezi alternativami, formulace řídicího zásahu). 3. Realizace (uskutečnění rozhodnutí). 4. Kontrola (zjišťování skutečného stavu, porovnání s plánem → generuje nové informace → cyklus se opakuje)."
+    },
+    {
+      "id": 6,
+      "question": "Co je matice 9 polí řídicí práce v TŘOS a co popisuje pole označené '12'?",
+      "options": {
+        "A": "Matice 3×3 kombinuje 3 úrovně řízení (vrcholová, střední, operativní) a 3 roky plánování; pole 12 = střední řízení v druhém roce",
+        "B": "Matice 3×3 kombinuje 3 fáze (Plánování=1, Organizování=2, Operativní řízení=3) a 3 etapy cyklu (Informace=1, Rozhodování=2, Realizace+Kontrola=3); pole 12 = rozhodování v plánování (tvorba plánů, výběr strategií)",
+        "C": "Pole 12 označuje dvanáctý krok procesu řízení v chronologickém pořadí",
+        "D": "Matice kombinuje 3 podniková oddělení a 4 čtvrtletí roku"
+      },
+      "correct": "B",
+      "explanation": "Matice TŘOS: desítky = fáze, jednotky = etapa cyklu. Pole 12: fáze Plánování (1) × etapa Rozhodování (2) = tvorba plánů, výběr strategických alternativ. Pole 33: fáze Operativní řízení (3) × etapa Kontrola (3) = průběžná operativní kontrola plnění úkolů. 9 polí tvoří úplný obraz řídicí práce."
+    },
+    {
+      "id": 7,
+      "question": "Jakou roli hraje faktor času ($t_0$ až $t_9$) v procesu řízení dle TŘOS?",
+      "options": {
+        "A": "Čas je irelevantní — řízení probíhá vždy okamžitě a bez zpoždění",
+        "B": "Chronologie $t_0$–$t_9$ zdůrazňuje, že řízení je proces rozvinutý v čase; zpoždění v jednotlivých etapách se kumulují a ovlivňují kvalitu a výsledek řídicího zásahu",
+        "C": "Faktor času se vztahuje pouze k dlouhodobému strategickému plánování",
+        "D": "$t_0$–$t_9$ označuje 10 povinných kroků kontrolního auditu manažera"
+      },
+      "correct": "B",
+      "explanation": "$t_0$: výchozí stav. $t_1$–$t_2$: sběr a zpracování informací. $t_3$–$t_4$: formulace a přijetí rozhodnutí. $t_5$–$t_7$: realizace. $t_8$–$t_9$: kontrola a zpětná vazba. Správné načasování zásahů je součástí kvality řízení — příliš pozdní korekce může být neúčinná nebo kontraproduktivní."
+    }
+  ]
+}

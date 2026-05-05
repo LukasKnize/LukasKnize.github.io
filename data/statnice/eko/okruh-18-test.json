@@ -1,0 +1,77 @@
+{
+  "title": "Styl řízení, delegování",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je styl řízení a jaký je rozdíl mezi jeho vnitřní a vnější stránkou?",
+      "options": {
+        "A": "Styl řízení je synonymum pro organizační strukturu podniku",
+        "B": "Styl řízení je způsob, jakým manažer vykonává svou řídicí roli. Vnitřní stránka: hodnoty, postoje, osobnost manažera (relativně stabilní). Vnější stránka: pozorovatelné chování — jak manažer komunikuje, rozhoduje, kontroluje (adaptovatelné situaci)",
+        "C": "Vnější stránka stylu je dána zákoníkem práce; vnitřní je zcela volná",
+        "D": "Styl řízení se nemění — manažer jej získá vzděláním a udržuje celou kariéru"
+      },
+      "correct": "B",
+      "explanation": "Vnitřní stránka stylu (charakter, hodnoty, přesvědčení) je relativně stabilní — hůře se mění. Vnější stránka (konkrétní chování v situacích) je situačně adaptovatelná — zkušený manažer přizpůsobuje projev situaci a podřízeným, přestože jeho vnitřní nastavení zůstává."
+    },
+    {
+      "id": 2,
+      "question": "Jaké jsou základní tři typy stylu řízení a čím se vyznačují?",
+      "options": {
+        "A": "Formální, neformální a smíšený styl",
+        "B": "Autoritativní (autokratický): manažer rozhoduje sám, minimální zapojení podřízených. Demokratický (participativní): sdílené rozhodování, zapojení podřízených, obousměrná komunikace. Liberální (laissez-faire): manažer přenechává rozhodování podřízeným, minimální zásahy",
+        "C": "Transakční, transformační a služebnický styl",
+        "D": "Direktivní, konzultativní a delegující styl (dle situačního vedení)"
+      },
+      "correct": "B",
+      "explanation": "Lewin (1939): tři základní styly. Autoritativní: rychlé rozhodování, vhodné v krizi nebo při nekompetentních podřízených; riziko demotivace. Demokratický: vyšší spokojenost a kreativita, pomalejší rozhodování; vhodné pro zkušené týmy. Liberální: maximální autonomie, vhodné pro experty; riziko chaosu bez kompetentních lidí."
+    },
+    {
+      "id": 3,
+      "question": "Co popisuje Tannenbaumovo-Schmidtovo kontinuum stylů řízení?",
+      "options": {
+        "A": "Škálu od nejjednodušších po nejsložitější manažerské funkce",
+        "B": "Spektrum od zcela autoritativního (manažer rozhoduje a oznamuje) po zcela delegující styl (podřízení rozhodují v daných mezích) — 7 bodů na kontinuu dle míry sdílení moci",
+        "C": "Vývoj stylu manažera od začátku kariéry po seniorní pozici",
+        "D": "Vztah mezi tvrdostí řízení a produktivitou podřízených"
+      },
+      "correct": "B",
+      "explanation": "Tannenbaum-Schmidt (1958): 7 stupňů od 'boss-centred' po 'subordinate-centred': 1) Manažer rozhoduje a oznamuje. 2) Prodává rozhodnutí. 3) Prezentuje a vítá otázky. 4) Navrhuje a konzultuje. 5) Předkládá problém, přijímá návrhy, rozhoduje. 6) Definuje meze, skupina rozhoduje. 7) Skupina rozhoduje v daných mezích."
+    },
+    {
+      "id": 4,
+      "question": "Co je situační vedení dle Hersey-Blancharda a na čem závisí volba stylu?",
+      "options": {
+        "A": "Manažer volí styl podle svého osobnostního typu (MBTI)",
+        "B": "Styl vedení se přizpůsobuje zralosti (readiness) podřízeného — kombinaci jeho kompetence a motivace. Čtyři styly: Telling (S1), Selling (S2), Participating (S3), Delegating (S4)",
+        "C": "Styl závisí výhradně na druhu úkolu — rutinní vs. kreativní",
+        "D": "Hersey-Blanchard doporučuje vždy demokratický styl jako nejefektivnější"
+      },
+      "correct": "B",
+      "explanation": "Situační vedení: R1 (nízká kompetence, vysoká motivace) → S1 Telling (direktivní). R2 (nízká kompetence, nízká motivace) → S2 Selling (koučování). R3 (vysoká kompetence, nízká motivace) → S3 Participating (podporování). R4 (vysoká kompetence, vysoká motivace) → S4 Delegating. Žádný styl není univerzálně nejlepší."
+    },
+    {
+      "id": 5,
+      "question": "Co je princip delegování a jaká je jeho formální a obsahová stránka?",
+      "options": {
+        "A": "Delegování = přenesení celé odpovědnosti na podřízeného; manažer se zbavuje veškeré zodpovědnosti",
+        "B": "Formální stránka: přenesení pravomoci (authority) na podřízeného rozhodovat v dané oblasti. Obsahová stránka: přenesení kompetentnosti — podřízený musí mít znalosti, informace a zdroje k plnění úkolu. Odpovědnost manažera zůstává — nelze delegovat",
+        "C": "Delegování je povinné pro všechny manažery ze zákona",
+        "D": "Delegování je vhodné pouze pro rutinní úkoly; strategická rozhodnutí delegovat nelze"
+      },
+      "correct": "B",
+      "explanation": "Delegování: přenesení pravomoci + vybavení podřízeného (znalosti, informace, zdroje). Klíčové: odpovědnost nadřízeného vůči vyšší hierarchii nelze delegovat — manažer zůstává odpovědný za výsledky podřízeného. Parity principle: pravomoc a odpovědnost musí být v rovnováze. Chybějící kompetentnost = delegování je předem odsouzeno k neúspěchu."
+    },
+    {
+      "id": 6,
+      "question": "Proč manažeři nedelegují — jaké jsou typické bariéry delegování?",
+      "options": {
+        "A": "Zákonné překážky — zákoník práce omezuje přenos pravomocí",
+        "B": "Strach ze ztráty kontroly nebo autority, přesvědčení 'udělám to lépe sám', nedůvěra v podřízené, nedostatek času na vysvětlení, perfekcionismus",
+        "C": "Podřízení odmítají přijmout delegované úkoly z důvodu odborné nekompetentnosti",
+        "D": "Delegování vždy vede k demotivaci podřízených — proto se nedoporučuje"
+      },
+      "correct": "B",
+      "explanation": "Bariéry na straně manažera: 'Já to udělám lépe a rychleji' (krátkodobě pravda, ale škodí rozvoji týmu), strach ze ztráty moci, perfekcionismus, nedůvěra. Bariéry na straně podřízených: strach z odpovědnosti, nedostatek motivace, nejistota. Nedelegování = manažer je přetížen detaily a nemá čas na strategii (mikromanagement)."
+    }
+  ]
+}

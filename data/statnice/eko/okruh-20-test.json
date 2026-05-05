@@ -1,0 +1,89 @@
+{
+  "title": "Racionalizace řídící práce manažera, komunikace v organizaci",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je Eisenhowerova matice (matice priorit) a jak se používá?",
+      "options": {
+        "A": "Matice porovnávající náklady a přínosy manažerských rozhodnutí ve 2×2 tabulce",
+        "B": "2×2 matice dělící úkoly podle dimenzí Důležitost a Naléhavost: Q1 (důležité + naléhavé) = řeš nyní, Q2 (důležité + nenaléhavé) = plánuj, Q3 (nedůležité + naléhavé) = deleguj, Q4 (nedůležité + nenaléhavé) = eliminuj",
+        "C": "Matice hodnotící výkonnost manažerů ve čtyřech klíčových oblastech",
+        "D": "Nástroj pro prioritizaci projektů dle strategického přínosu a rizika"
+      },
+      "correct": "B",
+      "explanation": "Covey popularizoval Eisenhowerovu matici: klíčový insight = efektivní manažeři maximalizují čas v Q2 (důležité, nenaléhavé — prevence, plánování, rozvoj). Q1 jsou krize (výsledek zanedbání Q2). Q3 a Q4 kradou čas. Chronický pobyt v Q1 vede k vyhoření. 'Nenaléhavé ale důležité' věci jsou klíčem k efektivitě."
+    },
+    {
+      "id": 2,
+      "question": "Jaké jsou hlavní principy time managementu pro manažery?",
+      "options": {
+        "A": "Pracovat déle a delegovat méně — efektivita roste s délkou pracovní doby",
+        "B": "Prioritizace úkolů (Eisenhower, ABC analýza), plánování dne/týdne, batching podobných úkolů, eliminace vyrušení, efektivní delegování, stanovení hranic a řízení energie nejen času",
+        "C": "Reagovat okamžitě na každý email a zprávu pro maximální responzivitu",
+        "D": "Time management se vztahuje výhradně na operativní manažery; strategičtí manažeři se plánováním nezabývají"
+      },
+      "correct": "B",
+      "explanation": "Principy: Pareto (80 % výsledků pochází z 20 % aktivit → identifikuj těch 20 %). Parkinsonův zákon: práce expanduje na dostupný čas → stanovuj realistické deadliny. Batching: seskup podobné úkoly (maily 2× denně). Deep work (Newport): hluboká soustředěná práce bez přerušení pro komplexní úkoly. Deleguj vše, co je pod tvoji přidanou hodnotou."
+    },
+    {
+      "id": 3,
+      "question": "Jaký je Shannon-Weaverův model komunikace a co je šum (noise)?",
+      "options": {
+        "A": "Kruhový model zachycující obousměrnou komunikaci s kontinuální zpětnou vazbou",
+        "B": "Lineární model (1948): Zdroj → Enkodér → Kanál → Dekodér → Příjemce. Šum = jakékoliv rušení v kanálu (fyzické, sémantické, psychologické) zkreslující přenesenou zprávu",
+        "C": "Transakční model zachycující simultánní odesílání a přijímání zpráv oběma stranami",
+        "D": "Model popisující neformální komunikační sítě (grapevine) v organizaci"
+      },
+      "correct": "B",
+      "explanation": "Shannon-Weaver (1948): původně technický model pro telekomunikace, přenesený do manažerské komunikace. Klíčový příspěvek: identifikace šumu jako systematické překážky. Fyzický šum: hluk, rušení signálu. Sémantický: různý výklad slov. Psychologický: předsudky, emoce. Omezení: lineárnost — nezachycuje zpětnou vazbu."
+    },
+    {
+      "id": 4,
+      "question": "Jaký je rozdíl mezi formálními a neformálními komunikačními kanály v organizaci?",
+      "options": {
+        "A": "Formální kanály jsou vždy elektronické; neformální vždy ústní",
+        "B": "Formální: stanovené organizační strukturou — shora dolů (příkazy), zdola nahoru (hlášení, návrhy), horizontálně (koordinace). Neformální: mimo formální strukturu — přátelské vztahy, 'grapevine' (fámy); rychlé, ale nefiltrované",
+        "C": "Formální komunikace probíhá pouze písemně; neformální pouze verbálně",
+        "D": "Neformální kanály jsou v organizacích zakázány interními předpisy"
+      },
+      "correct": "B",
+      "explanation": "Formální kanály: porady, reporty, emaily, intranet — zaručují dokumentaci a odpovědnost. Neformální (grapevine): rychlé šíření informací, vysoká propustnost ale i distorze — fámy mohou být přesnější než formální komunikace (Davis: 80 % fám přesných). Manažeři by neměli neformální kanály ignorovat — jsou cenným zdrojem informací o náladě organizace."
+    },
+    {
+      "id": 5,
+      "question": "Jaké jsou hlavní bariéry efektivní komunikace v organizaci?",
+      "options": {
+        "A": "Nedostatek technologií pro digitální komunikaci",
+        "B": "Fyzické (hluk, vzdálenost), sémantické (různý výklad pojmů, žargon), psychologické (předsudky, selektivní vnímání, emoce), organizační (příliš mnoho hierarchických úrovní — filtrace zpráv), kulturní (odlišné komunikační normy)",
+        "C": "Pouze jazyková bariéra při mezinárodní komunikaci",
+        "D": "Bariéry komunikace jsou výhradně technického charakteru — řeší je IT oddělení"
+      },
+      "correct": "B",
+      "explanation": "Psychologické bariéry jsou nejzáludnější: halo efekt (jeden atribut ovlivní vnímání celého sdělení), projekce (přisuzujeme druhým vlastní motivy), selektivní vnímání (vidíme, co chceme). Organizační bariéry: v hierarchii dochází k filtraci — podřízení říkají nadřízeným to, co chtějí slyšet (MUM effect). Aktivní naslouchání a zpětná vazba jsou klíčovými prostředky překonání bariér."
+    },
+    {
+      "id": 6,
+      "question": "Co je neverbální komunikace a jaký je její podíl na celkovém sdělení dle Mehrabiana?",
+      "options": {
+        "A": "Neverbální komunikace tvoří méně než 10 % celkového sdělení — slova jsou dominantní",
+        "B": "Neverbální komunikace (mimika, gesta, postoj, tón hlasu, oční kontakt, proxemika) tvoří dle Mehrabiana až 55 % (vizuální) + 38 % (vokální) = 93 % při komunikaci emočního obsahu; 7 % tvoří samotná slova",
+        "C": "Neverbální komunikace je relevantní pouze v prodejních situacích, ne v manažerském vedení",
+        "D": "Mehrabianova pravidla 55-38-7 platí pro veškerou komunikaci bez výjimek"
+      },
+      "correct": "B",
+      "explanation": "Mehrabian (1971): pravidlo 55-38-7 platí specificky pro sdělování pocitů a postojů (ne pro veškerou komunikaci). 55 % vizuální (mimika, gesta), 38 % vokální (tón, tempo, hlasitost), 7 % verbální (slova). Manažerská implikace: kongruence verbálního a neverbálního je klíčová pro důvěryhodnost. Nekongruence → záměr se ztrácí (řekneme 'výborně', ale tón naznačuje opak)."
+    },
+    {
+      "id": 7,
+      "question": "Co je transakční model komunikace a jak se liší od lineárního Shannon-Weaverova modelu?",
+      "options": {
+        "A": "Transakční model je starší a méně přesný — Shannon-Weaver ho nahradil",
+        "B": "Transakční model zachycuje komunikaci jako simultánní, obousměrný proces, kde oba účastníci jsou zároveň odesílateli i příjemci, s kontinuální zpětnou vazbou a sdíleným kontextem — na rozdíl od lineárního jednosměrného S-W modelu",
+        "C": "Transakční model se vztahuje výhradně k obchodním jednáním a smluvním vztahům",
+        "D": "Oba modely jsou identické — liší se pouze terminologií autorů"
+      },
+      "correct": "B",
+      "explanation": "Shannon-Weaver: jednosměrný (A → B). Transakční model (Barnlund, Schramm): komunikace je simultánní — oba lidé neustále kódují a dekódují, reagují na verbální i neverbální podněty druhého. Závisí na sdíleném poli zkušeností (shared field of experience). Bližší realitě dialogu — proto se v mezilidské a manažerské komunikaci preferuje."
+    }
+  ]
+}

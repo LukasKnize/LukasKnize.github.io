@@ -1,0 +1,77 @@
+{
+  "title": "Základní makroekonomické ukazatele: HDP, metody výpočtu, reálný a nominální",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co měří hrubý domácí produkt (HDP)?",
+      "options": {
+        "A": "Celkový majetek (bohatství) všech domácností v ekonomice",
+        "B": "Celkovou tržní hodnotu všech finálních statků a služeb vyprodukovaných na území státu za dané období (obvykle rok)",
+        "C": "Celkové výdaje domácností na spotřebu zboží a služeb",
+        "D": "Celkové příjmy státního rozpočtu minus výdaje"
+      },
+      "correct": "B",
+      "explanation": "HDP (GDP) = tržní hodnota finálních statků a služeb vyrobených na území státu za rok bez ohledu na státní příslušnost výrobce. Klíčová slova: finální (ne meziprodukty — aby se zamezilo dvojímu počítání), tržní hodnota, geografické vymezení (na území). HDP ≠ HNP (národní produkt — dle příslušnosti subjektů, ne území)."
+    },
+    {
+      "id": 2,
+      "question": "Jaké jsou tři metody výpočtu HDP a proč dávají stejný výsledek?",
+      "options": {
+        "A": "Exportní, importní a bilanční metoda; stejný výsledek kvůli účetní totožnosti platební bilance",
+        "B": "Výdajová (agregátní poptávka: $C+I+G+NX$), důchodová (součet příjmů výrobních faktorů) a produkční (přidaná hodnota); stejný výsledek, protože výdaje jednoho = příjem druhého = přidaná hodnota ve výrobě",
+        "C": "Daňová, mzdová a kapitálová metoda; stejné výsledky jen při vyrovnaném rozpočtu",
+        "D": "Tržní, státní a zahraniční metoda; stejný výsledek v ekonomikách bez šedé ekonomiky"
+      },
+      "correct": "B",
+      "explanation": "Výdajová: $GDP = C + I + G + (X - M)$. Důchodová: $GDP = w + r + \\pi + R + \\text{odpisy}$ (mzdy + úroky + zisky + renty). Produkční: $GDP = \\sum$ přidaných hodnot. Výsledek stejný: peníze utracené (výdajová) = peníze přijaté (důchodová) = hodnota přidaná (produkční) — jsou to různé pohledy na tentýž ekonomický tok."
+    },
+    {
+      "id": 3,
+      "question": "Nominální HDP vzrostl z 5 000 na 5 500 mld. Kč. Deflátor HDP = 1,05. Jaký je reálný růst HDP?",
+      "options": {
+        "A": "10 %",
+        "B": "5 %",
+        "C": "přibližně 4,8 %",
+        "D": "0 %"
+      },
+      "correct": "C",
+      "explanation": "Reálný HDP = Nominální HDP / deflátor. Původní reálné HDP = 5 000/1 = 5 000. Nové reálné HDP = 5 500/1,05 ≈ 5 238. Reálný růst ≈ $(5\\,238 - 5\\,000)/5\\,000 ≈ 4{,}76\\,\\%$. Nominální růst byl 10 %, ale 5 % způsobila inflace, pouze ~4,8 % je skutečný reálný růst produkce."
+    },
+    {
+      "id": 4,
+      "question": "Jak se liší HDP od HNP (GNP)?",
+      "options": {
+        "A": "HDP zahrnuje neformální ekonomiku; HNP jen formální sektor",
+        "B": "HDP měří produkci na území státu bez ohledu na příslušnost výrobce; HNP měří produkci rezidentů (občanů) bez ohledu na místo výroby",
+        "C": "HDP je vždy vyšší než HNP ve vyspělých zemích",
+        "D": "HNP = HDP + vládní výdaje na obranu a vzdělání"
+      },
+      "correct": "B",
+      "explanation": "HDP (teritoriální princip): zahrnuje vše vyrobené na území ČR, i zahraničními firmami. HNP (národnostní princip): zahrnuje produkci českých rezidentů kdekoliv na světě. $HNP = HDP + \\text{čisté příjmy z ciziny}$. Pro malé otevřené ekonomiky s přímými zahraničními investicemi: $HDP > HNP$ (zisky repatriované zahraničními firmami)."
+    },
+    {
+      "id": 5,
+      "question": "Co je čistý domácí produkt (NDP) a jak se vypočítá?",
+      "options": {
+        "A": "$NDP = HDP - \\text{vládní výdaje}$",
+        "B": "$NDP = HDP - \\text{odpisy (spotřeba fixního kapitálu)}$ — zachycuje produkci bez opotřebení kapitálu",
+        "C": "$NDP = HDP + \\text{čisté transfery ze zahraničí}$",
+        "D": "$NDP = HDP \\cdot (1 - \\text{míra inflace})$"
+      },
+      "correct": "B",
+      "explanation": "NDP (Net Domestic Product, čistý domácí produkt) = HDP − spotřeba fixního kapitálu (odpisy, CCA). Reprezentuje čistou novou produkci — HDP zahrnuje část, která pouze nahrazuje opotřebený kapitál (nemá tedy dopad na čisté bohatství společnosti). NDP je přesnější mírou ekonomické výkonnosti, ale méně používaná pro obtíže měření odpisů."
+    },
+    {
+      "id": 6,
+      "question": "Která z následujících transakcí NENÍ zahrnuta do HDP?",
+      "options": {
+        "A": "Výstavba nového bytového domu developerem",
+        "B": "Nákup použitého automobilu od soukromé osoby",
+        "C": "Vládní výdaje na platy učitelů ve veřejných školách",
+        "D": "Přidaná hodnota restaurace při přípravě jídla z nakoupených surovin"
+      },
+      "correct": "B",
+      "explanation": "HDP zahrnuje pouze novou produkci. Prodej použitého automobilu je přesun existujícího aktiva — nevzniká nová hodnota (automobil byl již zahrnut do HDP při prvním prodeji). Do HDP patří: nová produkce (A), vládní výdaje na služby (C), přidaná hodnota (D). Finanční transakce (akcie, dluhopisy) a transferové platby také nejsou součástí HDP."
+    }
+  ]
+}

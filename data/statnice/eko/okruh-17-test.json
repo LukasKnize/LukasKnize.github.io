@@ -1,0 +1,77 @@
+{
+  "title": "Osobnost manažera, role manažera (Mintzberg), manažerské funkce",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaké tři skupiny manažerských rolí definoval Mintzberg?",
+      "options": {
+        "A": "Strategické, taktické a operativní role",
+        "B": "Interpersonální role (figurehead, leader, liaison), informační role (monitor, disseminator, spokesperson) a rozhodovací role (entrepreneur, disturbance handler, resource allocator, negotiator)",
+        "C": "Technické, mezilidské a koncepční dovednosti",
+        "D": "Plánování, organizování a kontrola"
+      },
+      "correct": "B",
+      "explanation": "Mintzberg (1973) studoval práci manažerů empiricky a popsal 10 rolí ve třech skupinách: Interpersonální (vztahy s lidmi): reprezentant, lídr, styčný důstojník. Informační (zpracování info): monitor, šiřitel, mluvčí. Rozhodovací (rozhodování): podnikatel, krizový manažer, alokátor zdrojů, vyjednávač."
+    },
+    {
+      "id": 2,
+      "question": "Jaké jsou pět klasických manažerských funkcí dle Fayola?",
+      "options": {
+        "A": "Zadávání, delegování, motivování, kontrola, reportování",
+        "B": "Plánování (Planning), organizování (Organizing), přikazování/vedení (Directing/Leading), koordinace (Coordinating), kontrola (Controlling)",
+        "C": "Analýza, syntéza, implementace, evaluace, zpětná vazba",
+        "D": "Vize, mise, strategie, taktika, operativa"
+      },
+      "correct": "B",
+      "explanation": "Fayol (1916): POCCC — Planning, Organizing, Commanding (vedení), Coordinating, Controlling. Moderní adaptace: POLC (Planning, Organizing, Leading, Controlling) nebo POSDCORB (+ Staffing, Directing, Reporting, Budgeting). Tyto funkce popisují, CO manažeři dělají, nikoli jak. Jsou iterativní, ne sekvenční."
+    },
+    {
+      "id": 3,
+      "question": "Co jsou technické, mezilidské a koncepční dovednosti manažera a jak se jejich důležitost mění s hierarchií?",
+      "options": {
+        "A": "Všechny tři dovednosti jsou stejně důležité na všech úrovních řízení",
+        "B": "Technické: znalost oboru/procesů (důležité na nižších úrovních). Mezilidské: komunikace, motivace, vedení (důležité na všech úrovních). Koncepční: strategické myšlení, abstrakce (nejdůležitější na vrcholové úrovni)",
+        "C": "Koncepční dovednosti jsou nejdůležitější na nejnižší úrovni; technické na vrcholové",
+        "D": "Mezilidské dovednosti jsou nejdůležitější pouze pro HR manažery"
+      },
+      "correct": "B",
+      "explanation": "Katz (1955): Technické dovednosti (know-how oboru) — klíčové pro mistry a vedoucí týmů. Mezilidské (human skills) — kritické na všech úrovních. Koncepční (conceptual skills — systémové myšlení, strategie) — dominantní u top managementu. S postupem v hierarchii klesá potřeba technických a roste potřeba koncepčních dovedností."
+    },
+    {
+      "id": 4,
+      "question": "Jaký je rozdíl mezi manažerem a lídrem?",
+      "options": {
+        "A": "Lídr je vždy ve vyšší hierarchické pozici než manažer",
+        "B": "Manažer: formální autorita, orientace na efektivitu (dělat věci správně), plánování, kontrola, status quo. Lídr: vliv bez nutnosti formální autority, orientace na smysl a změnu (dělat správné věci), inspirace, vize",
+        "C": "Lídr řídí lidi; manažer řídí stroje a procesy",
+        "D": "Oba pojmy jsou synonyma — každý manažer je automaticky lídrem"
+      },
+      "correct": "B",
+      "explanation": "Bennis: 'Managers do things right; leaders do the right things.' Kouzes, Posner: lídr inspiruje, manažer administruje. Manažer: komplexnost, plánování, organizování, kontrola. Lídr: změna, vize, motivace, transformace. Nejlepší vedoucí kombinuje obojí. Formální autorita ≠ vedení: lídr může být i bez titulu."
+    },
+    {
+      "id": 5,
+      "question": "Co je emoční inteligence (EQ) a proč je důležitá pro manažery?",
+      "options": {
+        "A": "Schopnost rychle počítat a analyzovat ekonomické modely",
+        "B": "Schopnost rozpoznávat, chápat a řídit vlastní emoce a emoce druhých (Goleman): sebeuvědomění, sebeřízení, sociální vnímavost, řízení vztahů — klíčová pro vedení lidí a efektivní komunikaci",
+        "C": "Míra intelektuálních schopností manažera měřená IQ testy",
+        "D": "Schopnost potlačovat emoce a rozhodovat čistě racionálně"
+      },
+      "correct": "B",
+      "explanation": "Goleman (1995): EQ predikuje manažerský úspěch lépe než IQ v oblastech vedení lidí. 5 složek: Sebeuvědomění (znám své emoce), Sebeřízení (ovládám je), Motivace (vnitřní hnací síla), Empatie (rozumím emocím druhých), Sociální dovednosti (řídím vztahy). Manažeři s vysokým EQ lépe budují týmy a zvládají konflikty."
+    },
+    {
+      "id": 6,
+      "question": "Co popisuje role manažera jako 'disturbance handler' (krizový manažer) dle Mintzberga?",
+      "options": {
+        "A": "Manažer aktivně vyhledává příležitosti a iniciuje změny (inovační role)",
+        "B": "Manažer reaguje na neočekávané problémy, krize a konflikty — stávky, selhání dodavatele, ztráta klíčového zákazníka — a obnovuje stabilitu",
+        "C": "Manažer přiděluje zdroje (budget, čas, personál) mezi soupeřící požadavky",
+        "D": "Manažer reprezentuje organizaci při veřejných příležitostech (tiskovky, ceremoniály)"
+      },
+      "correct": "B",
+      "explanation": "Disturbance handler: reaktivní role — manažer musí rychle reagovat na narušení, která nešlo předvídat. Na rozdíl od role entrepreneur (proaktivní — iniciuje změny) je krizová role vynucena okolnostmi. Mintzberg zjistil, že manažeři tráví velkou část času řešením neplánovaných problémů — proto jsou jejich pracovní dny fragmentované."
+    }
+  ]
+}

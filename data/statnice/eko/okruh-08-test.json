@@ -1,0 +1,77 @@
+{
+  "title": "Majetek podniku: druhy, odpisy, ukazatele obratu",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jak se člení majetek podniku z hlediska doby použitelnosti?",
+      "options": {
+        "A": "Na hmotný a nehmotný majetek bez ohledu na dobu použitelnosti",
+        "B": "Na dlouhodobý majetek (doba použitelnosti > 1 rok) a oběžný majetek (krátkodobý, přeměňuje se v rámci výrobního cyklu)",
+        "C": "Na vlastní majetek financovaný z vlastního kapitálu a cizí majetek z úvěrů",
+        "D": "Na fixní (budovy, stroje) a variabilní (suroviny, pracovní síla)"
+      },
+      "correct": "B",
+      "explanation": "Dlouhodobý majetek (investiční): hmotný (budovy, stroje, pozemky), nehmotný (software, patenty, goodwill), finanční (cenné papíry, podíly). Oběžný majetek: zásoby (materiál, NV, hotové výrobky, zboží), pohledávky, KFM (pokladna, bankovní účty). Klíčové: DM se odepisuje (postupný přenos hodnoty do nákladů), oběžný se spotřebovává jednorázově."
+    },
+    {
+      "id": 2,
+      "question": "Co jsou odpisy a jak se liší účetní odpisy od daňových?",
+      "options": {
+        "A": "Odpisy jsou mimořádné náklady vzniklé fyzickým poškozením majetku; daňové odpisy jsou vždy vyšší",
+        "B": "Odpisy vyjadřují postupné opotřebení DM (fyzické i morální) zahrnuté do nákladů; účetní odpisy odráží skutečné opotřebení; daňové odpisy jsou stanoveny zákonem (rovnoměrné nebo zrychlené) a slouží k daňové optimalizaci",
+        "C": "Daňové odpisy se vztahují k nehmotného majetku; účetní k hmotnému",
+        "D": "Odpisy jsou pouze účetní kategorií — nemají vliv na cash flow podniku"
+      },
+      "correct": "B",
+      "explanation": "Odpisy = nepeněžní náklad (non-cash) — snižují zisk, ale neodcházejí z podniku peněžně → zdrojem interního financování. Účetní odpisy: volba metody (lineární, degresivní, výkonová) dle skutečného opotřebení. Daňové odpisy (ZDP): zákon určuje odpisové skupiny (1–6), metody (rovnoměrné/zrychlené) → základ daně ≠ účetní zisk."
+    },
+    {
+      "id": 3,
+      "question": "Stroj pořízený za 600 000 Kč má dobu životnosti 5 let a zůstatkovou hodnotu 0 Kč. Jaký je roční lineární odpis?",
+      "options": {
+        "A": "60 000 Kč",
+        "B": "100 000 Kč",
+        "C": "120 000 Kč",
+        "D": "150 000 Kč"
+      },
+      "correct": "C",
+      "explanation": "Lineární (rovnoměrný) odpis = (Pořizovací cena − Zůstatková hodnota) / Doba životnosti = $(600\\,000 - 0) / 5 = 120\\,000$ Kč/rok. Zůstatková (účetní) hodnota po 3 letech = $600\\,000 - 3 \\times 120\\,000 = 240\\,000$ Kč."
+    },
+    {
+      "id": 4,
+      "question": "Co vyjadřuje obrat celkových aktiv a jak se interpretuje?",
+      "options": {
+        "A": "Dobu, za kterou podnik jednou za rok prodá veškerý svůj majetek",
+        "B": "Počet obrátek aktiv za rok: $\\text{Obrat aktiv} = \\text{Tržby} / \\text{Celková aktiva}$; vyšší hodnota = efektivnější využití majetku",
+        "C": "Podíl oběžného majetku na celkových aktivech",
+        "D": "Délku výrobního cyklu od nákupu materiálu po inkaso pohledávky"
+      },
+      "correct": "B",
+      "explanation": "Obrat aktiv = Tržby / Aktiva celkem. Udává, kolikrát se celková aktiva 'obrátila' ve tržbách za rok. Nízký obrat → nadměrný majetek vzhledem k objemu tržeb (neefektivní využití). Pro různá odvětví se liší (výroba vs. obchod). Součást Du Pontova rozkladu ROE: $ROE = \\text{Zisková marže} \\times \\text{Obrat aktiv} \\times \\text{Finanční páka}$."
+    },
+    {
+      "id": 5,
+      "question": "Co vyjadřuje doba obratu pohledávek (DSO) a co signalizuje její prodloužení?",
+      "options": {
+        "A": "$DSO = \\text{Pohledávky} / \\text{Denní tržby}$; udává průměrný počet dní od fakturace do inkasa; prodloužení = potenciální problémy s platební morálkou odběratelů nebo agresivní úvěrová politika",
+        "B": "Počet dní, za které podnik zaplatí svým dodavatelům; prodloužení = dobré řízení likvidity",
+        "C": "Doba od nákupu materiálu do prodeje hotového výrobku",
+        "D": "Rychlost přeměny zásob na pohledávky v průběhu roku"
+      },
+      "correct": "A",
+      "explanation": "$DSO = (\\text{Pohledávky} / \\text{Tržby}) \\times 365$. Prodloužení DSO: odběratelé platí pomaleji → vyšší potřeba provozního kapitálu, riziko nedobytných pohledávek. Srovnání s dobou obratu závazků (DPO): pokud DSO > DPO, podnik de facto financuje odběratele. Cíl: DSO < DPO (výhodné pro cash flow)."
+    },
+    {
+      "id": 6,
+      "question": "Proč nákup stroje za hotovost neovlivňuje okamžitě výsledek hospodaření (výkaz zisků a ztrát)?",
+      "options": {
+        "A": "Protože nákup stroje je zachycen pouze v rozvaze jako změna aktiv, ne jako náklad — do nákladů vstupuje postupně formou odpisů",
+        "B": "Protože stroj je nakoupen za cenu pořízení, která se rovná tržní hodnotě",
+        "C": "Protože hotovostní transakce nepodléhají účtování do VZZ",
+        "D": "Protože stroj je finančním aktivem, nikoliv provozním"
+      },
+      "correct": "A",
+      "explanation": "Kapitalizace: DM se aktivuje do rozvahy (↑ aktiva, ↓ hotovost nebo ↑ závazky). Do nákladů vstupuje postupně přes odpisy dle doby použitelnosti — princip matching (náklady se párují s výnosy, které generují). Okamžitý výdaj (cash flow) vs. postupné náklady (odpisy) → rozdíl mezi cash flow a ziskem."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Organizační systém podniku, dekompozice a vztahy subsystémů (TŘOS)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jak TŘOS definuje organizační systém (OS)?",
+      "options": {
+        "A": "Formální hierarchická struktura nadřízenosti a podřízenosti v podniku",
+        "B": "Množina hmotných prvků a lidí, propojených hospodářsko-ekonomickými, informačními a sociálně-výchovnými vazbami, která jako celek realizuje definovaný účel (hlavní cíl)",
+        "C": "Soubor procesů a procedur popsaných v organizačním řádu podniku",
+        "D": "Systém pro evidenci a správu organizačních dokumentů a směrnic"
+      },
+      "correct": "B",
+      "explanation": "Definice OS dle TŘOS (Hron, Macák): OS = {množina prvků (L, HP, SP)} + {vazby (HE, I, SV)}. Vlastnosti: reálný, relativně uzavřený, redukovaný (volíme rozlišovací úroveň), velmi složitý, stochastický (lidé jsou nepředvídatelní). Příklady: podnik, závod, škola, úřad."
+    },
+    {
+      "id": 2,
+      "question": "Jaké jsou tři typy prvků organizačního systému dle TŘOS a jejich označení?",
+      "options": {
+        "A": "Vstupy (V), transformace (T), výstupy (V₂)",
+        "B": "Lidé (L), Hmotné prvky (HP), Smíšené prvky (SP — kombinace L a HP)",
+        "C": "Manažeři (M), Zaměstnanci (Z), Stroje (S)",
+        "D": "Prvky výrobní (PV), správní (PS) a podpůrné (PP)"
+      },
+      "correct": "B",
+      "explanation": "Prvky OS: L (lidé — pracovníci, manažeři), HP (hmotné prvky — stroje, budovy, suroviny, finance), SP (smíšené — pracoviště = člověk + stroj, tým + technologie). Klíčové: lidé jsou stochastičtí → OS jako celek je stochastický (nelze chování přesně předpovídat)."
+    },
+    {
+      "id": 3,
+      "question": "Jaké jsou tři typy vazeb v organizačním systému dle TŘOS?",
+      "options": {
+        "A": "Vertikální, horizontální a diagonální vazby dle organizační hierarchie",
+        "B": "HE (hospodářsko-ekonomické — toky materiálu, energie, peněz), I (informační — data, příkazy, hlášení), SV (sociálně-výchovné — autorita, motivace, komunikace, vzdělávání)",
+        "C": "Vstupní, výstupní a zpětnovazební vazby",
+        "D": "Formální, neformální a technologické vazby"
+      },
+      "correct": "B",
+      "explanation": "HE vazby: fyzické toky (materiál z TS₁ do PS₁, výrobek z PS₁ do PS₂, peněžní toky). I vazby: informační toky (plány z OSS do ŘSS, data z EIS do MOS). SV vazby: mezilidské vztahy — motivace, vzdělávání, autorita, komunikace. Formální zápis OS: $OS = \\{[subsystémy],\\ [HE, SV, I]\\}$."
+    },
+    {
+      "id": 4,
+      "question": "Jaká je formální struktura devíti subsystémů 1. řádu na 2. rozlišovací úrovni OS dle TŘOS?",
+      "options": {
+        "A": "$OS = \\{[PS_1, TS_1, TS_2, EES, OSS, EIS, PS_2, MOS, ŘSS],\\ [HE, SV, I]\\}$",
+        "B": "$OS = \\{[Finance, HR, Marketing, IT, Výroba, Logistika, Prodej, Management, Kontrola]\\}$",
+        "C": "$OS = \\{[Strategie, Taktika, Operativa]\\}$ — tři úrovně řízení",
+        "D": "$OS = \\{[Vstupy, Procesy, Výstupy, Zpětná vazba]\\}$ — kybernetický model"
+      },
+      "correct": "A",
+      "explanation": "Devět subsystémů: PS₁ (primární/výrobní), TS₁ (technický 1 — zásobování), TS₂ (technický 2 — technická obsluha), EES (ekonomicko-evidenční), OSS (organizačně-správní), EIS (evidenčně-informační), PS₂ (prodejní), MOS (manažersko-obchodní), ŘSS (řídící subsystém)."
+    },
+    {
+      "id": 5,
+      "question": "Co tvoří hlavní diagonálu maticového uspořádání subsystémů OS dle TŘOS?",
+      "options": {
+        "A": "EES – MOS – EIS",
+        "B": "PS₁ – OSS – ŘSS",
+        "C": "TS₁ – TS₂ – PS₂",
+        "D": "PS₁ – PS₂ – MOS"
+      },
+      "correct": "B",
+      "explanation": "Hlavní diagonála: PS₁ (co se vyrábí — výrobní jádro) — OSS (jak je výroba organizována — struktury, role) — ŘSS (jak je výroba řízena — koordinace, plánování, operativa). Tyto tři jsou v cyklické závislosti: výroba potřebuje organizaci → organizace potřebuje řízení → řízení se zaměřuje na výrobu."
+    },
+    {
+      "id": 6,
+      "question": "Jaké jsou tři funkční oblasti seskupení subsystémů OS dle TŘOS?",
+      "options": {
+        "A": "Výrobní, finanční a obchodní oblast",
+        "B": "Produkčně-technická (PS₁, TS₁, TS₂), organizačně-informační (EES, OSS, EIS), obchodně-řídící (PS₂, MOS, ŘSS)",
+        "C": "Strategická, taktická a operativní oblast",
+        "D": "Lidská, technická a finanční oblast"
+      },
+      "correct": "B",
+      "explanation": "Produkčně-technická oblast: zásobování (TS₁), vlastní výroba (PS₁), technická obsluha (TS₂) — dominuje HP. Organizačně-informační: ekonomika (EES), organizace (OSS), IT (EIS) — smíšené prvky. Obchodně-řídící: prodej (PS₂), strategické řízení (MOS), operativní řízení (ŘSS) — dominuje L."
+    },
+    {
+      "id": 7,
+      "question": "Jaké jsou tři základní procesy realizující vztahy mezi subsystémy OS dle TŘOS?",
+      "options": {
+        "A": "Plánování, organizování a kontrola",
+        "B": "Proces produkčního řízení (HE tok: materiál → PS₁ → výrobek → PS₂), proces nepřímého řízení (I, SV přes EES, OSS, EIS) a proces přímého řízení (I, SV přes MOS a ŘSS na PS₁ a PS₂)",
+        "C": "Vstupní, transformační a výstupní proces",
+        "D": "Strategický, taktický a operativní proces"
+      },
+      "correct": "B",
+      "explanation": "Produkční řízení: fyzický tok HE vazbami — materiál vstupuje přes TS₁ do PS₁ (výroba), výrobek odchází přes PS₂. Nepřímé řízení: informační a sociální toky přes EES, OSS, EIS — vytvářejí podmínky pro výrobu (plánování, organizace, IT). Přímé řízení: MOS a ŘSS působí přímo na PS₁ a PS₂ řídicími impulzy."
+    }
+  ]
+}

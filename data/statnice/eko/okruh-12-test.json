@@ -1,0 +1,77 @@
+{
+  "title": "Investice v podnicích: druhy, ekonomická efektivnost, NPV, IRR",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je rozdíl mezi investiční výdaj a ekonomickým efektem investice?",
+      "options": {
+        "A": "Investiční výdaj = tržby z investice; ekonomický efekt = náklady na její pořízení",
+        "B": "Investiční výdaj = jednorázový kapitálový výdaj na pořízení (cena + instalace + školení + přírůstek pracovního kapitálu); ekonomický efekt = budoucí peněžní příjmy (cash flow) nebo úspory nákladů generované investicí",
+        "C": "Ekonomický efekt je vždy roven účetnímu zisku z investice za dobu životnosti",
+        "D": "Investiční výdaj se zahrnuje do provozních nákladů; ekonomický efekt je rozdíl tržeb a výdajů"
+      },
+      "correct": "B",
+      "explanation": "Kapitálový výdaj (CAPEX): pořizovací cena + vedlejší pořizovací náklady + přírůstek ČPK. Ekonomický efekt: přírůstkové provozní CF (FCF) generované investicí za dobu životnosti + zůstatková hodnota. Správné vymezení CF je klíčové pro správné NPV."
+    },
+    {
+      "id": 2,
+      "question": "Co je čistá současná hodnota (NPV) a jak se interpretuje?",
+      "options": {
+        "A": "NPV = součet nediskontovaných CF za dobu životnosti minus investiční výdaj",
+        "B": "$NPV = \\sum_{t=1}^{n} \\frac{CF_t}{(1+r)^t} - IC_0$; pokud $NPV > 0$, investice vytváří hodnotu (výnos > diskontní sazba = WACC); přijímáme investice s kladným NPV",
+        "C": "NPV = průměrný roční zisk dělený investičním výdajem",
+        "D": "NPV měří dobu, za kterou se investice vrátí v nominálních hodnotách"
+      },
+      "correct": "B",
+      "explanation": "$NPV = \\sum_{t=0}^{n} \\frac{CF_t}{(1+WACC)^t}$. $NPV > 0$: investice vydělá více, než kolik stojí kapitál → přijmout. $NPV < 0$: zničení hodnoty → odmítnout. $NPV = 0$: hranice přijatelnosti. NPV je absolutní ukazatel (v Kč), závisí na velikosti investice — nelze přímo srovnávat investice různé velikosti bez PI (profitability index)."
+    },
+    {
+      "id": 3,
+      "question": "Investice stojí 1 000 000 Kč, generuje CF 400 000 Kč/rok po dobu 3 let. WACC = 10 %. Jaké je přibližné NPV?",
+      "options": {
+        "A": "200 000 Kč",
+        "B": "-5 000 Kč",
+        "C": "−5 260 Kč",
+        "D": "100 000 Kč"
+      },
+      "correct": "C",
+      "explanation": "$PV = 400\\,000/1{,}1 + 400\\,000/1{,}21 + 400\\,000/1{,}331 = 363\\,636 + 330\\,579 + 300\\,526 = 994\\,741$ Kč. $NPV = 994\\,741 - 1\\,000\\,000 \\approx -5\\,259$ Kč < 0 → investici nepřijmout (výnos IRR je těsně pod 10 % WACC)."
+    },
+    {
+      "id": 4,
+      "question": "Co je vnitřní výnosové procento (IRR) a jaké je rozhodovací pravidlo?",
+      "options": {
+        "A": "Průměrný roční výnos investice v procentech bez diskontování",
+        "B": "Diskontní sazba, při níž $NPV = 0$; investici přijmeme, pokud $IRR > WACC$ (diskontní sazba/náklady kapitálu)",
+        "C": "Sazba, při níž jsou kumulované CF rovny investičnímu výdaji",
+        "D": "Maximální úroková sazba, za níž podnik může financovat investici úvěrem"
+      },
+      "correct": "B",
+      "explanation": "IRR: $\\sum_{t=0}^{n} CF_t / (1+IRR)^t = 0$. Rozhodnutí: $IRR > WACC$ → přijmout (investice vydělá více, než stojí kapitál). Problém IRR: multiple IRR při nestandardních CF, předpoklad reinvestice za IRR (ne WACC). NPV je teoreticky nadřazený, ale IRR je intuitivnější pro komunikaci. MIRR (modified IRR) řeší reinvestiční předpoklad."
+    },
+    {
+      "id": 5,
+      "question": "Jaký je rozdíl mezi prostou dobou návratnosti a diskontovanou dobou návratnosti?",
+      "options": {
+        "A": "Prostá DN nezohledňuje inflaci; diskontovaná ano — jinak jsou totožné",
+        "B": "Prostá DN: $DN = IC / \\overline{CF}$ — bez diskontování (nezohledňuje TČP); diskontovaná DN: délka, za níž kumulované diskontované CF pokryjí IC — konzervativnější (delší) a ekonomicky správnější",
+        "C": "Diskontovaná DN se používá jen pro investice delší než 5 let",
+        "D": "Prostá DN je přesnější, protože diskontování závisí na subjektivní volbě WACC"
+      },
+      "correct": "B",
+      "explanation": "Prostá DN: $IC / \\overline{CF_{roční}}$ — rychlá, intuitivní. Ignoruje TČP a CF po splacení investice. Diskontovaná DN: kumuluje $CF_t/(1+r)^t$ dokud ≠ IC — vždy delší než prostá. Oba ukazatele preferují krátkodobé investice → vhodné jako doplňkové k NPV. Výhoda: jednoduchost a komunikovatelnost."
+    },
+    {
+      "id": 6,
+      "question": "Co je analýza citlivosti (sensitivity analysis) v hodnocení investic?",
+      "options": {
+        "A": "Testování, jak se změní NPV při změně jednoho vstupního parametru (cena, objem, náklady, diskontní sazba) ceteris paribus — identifikuje klíčové faktory rizika",
+        "B": "Statistická metoda pro výpočet pravděpodobnosti kladného NPV",
+        "C": "Metoda výběru nejlepší investice ze souboru vzájemně se vylučujících projektů",
+        "D": "Analýza citlivosti hodnotí, jak investice reaguje na změny úrokových sazeb ČNB"
+      },
+      "correct": "A",
+      "explanation": "Analýza citlivosti: mění se vždy jen jeden parametr (např. cena produktu −10 %), ostatní fixní → sleduje se dopad na NPV/IRR. Identifikuje, které proměnné mají největší vliv → priorita pro risk management. Scenario analysis: mění více parametrů najednou (pesimistický/základní/optimistický scénář). Monte Carlo: simuluje celé rozdělení NPV."
+    }
+  ]
+}

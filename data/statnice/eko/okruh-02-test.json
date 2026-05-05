@@ -1,0 +1,77 @@
+{
+  "title": "Cíle firmy, zisk účetní a ekonomický, krátké a dlouhé období",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je rozdíl mezi účetním a ekonomickým ziskem?",
+      "options": {
+        "A": "Ekonomický zisk je vždy vyšší, protože zahrnuje odpisy hmotného majetku",
+        "B": "Účetní zisk = výnosy − explicitní náklady; ekonomický zisk = výnosy − explicitní − implicitní náklady (oportunitní náklady vlastních zdrojů)",
+        "C": "Ekonomický zisk se počítá před zdaněním; účetní zisk po zdanění",
+        "D": "Oba pojmy jsou totožné — liší se pouze použitou účetní metodou"
+      },
+      "correct": "B",
+      "explanation": "Implicitní náklady = oportunitní náklady vlastních výrobních faktorů (práce vlastníka, vlastní kapitál, vlastní budovy). Ekonomický zisk = účetní zisk − implicitní náklady. Normální zisk = nulový ekonomický zisk (podnik pokrývá i implicitní náklady). Pouze kladný ekonomický zisk motivuje k setrvání v odvětví."
+    },
+    {
+      "id": 2,
+      "question": "Co odlišuje krátké období od dlouhého v teorii firmy?",
+      "options": {
+        "A": "Krátké období trvá méně než 1 rok; dlouhé více než 1 rok",
+        "B": "V krátkém období existují fixní výrobní faktory (nelze je měnit); v dlouhém období jsou všechny faktory variabilní",
+        "C": "V krátkém období maximalizuje firma zisk; v dlouhém období minimalizuje náklady",
+        "D": "Krátké období se vztahuje k cenové politice; dlouhé k investičním rozhodnutím"
+      },
+      "correct": "B",
+      "explanation": "Krátké období: alespoň jeden faktor fixní (typicky kapitál — nelze rychle rozšířit výrobní kapacitu). Proměnnou je práce. Dlouhé období: všechny faktory variabilní — firma může libovolně měnit rozsah výroby, vstupit/vystoupit z odvětví. Délka závisí na odvětví (výroba vs. stavebnictví)."
+    },
+    {
+      "id": 3,
+      "question": "Jaký je základní cíl firmy dle neoklasické ekonomie a jak se liší od alternativních cílů?",
+      "options": {
+        "A": "Maximalizace tržního podílu; alternativně maximalizace zisku",
+        "B": "Maximalizace zisku ($\\pi = TR - TC$); alternativní cíle: maximalizace tržeb (Baumol), maximalizace růstu (Marris), manažerský užitek (Williamson)",
+        "C": "Maximalizace hodnoty pro akcionáře v krátkém období; alternativně stakeholder přístup",
+        "D": "Přežití podniku; zisk je vedlejší produkt výrobního procesu"
+      },
+      "correct": "B",
+      "explanation": "Neoklasická firma maximalizuje zisk $\\pi = TR - TC$, podmínka: $MR = MC$. Alternativní cíle reflektují vlastnictví-řízení (principal-agent problém): Baumol — maximalizace tržeb při minimálním zisku; Marris — maximalizace růstu; Williamson — manažerský užitek (prestiž, plat, zaměstnanecké výhody)."
+    },
+    {
+      "id": 4,
+      "question": "Jak se vyvíjí zisk v dokonalé konkurenci v dlouhém období?",
+      "options": {
+        "A": "Zisk roste, protože firmy využívají úspory z rozsahu",
+        "B": "Zisk konverguje k nule — kladný ekonomický zisk přiláká nové firmy, nabídka roste, cena klesá, dokud $P = AC$ (normální zisk)",
+        "C": "Zisk se stabilizuje na úrovni průměrných variabilních nákladů",
+        "D": "Zisk klesá k nule pouze tehdy, pokud stát reguluje vstup do odvětví"
+      },
+      "correct": "B",
+      "explanation": "V dlouhém období dokonalé konkurence: kladný ekonomický zisk → vstup nových firem → nabídka ↑ → $P$ ↓ → zisk klesá. Záporný zisk → odchod firem → nabídka ↓ → $P$ ↑ → zisk roste. Rovnováha: $P = MC = AC_{min}$ → nulový ekonomický zisk (normální zisk). Firma v odvětví zůstává, pokud pokrývá oportunitní náklady."
+    },
+    {
+      "id": 5,
+      "question": "Podnik má tržby 5 000 000 Kč, explicitní náklady 3 500 000 Kč a implicitní náklady 800 000 Kč. Jaký je jeho ekonomický zisk?",
+      "options": {
+        "A": "1 500 000 Kč",
+        "B": "700 000 Kč",
+        "C": "4 200 000 Kč",
+        "D": "300 000 Kč"
+      },
+      "correct": "B",
+      "explanation": "Účetní zisk = $5\\,000\\,000 - 3\\,500\\,000 = 1\\,500\\,000$ Kč. Ekonomický zisk = účetní zisk − implicitní náklady = $1\\,500\\,000 - 800\\,000 = 700\\,000$ Kč. Kladný ekonomický zisk → podnik vydělává i nad rámec oportunitních nákladů vlastních zdrojů."
+    },
+    {
+      "id": 6,
+      "question": "Co je maximalizace tržeb (Baumolův model) a jaké má omezení?",
+      "options": {
+        "A": "Firma maximalizuje $TR = P \\cdot Q$ bez jakýchkoliv omezení",
+        "B": "Firma maximalizuje tržby $TR$ při podmínce dosažení minimální úrovně zisku — manažeři preferují obrat (prestiž, tržní podíl) nad maximalizací zisku vlastníků",
+        "C": "Firma nastavuje cenu tak, aby tržby rostly o 10 % ročně",
+        "D": "Model předpokládá, že cena a množství jsou nezávislé proměnné"
+      },
+      "correct": "B",
+      "explanation": "Baumolův model (1958): manažeři maximalizují $TR$, protože jejich odměna a prestiž jsou spjaty s velikostí firmy (obratem), ne se ziskem. Omezení: $\\pi \\geq \\pi_{min}$ (minimální přijatelný zisk pro akcionáře). Výsledkem je vyšší obrat a nižší zisk než u maximalizace zisku."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "title": "Produkční funkce, nákladová funkce, maximalizace zisku a tržeb",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co vyjadřuje mezní produkt práce ($MP_L$) a co říká zákon klesajících mezních výnosů?",
+      "options": {
+        "A": "$MP_L$ je průměrná produktivita práce; klesá s každým přidaným pracovníkem vždy od prvního",
+        "B": "$MP_L = \\Delta Q / \\Delta L$ — přírůstek produkce při přidání jedné jednotky práce; klesající mezní výnosy: po překročení určitého bodu přidávání L při fixním K vede ke stále menšímu $MP_L$",
+        "C": "$MP_L$ měří celkovou produkci na jednoho pracovníka; je vždy konstantní v krátkém období",
+        "D": "Zákon říká, že celková produkce vždy klesá po přidání více pracovníků"
+      },
+      "correct": "B",
+      "explanation": "$MP_L = \\partial Q / \\partial L$. Zákon klesajících mezních výnosů (short run): při fixním kapitálu přidávání práce nejprve zvyšuje $MP_L$ (specialisace), pak $MP_L$ klesá (přehlcení fixního K). Celková produkce $Q$ stále roste, ale stále pomalejším tempem. Pokud $MP_L < 0$, celková produkce klesá."
+    },
+    {
+      "id": 2,
+      "question": "Jaký je vztah mezi mezními náklady ($MC$) a průměrnými celkovými náklady ($AC$)?",
+      "options": {
+        "A": "$MC$ vždy leží nad $AC$ — mezní náklady jsou vyšší než průměrné",
+        "B": "Pokud $MC < AC$, pak $AC$ klesá; pokud $MC > AC$, pak $AC$ roste; $MC$ protíná $AC$ v minimu $AC$",
+        "C": "$MC$ a $AC$ jsou rovny při maximálním objemu výroby",
+        "D": "$AC$ klesá vždy, pokud $MC$ klesá"
+      },
+      "correct": "B",
+      "explanation": "Matematická analogie: mezní hodnota táhne průměr. Pokud je mezní náklad nižší než průměrný, průměr klesá; pokud vyšší, průměr roste. $MC$ protíná $AC$ v jeho minimu — to je eficientní výrobní bod. Stejný vztah platí pro $MC$ a $AVC$ (průměrné variabilní náklady)."
+    },
+    {
+      "id": 3,
+      "question": "Podmínka maximalizace zisku pro firmu v konkurenčním prostředí je:",
+      "options": {
+        "A": "$TR = TC$ (celkové výnosy rovnají se celkovým nákladům)",
+        "B": "$MR = MC$ (mezní příjem se rovná mezním nákladům)",
+        "C": "$P = AC$ (cena se rovná průměrným nákladům)",
+        "D": "$AR = AVC$ (průměrný příjem se rovná průměrným variabilním nákladům)"
+      },
+      "correct": "B",
+      "explanation": "Zisk $\\pi = TR - TC$. Maximum: $d\\pi/dQ = 0 \\Rightarrow MR - MC = 0 \\Rightarrow MR = MC$. Pro dokonale konkurenční firmu: $MR = P$, tedy $P = MC$. Pokud $MR > MC$: zvýšením výroby zisk roste. Pokud $MR < MC$: snížením výroby zisk roste. Optimum = bod $MR = MC$."
+    },
+    {
+      "id": 4,
+      "question": "Fixní náklady (FC) jsou 10 000 Kč, variabilní náklady (VC) na 100 jednotek jsou 15 000 Kč. Jaké jsou průměrné celkové náklady (AC) při výrobě 100 ks?",
+      "options": {
+        "A": "100 Kč",
+        "B": "150 Kč",
+        "C": "250 Kč",
+        "D": "200 Kč"
+      },
+      "correct": "C",
+      "explanation": "$TC = FC + VC = 10\\,000 + 15\\,000 = 25\\,000$ Kč. $AC = TC/Q = 25\\,000/100 = 250$ Kč. Průměrné fixní náklady: $AFC = 10\\,000/100 = 100$ Kč. Průměrné variabilní náklady: $AVC = 15\\,000/100 = 150$ Kč. $AC = AFC + AVC = 100 + 150 = 250$ Kč."
+    },
+    {
+      "id": 5,
+      "question": "Co jsou úspory z rozsahu (economies of scale) a kdy se projevují?",
+      "options": {
+        "A": "Pokles variabilních nákladů při zvýšení produkce v krátkém období",
+        "B": "V dlouhém období: pokles dlouhodobých průměrných nákladů ($LRAC$) s rostoucím výstupem — specializace, nedělitelné vstupy, množstevní slevy",
+        "C": "Zvýšení zisku při expanzi na zahraniční trhy",
+        "D": "Snížení fixních nákladů s výrobou více výrobkových linií"
+      },
+      "correct": "B",
+      "explanation": "Úspory z rozsahu (long run): $LRAC$ klesá s $Q$ — výroba je efektivnější ve větším objemu. Důvody: specializace práce, nedělitelné kapitálové vstupy (velký stroj nelze rozdělit), slevy za objem. Diseconomies of scale: $LRAC$ roste (koordinační náklady velkých organizací). Minimální eficientní měřítko (MES) = minimum $LRAC$."
+    },
+    {
+      "id": 6,
+      "question": "Kdy firma v krátkém období pokračuje ve výrobě i při záporném zisku?",
+      "options": {
+        "A": "Nikdy — při záporném zisku firma okamžitě ukončí výrobu",
+        "B": "Pokud $TR \\geq VC$ ($P \\geq AVC$) — firma pokrývá variabilní náklady a část fixních; zastavení výroby by znamenalo ztrátu rovnou celým FC",
+        "C": "Pokud $TR \\geq TC$ — firma nesmí prodávat pod průměrnými celkovými náklady",
+        "D": "Vždy — firma pokračuje dokud ji věřitelé nevyhlásí bankrot"
+      },
+      "correct": "B",
+      "explanation": "Bod uzavření (shutdown point): $P = AVC_{min}$. Pokud $P < AVC$: výrobou firma ztrácí více než FC → lepší okamžitě zastavit. Pokud $P \\geq AVC$: výrobou firma přispívá na úhradu FC → krátkodobě pokračovat a minimalizovat ztrátu. Dlouhodobě: pokud $P < AC_{min}$, firma odvětví opustí."
+    }
+  ]
+}
