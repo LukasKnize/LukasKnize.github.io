@@ -225,7 +225,7 @@ Router překládá soukromé IP adresy (192.168.x.x) na jednu veřejnou IP – t
 | **Optické vlákno (MM)** | 10–40 Gbit/s | < 550 m | Datová centra |
 | **WiFi 5 (802.11ac)** | až 3,5 Gbit/s | ~50 m indoor | Domácnost, kanceláře |
 | **WiFi 6 (802.11ax)** | až 9,6 Gbit/s | ~50 m | Moderní AP |
-| **5G** | až 20 Gbit/s | buňky | Mobilní internet |
+| **5G** | až 20 Gbit/s | stovky metrů až kilometr | Mobilní internet |
 
 ---
 
