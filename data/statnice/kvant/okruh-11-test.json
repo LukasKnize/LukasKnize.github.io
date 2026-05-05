@@ -1,0 +1,89 @@
+{
+  "title": "Projektové řízení: principy a nástroje",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co odlišuje projekt od opakované rutinní činnosti?",
+      "options": {
+        "A": "Projekt probíhá vždy déle než 6 měsíců a vyžaduje více než 5 pracovníků",
+        "B": "Projekt je dočasné, jedinečné úsilí s definovaným začátkem, koncem a cílem; má trojimperativ (čas, náklady, rozsah)",
+        "C": "Projekt musí být schválen externím zadavatelem a mít formální smlouvu",
+        "D": "Projekt se opakuje pravidelně, ale pokaždé s jinými zdroji"
+      },
+      "correct": "B",
+      "explanation": "Projekt je charakterizován trojimperativem (Iron Triangle): čas (deadline), náklady (budget) a rozsah/kvalita (scope). Je dočasný (má start a cíl), jedinečný (neopakuje se identicky) a cross-funkční (zapojuje různé týmy)."
+    },
+    {
+      "id": 2,
+      "question": "Co je WBS (Work Breakdown Structure)?",
+      "options": {
+        "A": "Ganttův diagram zobrazující časový průběh projektu",
+        "B": "Hierarchický rozklad projektu na pracovní balíčky (work packages) — základ pro plánování, odhad nákladů a přiřazení odpovědností",
+        "C": "Matice zobrazující závislosti mezi aktivitami projektu",
+        "D": "Dokument popisující rizika projektu a jejich zmírnění"
+      },
+      "correct": "B",
+      "explanation": "WBS rozkládá projekt hierarchicky: fáze → podprojekty → pracovní balíčky (nejnižší úroveň, measurable). Každý pracovní balíček má vlastníka, odhadnuté náklady a výstup. WBS je základ pro tvorbu harmonogramu a rozpočtu."
+    },
+    {
+      "id": 3,
+      "question": "Jaká je role projektového sponzora (project sponsor)?",
+      "options": {
+        "A": "Vedení každodenní operativy projektu a přidělování úkolů",
+        "B": "Poskytování zdrojů, prosazování projektu v organizaci a rozhodování o zásadních změnách rozsahu",
+        "C": "Technická implementace projektu a kontrola kvality výstupů",
+        "D": "Komunikace s externími dodavateli a správa smluv"
+      },
+      "correct": "B",
+      "explanation": "Sponzor (executive sponsor) je strategický patron projektu — zajišťuje finanční a politické krytí, odstraňuje překážky na top-management úrovni, schvaluje zásadní změny. Projektový manažer řídí každodenní chod; sponzor zasahuje eskalačně."
+    },
+    {
+      "id": 4,
+      "question": "Co zachycuje Ganttův diagram a jaké jsou jeho hlavní omezení?",
+      "options": {
+        "A": "Zachycuje závislosti zdrojů; omezením je neschopnost zobrazit časové milníky",
+        "B": "Zachycuje aktivity v čase (pruhový diagram); omezením je špatná viditelnost závislostí mezi aktivitami při větším počtu úkolů",
+        "C": "Zachycuje kritickou cestu; omezením je absence pravděpodobnostních odhadů",
+        "D": "Zachycuje nákladový průběh projektu; omezením je chybějící plán komunikace"
+      },
+      "correct": "B",
+      "explanation": "Ganttův diagram zobrazuje aktivity jako pruhy na časové ose — snadno čitelný, vhodný pro prezentaci. Omezení: při mnoha závislostech se stává nepřehledným, nezobrazuje přímou kritickou cestu ani pravděpodobnostní buffer."
+    },
+    {
+      "id": 5,
+      "question": "Co je EVM (Earned Value Management) a k čemu slouží?",
+      "options": {
+        "A": "Metoda pro výběr dodavatele dle ekonomické hodnoty nabídky",
+        "B": "Integrovaná metoda měření výkonnosti projektu kombinující rozsah, čas a náklady v jednom ukazateli; umožňuje predikci zbývajících nákladů a termínu",
+        "C": "Technika pro hodnocení přínosů projektu po jeho ukončení",
+        "D": "Nástroj pro řízení rizik pomocí monetárního ohodnocení scénářů"
+      },
+      "correct": "B",
+      "explanation": "EVM měří: PV (Planned Value), EV (Earned Value), AC (Actual Cost). Klíčové ukazatele: $SV = EV - PV$ (schedule variance), $CV = EV - AC$ (cost variance), $CPI = EV/AC$ (cost performance index). Umožňuje prognózu $EAC = BAC/CPI$."
+    },
+    {
+      "id": 6,
+      "question": "Jaký je rozdíl mezi agilním (Scrum) a tradičním (waterfall) projektovým řízením?",
+      "options": {
+        "A": "Waterfall je novější přístup vhodný pro IT projekty; Scrum se používá ve stavebnictví",
+        "B": "Waterfall plánuje celý rozsah předem a fáze probíhají sekvenčně; Scrum iterativně dodává funkcionality ve sprintech a přizpůsobuje plán dle zpětné vazby",
+        "C": "Scrum nevyžaduje žádné plánování; waterfall plánuje jen konec projektu",
+        "D": "V obou přístupech je rozsah fixní, liší se pouze délkou fází"
+      },
+      "correct": "B",
+      "explanation": "Waterfall: pevný rozsah, sekvenční fáze (požadavky → design → implementace → testování). Scrum: iterace (sprinty 1–4 týdny), průběžná dodávka hodnoty, rozsah se přizpůsobuje. Scrum je vhodný pro nejistá prostředí, waterfall pro dobře definované projekty."
+    },
+    {
+      "id": 7,
+      "question": "Co je registr rizik (risk register) v projektovém řízení?",
+      "options": {
+        "A": "Dokument obsahující seznam všech aktiv projektu a jejich pojistné hodnoty",
+        "B": "Strukturovaný seznam identifikovaných rizik s posouzením pravděpodobnosti, dopadu, vlastníka a plánů reakce",
+        "C": "Souhrnný přehled skutečných nákladů projektu rozčleněný dle typů rizik",
+        "D": "Matice kompetencí a odpovědností projektového týmu"
+      },
+      "correct": "B",
+      "explanation": "Registr rizik je živý dokument: identifikuje rizika, hodnotí je (pravděpodobnost × dopad = exposure), přiřazuje vlastníka, plánuje reakci (vyhnutí, přesun, zmírnění, akceptace). Aktualizuje se průběžně po celý životní cyklus projektu."
+    }
+  ]
+}

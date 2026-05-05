@@ -1,0 +1,77 @@
+{
+  "title": "Analýza závislosti kvalitativních znaků: kontingenční tabulky",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je kontingenční tabulka?",
+      "options": {
+        "A": "Tabulka zobrazující průměrné hodnoty kvantitativní proměnné pro různé kategorie",
+        "B": "Křížová tabulka zachycující četnosti kombinací hodnot dvou (nebo více) kategoricálních proměnných",
+        "C": "Tabulka korelačních koeficientů mezi všemi dvojicemi kvantitativních proměnných",
+        "D": "Tabulka rozdělení pravděpodobností diskrétní náhodné veličiny"
+      },
+      "correct": "B",
+      "explanation": "Kontingenční tabulka $r \\times c$: řádky = kategorie proměnné A, sloupce = kategorie proměnné B, buňky = pozorované četnosti $n_{ij}$. Marginální (okrajové) četnosti jsou řádkové a sloupcové součty. Testuje se závislost mezi A a B."
+    },
+    {
+      "id": 2,
+      "question": "Jak se počítají očekávané četnosti $E_{ij}$ v $\\chi^2$ testu nezávislosti?",
+      "options": {
+        "A": "$E_{ij} = n_{ij} / n$ (relativní frekvence)",
+        "B": "$E_{ij} = (n_{i\\cdot} \\cdot n_{\\cdot j}) / n$, kde $n_{i\\cdot}$ je řádkový součet, $n_{\\cdot j}$ sloupcový součet a $n$ celkový počet",
+        "C": "$E_{ij} = n / (r \\cdot c)$ (rovnoměrné rozdělení přes buňky)",
+        "D": "$E_{ij} = \\sqrt{n_{i\\cdot} \\cdot n_{\\cdot j}}$"
+      },
+      "correct": "B",
+      "explanation": "$E_{ij} = \\frac{n_{i\\cdot} \\cdot n_{\\cdot j}}{n}$ — očekávaná četnost za předpokladu nezávislosti (pravděpodobnost kombinace = součin marginálních pravděpodobností). Testová statistika: $\\chi^2 = \\sum_{i,j} \\frac{(O_{ij} - E_{ij})^2}{E_{ij}}$ s $(r-1)(c-1)$ stupni volnosti."
+    },
+    {
+      "id": 3,
+      "question": "Kontingenční tabulka 2×2 má celkový rozsah $n = 200$. Jedna buňka má $E_{ij} = 4$. Je $\\chi^2$ test přiměřený?",
+      "options": {
+        "A": "Ano, protože celkový rozsah $n = 200$ je dostatečně velký",
+        "B": "Ne, podmínka $E_{ij} \\geq 5$ pro všechny buňky není splněna — doporučuje se Fisherův exaktní test",
+        "C": "Ano, pokud ostatní buňky mají $E_{ij} > 10$",
+        "D": "Ne, $\\chi^2$ test se pro tabulky 2×2 nikdy nepoužívá"
+      },
+      "correct": "B",
+      "explanation": "Podmínka pro $\\chi^2$ test: všechny $E_{ij} \\geq 5$ (někteří autoři: alespoň 80 % buněk $\\geq 5$ a žádná $< 1$). Pokud není splněna: Fisherův exaktní test (pro 2×2 tabulky) nebo sloučení kategorií. Problém je v tom, že $\\chi^2$ aproximace je nepřesná pro malé $E_{ij}$."
+    },
+    {
+      "id": 4,
+      "question": "Co měří Cramérovo V v analýze kontingenčních tabulek?",
+      "options": {
+        "A": "Statistickou významnost závislosti (p-hodnotu) $\\chi^2$ testu",
+        "B": "Sílu asociace (effect size) mezi dvěma kategoricálními proměnnými; hodnota v $[0, 1]$",
+        "C": "Počet stupňů volnosti $\\chi^2$ testu",
+        "D": "Podíl vysvětlené variability v lineárním regresním modelu"
+      },
+      "correct": "B",
+      "explanation": "Cramérovo $V = \\sqrt{\\chi^2 / (n \\cdot \\min(r-1, c-1))}$. Nabývá hodnot $[0,1]$: 0 = nezávislost, 1 = perfektní asociace. Oproti $\\chi^2$ (závisí na $n$) je $V$ srovnatelné napříč tabulkami různého rozsahu. Konvence: 0,1 = slabá, 0,3 = střední, 0,5+ = silná asociace."
+    },
+    {
+      "id": 5,
+      "question": "Co je relativní riziko (RR) a odds ratio (OR) v 2×2 kontingenčních tabulkách?",
+      "options": {
+        "A": "RR i OR jsou totožné míry síly asociace; liší se pouze výpočtem",
+        "B": "RR = poměr pravděpodobností výsledku v exponované vs. neexponované skupině; OR = poměr šancí — vhodný pro retrospektivní studie (case-control), kde RR nelze přímo spočítat",
+        "C": "RR se používá pro ordinální proměnné; OR pro nominální",
+        "D": "RR měří absolutní riziko; OR měří relativní riziko po korekci na věk"
+      },
+      "correct": "B",
+      "explanation": "$RR = P(\\text{výsledek}|\\text{exp}) / P(\\text{výsledek}|\\text{neexp})$. $OR = \\frac{n_{11} \\cdot n_{22}}{n_{12} \\cdot n_{21}}$. Pro vzácné nemoci $OR \\approx RR$. OR lze vždy spočítat v case-control studiích (kde RR nelze), proto je standardní mírou v epidemiologii."
+    },
+    {
+      "id": 6,
+      "question": "Výzkumník zjistil, že $\\chi^2 = 8{,}5$ pro tabulku 3×4 (tedy 3 řádky, 4 sloupce). Kolik stupňů volnosti má $\\chi^2$ rozdělení a jak posoudí výsledek na $\\alpha = 0{,}05$?",
+      "options": {
+        "A": "$df = 12$; kritická hodnota $\\chi^2_{12; 0{,}05} = 21{,}03$ → nezamítáme $H_0$",
+        "B": "$df = 6$; kritická hodnota $\\chi^2_{6; 0{,}05} = 12{,}59$ → nezamítáme $H_0$",
+        "C": "$df = 6$; kritická hodnota $\\chi^2_{6; 0{,}05} = 12{,}59$ → zamítáme $H_0$",
+        "D": "$df = 11$; kritická hodnota $\\chi^2_{11; 0{,}05} = 19{,}68$ → nezamítáme $H_0$"
+      },
+      "correct": "B",
+      "explanation": "$df = (r-1)(c-1) = (3-1)(4-1) = 2 \\cdot 3 = 6$. Kritická hodnota $\\chi^2_{6; 0{,}05} = 12{,}59$. Protože $\\chi^2 = 8{,}5 < 12{,}59$, nezamítáme $H_0$ o nezávislosti proměnných na hladině 5 %."
+    }
+  ]
+}

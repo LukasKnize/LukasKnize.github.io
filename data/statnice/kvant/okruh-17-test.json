@@ -1,0 +1,89 @@
+{
+  "title": "Testování statistických hypotéz: parametrické a neparametrické testy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je nulová hypotéza $H_0$ a alternativní hypotéza $H_1$?",
+      "options": {
+        "A": "$H_0$ vždy tvrdí, že parametr je nulový; $H_1$ tvrdí, že je nenulový",
+        "B": "$H_0$ je výchozí tvrzení (status quo, typicky 'žádný efekt'); $H_1$ je hypotéza, jejíž platnost chceme prokázat",
+        "C": "$H_0$ se zamítá vždy, pokud p-hodnota < 0,05; $H_1$ se přijímá jako pravdivá",
+        "D": "$H_0$ a $H_1$ jsou ekvivalentní alternativy s rovnou pravděpodobností"
+      },
+      "correct": "B",
+      "explanation": "$H_0$ vyjadřuje status quo (např. $\\mu_1 = \\mu_2$, korelace = 0). $H_1$ je alternativa (např. $\\mu_1 \\neq \\mu_2$). Testování shromažďuje důkazy PROTI $H_0$. Nezamítnutí $H_0$ neznamená, že je $H_0$ pravdivá — jen že data neposkytují dostatečný důkaz pro $H_1$."
+    },
+    {
+      "id": 2,
+      "question": "Co je chyba I. druhu (typ I error) a jak ji ovládáme?",
+      "options": {
+        "A": "Nezamítnutí $H_0$, když je $H_0$ skutečně nepravdivá; ovládáme ji hladinou testu $\\alpha$",
+        "B": "Zamítnutí $H_0$, když je $H_0$ skutečně pravdivá; pravděpodobnost chyby I. druhu = hladina testu $\\alpha$",
+        "C": "Přijetí $H_1$, která je pravdivá; ovládáme ji silou testu $(1-\\beta)$",
+        "D": "Chyba výpočtu testové statistiky; ovládáme ji volbou správné distribuce"
+      },
+      "correct": "B",
+      "explanation": "Chyba I. druhu (false positive): zamítáme $H_0$, přestože je pravdivá. $P(\\text{chyba I}) = \\alpha$ (hladina testu). Chyba II. druhu (false negative): nezamítáme $H_0$, přestože je nepravdivá. $P(\\text{chyba II}) = \\beta$. Síla testu = $1 - \\beta$."
+    },
+    {
+      "id": 3,
+      "question": "Výzkumník testuje $H_0: \\mu = 50$ oproti $H_1: \\mu \\neq 50$ na hladině $\\alpha = 0{,}05$ a dostane p-hodnotu = 0,03. Jaký závěr udělá?",
+      "options": {
+        "A": "Nezamítá $H_0$, protože p-hodnota > 0,01",
+        "B": "Zamítá $H_0$ na hladině 5 %, protože $p = 0{,}03 < \\alpha = 0{,}05$",
+        "C": "Přijímá $H_1$ jako absolutně pravdivou",
+        "D": "Test je neprůkazný, protože p-hodnota není menší než 0,01"
+      },
+      "correct": "B",
+      "explanation": "p-hodnota = pravděpodobnost získat pozorované (nebo extrémnější) výsledky za předpokladu, že $H_0$ je pravdivá. Pokud $p < \\alpha$: zamítáme $H_0$. Zde $p = 0{,}03 < 0{,}05$, tedy zamítáme $H_0$ na 5% hladině. Výsledek je statisticky významný na $\\alpha = 0{,}05$."
+    },
+    {
+      "id": 4,
+      "question": "Kdy se používá dvouvýběrový t-test (nezávislé výběry) a jaký je jeho předpoklad?",
+      "options": {
+        "A": "Pro porovnání průměrů dvou závislých (spárovaných) výběrů; předpoklady: normalita a stejné rozptyly",
+        "B": "Pro porovnání průměrů dvou nezávislých skupin; předpoklady: (přibližná) normalita, nezávislost výběrů; Welchova varianta nevyžaduje stejné rozptyly",
+        "C": "Pro testování, zda průměr jedné skupiny se rovná konstantě; předpoklad: $n > 30$",
+        "D": "Pro porovnání mediánů dvou skupin; nevyžaduje žádné předpoklady o rozdělení"
+      },
+      "correct": "B",
+      "explanation": "Dvouvýběrový t-test: $H_0: \\mu_1 = \\mu_2$. Klasická verze předpokládá $\\sigma_1^2 = \\sigma_2^2$ (Studentův t-test). Welchova varianta (doporučená) nevyžaduje rovnost rozptylů — upravuje stupně volnosti (Welch-Satterthwaite). Předpoklady: nezávislost, (přibližná) normalita."
+    },
+    {
+      "id": 5,
+      "question": "Kdy je vhodné použít Mann-Whitney U test místo dvouvýběrového t-testu?",
+      "options": {
+        "A": "Vždy — Mann-Whitney je přesnější než t-test",
+        "B": "Když data nejsou normálně rozdělena nebo jsou ordinální; Mann-Whitney testuje, zda jedna skupina tenduje mít vyšší hodnoty (mediány) než druhá",
+        "C": "Pouze pro výběry s $n > 100$; pro malé výběry je t-test robustnější",
+        "D": "Když je znám populační rozptyl $\\sigma$"
+      },
+      "correct": "B",
+      "explanation": "Mann-Whitney U test: neparametrická alternativa k dvouvýběrovému t-testu. Netestuje průměry, ale pořadí hodnot (testuje, zda $P(X > Y) = 0{,}5$). Vhodný pro: ordinální data, silně nenormální rozdělení, přítomnost outlierů. Pro normální data má t-test větší sílu."
+    },
+    {
+      "id": 6,
+      "question": "Co testuje chi-kvadrát test dobré shody ($\\chi^2$ goodness-of-fit)?",
+      "options": {
+        "A": "Zda dvě nezávislé skupiny mají stejné rozložení četností",
+        "B": "Zda pozorované četnosti odpovídají očekávaným četnostem dle předpokládaného rozdělení: $\\chi^2 = \\sum (O_i - E_i)^2/E_i$",
+        "C": "Zda existuje lineární korelace mezi dvěma kvantitativními proměnnými",
+        "D": "Zda rozptyl výběru odpovídá předpokládanému populačnímu rozptylu"
+      },
+      "correct": "B",
+      "explanation": "$\\chi^2 = \\sum_{i=1}^k \\frac{(O_i - E_i)^2}{E_i}$ má přibližně $\\chi^2$ rozdělení s $k-1-p$ stupni volnosti ($p$ = počet odhadnutých parametrů). Podmínka: $E_i \\geq 5$ pro každou kategorii. Testuje shodu dat s daným modelem (normální, Poissonovo, binomické...)."
+    },
+    {
+      "id": 7,
+      "question": "Co je ANOVA (Analysis of Variance) a jakou hypotézu testuje?",
+      "options": {
+        "A": "Test pro porovnání rozptylů dvou výběrů: $H_0: \\sigma_1^2 = \\sigma_2^2$",
+        "B": "Test pro porovnání průměrů $k \\geq 2$ skupin: $H_0: \\mu_1 = \\mu_2 = \\ldots = \\mu_k$ (všechny průměry jsou stejné)",
+        "C": "Test pro porovnání mediánů více skupin bez předpokladu normality",
+        "D": "Test korelace mezi více proměnnými pomocí variančního rozkladu"
+      },
+      "correct": "B",
+      "explanation": "Jednofaktorová ANOVA: $H_0: \\mu_1 = \\ldots = \\mu_k$. Rozloží celkovou variabilitu na variabilitu mezi skupinami ($SS_{between}$) a uvnitř skupin ($SS_{within}$). $F = MS_{between}/MS_{within}$. Zamítnutí $H_0$ říká, že alespoň jedna skupina se liší — post-hoc testy (Tukey, Bonferroni) upřesní kde."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "title": "Náhodný jev, náhodná veličina, pravděpodobnost a rozdělení",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaká je klasická (Laplaceova) definice pravděpodobnosti?",
+      "options": {
+        "A": "$P(A) = \\lim_{n \\to \\infty} n_A / n$, kde $n_A$ je počet výskytů jevu A v $n$ pokusech",
+        "B": "$P(A) = m / n$, kde $m$ je počet příznivých výsledků a $n$ celkový počet stejně možných výsledků",
+        "C": "$P(A)$ je axiomaticky definována jako hodnota v $[0,1]$ splňující Kolmogorovy axiomy",
+        "D": "$P(A) = 1 - P(\\bar{A})$, kde $\\bar{A}$ je doplněk jevu $A$"
+      },
+      "correct": "B",
+      "explanation": "Klasická definice: $P(A) = m/n$ — počet příznivých výsledků dělený celkovým počtem stejně možných výsledků. Předpoklad: stejná pravděpodobnost každého elementárního jevu. Limitací je, že předpokládá konečný počet výsledků."
+    },
+    {
+      "id": 2,
+      "question": "Co říká věta o úplné pravděpodobnosti?",
+      "options": {
+        "A": "$P(A \\cap B) = P(A) \\cdot P(B)$ pro nezávislé jevy",
+        "B": "$P(A) = \\sum_{i} P(A | B_i) \\cdot P(B_i)$, kde $\\{B_i\\}$ tvoří úplný systém jevů",
+        "C": "$P(A | B) = P(B | A) \\cdot P(A) / P(B)$",
+        "D": "$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$"
+      },
+      "correct": "B",
+      "explanation": "Věta o úplné pravděpodobnosti: pokud $\\{B_1, B_2, \\ldots, B_k\\}$ je úplný systém jevů (vzájemně se vylučují a pokrývají celý prostor), pak $P(A) = \\sum_{i=1}^k P(A|B_i) \\cdot P(B_i)$. Základ pro Bayesovu větu."
+    },
+    {
+      "id": 3,
+      "question": "Náhodná veličina $X$ má normální rozdělení $N(\\mu, \\sigma^2)$. Jaký je vztah mezi střední hodnotou, mediánem a modem?",
+      "options": {
+        "A": "Střední hodnota > medián > modus (pravostranně zešikmené)",
+        "B": "Střední hodnota = medián = modus = $\\mu$ (symetrické rozdělení)",
+        "C": "Medián < střední hodnota < modus",
+        "D": "Vztah závisí na hodnotě $\\sigma^2$"
+      },
+      "correct": "B",
+      "explanation": "Normální rozdělení je symetrické kolem $\\mu$. Proto střední hodnota = medián = modus = $\\mu$. Hustota pravděpodobnosti: $f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}$. Rozptyl: $D(X) = \\sigma^2$."
+    },
+    {
+      "id": 4,
+      "question": "Co vyjadřuje rozptyl $D(X)$ náhodné veličiny $X$?",
+      "options": {
+        "A": "Průměrnou hodnotu veličiny $X$",
+        "B": "Průměrnou kvadratickou odchylku hodnot od střední hodnoty: $D(X) = E[(X - E[X])^2]$",
+        "C": "Maximální možnou hodnotu veličiny $X$",
+        "D": "Pravděpodobnost, že $X$ leží v intervalu $\\pm 1$ od průměru"
+      },
+      "correct": "B",
+      "explanation": "$D(X) = E[(X - \\mu)^2] = E[X^2] - (E[X])^2$. Rozptyl měří rozptýlenost rozdělení. Směrodatná odchylka $\\sigma = \\sqrt{D(X)}$ je ve stejných jednotkách jako $X$. Pro nezávislé veličiny: $D(X+Y) = D(X) + D(Y)$."
+    },
+    {
+      "id": 5,
+      "question": "Která z následujících nerovností dává universální odhad pravděpodobnosti odchylky od průměru?",
+      "options": {
+        "A": "Centrální limitní věta: $P(|\\bar{X} - \\mu| > \\varepsilon) \\to 0$",
+        "B": "Čebyševova nerovnost: $P(|X - \\mu| \\geq k\\sigma) \\leq 1/k^2$ pro libovolné rozdělení s konečným rozptylem",
+        "C": "Markovova nerovnost: $P(X \\geq a) \\leq E[X]/a$ pro nezápornou veličinu",
+        "D": "Jensenova nerovnost: $E[g(X)] \\geq g(E[X])$ pro konvexní $g$"
+      },
+      "correct": "B",
+      "explanation": "Čebyševova nerovnost platí pro libovolné rozdělení (jen nutný konečný rozptyl): $P(|X-\\mu| \\geq k\\sigma) \\leq 1/k^2$. Pro $k=2$: max 25 % hodnot leží dále než $2\\sigma$ od průměru. Pro normální rozdělení je skutečnost lepší (cca 4,6 %)."
+    },
+    {
+      "id": 6,
+      "question": "Diskrétní náhodná veličina $X$ nabývá hodnot 1, 2, 3 s pravděpodobnostmi 0,2; 0,5; 0,3. Jaká je její střední hodnota $E[X]$?",
+      "options": {
+        "A": "1,8",
+        "B": "2,0",
+        "C": "2,1",
+        "D": "2,5"
+      },
+      "correct": "C",
+      "explanation": "$E[X] = 1 \\cdot 0{,}2 + 2 \\cdot 0{,}5 + 3 \\cdot 0{,}3 = 0{,}2 + 1{,}0 + 0{,}9 = 2{,}1$."
+    },
+    {
+      "id": 7,
+      "question": "Co říká centrální limitní věta (CLV)?",
+      "options": {
+        "A": "Součet libovolně závislých náhodných veličin má vždy normální rozdělení",
+        "B": "Součet (průměr) dostatečně velkého počtu nezávislých stejně rozdělených veličin s konečným rozptylem se přibližuje normálnímu rozdělení",
+        "C": "Každá náhodná veličina s konečnou střední hodnotou má normální rozdělení",
+        "D": "Výběrový průměr je vždy rovný populačnímu průměru"
+      },
+      "correct": "B",
+      "explanation": "CLV: $\\bar{X}_n = \\frac{1}{n}\\sum X_i \\xrightarrow{d} N(\\mu, \\sigma^2/n)$ pro $n \\to \\infty$. Předpoklady: nezávislost, stejné rozdělení, konečný rozptyl. Vysvětluje, proč je normální rozdělení tak časté — mnoho veličin je součtem mnoha malých vlivů."
+    },
+    {
+      "id": 8,
+      "question": "Náhodná veličina $X \\sim \\text{Exp}(\\lambda)$ má střední hodnotu 4 minuty. Jaká je pravděpodobnost, že $X > 4$ minuty?",
+      "options": {
+        "A": "0,50",
+        "B": "$1/e \\approx 0{,}368$",
+        "C": "$1 - 1/e \\approx 0{,}632$",
+        "D": "0,25"
+      },
+      "correct": "B",
+      "explanation": "$E[X] = 1/\\lambda = 4$, tedy $\\lambda = 0{,}25$. $P(X > t) = e^{-\\lambda t}$. $P(X > 4) = e^{-0{,}25 \\cdot 4} = e^{-1} \\approx 0{,}368$. Exponenciální rozdělení má vlastnost bez paměti — základ pro M/M/1 fronty."
+    }
+  ]
+}

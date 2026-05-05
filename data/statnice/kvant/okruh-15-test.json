@@ -1,0 +1,89 @@
+{
+  "title": "Základní statistické charakteristiky, výběrové techniky a průzkumová analýza dat (EDA)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je rozdíl mezi výběrovým průměrem $\\bar{x}$ a populačním průměrem $\\mu$?",
+      "options": {
+        "A": "$\\bar{x}$ a $\\mu$ jsou vždy totožné, pokud je výběr dostatečně velký",
+        "B": "$\\mu$ je parametr celé populace (neznámý); $\\bar{x} = \\frac{1}{n}\\sum x_i$ je statistika vypočtená z výběru — nestranný odhad $\\mu$",
+        "C": "$\\bar{x}$ je vždy větší než $\\mu$ kvůli výběrovému zkreslení",
+        "D": "$\\mu$ se počítá z výběru; $\\bar{x}$ je teoretická hodnota populace"
+      },
+      "correct": "B",
+      "explanation": "$\\mu$ je neznámý populační parametr. $\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i$ je nestranný odhad $\\mu$ (tzn. $E[\\bar{x}] = \\mu$). Výběrový rozptyl $s^2 = \\frac{1}{n-1}\\sum(x_i - \\bar{x})^2$ je nestranný odhad $\\sigma^2$ (dělitel $n-1$, ne $n$)."
+    },
+    {
+      "id": 2,
+      "question": "Co je medián a kdy je vhodnější než průměr?",
+      "options": {
+        "A": "Medián je průměr prostředních 50 % hodnot; vhodný pro symetrická rozdělení",
+        "B": "Medián je hodnota dělící seřazená data na dvě stejně velké poloviny; robustní vůči odlehlým hodnotám (outlierům) — vhodný pro zešikmená rozdělení nebo data s extrémy",
+        "C": "Medián je totožný s průměrem u všech unimodálních rozdělení",
+        "D": "Medián je nejvyšší frekvence v datovém souboru"
+      },
+      "correct": "B",
+      "explanation": "Medián: prostřední hodnota v seřazeném souboru (pro lichý $n$) nebo průměr dvou prostředních (pro sudý $n$). Robustní vůči extrémním hodnotám — proto se používá pro příjmy, ceny nemovitostí, doby přežití. Průměr je citlivý na outliers."
+    },
+    {
+      "id": 3,
+      "question": "Jaký je rozdíl mezi prostým náhodným výběrem a stratifikovaným výběrem?",
+      "options": {
+        "A": "Prostý náhodný výběr vybírá cílově ze skupin; stratifikovaný výběr výbírá bez jakékoliv struktury",
+        "B": "Prostý náhodný výběr: každý prvek má stejnou šanci výběru bez ohledu na skupiny. Stratifikovaný: populace se rozdělí do homogenních vrstev a z každé vrstvy se vybere proporcionální podvýběr",
+        "C": "Stratifikovaný výběr je méně přesný než prostý, ale levnější",
+        "D": "Prostý náhodný výběr vyžaduje seznam populace; stratifikovaný ne"
+      },
+      "correct": "B",
+      "explanation": "Stratifikovaný výběr zajišťuje zastoupení každé skupiny (pohlaví, věk, region). Snižuje výběrovou chybu pokud jsou vrstvy homogenní uvnitř a heterogenní mezi sebou. Klusterový výběr naopak vybírá celé shluky — efektivnější pro velké geografické oblasti."
+    },
+    {
+      "id": 4,
+      "question": "Co zobrazuje krabicový graf (box plot) a co jsou 'vousy' (whiskers)?",
+      "options": {
+        "A": "Krabice = průměr ± 1 SD; vousy = minimum a maximum",
+        "B": "Krabice = IQR (Q1 až Q3), linka uvnitř = medián; vousy sahají k nejextrémnějším hodnotám v rámci 1,5×IQR od kvartilů; body za vousy jsou outlieři",
+        "C": "Krabice = 95% interval spolehlivosti průměru; vousy = 99% interval",
+        "D": "Krabice = frekvenční distribuce dat; vousy = chybové úsečky"
+      },
+      "correct": "B",
+      "explanation": "Box plot: Q1 (dolní kvartil), Q2 (medián), Q3 (horní kvartil). IQR = Q3 - Q1. Vousy: $Q1 - 1{,}5 \\cdot IQR$ a $Q3 + 1{,}5 \\cdot IQR$ (nebo k min/max pokud jsou blíže). Hodnoty za vousy = outlieři (zobrazeny jako body). Kompaktní způsob detekce symetrie a odlehlých hodnot."
+    },
+    {
+      "id": 5,
+      "question": "Co je šikmost (skewness) a jak ji lze interpretovat?",
+      "options": {
+        "A": "Šikmost měří špičatost (height of peak) rozdělení oproti normálnímu",
+        "B": "Kladná šikmost: dlouhý pravý ocas (průměr > medián > modus); záporná: dlouhý levý ocas (průměr < medián < modus)",
+        "C": "Šikmost je vždy v intervalu $[-1, 1]$ pro reálná data",
+        "D": "Šikmost nula znamená symetrické rozdělení, ale to neimplikuje normalitu"
+      },
+      "correct": "B",
+      "explanation": "Šikmost = $E[(X-\\mu)^3]/\\sigma^3$. Pravostranná šikmost (positive skew): dlouhý pravý ocas, průměr > medián (příjmy, ceny). Levostranná (negative skew): dlouhý levý ocas, průměr < medián. Symetrická rozdělení mají šikmost = 0."
+    },
+    {
+      "id": 6,
+      "question": "Jaký je účel průzkumové analýzy dat (EDA) dle Tukeyho přístupu?",
+      "options": {
+        "A": "Testovat předem definované hypotézy pomocí parametrických testů",
+        "B": "Vizuálně a deskriptivně prozkoumat data před formálním modelováním — odhalit vzory, anomálie, rozdělení a vztahy bez předpokladů",
+        "C": "Automatizovat výběr nejlepšího statistického modelu pro predikci",
+        "D": "Validovat výsledky regresní analýzy pomocí reziduálních grafů"
+      },
+      "correct": "B",
+      "explanation": "EDA (Tukey, 1977): data-driven přístup — nejprve pozoruj, pak modeluj. Nástroje: histogramy, box ploty, scatter ploty, korelační matice, Q-Q ploty. Cílem je porozumět datům (distribuce, outliers, chybějící hodnoty, vztahy) dříve než se aplikují formální testy."
+    },
+    {
+      "id": 7,
+      "question": "Data: 2, 4, 4, 4, 5, 5, 7, 9. Jaké jsou průměr, medián a modus?",
+      "options": {
+        "A": "průměr=5, medián=4, modus=5",
+        "B": "průměr=5, medián=4,5, modus=4",
+        "C": "průměr=4,5, medián=5, modus=4",
+        "D": "průměr=5, medián=5, modus=4"
+      },
+      "correct": "B",
+      "explanation": "Průměr: $(2+4+4+4+5+5+7+9)/8 = 40/8 = 5$. Medián (8 hodnot): průměr 4. a 5. hodnoty = $(4+5)/2 = 4{,}5$. Modus: 4 (vyskytuje se 3×). Průměr = 5, medián = 4,5, modus = 4."
+    }
+  ]
+}

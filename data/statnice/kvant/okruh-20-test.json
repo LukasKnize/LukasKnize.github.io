@@ -1,0 +1,89 @@
+{
+  "title": "Analýza časových řad",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Na jaké složky se klasicky rozkládá časová řada?",
+      "options": {
+        "A": "Průměr, rozptyl, šikmost a špičatost",
+        "B": "Trend ($T$), sezónní složka ($S$), cyklická složka ($C$) a náhodná (reziduální) složka ($E$)",
+        "C": "Autokorelace, parciální autokorelace, integrace a klouzavý průměr",
+        "D": "Drift, sezóna, intervence a heteroskedasticita"
+      },
+      "correct": "B",
+      "explanation": "Klasický rozklad: $Y_t = T_t + S_t + C_t + E_t$ (aditivní model) nebo $Y_t = T_t \\cdot S_t \\cdot C_t \\cdot E_t$ (multiplikativní). Trend: dlouhodobý směr. Sezóna: pravidelné výkyvy s pevnou periodou. Cyklus: nepravidelné dlouhodobé vlny. Reziduum: nepravidelná složka."
+    },
+    {
+      "id": 2,
+      "question": "Co je stacionarita časové řady a proč je důležitá?",
+      "options": {
+        "A": "Řada bez sezónní složky; důležitá pro krátkodobé předpovědi",
+        "B": "Řada s konstantní střední hodnotou, rozptylem a autokovariancí v čase; většina modelů (ARMA) vyžaduje stacionaritu — nestacionární řady se diferencují",
+        "C": "Řada s lineárním trendem; vhodná pro OLS regresi v čase",
+        "D": "Řada s monotonně klesající autokorelací; nevyžaduje žádné transformace"
+      },
+      "correct": "B",
+      "explanation": "Slabá stacionarita: $E[Y_t] = \\mu$ (konstantní), $\\text{Var}(Y_t) = \\sigma^2$ (konstantní), $\\text{Cov}(Y_t, Y_{t-k})$ závisí jen na $k$ (ne na $t$). ARMA modely vyžadují stacionaritu. Nestacionární řady (trend, jednotkový kořen) se transformují diferencováním ($\\Delta Y_t = Y_t - Y_{t-1}$)."
+    },
+    {
+      "id": 3,
+      "question": "Co znamená, že časová řada je ARIMA(1,1,0)?",
+      "options": {
+        "A": "Model obsahuje 1 klouzavý průměr, 1. diference a bez autoregrese",
+        "B": "Model po jednom diferencování (d=1) je AR(1): aktuální hodnota závisí na jedné zpožděné hodnotě; MA složka chybí",
+        "C": "Model má 1 sezónní složku, 1. řád integrace a 0 reziduálních členů",
+        "D": "Model je stacionární s jedním exogenním prediktorem a bez zpožděných reziduí"
+      },
+      "correct": "B",
+      "explanation": "ARIMA($p$, $d$, $q$): $p$ = řád AR složky, $d$ = počet diferencování, $q$ = řád MA složky. ARIMA(1,1,0): po jednom diferencování (→ stacionarita) závisí $\\Delta Y_t$ na $\\Delta Y_{t-1}$ (AR(1)). Výběr $p, d, q$ pomocí ACF/PACF grafů a informačních kritérií (AIC, BIC)."
+    },
+    {
+      "id": 4,
+      "question": "Jak se liší ACF (autokorelační funkce) a PACF (parciální autokorelační funkce)?",
+      "options": {
+        "A": "ACF měří korelaci s jedním zpožděním; PACF s libovolným počtem zpoždění",
+        "B": "ACF měří korelaci $Y_t$ s $Y_{t-k}$ zahrnující vliv všech mezilehlých zpoždění; PACF měří přímý vliv $Y_{t-k}$ po eliminaci vlivu $Y_{t-1}, \\ldots, Y_{t-k+1}$",
+        "C": "ACF a PACF jsou identické pro stacionární řady",
+        "D": "ACF slouží pro výběr $q$; PACF pro výběr $d$ v ARIMA modelu"
+      },
+      "correct": "B",
+      "explanation": "ACF v labu $k$ zahrnuje nepřímé vlivy přes mezilehlá zpoždění. PACF eliminuje tyto nepřímé vlivy — měří čistý efekt $Y_{t-k}$. Pravidlo: AR($p$) → PACF se utne po $p$ lagách; MA($q$) → ACF se utne po $q$ lagách. Obojí klesá postupně → ARMA."
+    },
+    {
+      "id": 5,
+      "question": "Jaká je metoda exponenciálního vyrovnávání (Holt-Winters) a kdy se používá?",
+      "options": {
+        "A": "Metoda průměrování za posledních $k$ period; vhodná pro řady bez trendu a sezóny",
+        "B": "Metoda přidělující exponenciálně klesající váhy historickým hodnotám; Holt přidává trend, Holt-Winters přidává sezónu — vhodné pro předpovědi při plynulém trendu a/nebo sezóně",
+        "C": "Metoda rozkladu řady na deterministický trend a stochastické reziduum pomocí regrese",
+        "D": "Metoda spektrální analýzy pro detekci skrytých period v řadě"
+      },
+      "correct": "B",
+      "explanation": "Jednoduché exp. vyrovnávání: $\\hat{Y}_{t+1} = \\alpha Y_t + (1-\\alpha)\\hat{Y}_t$. $\\alpha \\in (0,1)$: vyšší $\\alpha$ = větší váha na nová data. Holt: přidává složku trendu. Holt-Winters: přidává sezónní složku (aditivní nebo multiplikativní). Výhodné pro krátkodobé předpovědi bez nutnosti specifikovat ARIMA strukturu."
+    },
+    {
+      "id": 6,
+      "question": "Co je testování jednotkového kořene (unit root test) a proč je důležité?",
+      "options": {
+        "A": "Test symetrie rozdělení řady; důležité pro volbu parametrického vs. neparametrického modelu",
+        "B": "Test, zda řada je nestacionární (náhodná procházka) — pokud ano, diferencování dá stacionární řadu; předchází falešné regresi mezi nesouvisejícími trendy",
+        "C": "Test normality reziduí regresního modelu na časové řadě",
+        "D": "Test sezónnosti pomocí srovnání rozptylů v různých ročních obdobích"
+      },
+      "correct": "B",
+      "explanation": "Dickey-Fuller test: $H_0$: řada má jednotkový kořen (= nestacionární, I(1)). Důvod: regrese dvou nesouvisejících náhodných procházek dává zdánlivě signifikantní výsledky (spurious regression). Pokud $H_0$ nezamítáme, diferencujeme. Kointegrace = výjimka (nestacionární řady mohou být modelovány společně)."
+    },
+    {
+      "id": 7,
+      "question": "Sezónní časová řada má periodu $s = 12$ (měsíční data). Jaký model zahrnuje sezónnost v rámci ARIMA?",
+      "options": {
+        "A": "ARIMA(p, d, q) s vysokým $q = 12$",
+        "B": "SARIMA$(p, d, q)(P, D, Q)_{12}$ — sezonní ARIMA přidávající sezónní AR, diferencování a MA složky s periodou 12",
+        "C": "ARIMA(p, d, q) po předchozím odečtení sezónní složky Holt-Wintersovým vyrovnáváním",
+        "D": "ARIMA(12, 1, 12) kde parametry odpovídají délce sezóny"
+      },
+      "correct": "B",
+      "explanation": "SARIMA$(p,d,q)(P,D,Q)_s$: nesezónní část $(p,d,q)$ + sezónní část $(P,D,Q)_s$. Pro měsíční data $s=12$: sezónní diferencování $D=1$ odstraní sezónní trend. Sezónní AR/MA složky zachycují vzory opakující se každých 12 period. Box-Jenkins metodologie: identifikace → odhad → diagnostika → prognóza."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Teorie omezení a lidský činitel v projektovém řízení",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaký je základní princip Teorie omezení (TOC) dle Goldratta?",
+      "options": {
+        "A": "Optimalizovat každý zdroj projektu samostatně pro maximální efektivitu celku",
+        "B": "Výkon systému je limitován jeho nejslabším článkem (bottleneckem); zlepšení mimo bottleneck nepomáhá celkovému výkonu",
+        "C": "Přidat více zdrojů ke kritické aktivitě vždy urychlí projekt lineárně",
+        "D": "Eliminovat veškeré časové rezervy (buffery) pro zvýšení rychlosti průtoku"
+      },
+      "correct": "B",
+      "explanation": "TOC: systém je silný jen jako jeho nejslabší článek. Goldrattův 5-krokový proces: 1. Identifikuj omezení, 2. Využij ho naplno, 3. Podřiď vše ostatní omezení, 4. Posil omezení, 5. Opakuj. Zlepšení mimo bottleneck nevede ke zlepšení celkového průtoku."
+    },
+    {
+      "id": 2,
+      "question": "Co je CCPM (Critical Chain Project Management) a jak se liší od CPM?",
+      "options": {
+        "A": "CCPM ignoruje sdílení zdrojů a plánuje aktivity čistě dle závislostí jako CPM",
+        "B": "CCPM explicitně řeší konflikty zdrojů, odstraňuje individuální rezervy aktivit a agreguje je do projektového bufferu na konci kritického řetězce",
+        "C": "CCPM zkracuje kritickou cestu eliminací aktivit s nízkou prioritou",
+        "D": "CCPM je agilní metodika odvozená od Scrumu pro výzkumné projekty"
+      },
+      "correct": "B",
+      "explanation": "CCPM (Goldratt): místo rezerv u každé aktivity ('student syndrome', Parkinsonův zákon) sdružuje rezervu do projektového bufferu na konci. Kritický řetězec = nejdelší cesta s ohledem na sdílení zdrojů. Feeding buffery chrání napojení nekritických cest."
+    },
+    {
+      "id": 3,
+      "question": "Co popisuje Parkinsonův zákon v kontextu projektového řízení?",
+      "options": {
+        "A": "Projekt se vždy rozroste nad původní rozsah, pokud není pevně definovaný",
+        "B": "Práce se roztáhne na veškerý dostupný čas — pokud má aktivita 5denní rezervu, trvá 5 dní déle, než je nutné",
+        "C": "Počet lidí v projektovém týmu roste exponenciálně s délkou projektu",
+        "D": "Komunikační kanály rostou kvadraticky s počtem členů týmu"
+      },
+      "correct": "B",
+      "explanation": "Parkinsonův zákon: 'Work expands so as to fill the time available for its completion.' V projektech: pracovníci spotřebují celou přidělenou rezervu místo aby ji ušetřili. CCPM to řeší odstraněním viditelných individuálních rezerv."
+    },
+    {
+      "id": 4,
+      "question": "Jak ovlivňuje 'studentský syndrom' (student syndrome) projektové plánování?",
+      "options": {
+        "A": "Projektový tým přeceňuje doby trvání aktivit a projekt tak trvá déle",
+        "B": "Pracovníci odkládají zahájení práce na aktivitu na poslední chvíli, přestože mají časovou rezervu — čímž ji eliminují",
+        "C": "Mladší členové týmu pracují rychleji než zkušení, a narušují tak plán",
+        "D": "Projekt se zpomaluje koncem fáze, protože tým čeká na schválení výstupů"
+      },
+      "correct": "B",
+      "explanation": "Studentský syndrom: lidé začnou pracovat intenzivně teprve těsně před deadline (jako studenti před zkouškou). Individuální časové rezervy jsou tak promarněny odkládáním, nikoliv skutečnou prací. CCPM odstraňuje viditelné rezervy a nahrazuje je sdíleným projektovým bufferem."
+    },
+    {
+      "id": 5,
+      "question": "Kolik komunikačních kanálů existuje v projektovém týmu o 5 členech?",
+      "options": {
+        "A": "5",
+        "B": "10",
+        "C": "15",
+        "D": "20"
+      },
+      "correct": "B",
+      "explanation": "Počet komunikačních kanálů = $n(n-1)/2 = 5 \\cdot 4/2 = 10$. Při 10 členech to je 45 kanálů — proto roste koordinační náročnost superlineárně s velikostí týmu (Brooks' Law)."
+    },
+    {
+      "id": 6,
+      "question": "Co říká Brooksův zákon (Brooks' Law) o přidávání pracovníků do opožděného projektu?",
+      "options": {
+        "A": "Přidání zkušených pracovníků vždy projekt urychlí o dobu jejich zaškolení",
+        "B": "Přidání pracovníků do opožděného projektu ho ještě více zpozdí — kvůli nárokům na zaškolení a komunikační overhead",
+        "C": "Projekt se urychlí úměrně počtu přidaných pracovníků až do optima 10 lidí",
+        "D": "Přidání pracovníků je efektivní pouze v počáteční fázi projektu"
+      },
+      "correct": "B",
+      "explanation": "Brooks' Law: 'Adding manpower to a late software project makes it later.' Nový člen potřebuje zaškolení (odebírá čas zkušeným), zvyšuje komunikační overhead a dočasně snižuje produktivitu týmu. Platí zejména pro pozdní fáze projektu."
+    },
+    {
+      "id": 7,
+      "question": "Co je Belbin Team Role Theory a jak se uplatňuje v projektovém řízení?",
+      "options": {
+        "A": "Teorie říkající, že všichni členové týmu by měli zastávat stejnou roli pro maximální efektivitu",
+        "B": "Model 9 týmových rolí (Plant, Coordinator, Shaper, atd.), kde vyvážené obsazení rolí zvyšuje výkonnost týmu",
+        "C": "Metodika přidělování úkolů na základě seniority členů týmu",
+        "D": "Rámec pro hodnocení technických kompetencí projektového týmu"
+      },
+      "correct": "B",
+      "explanation": "Belbin identifikoval 9 týmových rolí: akční (Shaper, Implementer, Completer-Finisher), sociální (Coordinator, Teamworker, Resource Investigator), myšlenkové (Plant, Monitor-Evaluator, Specialist). Vyvážené obsazení rolí — ne pouze technické kompetence — předpovídá úspěch týmu."
+    }
+  ]
+}

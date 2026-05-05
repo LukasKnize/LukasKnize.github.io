@@ -1,0 +1,77 @@
+{
+  "title": "Softwarové nástroje v řízení projektů: MS Excel, MS Project",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jak se v MS Excel zapíše vzorec pro výpočet síťového grafu (nejdřívější začátek ES aktivity B, která navazuje na aktivitu A s ES=3 a dobou trvání 5)?",
+      "options": {
+        "A": "=A1+B1",
+        "B": "=ES_A + Trvání_A, tedy numericky 3+5=8",
+        "C": "=MAX(EF předchůdců), tedy =MAX(8) = 8",
+        "D": "=MIN(LS předchůdců)"
+      },
+      "correct": "C",
+      "explanation": "ES aktivity = MAX(EF všech předchůdců). Pokud A: ES=3, trvání=5, pak EF_A=8. ES_B = MAX(EF_A) = 8. V Excelu: =MAX(odkaz na EF předchůdců). Při více předchůdcích se bere maximum — aktivita může začít, až jsou všichni hotovi."
+    },
+    {
+      "id": 2,
+      "question": "K čemu slouží funkce SOLVER v MS Excel?",
+      "options": {
+        "A": "K automatickému generování Ganttova diagramu z tabulky aktivit",
+        "B": "K řešení optimalizačních úloh (LP, NLP, celočíselné programování) — minimalizace/maximalizace účelové funkce při daných omezeních",
+        "C": "K výpočtu kritické cesty v síťovém grafu projektu",
+        "D": "K simulaci Monte Carlo pro analýzu rizik projektu"
+      },
+      "correct": "B",
+      "explanation": "Solver je add-in pro optimalizaci: definuje se cílová buňka (max/min), měnitelné buňky (rozhodovací proměnné) a omezení. Řeší LP (Simplex), NLP (GRG Nonlinear) i celočíselné úlohy (Evolutionary/Branch & Bound)."
+    },
+    {
+      "id": 3,
+      "question": "Co je Ganttův diagram v MS Project a jaké informace zobrazuje?",
+      "options": {
+        "A": "Síťový graf zobrazující závislosti aktivit formou diagramu šipek",
+        "B": "Pruhový diagram zobrazující aktivity na časové ose; barevně odlišuje kritické aktivity (červeně) a zobrazuje závislosti šipkami",
+        "C": "Histogram přidělení zdrojů ke každé aktivitě projektu",
+        "D": "Tabulkový přehled nákladů na jednotlivé pracovní balíčky"
+      },
+      "correct": "B",
+      "explanation": "MS Project Ganttův diagram: pruhy = aktivity na časové ose, červené pruhy = kritická cesta, šipky = závislosti (FS, SS, FF, SF). Umožňuje zobrazit časové rezervy (slack), milníky (diamanty) a baseline plán pro srovnání s aktuálním stavem."
+    },
+    {
+      "id": 4,
+      "question": "Co je 'baseline' (základní plán) v MS Project a proč je důležitý?",
+      "options": {
+        "A": "Výchozí šablona projektu pro daný typ průmyslu",
+        "B": "Uložený snímek původního plánu (termíny, náklady, rozsah), vůči němuž se měří odchylky při sledování průběhu",
+        "C": "Minimální požadovaná kvalita výstupů definovaná zákazníkem",
+        "D": "Automaticky generovaný plán B pro případ selhání kritické aktivity"
+      },
+      "correct": "B",
+      "explanation": "Baseline = zmrazený původní plán (Baseline Start, Baseline Finish, Baseline Cost). Při aktualizaci projektu (tracking) MS Project porovnává Actual vs. Baseline a počítá odchylky (Variance). Bez baseline nelze měřit výkonnost (EVM)."
+    },
+    {
+      "id": 5,
+      "question": "Jak MS Project řeší přetížení zdrojů (resource overallocation)?",
+      "options": {
+        "A": "Automaticky přidá nové zdroje ze sdíleného fondu organizace",
+        "B": "Zvýrazní přetížené zdroje; nabízí resource leveling (vyrovnání zdrojů přesunutím aktivit v rámci rezerv nebo prodloužením projektu)",
+        "C": "Automaticky sníží rozsah práce přetíženého zdroje na 80 %",
+        "D": "Přetížení ignoruje a ponechá řešení výhradně na projektovém manažerovi"
+      },
+      "correct": "B",
+      "explanation": "MS Project detekuje overallocation (zdroj přiřazen na více než 100 % kapacity) a graficky ho označí (červeně). Resource Leveling přesouvá aktivity s rezervou nebo prodlužuje projekt (level within slack / level over time limit) — zachovává priority."
+    },
+    {
+      "id": 6,
+      "question": "Jaká je výhoda použití MS Project oproti Excelu pro řízení projektů?",
+      "options": {
+        "A": "MS Project je levnější a dostupnější než Excel",
+        "B": "MS Project automaticky počítá kritickou cestu, sleduje zdroje a integruje EVM; Excel vyžaduje ruční implementaci těchto výpočtů",
+        "C": "MS Project podporuje makra a VBA, zatímco Excel ne",
+        "D": "MS Project umí pracovat s pravděpodobnostními odhady dle PERT; Excel ne"
+      },
+      "correct": "B",
+      "explanation": "MS Project: nativní výpočet kritické cesty (CPM/PDM), správa zdrojů, sledování nákladů, EVM metriky, resource leveling — vše automaticky. Excel tyto výpočty může implementovat, ale vyžaduje manuální tvorbu vzorců a nemá nativní integraci zdrojů."
+    }
+  ]
+}

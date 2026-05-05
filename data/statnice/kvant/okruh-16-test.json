@@ -1,0 +1,77 @@
+{
+  "title": "Teorie odhadu: bodový odhad, intervalový odhad",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Jaké jsou tři žádoucí vlastnosti bodového odhadu?",
+      "options": {
+        "A": "Přesnost, rychlost výpočtu a interpretovatelnost",
+        "B": "Nestrannost ($E[\\hat{\\theta}] = \\theta$), vydatnost (minimální rozptyl mezi nestrannými odhady) a konzistentnost ($\\hat{\\theta}_n \\to \\theta$ pro $n \\to \\infty$)",
+        "C": "Normalita, linearita a homoskedasticita",
+        "D": "Robustnost, škálovatelnost a reproducibilita"
+      },
+      "correct": "B",
+      "explanation": "Nestrannost: $E[\\hat{\\theta}] = \\theta$ — odhad netíhne ke kladné ani záporné chybě. Vydatnost (efficiency): nejmenší rozptyl mezi všemi nestrannými odhady (UMVUE). Konzistentnost: s rostoucím $n$ se odhad zpřesňuje. Výběrový průměr $\\bar{x}$ je nestranný, vydatný a konzistentní odhad $\\mu$."
+    },
+    {
+      "id": 2,
+      "question": "Jak se konstruuje 95% intervalový odhad průměru $\\mu$, je-li populační rozptyl $\\sigma^2$ znám?",
+      "options": {
+        "A": "$\\bar{x} \\pm t_{n-1;0{,}025} \\cdot s/\\sqrt{n}$",
+        "B": "$\\bar{x} \\pm 1{,}96 \\cdot \\sigma/\\sqrt{n}$",
+        "C": "$\\bar{x} \\pm 1{,}96 \\cdot s/\\sqrt{n}$",
+        "D": "$\\bar{x} \\pm z_{0{,}05} \\cdot \\sigma/\\sqrt{n}$"
+      },
+      "correct": "B",
+      "explanation": "Pokud $\\sigma$ je znám: $CI = \\bar{x} \\pm z_{\\alpha/2} \\cdot \\sigma/\\sqrt{n}$. Pro 95 % ($\\alpha = 0{,}05$): $z_{0{,}025} = 1{,}96$. Pokud $\\sigma$ neznámý: nahradit $\\sigma$ výběrovým $s$ a $z$ hodnotou $t_{n-1;\\alpha/2}$ (Studentovo t-rozdělení)."
+    },
+    {
+      "id": 3,
+      "question": "Proč se při neznámém $\\sigma$ používá Studentovo t-rozdělení místo normálního?",
+      "options": {
+        "A": "T-rozdělení je vždy přesnější než normální bez ohledu na velikost výběru",
+        "B": "Nahrazení $\\sigma$ odhadem $s$ vnáší dodatečnou nejistotu; t-rozdělení má těžší chvosty, což tuto nejistotu zohledňuje; pro $n \\to \\infty$ konverguje k normálnímu",
+        "C": "T-rozdělení se používá výhradně při $n < 10$; pro větší výběry je správné normální",
+        "D": "T-rozdělení kompenzuje zkreslení způsobené nesymetrií populačního rozdělení"
+      },
+      "correct": "B",
+      "explanation": "Statistika $T = (\\bar{X} - \\mu)/(s/\\sqrt{n})$ má t-rozdělení s $n-1$ stupni volnosti. T má těžší chvosty než normální (konverguje k $N(0,1)$ pro $n \\to \\infty$). Pro malá $n$ dává širší (konzervativnější) intervaly spolehlivosti — to je správně, protože $s$ je méně spolehlivý odhad $\\sigma$."
+    },
+    {
+      "id": 4,
+      "question": "Výběr o rozsahu $n=100$ má průměr $\\bar{x} = 50$ a výběrovou směrodatnou odchylku $s = 20$. Jaká je přibližná šířka 95% intervalu spolehlivosti pro $\\mu$?",
+      "options": {
+        "A": "±1,96",
+        "B": "±3,92",
+        "C": "±0,392",
+        "D": "±39,2"
+      },
+      "correct": "B",
+      "explanation": "$SE = s/\\sqrt{n} = 20/\\sqrt{100} = 20/10 = 2$. Pološířka: $1{,}96 \\cdot 2 = 3{,}92$. Interval: $(50 - 3{,}92;\\; 50 + 3{,}92) = (46{,}08;\\; 53{,}92)$. Šířka intervalu ±3,92."
+    },
+    {
+      "id": 5,
+      "question": "Jak se konstruuje intervalový odhad pro podíl $p$ (alternativní rozdělení) s velkým výběrem?",
+      "options": {
+        "A": "$\\hat{p} \\pm t_{n-1;\\alpha/2} \\cdot \\sqrt{\\hat{p}(1-\\hat{p})/n}$",
+        "B": "$\\hat{p} \\pm z_{\\alpha/2} \\cdot \\sqrt{\\hat{p}(1-\\hat{p})/n}$",
+        "C": "$\\hat{p} \\pm z_{\\alpha/2} \\cdot \\hat{p}/\\sqrt{n}$",
+        "D": "$\\hat{p} \\pm 1{,}96 / n$"
+      },
+      "correct": "B",
+      "explanation": "Pro velká $n$ (platí CLV): $CI(p) = \\hat{p} \\pm z_{\\alpha/2} \\sqrt{\\hat{p}(1-\\hat{p})/n}$. Podmínka: $n\\hat{p} \\geq 5$ a $n(1-\\hat{p}) \\geq 5$. Pro $\\alpha = 0{,}05$: $z_{0{,}025} = 1{,}96$. Maximální pološířka nastává při $\\hat{p} = 0{,}5$."
+    },
+    {
+      "id": 6,
+      "question": "Co vyjadřuje hladina spolehlivosti $1 - \\alpha$ (např. 95 %)?",
+      "options": {
+        "A": "Pravděpodobnost, že skutečný parametr $\\theta$ leží v konkrétním spočítaném intervalu",
+        "B": "Pravděpodobnost, že metoda konstrukce intervalů pokryje skutečnou hodnotu $\\theta$ při opakovaném vzorkování",
+        "C": "Podíl hodnot $\\theta$ v populaci, které splňují podmínky modelu",
+        "D": "Pravděpodobnost, že výběr byl správně proveden bez systematické chyby"
+      },
+      "correct": "B",
+      "explanation": "Frekventistická interpretace: 95% IS neznamená '95% šance, že $\\theta$ je v tomto intervalu' (to by byl bayesovský credible interval). Znamená: kdybychom postup opakovali 100×, přibližně 95 z takto spočítaných intervalů by obsahovalo skutečnou $\\theta$. Konkrétní interval buď obsahuje $\\theta$, nebo ne."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Regresní a korelační analýza",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co měří Pearsonův korelační koeficient $r$ a jaký je jeho obor hodnot?",
+      "options": {
+        "A": "Sílu a směr monotonního (nemusí být lineárního) vztahu; $r \\in [-1, 1]$",
+        "B": "Sílu a směr lineárního vztahu mezi dvěma kvantitativními proměnnými; $r \\in [-1, 1]$",
+        "C": "Podíl variability $Y$ vysvětlené regresním modelem; $r \\in [0, 1]$",
+        "D": "Průměrnou absolutní odchylku od regresní přímky; $r \\in [0, \\infty)$"
+      },
+      "correct": "B",
+      "explanation": "$r = \\frac{\\sum(x_i - \\bar{x})(y_i - \\bar{y})}{\\sqrt{\\sum(x_i - \\bar{x})^2 \\sum(y_i - \\bar{y})^2}}$. Měří linearitu: $r = 1$ perfektní kladná, $r = -1$ perfektní záporná, $r = 0$ žádná lineární závislost. Pro neparametrické/ordinální data: Spearmanovo $\\rho$."
+    },
+    {
+      "id": 2,
+      "question": "Jak se interpretuje koeficient determinace $R^2$ v jednoduché lineární regresi?",
+      "options": {
+        "A": "Statistická významnost regresního koeficientu $\\beta_1$",
+        "B": "Podíl celkové variability $Y$ vysvětlené regresním modelem (lineárním vztahem s $X$); $R^2 \\in [0, 1]$",
+        "C": "Průměrná chyba předpovědi modelu v originálních jednotkách $Y$",
+        "D": "Počet proměnných v modelu dělený počtem pozorování"
+      },
+      "correct": "B",
+      "explanation": "$R^2 = 1 - SS_{res}/SS_{tot} = SS_{reg}/SS_{tot}$. Například $R^2 = 0{,}75$ znamená, že model vysvětluje 75 % variability $Y$. V jednoduché regresi $R^2 = r^2$. Upravené $\\bar{R}^2$ penalizuje za počet prediktoru — slouží ke srovnání modelů."
+    },
+    {
+      "id": 3,
+      "question": "Jakou vlastnost mají OLS (metoda nejmenších čtverců) odhady regresních koeficientů dle Gauss-Markovovy věty?",
+      "options": {
+        "A": "Jsou maximálně věrohodné, ale nikoliv nestranné",
+        "B": "Jsou BLUE (Best Linear Unbiased Estimators) — nejlepší nestranné lineární odhady, pokud jsou splněny předpoklady (linearita, exogenita, homoskedasticita, nezávislost chyb)",
+        "C": "Jsou vždy konzistentní bez ohledu na splnění předpokladů",
+        "D": "Minimalizují součet absolutních hodnot reziduí"
+      },
+      "correct": "B",
+      "explanation": "Gauss-Markovova věta: za předpokladů (lineární model, $E[\\varepsilon] = 0$, $\\text{Var}(\\varepsilon) = \\sigma^2 I$, nezávislost chyb a regresoru) jsou OLS odhady BLUE — nejmenší rozptyl mezi všemi nestrannými lineárními odhady."
+    },
+    {
+      "id": 4,
+      "question": "Data: $x = [1, 2, 3, 4, 5]$, $y = [2, 4, 5, 4, 5]$. Výpočet dá $\\hat{\\beta}_1 = 0{,}7$ a $\\hat{\\beta}_0 = 2{,}1$. Jaká je predikce pro $x = 6$?",
+      "options": {
+        "A": "5,8",
+        "B": "6,3",
+        "C": "6,9",
+        "D": "7,5"
+      },
+      "correct": "B",
+      "explanation": "$\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 \\cdot x = 2{,}1 + 0{,}7 \\cdot 6 = 2{,}1 + 4{,}2 = 6{,}3$. Extrapolace (předpověď mimo rozsah dat) je riziková — předpoklad linearity nemusí platit za hranicemi pozorování."
+    },
+    {
+      "id": 5,
+      "question": "Co je multikolinearita ve vícenásobné regresi a jak ji detekujeme?",
+      "options": {
+        "A": "Situace, kdy závislá proměnná $Y$ má nelineární vztah s prediktory; detekujeme reziduálními grafy",
+        "B": "Vysoká korelace mezi prediktory; způsobuje nestabilitu odhadů, velké SE koeficientů a obtíže s interpretací; detekujeme pomocí VIF (Variance Inflation Factor)",
+        "C": "Heteroskedasticita chyb modelu; detekujeme Breusch-Pagan testem",
+        "D": "Autokorelace chyb v čase; detekujeme Durbin-Watson statistikou"
+      },
+      "correct": "B",
+      "explanation": "Multikolinearita: prediktory jsou vzájemně silně korelovány → OLS odhady jsou technicky stále BLUE, ale koeficienty mají velký rozptyl (nestabilní, citlivé na malé změny dat). VIF > 10 signalizuje problém. Řešení: odstranění korelovaných prediktorů, PCA, ridge regrese."
+    },
+    {
+      "id": 6,
+      "question": "Kdy je vhodné použít Spearmanův korelační koeficient $\\rho$ místo Pearsonova $r$?",
+      "options": {
+        "A": "Když je objem dat $n > 100$ — Spearmanův je výpočetně efektivnější",
+        "B": "Když jsou data ordinální, silně nenormální nebo obsahují outliers — Spearmanův $\\rho$ měří monotonní (ne nutně lineární) vztah na základě pořadí hodnot",
+        "C": "Když chceme testovat kauzalitu (ne jen asociaci) mezi proměnnými",
+        "D": "Spearmanův $\\rho$ se používá výhradně pro binární data"
+      },
+      "correct": "B",
+      "explanation": "Spearmanův $\\rho$: Pearsonův $r$ aplikovaný na pořadí (ranky) hodnot. Robustní vůči outlierům, nevyžaduje normalitu, zachycuje monotonní (i nelineární) vztahy. Pro ordinální data (škály Likert) je vždy vhodnější než Pearsonův."
+    },
+    {
+      "id": 7,
+      "question": "Co je transformace proměnných v regresi a proč se provádí?",
+      "options": {
+        "A": "Standardizace prediktorů na jednotkový rozptyl pro numerickou stabilitu výpočtů",
+        "B": "Aplikace funkce (log, sqrt, ...) na $X$ nebo $Y$ pro linearizaci vztahu, stabilizaci rozptylu nebo normalitu reziduí — umožňuje použití OLS na nelineárních datech",
+        "C": "Imputace chybějících hodnot v datovém souboru",
+        "D": "Rozdělení dat na trénovací a testovací sadu pro křížovou validaci"
+      },
+      "correct": "B",
+      "explanation": "Logaritmická transformace ($\\ln Y$, $\\ln X$) linearizuje exponenciální/mocninné vztahy a stabilizuje heteroskedasticitu. Příklad: log-log model $\\ln Y = \\alpha + \\beta \\ln X$ → $\\beta$ je elasticita. Po transformaci lze aplikovat OLS a provádět zpětnou transformaci pro interpretaci."
+    }
+  ]
+}

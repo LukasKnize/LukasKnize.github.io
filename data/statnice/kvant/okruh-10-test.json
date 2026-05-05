@@ -1,0 +1,89 @@
+{
+  "title": "Aplikace teorie grafů v projektovém řízení: CPM, PERT, GERT, MPM",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Co je kritická cesta (critical path) v metodě CPM?",
+      "options": {
+        "A": "Nejkratší cesta od počátečního do koncového uzlu sítě",
+        "B": "Nejdelší cesta od počátečního do koncového uzlu; zpoždění jakékoliv aktivity na ní zpožďuje celý projekt",
+        "C": "Cesta s nejvyšším počtem aktivit bez ohledu na jejich délku",
+        "D": "Cesta s minimálním součtem časových rezerv jednotlivých aktivit"
+      },
+      "correct": "B",
+      "explanation": "Kritická cesta je nejdelší cesta sítí — určuje minimální dobu trvání projektu. Aktivity na kritické cestě mají nulovou celkovou rezervu ($R = 0$). Každé zpoždění kritické aktivity prodlužuje projekt o stejnou dobu."
+    },
+    {
+      "id": 2,
+      "question": "Čím se PERT liší od CPM při odhadu dob trvání aktivit?",
+      "options": {
+        "A": "CPM používá tři odhady (optimistický, nejpravděpodobnější, pesimistický); PERT jediný deterministický odhad",
+        "B": "PERT používá tři odhady (a, m, b) a počítá střední hodnotu $t_e = (a + 4m + b)/6$; CPM používá jediný deterministický odhad",
+        "C": "PERT i CPM používají stejný přístup, liší se pouze algoritmem výpočtu kritické cesty",
+        "D": "PERT pracuje s uzly (AON), CPM s hranami (AOA)"
+      },
+      "correct": "B",
+      "explanation": "PERT zavádí probabilistický odhad: $t_e = (a + 4m + b)/6$ (vážený průměr beta-rozdělení). Rozptyl aktivity: $\\sigma^2 = ((b-a)/6)^2$. CPM počítá s jediným deterministickým odhadem doby trvání."
+    },
+    {
+      "id": 3,
+      "question": "Aktivita má optimistický odhad $a = 2$ dny, nejpravděpodobnější $m = 5$ dní a pesimistický $b = 14$ dní. Jaká je její střední hodnota $t_e$ dle PERT?",
+      "options": {
+        "A": "5 dní",
+        "B": "6 dní",
+        "C": "7 dní",
+        "D": "8 dní"
+      },
+      "correct": "B",
+      "explanation": "$t_e = (a + 4m + b)/6 = (2 + 4 \\cdot 5 + 14)/6 = (2 + 20 + 14)/6 = 36/6 = 6$ dní."
+    },
+    {
+      "id": 4,
+      "question": "Co je celková časová rezerva ($R$) aktivity v síťovém grafu?",
+      "options": {
+        "A": "Rozdíl mezi nejpozdějším a nejdřívějším možným začátkem aktivity",
+        "B": "O kolik lze aktivitu zpozdit, aniž by se posunul termín dokončení projektu",
+        "C": "O kolik lze aktivitu zkrátit bez narušení technologické posloupnosti",
+        "D": "Minimální čas potřebný k dokončení aktivity za optimálních podmínek"
+      },
+      "correct": "B",
+      "explanation": "Celková rezerva $R = LF - EF = LS - ES$, kde $LS/LF$ jsou nejpozdější a $ES/EF$ nejdřívější časy. Aktivity s $R = 0$ leží na kritické cestě — jejich zpoždění zpožďuje projekt."
+    },
+    {
+      "id": 5,
+      "question": "Čím se GERT odlišuje od CPM a PERT?",
+      "options": {
+        "A": "GERT neumí pracovat s pravděpodobnostmi; je pouze deterministický",
+        "B": "GERT umožňuje modelovat větvení s pravděpodobnostmi, cykly (opakování) a alternativní výsledky aktivit",
+        "C": "GERT je specificky určen pro stavební projekty s fixními termíny",
+        "D": "GERT používá výhradně AOA (activity on arrow) reprezentaci"
+      },
+      "correct": "B",
+      "explanation": "GERT (Graphical Evaluation and Review Technique) rozšiřuje PERT o stochastické větvení (ne všechny cesty musí být dokončeny), cykly (iterace, opakování), a alternativní výstupy aktivit — vhodné pro R&D projekty a vývoj nových produktů."
+    },
+    {
+      "id": 6,
+      "question": "Co je charakteristické pro metodu MPM (Metra Potential Method)?",
+      "options": {
+        "A": "Používá reprezentaci AOA (aktivita na hraně) a uzly jako milníky",
+        "B": "Používá reprezentaci AON (aktivita na uzlu) a umožňuje různé typy vazeb mezi aktivitami (FS, SS, FF, SF) s prodlevami",
+        "C": "Vychází z lineárního programování a optimalizuje zdroje projektu",
+        "D": "Pracuje výhradně s pravděpodobnostními odhady dob trvání"
+      },
+      "correct": "B",
+      "explanation": "MPM (PDM — Precedence Diagramming Method) používá AON: uzly jsou aktivity, hrany jsou vazby. Podporuje 4 typy vazeb: FS (finish-to-start), SS (start-to-start), FF (finish-to-finish), SF (start-to-finish), vč. prodlev (lag). Tím je flexibilnější než AOA metody."
+    },
+    {
+      "id": 7,
+      "question": "Projekt má kritickou cestu délky 20 dní. Rozptyl kritické cesty je $\\sigma^2 = 4$ dny$^2$. Jaká je pravděpodobnost dokončení do 22 dní?",
+      "options": {
+        "A": "cca 50 %",
+        "B": "cca 68 %",
+        "C": "cca 84 %",
+        "D": "cca 98 %"
+      },
+      "correct": "C",
+      "explanation": "$\\sigma = \\sqrt{4} = 2$ dny. $z = (22 - 20)/2 = 1{,}0$. Z tabulky normálního rozdělení $\\Phi(1{,}0) \\approx 0{,}841$. Pravděpodobnost dokončení do 22 dní je přibližně 84 %."
+    }
+  ]
+}
