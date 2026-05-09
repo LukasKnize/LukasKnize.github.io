@@ -51,9 +51,9 @@
     },
     {
       "id": 5,
-      "question": "Co určuje zákon o minimální mzdě a co je zaručená mzda?",
+      "question": "Co určuje zákon o minimální mzdě a co je zaručený plat?",
       "options": {
-        "A": "Minimální mzda: nejnižší sazba pro nekvalifikovanou práci; zaručená mzda: minimální sazby dle skupin prací 1–8 (dle složitosti, odpovědnosti, namáhavosti)",
+        "A": "Minimální mzda: nejnižší sazba pro nekvalifikovanou práci; zaručený plat: minimální sazby dle skupin prací 1–4 (dle složitosti, odpovědnosti, namáhavosti)",
         "B": "Minimální mzda se vztahuje pouze na dohody o provedení práce; zaručená na pracovní smlouvy",
         "C": "Obě jsou shodné — liší se pouze názvem v různých zákonech",
         "D": "Zaručená mzda je vyplácena státem zaměstnancům při platební neschopnosti zaměstnavatele"
