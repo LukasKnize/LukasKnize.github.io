@@ -8,7 +8,7 @@ Odměňování zaměstnanců v ČR reguluje primárně **zákoník práce** (zá
 
 - **Mzda** – peněžité plnění poskytované zaměstnavatelem soukromého sektoru za práci. (Zaměstnanci veřejného sektoru pobírají **plat** – pevně daný platem sazbou dle tabulek.)
 - **Minimální mzda** – zákonem garantované minimum (stanovuje vláda nařízením). Zaměstnavatel nesmí platit méně. V ČR v roce 2024 činila 18 900 Kč/měsíc (pro 40h týden).
-- **Zaručená mzda** – minimální mzda pro danou skupinu prací podle složitosti, odpovědnosti a namáhavosti (8 skupin). Plní ochrannou funkci vůči nekvalifikované i vysoce kvalifikované práci.
+- **Zaručený plat** – minimální plat pro danou skupinu prací podle složitosti, odpovědnosti a namáhavosti (4 skupiny). Plní ochrannou funkci vůči nekvalifikované i vysoce kvalifikované práci. (Původně platilo i pro soukromý sektor pod názvem zaručená mzda a byla rozdělena do 8 skupin)
 - **Kolektivní smlouva** – dohoda mezi odborovou organizací a zaměstnavatelem; může stanovat mzdové podmínky výhodněji, než zákon.
 
 ---
